@@ -1,6 +1,6 @@
-const d = new Date("July 21, 1983 01:15:00");
-let year = d.getFullYear();
-const date = d.getDate();
 
-document.getElementById("year").innerHTML = year;
-document.getElementByClassName("date").innerHTML = date;
+//ToLocaleDateString
+const options = {weekday: 'long' , day: 'numeric', month: 'long', year: 'numeric'};
+const year = {year: 'numeric'}
+document.getElementById('year').textContent = new Date().toLocaleDateString('en-us', year);
+document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-us', options);
