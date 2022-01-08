@@ -49,6 +49,10 @@ main h2 {
     font-size: 1.5em;
     margin-bottom: 0;
 }
+ p.time {
+   font-size: .8em;
+   font-weight: 400;
+}
 main span.endnote {
     font-size:smaller;
     font-style: italic;
