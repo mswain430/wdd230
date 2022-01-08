@@ -51,5 +51,5 @@ document.getElementById('year').textContent = new Date().toLocaleDateString('en-
 document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-us', options);
 
 //String Literal
-currentdate3 = `current Date: ${dayName}, ${monthName} ${d.getDate()}, ${year}`
-document.getElementById('currentdate3').textContent = currentdate3
+//currentdate3 = `current Date: ${dayName}, ${monthName} ${d.getDate()}, ${year}`
+//document.getElementById('currentdate3').textContent = currentdate3

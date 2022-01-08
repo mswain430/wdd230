@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 230 Assignment Portal for Millie Swain">
+    <meta name="description" content="Assignment portal for Millie Swain in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     <title>Millie Swain Profile</title>
     <link rel="stylesheet" href="css/styles.css">
     <script defer src="js/currentdate.js"></script>
+    <script defer src="js/lastmodified.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <content>
     <header>
         <img src="images/milliesw.jpg" alt="Millie Swain">
         <h1>Millie Swain</h1>
     </header>
     <main>
-        <h3>WDD 230: Assignment Portal</h3>
+        <h2>WDD 230: Assignment Portal</h2>
+        <h6>Current date: <span id="currentdate"></span></h6>
         <hr>
        <ul>
            <li>Lesson 02:  <a href="#">Title</a></li>
@@ -34,12 +35,11 @@
            <li>Lesson 11:  <a href="#">Title</a></li>
       </ul>
       <hr>
-      <em>Some lessons may need more than one activity/assignment link.</em>
+      <span class="endnote" >Some lessons may need more than one activity/assignment link.</span>
     </main>
     <footer>
-        <p>&copy <span id="year" class="year">2021</span> | Millie Swain | San Diego, CA
-        <br><small>Last Updated: <span id="currentdate"></span></small></p>
+        <p>&#169; <span id="year" class="year">2021</span> | Millie Swain | San Diego, CA
+        <br><span class="modified">Last Updated:</span> <span class="modified" id="lastMod"></span></p>
      </footer>
-     </content>
 </body>
 </html>
