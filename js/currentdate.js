@@ -1,4 +1,5 @@
-/* const daynames = [
+ /*
+ const daynames = [
 	"Sunday",
 	"Monday",
 	"Tuesday",
@@ -41,8 +42,8 @@ try {
   date2.textContent = new Date().toLocaleDateString('en-UK', options);
 } catch (e) {
   alert('Error with code or your browser does not support Locale');
-}  */
-
+}
+*/
 
 //ToLocaleDateString
 const options = {weekday: 'long' , day: 'numeric', month: 'long', year: 'numeric'};

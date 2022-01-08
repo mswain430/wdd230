@@ -1,2 +1,2 @@
-let oLastModif = new Date(document.lastModified);
-document.getElementById('lastMod').textContent = oLastModif;
+let lastmod = document.querySelector('#lastmod');
+lastmod.textContent =  document.lastModified;
