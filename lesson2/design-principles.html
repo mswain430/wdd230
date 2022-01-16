@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,27 +8,65 @@
     <title>Millie Swain Profile</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@500&family=Open+Sans:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
     <script defer src="js/currentdate.js"></script>
     <script defer src="js/lastmodified.js"></script>
 </head>
 <body>
+    <header>
+        <h1>Design Principles Document</h1>
+        <p>Millie M Swain</p>
+    </header>
 <main>
-    <section>
-        <h2>title</h2>
-        <h3>name</h3>
-        <h4>address</h4>
-        <img>
-            screencapture
-        <article>
-            description
-        </article>
+    <section class="thirds">
+        <div class="title">
+            <h2>Rule of Thirds</h2>
+        </div>
+        <div class="site">
+           <p>Adobe.com</p>
+           <p><a href="https://adobe.com">https://Adobe.com</a></p>
+       </div>
+        <div class="pic">
+          <a href="https://adobe.com"><img src="images/Adobe.jpg" alt="Adobe"></a>
+          </div>
+          <div class="descr">The rule of thirds is a design layout that encourages the use of an imaginary grid to layout your display. It uses the primise that our eye is drawn to the four intersecting lines in the middle of the grid. Our eye is first drawn to the top left corner. The rule of thirds creates balance and is graphically appealing when adding content to your page. When designing our web layouts we should incorporate the rule of thirds. When incorporating images we should consider the rule of thirds. In the Adobe example many of the images have the text in the upper left corner.</div>
     </section>
-    <section></section>
-    <section></section>
+    <section class="proximity">
+        <div class="title">
+            <h2>Proximity</h2>
+        </div>
+         <div class="site">
+           <p>Fontawesome.com</p>
+           <p><a href="https://fontawesome.com">https://fontawesome.com</a></p>
+       </div>
+        <div class="pic">
+          <a href="https://fontawesome.com"><img src="images/fontawesome.jpg" alt="Fontawesome"></a>
+        </div>
+        <div class="descr">
+          <p>The principle of proximity states that items close together are likely to be perceived as part of the same group. In this fontawesome page each section is inside a background, deliniated by horizontal lines on each section. The headers are in close proximity to the description. The images are close to the description. The proximity tells us that the content is related. Each of the images of fonts are uniform and are viewed as a grouping. The layouts repeat themselves and one also mirrors itself, but because of the proximity we know which content goes with which pictures and heading and description.  </p>
+        </div>
+    </section>
+    <section class="whitespace">
+        <div class="title">
+            <h2>Whitespace & Clean Design</h2>
+        </div>
+         <div class="site">
+           <p>LucidChart.com</p>
+           <p><a href="https://lucidchart.com">https://lucidchart.com</a></p>
+       </div>
+         <div class="pic">
+          <a href="https://lucidchart.com"><img src="images/Lucidchart.jpg"  alt="LucidChart"></a>
+         </div>
+        <div class="descr">White space is the space between and around the other elements on the page. White Space does not need to be white it can be any color, it just refers to the space. Sometimes this can be in conflict when trying to fit the content. It also includes the whitespace between fonts. On this LucidChart site there is a lot of space between the elements. It uses the 'white' space to elegantly display the content. Simple and elegant. The typography uses Sans Serif which makes for clean lines.</div>
+    </section>
 </main>
+<footer>
+        <p>&#169; <span id="year" class="year">2021</span> | Millie Swain | San Diego, CA
+        <br><span class="modified">Last Updated:</span> <span class="modified" id="lastmod"></span></p>
+     </footer>
 </body>
 </html>
