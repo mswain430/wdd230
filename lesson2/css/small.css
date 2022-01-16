@@ -44,7 +44,7 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-gap: 25px;
-    align-self:justify;
+    align-self: center;
     vertical-align: top;
     padding: 10px 5px;
     margin: 20px auto 10px auto;
@@ -112,7 +112,7 @@ section .site {
 section .pic {
     grid-row:3;
     padding:10px 5px;
-    text-shadow:rgba(217, 217, 247, 0.3);
+    text-shadow:2px 2px 2px rgba(217, 217, 247, 0.3);
 }
 img {
   max-width: 100%;
