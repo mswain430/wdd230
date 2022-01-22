@@ -11,7 +11,13 @@ body {
     font-size: 1em;
     display:block;
 }
+h2, h3, h4 {
+    color:rgb(15, 64, 119)
+}
 
+h2{font-size: 1.8rem}
+h3{font-size: 1.5rem}
+h4{font-size: 1.2rem}
 header {
     display: grid;
     grid-template-columns: 1fr;
@@ -46,9 +52,9 @@ header p {
     font-family: "Open Sans", sans-serif;
 }
 nav {
-	background-color: #36454f;
+	background-color: rgb(74, 143, 223);
 	text-align: center;
-	box-shadow: 0 2px 15px gray;
+	box-shadow: 0 2px 10px rgb(39, 89, 146);
 }
 nav ul {
 	list-style-type: none;
@@ -62,18 +68,22 @@ nav ul li a {
 	text-align: center;
 	padding: 0.75rem;
 	text-decoration: none;
-	font-size: 0.95rem;
+	font-size: 1.2rem;
+    font-weight:500;
 	background: linear-gradient(90deg, transparent, yellow, transparent) top /
-		var(--d, 0) 10px no-repeat;
+		var(--d, 0) 5px no-repeat;
 	transition: 0.5s;
 }
 nav a:hover {
-	/* 	background-color: #bbb;
-	color: #36454f; */
+	/*background-color: rgb(222, 238, 192);*/
+	color: #030f16;
+    color: yellow;
 	--d: 75%;
 }
 .active {
 	color: yellow;
+    font-weight: 400;
+
 }
 main {
     display:grid;
