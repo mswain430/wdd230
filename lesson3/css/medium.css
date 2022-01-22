@@ -1,5 +1,10 @@
 /* Media Queries */
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 38.5em) {
+
+/* Flex *********************/
+		nav ul { display: flex; }
+		nav ul li { flex: 1 1 auto; }
+
 main {
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -7,7 +12,7 @@ main {
   }
 
 header h1 {
-  font-size: 2.5em;
+  font-size: 2.3em;
 }
 
 main section.whitespace {
@@ -17,5 +22,6 @@ main section .pic img {
   object-fit: cover;
   width: 100%
 }
+
 
 }

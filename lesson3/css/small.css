@@ -1,3 +1,9 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
     margin:0px auto;
     box-sizing: content-box;
@@ -9,12 +15,12 @@ body {
 header {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3.2em 2em;
+    grid-template-rows: 3.8em 3em;
     align-self:center;
     color:rgb(242, 243, 248);
     max-width: 100%;
-    height: 80px;
-    padding:  30px;
+    height: 120px;
+    padding:  20px;
     background-color:rgb(15, 64, 119);
     border-radius: 0px;
     box-shadow: 5px 5px 5px 5px rgba(141, 187, 240, 0.5);
@@ -27,7 +33,7 @@ header h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 2em;
-    padding: 20px;
+    padding: 20px 0 20px 0;
     margin: 20px;
     line-height: 1em;
 
@@ -36,8 +42,38 @@ header p {
     grid-row: 2;
     text-align: center;
     color:rgb(242, 243, 248);
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-family: "Open Sans", sans-serif;
+}
+nav {
+	background-color: #36454f;
+	text-align: center;
+	box-shadow: 0 2px 15px gray;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+	background: linear-gradient(90deg, transparent, yellow, transparent) top /
+		var(--d, 0) 10px no-repeat;
+	transition: 0.5s;
+}
+nav a:hover {
+	/* 	background-color: #bbb;
+	color: #36454f; */
+	--d: 75%;
+}
+.active {
+	color: yellow;
 }
 main {
     display:grid;
@@ -136,6 +172,7 @@ footer {
     text-align:center;
     width: 100%;
     height: 65px;
+    padding: 10px;
     background-color:rgb(15, 64, 119);
     color:rgb(242, 243, 248);
     text-shadow: 1px 1px 3px #102c47;
