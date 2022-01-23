@@ -81,12 +81,12 @@ main {
     text-align:left;
 }
 ul li {
-    padding:5px;
+    padding: 10px;
     list-style-type:square;
 }
 /* Media Queries */
 @media only screen and (max-width: 32.5em) {
-    
+
     body {
         font-size: .9em;
     }
