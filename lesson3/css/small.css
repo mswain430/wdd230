@@ -1,3 +1,4 @@
+
 * {
 	margin: 0;
 	padding: 0;
@@ -11,18 +12,31 @@ body {
     font-size: 1em;
     display:block;
 }
-h2, h4 {
-    color:green;
-}
-h3 {
-    color:rgb(240, 180, 17);
-    color: rgb(238, 204, 10);
-    border-bottom: 1px solid rgb(240, 180, 17);
+h2{
+    color:#046fb9;
+    padding: 5px 0;
 }
 
+h4 {
+    color:#1fc9b8;
+    padding: 5px 0;
+    max-width: 400px;
+}
+h3 {
+    color: rgb(238, 204, 10);
+    color: #ffda00;
+    border-bottom: 1px solid rgb(240, 180, 17);
+    padding: 5px 0;
+    margin: 10px 0;
+    max-width: 400px;
+}
+
+p {font-family: 'open sans', sans-serif; font-size: 1.2em;line-height: 1.2em;}
 h2{font-size: 2.3rem}
-h3{font-size: 1.8rem}
-h4{font-size: 1.4rem}
+h3{font-size: 2rem}
+h4{font-size: 1.6rem}
+main a:link {color:#1fc9b8;}
+main a:hover {color: #000;}
 header {
     display: grid;
     grid-template-columns: 1fr;
@@ -35,6 +49,7 @@ header {
     background-color:rgb(15, 64, 119);
     border-radius: 0px;
     box-shadow: 5px 5px 5px 5px rgba(141, 187, 240, 0.5);
+
 }
 header h1 {
     grid-row: 1;
@@ -57,9 +72,10 @@ header p {
     font-family: "Open Sans", sans-serif;
 }
 nav {
-	background-color: rgb(74, 143, 223);
+	background-color: #046fb9;
 	text-align: center;
 	box-shadow: 0 2px 5px rgb(39, 89, 146);
+
 }
 nav ul {
 	list-style-type: none;
@@ -93,94 +109,41 @@ nav a:hover {
 main {
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 25px;
     align-self: center;
     vertical-align: top;
     padding: 10px 10px;
     margin: 20px auto 10px auto;
+    width: 80%;
 
 }
-
 main section {
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 70px auto auto;
-    grid-gap: 10px;
-    background-color:rgba(217, 217, 247, 0.4);
-    border-radius: 8px 8px 0px 0px;
-    border: 1px solid #000;
-    text-align:left;
+    padding: 10px;
+    border:1px solid rgb(190, 187, 187);
 }
-main hr {
-    margin: 0;
+main section ul li {
+    list-style-type: none;
+    padding: 5px 25px;
 }
 
+
 main h2 {
-    color:rgb(42, 194, 62);
+    color:#046fb9;
     text-shadow:2px 2px 2px rgba(217, 217, 247, 0.3);
     font-size: 2.2em;
-    border-bottom: 1px solid rgb(238, 204, 10);
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
  p.time {
    font-size: .8em;
    font-weight: 400;
 }
-main span.endnote {
-    font-size:smaller;
-    font-style: italic;
-    line-height: .8em;
-    margin-top: 0;
-}
-section .title  {
-    margin: 0 ;
-    width: 100%;
-    grid-column: 1;
-    background-color:rgb(19, 85, 160);
-    border-radius: 8px 8px 0 0;
-    border: 1px solid rgb(28, 4, 73);
-    text-align:left;
-    vertical-align:middle;
-    box-sizing: border-box;
-}
 
-section .title h2 {
-    grid-row:1;
-    font-family: "Montserrat", san-serif;
-    font-weight: 500;
-    color:rgba(242, 243, 248, 1.0);
-    font-size: 1.2rem;
-    margin-right:-10px;
-    padding: 0 5px;
-    font-style: italic;
-}
-section .site {
-    grid-row: 2;
-    max-height: 70px;
-    padding: 10px;
-}
-
-section .pic {
-    grid-row:3;
-    padding:10px 5px;
-    text-shadow:2px 2px 2px rgba(217, 217, 247, 0.3);
-}
 img {
   max-width: 100%;
   height: auto;
 }
 
-section .descr  {
-    padding:10px;
-    font-family: "Open Sans", san-serif;
-    font-size: 1em;
-    line-height: 1.5em;
-    text-align:justify;
-    align-self: normal;
-    vertical-align:top;
-    margin: 10px;
-}
 footer {
     display: grid;
     grid-template-columns: 1fr;

@@ -6,21 +6,11 @@
 		nav ul li { flex: 1 1 auto; }
 
 main {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
     max-width: 90%;
   }
 
 header h1 {
   font-size: 2.3em;
-}
-
-main section.whitespace {
-  grid-column: 1/3;
-}
-main section .pic img {
-  object-fit: cover;
-  width: 100%
 }
 
 
