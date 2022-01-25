@@ -15,12 +15,14 @@ body {
 h2{
     color:#046fb9;
     padding: 5px 0;
+    font-family: "Merriweather", sans-serif;
 }
 
 h4 {
     color:#CE5505;
     padding: 5px 0;
     font-weight: bold;
+    font-family: "Merriweather", sans-serif;
 }
 h3 {
    /* color: rgb(238, 205, 17);*/
@@ -28,6 +30,7 @@ h3 {
    background-color:#046fb9;
    padding: 5px;
    margin: 10px 0;
+   font-family: "Merriweather", sans-serif;
 }
 
 p {font-family: 'open sans', sans-serif; font-size: 1.2em;line-height: 1.2em;}
@@ -58,7 +61,7 @@ header h1 {
     text-align:center;
     align-self:center;
     text-shadow:1px 1px rgba(40, 40, 41, 0.6);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Merriweather', sans-serif;
     font-weight: 500;
     font-size: 2em;
     padding: 20px 0 20px 0;
