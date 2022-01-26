@@ -112,6 +112,20 @@ nav a:hover {
     font-weight: 400;
 
 }
+ ul.target {
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 10px;
+
+}
+ul.target  li {
+    list-style-type: square;
+    padding: 5px 10px;
+}
+ ul.target li ul li {
+    list-style-type: none;
+    padding: 3px 20px;
+}
 main {
     display:grid;
     grid-template-columns: 1fr;
