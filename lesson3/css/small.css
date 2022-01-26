@@ -33,6 +33,11 @@ table, th, td {
     font-size: 1em;
 
 }
+h1 {
+    background-color: #0f4077; 
+    color:rgb(242, 243, 248); 
+    font-size: 2.2em; 
+    font-family: "Merriweather", sans-serif}
 h2{
     color:#046fb9;
     padding: 5px 0;
