@@ -1,0 +1,17 @@
+/* Media Queries */
+@media only screen and (min-width: 38.5em) {
+
+/* Flex *********************/
+		nav ul { display: flex; }
+		nav ul li { flex: 1 1 auto; }
+
+main {
+    max-width: 90%;
+  }
+
+header h1 {
+  font-size: 2.3em;
+}
+
+
+}
