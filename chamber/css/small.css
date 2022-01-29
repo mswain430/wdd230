@@ -6,7 +6,7 @@
     --accent2-color: #ffda00;
     --neutral-color: #ddd;
     --neutral2-color: #264664;
-  
+
     /* change the values below to your chosen font(s) */
     --heading-font: "Bitter";
     --paragraph-font: "Open Sans", Helvetica, sans-serif;
@@ -24,12 +24,18 @@ body {
     font-size: 1em;
     display:block;
 }
-table { 
+.mainlogo img {
+    width: 150px;
+    height: auto;
+    margin-top: 5px;
+    margin-left:5px;
+}
+table {
     margin: 10px;
     border-collapse: collapse;
 }
 table, th, td {
-    
+
     border: 1px solid #6998b9;
     padding: 5px;
     text-align: left;
@@ -37,9 +43,9 @@ table, th, td {
     font-size: 1em;
 }
 h1 {
-    background-color: #0f4077; 
-    color:rgb(242, 243, 248); 
-    font-size: 2.2em; 
+    background-color: #0f4077;
+    color:rgb(242, 243, 248);
+    font-size: 2.2em;
     font-family: "Merriweather", sans-serif}
 h2{
     color:#046fb9;
@@ -74,13 +80,12 @@ main a:hover {
 }
 header {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3.8em 3em;
+    grid-template-columns: 1fr 1fr 1fr;
     align-self:center;
     color:rgb(242, 243, 248);
     max-width: 100%;
     height: 120px;
-    padding:  20px;
+    padding:  0;
     background-color:rgb(15, 64, 119);
     border-radius: 0px;
     box-shadow: 5px 5px 5px 5px rgba(141, 187, 240, 0.5);
@@ -106,6 +111,7 @@ header p {
     font-size: 1.1em;
     font-family: "Open Sans", sans-serif;
 }
+header {display:flex;  justify-content: space-around;}
 nav {
 	background-color: #046fb9;
 	text-align: center;
@@ -145,7 +151,7 @@ nav a:hover {
     font-size: 1.2em;
     margin: 10px;
     padding: 10px;
-    color: #CE5505; 
+    color: #CE5505;
 }
 ul.target  li {
     list-style-type: square;
@@ -154,7 +160,7 @@ ul.target  li {
  ul.target li ul li {
     list-style-type: none;
     padding: 3px 20px;
-    color: #000; 
+    color: #000;
 }
 main {
     display:grid;
