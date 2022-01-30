@@ -3,37 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lesson 3 - SITE PLAN for Millie Swain in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <meta name="description" content="Blanding Chambeer of Commerce">
     <title>Color Scheme</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <script defer src="js/currentdate.js"></script>
     <script defer src="js/lastmodified.js"></script>
+    <script defer src="js/scripts.js"></script>
 </head>
 <body>
-    <header>
-        <div class="mainlogo"><img src="images/blanding.png"></div>
-        <h1><em>Blanding Chamber of Commerce</em></h1>
+   <header>
+       <picture>
+          <source srcset="images/Blanding-logo.png"
+            media="(min-width: 65rem)">
+            <img src="images/blanding-xs.png" alt="logo" />
+        </picture>
+        <h1>Blanding<br/> <span>Chamber of Commerce</span></h1>
         <p>social media here</p>
-    </header>
-    <nav>
-	<ul>
-		<li><a href="home.html" class="active">Home</a></li>
-		<li><a href="discover.html">Discover</a></li>
-		<li><a href="directory.html">Directory</a></li>
-		<li><a href="join.html">Join</a></li>
-		<li><a href="contact.html">Contact</a></li>
-	</ul>
-</nav>
-<main>
-more here
-</main>
-<footer>
+  </header>
+  <nav>
+            <ul id="primaryNav">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="hamBtn">&#9776;</button>
+        </nav>
+  <main>
+    <section>one</section>
+    <section>one</section>
+    <section>one</section>
+    <section>one</section>
+    <section>one</section>
+    <section>one</section>
+  </main>
+  <footer>
         <p>&#169; <span id="year" class="year">2021</span> | Millie Swain | San Diego, CA
         <br><span class="modified">Last Updated:</span> <span class="modified" id="lastmod"></span></p>
      </footer>

@@ -1,0 +1,111 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    display:block;
+}
+header {
+    display:grid;
+    grid-template-columns: 105px auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-height: 100px;
+    color:rgb(242, 243, 248);
+    max-width: 100%;
+    padding:  0;
+    background-color:rgb(15, 64, 119);
+    border-radius: 0px;
+    box-shadow: 5px 5px 5px 5px rgba(141, 187, 240, 0.5);
+
+}
+ picture {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 5px;
+    margin-left:5px;
+    margin-right: 10px;
+}
+picture img {
+    max-width: 65px;
+}
+header h1 {
+    grid-column: 2 - 3;
+    text-align:left;
+    text-shadow:1px 1px rgba(40, 40, 41, 0.6);
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 1em;
+    margin: 7vh 2vw;
+}
+
+header h1 span {
+    font-size: .8em;
+}
+header p {
+    grid-row: 2;
+    text-align: center;
+    color:rgb(242, 243, 248);
+    font-size: 1.1em;
+    font-family: "Open Sans", sans-serif;
+}
+
+nav {
+	background-color: #046fb9;
+	text-align: center;
+	box-shadow: 0 2px 5px rgb(39, 89, 146);
+
+}
+ nav button{
+    display:none;
+ }
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+    display:none;
+}
+
+nav ul.open {display:block;}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 1.2rem;
+    font-weight:500;
+	background: linear-gradient(90deg, transparent, yellow, transparent) top /
+		var(--d, 0) 5px no-repeat;
+	transition: 0.5s;
+}
+nav a:hover {
+	/*background-color: rgb(222, 238, 192);*/
+	font-weight: bold;
+    color: yellow;
+    --d: 75%;
+}
+.active {
+	color: yellow;
+
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    text-align:center;
+    width: 100%;
+    height: 65px;
+    padding: 10px;
+    background-color:rgb(15, 64, 119);
+    color:rgb(242, 243, 248);
+    text-shadow: 1px 1px 3px #102c47;
+    border-radius: 0px;
+    box-shadow: 5px 5px 5px 5px rgba(217, 217, 247, 0.4);
+
+}
+footer span.modified {
+    font-size: .8em;
+}
