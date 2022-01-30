@@ -7,7 +7,7 @@ body {
 }
 header {
     display:grid;
-    grid-template-columns: 105px auto 1fr;
+    grid-template-columns: 80px auto 1fr;
     grid-template-rows: 1fr 1fr;
     max-height: 100px;
     color:rgb(242, 243, 248);
@@ -21,9 +21,7 @@ header {
  picture {
     grid-column: 1;
     grid-row: 1;
-    margin-top: 5px;
-    margin-left:5px;
-    margin-right: 10px;
+    margin: 3vh 3vw;
 }
 picture img {
     max-width: 65px;
@@ -36,7 +34,7 @@ header h1 {
     font-weight: 500;
     font-size: 1.2em;
     line-height: 1em;
-    margin: 7vh 2vw;
+    margin: 4vh 2vw;
 }
 
 header h1 span {
