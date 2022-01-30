@@ -34,7 +34,7 @@ header h1 {
     font-weight: 500;
     font-size: 1.2em;
     line-height: 1em;
-    margin: 4vh 2vw;
+    margin: 5vh 2vw;
 }
 
 header h1 span {
@@ -47,7 +47,46 @@ header p {
     font-size: 1.1em;
     font-family: "Open Sans", sans-serif;
 }
+/* Style all font awesome icons */
+.fa {
+  padding: 5px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4vh 1vw;
+}
 
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+nav button {
+    margin: 2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 3em;
+    color: #555;
+}
+div.social {
+    text-align:right;
+    margin-right: 20px;
+}
 nav {
 	background-color: #046fb9;
 	text-align: center;

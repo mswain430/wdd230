@@ -1,15 +1,28 @@
 /* Media Queries */
 @media only screen and (min-width: 64rem) {
-main {
+header {
+  grid-template-columns: 100px auto 1fr;
+}
+header h1 {
+  margin: 2vw;
+  font-size: 1.8rem;
+  line-height: .9em;
+  margin: 5vh 5vw;
+}
+header h1 span {
+  font-size: 1.1rem;
+}
+picture img {
+    max-width: 100px;
+}
+
+  main {
     display:grid;
     grid-template-columns: 260px 1fr 1fr;
     max-width: 80%;
     grid-gap: 25px;
   }
-header {max-height: 150px;}
-header h1 {
-  font-size: 1.5em;
-}
+
 
 nav ul li a {
         padding: .5rem 1rem;

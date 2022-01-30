@@ -5,17 +5,18 @@
 		nav ul { display: flex; }
 		nav ul li { flex: 1 1 auto; }
 
-main {
-    max-width: 90%;
-  }
-
+header {
+  grid-template-columns: 100px auto 1fr;
+}
 header h1 {
-  margin: 2vw;
   font-size: 1.5em;
-  margin: 5vh 2vw;
+  margin: 4vh 2vw;
 }
 header h1 span {
   font-size: .9em;
+}
+picture img {
+    max-width: 75px;
 }
  nav button{
     display:none;
@@ -32,6 +33,10 @@ header h1 span {
     border: none;
     border-right: 1px solid rgba(0,0,0,.3);
 }
-
+main {
+    max-width: 90%;
+  }
 
 }
+
+
