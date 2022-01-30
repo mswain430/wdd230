@@ -8,26 +8,27 @@ body {
 header {
     display:grid;
     grid-template-columns: 80px auto 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 65px auto;
     max-height: 100px;
     color:rgb(242, 243, 248);
     max-width: 100%;
     padding:  0;
+    margin:0;
     background-color:rgb(15, 64, 119);
     border-radius: 0px;
     box-shadow: 5px 5px 5px 5px rgba(141, 187, 240, 0.5);
 
 }
- picture {
+picture {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 1 ;
     margin: 3vh 3vw;
 }
 picture img {
     max-width: 65px;
 }
 header h1 {
-    grid-column: 2 - 3;
+    grid-column: 2;
     text-align:left;
     text-shadow:1px 1px rgba(40, 40, 41, 0.6);
     font-family: 'Merriweather', sans-serif;
@@ -40,13 +41,7 @@ header h1 {
 header h1 span {
     font-size: .8em;
 }
-header p {
-    grid-row: 2;
-    text-align: center;
-    color:rgb(242, 243, 248);
-    font-size: 1.1em;
-    font-family: "Open Sans", sans-serif;
-}
+
 /* Style all font awesome icons */
 .fa {
   padding: 5px;
@@ -54,7 +49,7 @@ header p {
   width: 20px;
   text-align: center;
   text-decoration: none;
-  margin: 4vh 1vw;
+  margin: 1vh 1vw;
 }
 
 /* Add a hover effect if you want */
@@ -76,16 +71,37 @@ header p {
   color: white;
 }
 
-nav button {
-    margin: 2rem 2vw;
-    background: transparent;
-    border: none;
-    font-size: 3em;
-    color: #555;
-}
 div.social {
+    grid-column: 2 -3;
     text-align:right;
     margin-right: 20px;
+    margin: 2vh 2vw;
+}
+button {
+    margin: 2vh 2vw;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 1.5em;
+    color: rgb(245, 248, 248);
+}
+header p.time {
+    grid-column: 1 - 4;
+    grid-column: span;
+    justify-items: center ;
+    grid-row: 2 - 3;
+    align-self: center ;
+    text-align: center;
+    color:rgb(242, 243, 248);
+    font-size: 1.1em;
+    font-family: "Open Sans", sans-serif;
+    min-width: 300px;
+    width: 100%;
+    background-color:rgba(141, 187, 240, 0.5);
+    font-size: .9em;
+    padding: 3px;
+    margin: 2vh 2vw;
+    border:1px solid #046fb9;
 }
 nav {
 	background-color: #046fb9;
