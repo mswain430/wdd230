@@ -8,8 +8,8 @@ body {
 header {
     display:grid;
     grid-template-columns: 80px auto 1fr;
-    grid-template-rows: 65px auto;
-    max-height: 100px;
+    grid-template-rows: 70px 50px;
+    max-height: 120px;
     color:rgb(242, 243, 248);
     max-width: 100%;
     padding:  0;
@@ -97,10 +97,10 @@ header p.time {
     font-family: "Open Sans", sans-serif;
     min-width: 300px;
     width: 100%;
-    background-color:rgba(141, 187, 240, 0.5);
+    background-color:rgba(141, 187, 240, 0.2);
     font-size: .9em;
-    padding: 3px;
-    margin: 2vh 2vw;
+    padding: 5px;
+    margin: auto;
     border:1px solid #046fb9;
 }
 nav {

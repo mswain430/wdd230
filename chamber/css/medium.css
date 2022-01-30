@@ -18,6 +18,9 @@ header h1 span {
 picture img {
     max-width: 75px;
 }
+header p {
+  width: 100%;
+}
  nav button{
     display:none;
  }
