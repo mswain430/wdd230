@@ -118,9 +118,8 @@ p.time {
 }
 nav {
     display:flex;
-    flex-direction: flex-reverse;
     align-content: center;
-    margin: 2vh auto;
+    margin: 4vh auto;
     max-width: 760px;
     background-color: transparent;
     /*background: transparent;*/
