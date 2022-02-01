@@ -8,6 +8,7 @@ body {
 header {
     display:flex;
     flex-direction: row;
+    order: 3;
     min-height: 60px;
     color:rgb(242, 243, 248);
     width: 100%;
@@ -81,13 +82,14 @@ picture img {
 
 .social {
     display: flex;
+    justify-content: center;
     align-items: flex-start;
     text-align:right;
     margin: 6vh 2vw;
 }
 a.ham  {
-    grid-column: 4;
-    grid-row-end: -1;
+   /* grid-column: 4;
+    grid-row-end: -1; */
     margin: 2vh 2vw;
     background: transparent;
     border: 1px solid #fff;
@@ -116,9 +118,9 @@ p.time {
 }
 nav {
     display:flex;
-    justify-content: flex-reverse;
+    flex-direction: flex-reverse;
     align-content: center;
-    margin: 8vh auto;
+    margin: 2vh auto;
     max-width: 760px;
     background-color: transparent;
     /*background: transparent;*/
@@ -135,7 +137,7 @@ nav ul {
     display:none;
 }
 
- nav.responsive {
+ nav#primaryNav {
     display:block;
     display:flex;
     flex-direction: column;
@@ -179,6 +181,15 @@ nav a:hover {
 }
 responsive a.ham::before{
     content:"X";
+}
+nav ul{display:none;}
+nav ul.open {display:block;}
+nav button {
+    margin: 2vw 2vw;
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
 }
 footer {
     display: grid;

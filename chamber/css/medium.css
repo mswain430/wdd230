@@ -21,11 +21,11 @@ picture img {
 header p {
   width: 100%;
 }
- nav button{
+ /*nav button{
     display:none;
- }
+ } */
 
- nav ul#primaryNav {
+ nav ul.navigation {
     display:flex;
     justify-content: flex-start;
     margin-left: 2vw;
@@ -53,6 +53,24 @@ main {
   display: none;
 }
 
+    nav button{
+        display:none;
+    }
+
+    nav ul#primaryNav {
+        display:flex;
+        justify-content: flex-start;
+        margin-left: 2vw;
+        border-left: 1px solid rgba(0,0,0,.3);
+
+    }
+    nav button {
+    margin: 2vw 2vw;
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+}
 }
 
 
