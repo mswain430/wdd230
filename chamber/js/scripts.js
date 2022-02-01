@@ -1,7 +1,17 @@
-function toggleMenu() {
+ function toggleMenu() {
 
-   document.getElementById("PrimaryNav").classList.toggle("open");
+   document.getElementById("navigation").classList.toggle("responsive");
 }
 
-const x = document.getElementById("hamBtn");
+const x = document.getElementById("ham");
 x.onclick = toggleMenu;
+/*
+const hambutton = document.querySelector('ham');
+const mainnav = document.querySelector('.navigation');
+
+hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+
+// Solve the mid resizing issue
+window.onresize = () => {if(window.innerWidth > 760) mainnav.classList.remove('responsive')};
+
+*/

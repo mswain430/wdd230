@@ -1,29 +1,46 @@
 /* Media Queries */
 @media only screen and (min-width: 64rem) {
 header {
-  grid-template-columns: 100px auto 1fr;
+  grid-template-columns: 160px 275px 800px 1fr;
+  grid-template-rows: 75px 1fr;
 }
 header h1 {
-  margin: 2vw;
+  grid-column: 2;
+  grid-row: 1;
   font-size: 1.8rem;
   line-height: .9em;
-  margin: 5vh 5vw;
+  margin: 2vw;
 }
 header h1 span {
+  grid-column: 2;
+  grid-row: 1;
   font-size: 1.1rem;
 }
 picture img {
     max-width: 100px;
 }
-
+nav .navigation {
+  grid-column: 3;
+  grid-row: 1;
+}
+div.social {
+  grid-column: 4;
+  grid-row: 1;
+}
   main {
     display:grid;
-    grid-template-columns: 260px 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(200px, 6);
     max-width: 80%;
     grid-gap: 25px;
   }
+main section {
+  border: 1px solid #000;
+  width: 200px;
+  height: 200px;
 
-
+}
+.ham {display:none}
 nav ul li a {
         padding: .5rem 1rem;
     }

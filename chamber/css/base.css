@@ -6,41 +6,47 @@ body {
     display:block;
 }
 header {
-    display:grid;
-    grid-template-columns: 80px auto 1fr;
-    grid-template-rows: 70px 50px;
-    max-height: 120px;
+    display:flex;
+    flex-direction: row;
+    min-height: 60px;
     color:rgb(242, 243, 248);
-    max-width: 100%;
-    padding:  0;
+    width: 100%;
+    padding: 0;
     margin:0;
     background-color:rgb(15, 64, 119);
     border-radius: 0px;
     box-shadow: 5px 5px 5px 5px rgba(141, 187, 240, 0.5);
 
 }
-picture {
-    grid-column: 1;
-    grid-row: 1 ;
-    margin: 3vh 3vw;
+.heading {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 180px;
 }
+
 picture img {
+    display:block;
     max-width: 65px;
+    margin: 2vh 2vw;
 }
-header h1 {
-    grid-column: 2;
+.heading h1 {
+    justify-content: flex-start;
     text-align:left;
     text-shadow:1px 1px rgba(40, 40, 41, 0.6);
     font-family: 'Merriweather', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.2em;
-    line-height: 1em;
-    margin: 5vh 2vw;
+    margin-bottom: 0;
 }
 
-header h1 span {
+.sub  {
     font-size: .8em;
+    margin-top: 0;
+    padding:0;
+    text-align: left;
 }
+
 
 /* Style all font awesome icons */
 .fa {
@@ -63,55 +69,64 @@ header h1 span {
 .fa-facebook {
   background: #3B5998;
   color: white;
+  border-radius: 50%;
 }
 
 /* Twitter */
 .fa-twitter {
   background: #55ACEE;
   color: white;
+  border-radius: 50%;
 }
 
-div.social {
-    grid-column: 2 -3;
+.social {
+    display: flex;
+    align-items: flex-start;
     text-align:right;
-    margin-right: 20px;
-    margin: 2vh 2vw;
+    margin: 6vh 2vw;
 }
-button {
+a.ham  {
+    grid-column: 4;
+    grid-row-end: -1;
     margin: 2vh 2vw;
     background: transparent;
     border: 1px solid #fff;
     border-radius: 4px;
     font-size: 1.5em;
+    font-size: .9em;
     color: rgb(245, 248, 248);
 }
-header p.time {
-    grid-column: 1 - 4;
-    grid-column: span;
-    justify-items: center ;
-    grid-row: 2 - 3;
-    align-self: center ;
+div.daydate {
+    display:flex;
     text-align: center;
     color:rgb(242, 243, 248);
-    font-size: 1.1em;
     font-family: "Open Sans", sans-serif;
-    min-width: 300px;
-    width: 100%;
-    background-color:rgba(141, 187, 240, 0.2);
+    background-color:rgb(15, 64, 119);
     font-size: .9em;
+    padding: 0;
+    margin: 0;
+}
+p.time {
+    justify-content: center;
+    width: 100%;
     padding: 5px;
-    margin: auto;
+    margin:5px 3px;
+    background-color:rgba(78, 139, 209, 0.6);
     border:1px solid #046fb9;
 }
 nav {
-	background-color: #046fb9;
-	text-align: center;
-	box-shadow: 0 2px 5px rgb(39, 89, 146);
-
+    display:flex;
+    justify-content: flex-reverse;
+    align-content: center;
+    margin: 8vh auto;
+    max-width: 760px;
+    background-color: transparent;
+    /*background: transparent;*/
+    color: #000;
 }
- nav button{
+ /* nav button {
     display:none;
- }
+ } */
 nav ul {
 	list-style-type: none;
 	margin: 0;
@@ -120,15 +135,24 @@ nav ul {
     display:none;
 }
 
-nav ul.open {display:block;}
+ nav.responsive {
+    display:block;
+    display:flex;
+    flex-direction: column;
+    background-color: #046fb9;
+	text-align: center;
+	box-shadow: 0 2px 5px rgb(39, 89, 146);
+}
 nav ul li a {
 	display: block;
+    width: 50px;
 	color: #fff;
 	text-align: center;
 	padding: 0.75rem;
 	text-decoration: none;
 	font-size: 1.2rem;
-    font-weight:500;
+    font-size: .9em;
+    /* font-weight:500; */
 	background: linear-gradient(90deg, transparent, yellow, transparent) top /
 		var(--d, 0) 5px no-repeat;
 	transition: 0.5s;
@@ -143,7 +167,19 @@ nav a:hover {
 	color: yellow;
 
 }
-
+.navigaton {
+    padding:0;
+    list-style: none;
+}
+.navigation li:first-child {
+    display:none;
+}
+.responsive li {
+    display:block;
+}
+responsive a.ham::before{
+    content:"X";
+}
 footer {
     display: grid;
     grid-template-columns: 1fr;
@@ -161,4 +197,13 @@ footer {
 }
 footer span.modified {
     font-size: .8em;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+}
+.wrapper > div {
+    border:1px dotted #000
 }
