@@ -27,10 +27,11 @@ picture img {
 }
 .heading {
     display:flex;
-    flex-direction: column;
     justify-content: flex-start;
+    flex-direction: column;
     align-self: left;
-    min-width: 160px;
+    min-width: 220px;
+    margin: auto;
     max-height: 75px;
 }
 
@@ -54,8 +55,8 @@ picture img {
 
 .social {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: flex-end;
+    align-items: flex-end;
     text-align:right;
     margin: 2vh 2vw;
 }
@@ -91,15 +92,16 @@ picture img {
 }
 
 
-.hambutton {
+nav button.hambutton {
+    justify-content: flex-end;
     align-self: center;
-    text-align: center;
+    text-align: right;
     background: transparent;
     border: 1px solid #a3d3f5;
     border-radius: 4px;
-    font-size: 2em;
+    font-size: 1.8em;
     color: #a3d3f5;
-    width: 44px;
+    max-width: 2.2em;
     height: 44px;
 
 }
@@ -123,7 +125,7 @@ p.time {
 }
 nav {
     display:flex;
-    justify-content:center  ;
+    justify-content:center;
     align-content: flex-start;
     margin: 1vh auto;
     max-width: 760px;
@@ -137,8 +139,8 @@ nav {
  } */
 
 nav#primaryNav {
-     display:flex;
-    flex-direction: column;
+    display:flex;
+    flex-direction: row;
     background-color: #046fb9;
 	text-align: center;
 	box-shadow: 0 2px 5px rgb(39, 89, 146);
@@ -152,8 +154,6 @@ nav ul {
 }
 nav ul.open {
     display:block;
-
-
 }
 
 nav ul li a {

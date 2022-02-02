@@ -36,8 +36,10 @@ section.heading {
   grid-row: 1;
   font-size: 1.5rem;
 }
-
-.hambutton{
+header .social {
+  order: 3;
+}
+nav button.hambutton{
     display:none;
     }
  nav#primaryNav {
@@ -60,21 +62,22 @@ main section {
   height: 200px;
 
 }
-.ham {display:none}
+nav button.ham {display:none}
 nav ul li a {
         padding: .5rem 1rem;
     }
-#primaryNav {
+nav ul#primaryNav {
   display:flex;
+  flex-direction: row;
 }
-#primaryNav li {
+nav ul#primaryNav li {
   display:block;
   flex: 1 1 auto;
 }
-#primaryNav a {
+nav ul#primaryNav li a {
   text-align:center;
 }
-#primaryNav li:first-child {
+nav ul#primaryNav li:first-child {
   display: none;
 } */
 }
