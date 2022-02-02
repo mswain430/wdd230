@@ -16,9 +16,10 @@ nav {
   display:flex;
   justify-content: center;
   align-content: flex-start;
-  margin: 2vh auto;
-  max-width: 760px;
+  margin: 0 auto;
+  max-width: 100%;
   background-color: transparent;
+  background-color: #046fb9;
   /*background: transparent;*/
   color: #000;
 }
