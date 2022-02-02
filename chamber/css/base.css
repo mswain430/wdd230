@@ -10,7 +10,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items:center;
-    max-height: 75px;
+    max-height: 65px;
     color:rgb(242, 243, 248);
     width: 100%;
     padding: 0;
@@ -50,11 +50,7 @@ picture img {
     padding:0;
     text-align: left;
 }
-nav {
-    display: block;
-    margin:0;
-    padding:0;
-}
+
 
 .social {
     display: flex;
@@ -99,13 +95,13 @@ nav {
     align-self: center;
     text-align: center;
     background: transparent;
-    border: 1px solid #fff;
+    border: 1px solid #a3d3f5;
     border-radius: 4px;
-    font-size: 1em;
-    color: aliceblue;
-    width: 30px;
-    height: 28px;
-    
+    font-size: 2em;
+    color: #a3d3f5;
+    width: 44px;
+    height: 44px;
+
 }
 div.daydate {
     display:flex;
@@ -130,7 +126,7 @@ nav {
     justify-content:center  ;
     align-content: flex-start;
     margin: 1vh auto;
-    max-width: 50px;
+    max-width: 760px;
     height: 50px;
     background-color: transparent;
     /*background: transparent;*/
@@ -139,6 +135,14 @@ nav {
  /* nav button {
     display:none;
  } */
+
+nav#primaryNav {
+     display:flex;
+    flex-direction: column;
+    background-color: #046fb9;
+	text-align: center;
+	box-shadow: 0 2px 5px rgb(39, 89, 146);
+}
 nav ul {
 	list-style-type: none;
 	margin: 0;
@@ -146,39 +150,38 @@ nav ul {
 	overflow: hidden;
     display:none;
 }
+nav ul.open {
+    display:block;
 
- nav#primaryNav {
-     display:flex;
-    flex-direction: column;
-    background-color: #046fb9;
-	text-align: center;
-	box-shadow: 0 2px 5px rgb(39, 89, 146);
+
 }
+
 nav ul li a {
 	display: block;
-    width: 50px;
 	color: #fff;
 	text-align: center;
-	padding: 0.75rem;
+	padding: 0.8rem 2vw;
 	text-decoration: none;
-	font-size: 1.2rem;
-    font-size: .9em;
+	font-size: .9rem;
+    max-width:5em;
     /* font-weight:500; */
 	background: linear-gradient(90deg, transparent, yellow, transparent) top /
 		var(--d, 0) 5px no-repeat;
 	transition: 0.5s;
 }
+nav ul li.active a {
+     background-color: responsive rgba(0,0,0,0, .3);
+	color: rgb(149, 179, 243);
+}
 nav a:hover {
 	/*background-color: rgb(222, 238, 192);*/
 	font-weight: bold;
+    background-color: responsive rgba(0,0,0,0, .3);
     color: yellow;
     --d: 75%;
 }
-.active {
-	color: yellow;
 
-}
-.navigaton {
+/*.navigaton {
     padding:0;
     list-style: none;
 }
@@ -191,15 +194,10 @@ nav a:hover {
 responsive a.ham::before{
     content:"X";
 }
+*/
 nav ul{display:none;}
 nav ul.open {display:block;}
-nav button {
-    margin: 2vw 2vw;
-    background: transparent;
-    border: none;
-    font-size: 1rem;
-    color: #fff;
-}
+
 footer {
     display: grid;
     grid-template-columns: 1fr;

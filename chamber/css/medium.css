@@ -2,75 +2,56 @@
 @media only screen and (min-width: 40rem) {
 
 /* Flex *********************/
-		nav ul { display: flex; }
-		nav ul li { flex: 1 1 auto; }
+		nav ul#primaryNav {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 2vw;
+       /*  border-left: 1px solid rgba(0,0,0,.3); */
+    }
+		nav ul li {
+      flex: 1 1 auto;
+     }
 
-header {
-  grid-template-columns: 100px auto 1fr;
+
+.heading h1 {
+  font-size: 1.8em;
 }
-header h1 {
-  font-size: 1.5em;
-  margin: 4vh 2vw;
-}
-header h1 span {
-  font-size: .9em;
+.heading span {
+  font-size: 1.2em
 }
 picture img {
     max-width: 75px;
+    margin: 4vh 2vw
 }
-header p {
-  width: 100%;
+header {
+  height: 80px;
 }
- /*nav button{
+ /* nav button{
     display:none;
  } */
 
- nav ul.navigation {
-    display:flex;
-    justify-content: flex-start;
-    margin-left: 2vw;
-    border-left: 1px solid rgba(0,0,0,.3);
-}
-
- nav ul li a {
+nav ul li a {
     border: none;
-    border-right: 1px solid rgba(0,0,0,.3);
+    padding: .5rem 1rem;
 }
 main {
     max-width: 90%;
   }
-.navigation {
-  display:flex;
-}
-.navigation li {
-  display:block;
-  flex: 1 1 auto;
-}
-.navigation a {
-  text-align:center;
-}
-.navigation li:first-child {
-  display: none;
-}
 
-    nav button{
-        display:none;
+
+
+.hambutton{
+    display:none;
     }
 
-    nav ul#primaryNav {
+nav ul#primaryNav {
         display:flex;
         justify-content: flex-start;
         margin-left: 2vw;
         border-left: 1px solid rgba(0,0,0,.3);
 
     }
-    nav button {
-    margin: 2vw 2vw;
-    background: transparent;
-    border: none;
-    font-size: 1rem;
-    color: #fff;
-}
+
 }
 
 
