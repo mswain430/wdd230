@@ -12,14 +12,14 @@
 
 header {
    min-height: 120px;
-   
+
 
 }
-.wrap {
+header .wrap {
   max-width: 900px;
   min-height: 80px;
   margin:auto;
-  
+
 }
 picture img {
     max-width: 100px;
@@ -85,6 +85,6 @@ nav ul#primaryNav li a {
 }
 nav ul#primaryNav li:first-child {
   display: none;
-} 
+}
 
 }
