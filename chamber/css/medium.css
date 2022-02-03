@@ -17,6 +17,14 @@ nav ul {
 nav ul.open {
     display:block;
 }
+header {
+  max-height: 80px;
+  min-width: 32.5rem;
+}
+header .wrap {
+  max-width: 900px;
+  
+}
 .heading {
   margin-top: 0;
 }
@@ -27,12 +35,11 @@ nav ul.open {
   font-size: 1.2em
 }
 picture img {
+  justify-content: center;
     max-width: 75px;
-    margin: 4vh 2vw;
+    
 }
-header {
-  max-height: 80px;
-}
+
  /* nav button{
     display:none;
  } */
@@ -48,6 +55,32 @@ main {
 nav ul.open {
     display:block;
 }
+footer {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+footer .wrap {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+  background-color:rgb(15, 64, 119);
+  max-width: 900px;
+  margin: auto;
+  min-height: 115px;
+}
+
+
+  .contactInfo {
+   display: block;
+}
+.ftrLogo {grid-column: 1; max-width: 100px; text-align:center}
+.ftrLogo img {max-width: 100px;}
+ .address {grid-column: 2;}
+.email, .phone, .map {grid-column: 3}
+.contactInfo .email, .contactInfo .phone, .map {padding:5px 0;}
+.contactInfo .email {margin-top:5px;}
 }
 
 

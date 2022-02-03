@@ -11,16 +11,22 @@
 }
 
 header {
-   min-height: 100px;
+   min-height: 120px;
+   
 
 }
-
+.wrap {
+  max-width: 900px;
+  min-height: 80px;
+  margin:auto;
+  
+}
 picture img {
     max-width: 100px;
 }
 section.heading {
   padding: 5px;
-  margin: 6vh 4vw;
+  margin: 2vh 2vw;
   min-width: 300px;
 }
 
@@ -79,5 +85,6 @@ nav ul#primaryNav li a {
 }
 nav ul#primaryNav li:first-child {
   display: none;
-} */
+} 
+
 }

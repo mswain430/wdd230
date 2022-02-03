@@ -19,7 +19,9 @@
     <script defer src="js/scripts.js"></script>
 </head>
 <body>
+  
    <header>
+    <div class="wrap">
        <picture>
           <source srcset="images/blanding-logo.png"
             media="(min-width: 65rem)">
@@ -32,12 +34,9 @@
          <section class="social">
           <a href="#" class="fa fa-facebook"></a>
           <a href="#" class="fa fa-twitter"></a>
-          <!--<button id="ham" class="hambutton">&#9776;</button> -->
         </section>
         <nav><button id="ham"  class="hambutton">&#9776;</button>
             <ul id="primaryNav" class="navigation">
-         <!-- <ul id="navigaton">
-              <li><a class="ham" href="#">&#9776; Menu</a></li>-->
               <li><a href="index.html" class="active">Home</a></li>
               <li><a href="directory.html">Directory</a></li>
               <li><a href="join.html">Join</a></li>
@@ -45,21 +44,40 @@
               <li><a href="discover.html">Discover</a></li>
           </ul>
         </nav>
+      </div>
   </header>
+
   <div class="daydate"><p class="time"><span id="currentdate"></span></p></div>
   <main>
     <div class="wrapper">
-    <div class="box box1">One</div>
-    <div class="box box2">Two</div>
-    <div class="box box3">Three</div>
-    <div class="box box4">Four</div>
-    <div class="box box5">Five</div>
+    <div class="box box1">hero</div>
+    <div class="box box2">call to action</div>
+    <div class="box box3">news</div>
+    <div class="box box6">join</div>
+    <div class="box box4">Events</div>
+    <div class="box box5">weather</div>
+      <div class="box box6">Spotlights
+        <div class="box box6">Spotlight1</div>
+        <div class="box box6">Spotlight2</div>
+        <div class="box box6">Spotlight3</div>
+      </div>
     <div class="box box6">Six</div>
 </div>
   </main>
   <footer>
-        <p>&#169; <span id="year" class="year">2021</span> | Millie Swain | San Diego, CA
-        <br><span class="modified">Last Updated:</span> <span class="modified" id="lastmod"></span></p>
-     </footer>
+    <div class="wrap">
+    <div class="footer_addlogo"> 
+      <div class="contactInfo">
+        <div class="ftrLogo"> <img src="images/blanding-logo.png" alt="logo" /></div>
+        <div class="address"><h2>Blanding Chamber of Commerce</h2>50 West 100 South<br>Blanding, UT xxxxx</div>
+         <div class="email">Blanding@chamber.com </div>
+         <div class="phone">(435) 678-2791</div>
+         <div class="map"> Location Map</div>
+      </div>
+    </div>
+    <div class="copyright">&#169; <span id="year" class="year">2021</span> <span class="sm_name">Blanding Chamber</span> | Millie Swain | WDD 230 Project</div>
+    <div class="mod"><span class="modified">Last Updated:</span> <span class="modified" id="lastmod"></span></div>
+  </div>
+</footer>
 </body>
 </html>
