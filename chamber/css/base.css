@@ -187,14 +187,14 @@ nav ul li a {
 }
 nav ul li.active a {
      background-color:#000;
-     background-color: rgba(0,0,0,0,.3);
+     background-color: rgba(0,0,0,0, 0.3);
 	color: rgb(149, 179, 243);
 }
 nav a:hover {
 	/*background-color: rgb(222, 238, 192);*/
     background-color: rgb(222, 238, 192);
 	font-weight: bold;
-    background-color: rgba(0,0,0,0, .3);
+    background-color: rgba(0,0,0,0, 0.3);
     color: yellow;
     --d: 75%;
 }
