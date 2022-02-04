@@ -13,11 +13,13 @@
 header {
    min-height: 120px;
    justify-content: space-around;
+   min-width: 100%;
   
 }
 header .wrap {
   justify-content: center;
   min-height: 80px;
+  min-width: 100%;
 
 }
 picture {
