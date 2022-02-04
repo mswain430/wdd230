@@ -41,7 +41,7 @@ picture img {
     display:flex;
     justify-content: flex-start;
     flex-direction: column;
-    align-self: left;
+    align-self:flex-start;
     text-align: left;
     min-width: 150px;
     margin: auto;
@@ -186,13 +186,15 @@ nav ul li a {
 	transition: 0.5s;
 }
 nav ul li.active a {
-     background-color: responsive rgba(0,0,0,0, .3);
+     background-color:#000;
+     background-color: rgba(0,0,0,0,.3);
 	color: rgb(149, 179, 243);
 }
 nav a:hover {
 	/*background-color: rgb(222, 238, 192);*/
+    background-color: rgb(222, 238, 192);
 	font-weight: bold;
-    background-color: responsive rgba(0,0,0,0, .3);
+    background-color: rgba(0,0,0,0, .3);
     color: yellow;
     --d: 75%;
 }
@@ -248,6 +250,6 @@ footer .wrap {
 }
 .wrapper > div {
     border:1px dotted #000;
-    grid-row: 200px;
+    
 }
 
