@@ -12,12 +12,14 @@
 
 header {
    min-height: 120px;
+   width: 100%;
 
 
 }
 header .wrap {
-  max-width: 900px;
+ 
   min-height: 80px;
+  width: 100%;
   margin:auto;
 
 }
@@ -86,5 +88,17 @@ nav ul#primaryNav li a {
 nav ul#primaryNav li:first-child {
   display: none;
 }
-
+.wrap {
+  border-top: 1px solid rgb(1, 20, 36);
+  display: inline-flex; 
+  padding: 0; 
+  margin: 0;
+  text-align: center;
+}
+.copyright {display:inline} 
+.mod {display: inline; 
+  justify-content: flex-end; 
+  padding: 0; 
+  margin:0;
+}
 }
