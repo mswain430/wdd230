@@ -12,24 +12,26 @@
 
 header {
    min-height: 120px;
-   width: 100%;
-
-
+   justify-content: space-around;
+  
 }
 header .wrap {
- 
+  justify-content: center;
   min-height: 80px;
-  width: 100%;
-  margin:auto;
 
+}
+picture {
+  justify-content: center;
+  align-self: center;
 }
 picture img {
     max-width: 100px;
+    padding-left: 10px;
 }
 section.heading {
   padding: 5px;
   margin: 2vh 2vw;
-  min-width: 300px;
+  min-width: 270px;
 }
 
 .heading h1 {
@@ -46,6 +48,8 @@ section.heading {
 }
 header .social {
   order: 3;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 nav button.hambutton{
     display:none;
@@ -54,7 +58,7 @@ nav button.hambutton{
      display:flex;
     flex-direction: row;
     align-items: flex-end;
-    width: 760px;
+    width: 730px;
 
 }
   main {
@@ -88,7 +92,7 @@ nav ul#primaryNav li a {
 nav ul#primaryNav li:first-child {
   display: none;
 }
-.wrap {
+footer .wrap {
   border-top: 1px solid rgb(1, 20, 36);
   display: inline-flex; 
   padding: 0; 

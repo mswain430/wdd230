@@ -21,14 +21,21 @@ header {
 header .wrap {
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items:center;
     background-color:rgb(15, 64, 119);
+    margin: 0;
+}
+picture {
+    align-items: center; 
+    justify-content:center;
+    min-width:75px;
 }
 picture img {
     display:block;
-    min-width: 65px;
-    margin: 2vh 2vw;
+    max-width: 65px;
+    justify-content: flex-start;
+    
 }
 .heading {
     display:flex;
@@ -36,7 +43,7 @@ picture img {
     flex-direction: column;
     align-self: left;
     text-align: left;
-    min-width: 220px;
+    min-width: 150px;
     margin: auto;
 
 }
@@ -63,8 +70,9 @@ picture img {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    justify-content: space-between;
     text-align:right;
-    margin: 2vh 2vw;
+    margin: 0;
 }
 /* Style all font awesome icons */
 .fa {
@@ -73,7 +81,7 @@ picture img {
   width: 20px;
   text-align: center;
   text-decoration: none;
-  margin: 1vh 1vw;
+  margin: 1vh 2vw;
 }
 
 /* Add a hover effect if you want */
@@ -99,15 +107,15 @@ picture img {
 
 
 nav button.hambutton {
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-self: center;
-    text-align: right;
+    text-align: left;
     background: transparent;
-    border: 1px solid #a3d3f5;
+    border: 0px solid #a3d3f5;
     border-radius: 4px;
-    font-size: 1.8em;
+    font-size: 2em;
     color: #a3d3f5;
-    max-width: 2.2em;
+    max-width: 2.0em;
     height: 44px;
 
 }
@@ -129,6 +137,9 @@ p.time {
     background-color:rgba(78, 139, 209, 0.6);
     border:1px solid #046fb9;
 }
+
+/*nav ul{display:none;}
+nav ul.open {display:block;} */
 nav {
     display:flex;
     justify-content:center;
@@ -137,20 +148,19 @@ nav {
     max-width: 760px;
     height: 50px;
     background-color: transparent;
-    /*background: transparent;*/
+    background: transparent;
     color: #000;
 }
- /* nav button {
-    display:none;
- } */
+  nav button {
+     /* margin: .2rem 2vw; */
+      background: transparent;
+      border: none;
+      font-size: 2rem;
+      color:rgb(149, 179, 243);
+    /*display:none; */
+ } 
 
-nav#primaryNav {
-    display:flex;
-    flex-direction: row;
-    background-color: #046fb9;
-	text-align: center;
-	box-shadow: 0 2px 5px rgb(39, 89, 146);
-}
+
 nav ul {
 	list-style-type: none;
 	margin: 0;
@@ -201,8 +211,7 @@ responsive a.ham::before{
     content:"X";
 }
 */
-nav ul{display:none;}
-nav ul.open {display:block;}
+
 
 footer {
     display: flex;

@@ -19,14 +19,14 @@ nav ul.open {
 }
 header {
   max-height: 80px;
-  min-width: 32.5rem;
+  width: 100%;
 }
 header .wrap {
-  max-width: 900px;
-
+  justify-content: space-evenly;
 }
 .heading {
   margin-top: 0;
+  min-width: 250px;
 }
 .heading h1 {
   font-size: 1.8em;
@@ -34,12 +34,20 @@ header .wrap {
 .heading span {
   font-size: 1.2em
 }
+picture {min-width: 100px;}
 picture img {
   justify-content: center;
     max-width: 75px;
 
 }
-
+.social {justify-content: flex-end;}
+nav#primaryNav {
+  display:flex;
+  flex-direction: row;
+  background-color: #046fb9;
+text-align: center;
+/*box-shadow: 0 2px 5px rgb(39, 89, 146); */
+}
  /* nav button{
     display:none;
  } */
@@ -48,6 +56,8 @@ nav ul li a {
     border: none;
     padding: .5rem 1rem;
 }
+
+
 main {
     max-width: 90%;
   }
