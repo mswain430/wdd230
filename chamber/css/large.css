@@ -94,12 +94,14 @@ nav ul#primaryNav li:first-child {
   display: none;
 }
 footer .wrap {
-  border-top: 1px solid rgb(1, 20, 36);
+  border-top: 1px solid rgb(4, 82, 146);
   display: inline-flex; 
   padding: 0; 
   margin: 0;
   text-align: center;
 }
+footer .wrap span.modified { 
+  font-size: 1em;}
 .copyright {display:inline} 
 .mod {display: inline; 
   justify-content: flex-end; 
