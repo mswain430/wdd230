@@ -66,8 +66,7 @@ nav button.hambutton{
   main {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(200px, 6);
-    max-width: 80%;
+    grid-template-rows: repeat(1fr, 6);
     grid-gap: 25px;
   }
 main section {
