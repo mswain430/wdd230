@@ -77,8 +77,8 @@ picture img {
 /* Style all font awesome icons */
 .fa {
   padding: 5px;
-  font-size: 20px;
-  width: 20px;
+  font-size: 24px;
+  width: 24px;
   text-align: center;
   text-decoration: none;
   margin: 1vh 2vw;
@@ -93,7 +93,7 @@ picture img {
 
 /* Facebook */
 .fa-facebook {
-  background: #3B5998;
+  background: #697897;
   color: white;
   border-radius: 50%;
 }
