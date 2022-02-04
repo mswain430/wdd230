@@ -178,7 +178,9 @@ nav ul li a {
 	text-align: center;
 	padding: 0.8rem 2vw;
 	text-decoration: none;
-	font-size: .9rem;
+	font-size: 1rem;
+    font-family: "merriweather", serif;
+    letter-spacing: .1em;
     max-width:5em;
     /* font-weight:500; */
 	background: linear-gradient(90deg, transparent, yellow, transparent) top /
@@ -187,14 +189,13 @@ nav ul li a {
 }
 nav ul li.active a {
      background-color:#000;
-     background-color: rgba(0,0,0,0, 0.3);
+     background-color: transparent;
 	color: rgb(149, 179, 243);
 }
 nav a:hover {
-	/*background-color: rgb(222, 238, 192);*/
-    background-color: rgb(222, 238, 192);
-	font-weight: bold;
-    background-color: rgba(0,0,0,0, 0.3);
+	/*background-color: rgb(222, 238, 192);
+    background-color: rgb(222, 238, 192);*/
+	background-color: transparent;
     color: yellow;
     --d: 75%;
 }
