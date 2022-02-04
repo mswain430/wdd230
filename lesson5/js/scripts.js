@@ -1,6 +1,25 @@
-const x = document.getElementById("favchap");
-x.onclick = toggleMenu;
 
+const list = document.querySelector('ul');
+const input = document.querySelector('input');
+const button = document.querySelector('button');
 
-const hambutton = document.querySelector('ham');
-const mainnav = document.querySelector('navigation');
+button.onclick = function() {
+    let favChap = input.value;
+    input.value = '';
+
+    const listItem = document.createElement('li');
+    const listText = document.createElement('span');
+    const listBtn = document.createElement('button');
+
+    listItem.appendChild(listText);
+    listText.textContent = favChap;
+    listItem.appendChild(listBtn);
+    listBtn.textContent = 'Delete';
+    list.appendChild(listItem);
+
+    listBtn.onclick = function(e){
+        list.removeChild(listItem);
+    }
+
+    input.focus();
+}
