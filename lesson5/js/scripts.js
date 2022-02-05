@@ -14,8 +14,8 @@ button.onclick = function() {
     listItem.appendChild(listText);
     listText.textContent = favChap;
     listItem.appendChild(listBtn);
-   // listBtn.textContent = 'X';
-   listBtn.innerHTML = "<strong style='color: red;font-weight:bolder;text-shadow: 1px 1px #000;'>X</strong>";
+   listBtn.textContent = '❌';
+   // listBtn.innerHTML = "<strong style='color: red;font-weight:bolder;text-shadow: 1px 1px #000;'>X</strong>";
     list.appendChild(listItem);
 
     listBtn.onclick = function(e){
