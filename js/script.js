@@ -6,9 +6,7 @@ document.getElementById('year').textContent = new Date().toLocaleDateString('en-
 document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-us', options);
 
 function toggleMenu() {
-
    document.getElementById("PrimaryNav").classList.toggle("open");
-
 }
 
 const x = document.getElementById("hamburgerBtn");
