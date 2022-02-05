@@ -262,11 +262,15 @@ footer .wrap {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-column-gap: 2em;
+
 }
 .wrapper > div {
-    border:1px dotted #000;
-    
+    border:1px dotted #000;   
 }
-
+.box {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-right: 30px;
+}
