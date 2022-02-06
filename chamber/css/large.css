@@ -101,22 +101,22 @@ footer .wrap span.modified {
 main {
     display:grid;
     grid-template-columns: 200px auto 240px;
-    grid-template-rows: 200px 200px 206px;
+    grid-template-rows: 200px 206px 206px;
     max-width: 850px;
     text-align:center;
     margin: auto;
-    row-gap:1vh;
-    column-gap: 1vw;
+    row-gap:10px;;
+    column-gap: 10px;
 }
 .hero {
   grid-row: 1/3;
   grid-column: 2;
-  height: 400px;
+  -ms-grid-row-span: 2;
+  height: 410px;
   width: 400px;
   background-color: #eee;
-  border:1px solid #333;
-  margin-top: 1vh;
-  margin-bottom: 2vh;
+  border:1px solid #9c9b9b;
+  margin-top: 10px;
  }
 
 .events {
@@ -124,8 +124,8 @@ main {
    grid-column: 1;
   height: 200px;
   background-color: #eee;
-  border:1px solid #333;
-  margin: 1vh;
+  border:1px solid #9c9b9b;
+  margin-top: 10px;
 
 }
 .weather {
@@ -133,8 +133,8 @@ main {
    grid-column: 1;
    height: 200px;
   background-color: #eee;
-  border:1px solid #333;
-  margin: 1vh;
+  border:1px solid #9c9b9b;
+  margin-top: 10px;
 }
 .news {
   grid-row-start: 3;
@@ -142,18 +142,17 @@ main {
    height: 200px;
    width: 400px;
   background-color: #eee;
-  border:1px solid #333;
-
+  border:1px solid #9c9b9b;
+   margin-top: 5px;
 }
 .spot {
   grid-row: 1/5;
   grid-column: 3;
   width: 230px;
-  height: 606px;
+  height: 620px;
   background-color: #eee;
-  border: 1px solid #333;
-  margin-top: 1vh;
-  margin-left: -1vh;
+  border: 1px solid #9c9b9b;
+  margin-top: 10px;
 }
 .spot1 {
   grid-row: 1;
@@ -161,9 +160,9 @@ main {
   height: 190px;
   width: 200px;
   background-color: #eee;
-  border:1px solid #333;
+  border:1px solid #9c9b9b;
   margin-left: 1vw;
-  margin-top: 2vh;
+  margin-top: 15px;
 
 
 }
@@ -173,7 +172,7 @@ main {
   width: 200px;
   height: 195px;
   background-color: #eee;
-  border:1px solid #333;
+  border:1px solid #9c9b9b;
   margin:0;padding:0;
   margin-left: 1vw;
 }
@@ -184,7 +183,7 @@ main {
   height: 195px;
   width: 200px;
   background-color: #eee;
-  border: 1px solid #333;
+  border: 1px solid #9c9b9b;
   margin:0;padding:0;
   margin-left: 1vw;
 }
@@ -194,9 +193,9 @@ main {
   height: 200px;
   width: 200px;
   background-color: #eee;
-  border:1px solid #333;
+  border:1px solid #9c9b9b;
   display:block;
-  margin: 1vh;
+  margin-top: 6px;
 }
 
 }
