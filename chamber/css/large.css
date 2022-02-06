@@ -130,8 +130,9 @@ main {
 }
 .weather {
   grid-row: 2;
-   grid-column: 1;
-   height: 200px;
+  grid-column: 1;
+  height: 200px;
+  width: 200px;
   background-color: #eee;
   border:1px solid #9c9b9b;
   margin-top: 10px;
