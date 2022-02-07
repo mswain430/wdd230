@@ -256,6 +256,10 @@ main {
   height: 200px;
   background-color: #eee;
   border:1px solid #333;
+  background-image: url('images/imgp8955.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 200px 100%;
 }
 .call {display:none;}
 .events {
