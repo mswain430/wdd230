@@ -41,6 +41,7 @@ picture {
 picture img {
     display:block;
     max-width: 65px;
+    padding-left: 10px;
     justify-content: flex-start;
 }
 
@@ -254,27 +255,40 @@ main {
 }
 .hero {
   grid-row: 1;
-  max-width: 100%;
-  height: 200px;
-  background-color: #eee;
-  border:1px solid #333;
-  background-image: url('images/imgp8955.jpg');
+  background-image: url('../images/imgp8973_sm.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 200px 100%;
+  max-width: 100%;
+  height: 200px;
+  margin:0;
+  background-color: #eee;
+  border:1px solid #333;
+  position: relative;
+
 }
-.call {display:none;}
+.hero h3 {Color: aliceblue; font-size: 1.5em; position: center;text-align: center; text-shadow: 2px 2px #333}
+.hero div.call {border:1px solid #55ACEE ; position: absolute; left: 30%;   width:175px; height: 25px; padding: 3px;text-align: center; background-color:rgba(101, 185, 245, 0.6); border-radius: 8px;
+}
 .events {
   grid-row-start: 2;
   max-width: 100%;
   height: 200px;
+  max-height: 200px important!;
+  padding:3px;
+  margin:0;
   background-color: #eee;
   border:1px solid #333;
-
 }
+.events h3 {margin: 5px 5px 10px 30px}
+.events ul {list-style-type: none; margin:0;display:block;max-width: 80%;}
+li.upevents {background-color: aliceblue; border: 1px solid #000; border-radius: 4px; max-height: 30px;padding:3px;margin:3px;margin-left: -10px;}
+span.md {width: 20px;margin-right: 10px;padding: 3px;font-size: .8em; text-align: left;}
+span.up {padding: 3px; font-size: .8em; text-align: left;}
+
 .weather {
   grid-row-start: 3;
-  max-width: 100%;
+  min-width: 100px;
   height: 200px;
   background-color: #eee;
   border:1px solid #333;
@@ -283,6 +297,7 @@ main {
   grid-row-start: 4;
   max-width: 100%;
   height: 200px;
+  padding: 5px;
   background-color: #eee;
   border:1px solid #333;
 }
