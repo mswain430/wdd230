@@ -97,7 +97,7 @@ main {
 
   margin:0;
 }
-.call {display:none;}
+
 .events {
   grid-row-start: 5;
   grid-column: 1/2;

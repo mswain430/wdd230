@@ -136,8 +136,8 @@ main {
   margin-top: 10px;
 }
 .events ul {justify-content: center;}
-li.upevents {display:flex;max-height: 120px;margin-left: -30px;}
-span.md {width: 18px;margin-right: 10px;padding:3px;font-size: .8em; text-align: left;}
+li.upevents {margin-left: -30px;}
+span.md {font-size: .8em;text-align:left; }
 span.up { height: 18px;text-align: left;}
 li.upevents:nth-child(4){display:none;}
 .weather {

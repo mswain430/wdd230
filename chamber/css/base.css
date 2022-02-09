@@ -281,9 +281,9 @@ main {
   border:1px solid #333;
 }
 .events h3 {margin: 5px 5px 10px 30px}
-.events ul {list-style-type: none; margin:0;display:block;max-width: 80%;}
+.events ul {list-style-type: none; margin:0;display:flex;flex-direction: column;max-width: 80%;}
 li.upevents {background-color: aliceblue; border: 1px solid #000; border-radius: 4px; max-height: 30px;padding:3px;margin:3px;margin-left: -10px;}
-span.md {width: 20px;margin-right: 10px;padding: 3px;font-size: .8em; text-align: left;}
+span.md {height: 20px;width: 20px;margin-right: 10px;padding: 3px;font-size: .8em; text-align: left;}
 span.up {padding: 3px; font-size: .8em; text-align: left;}
 
 .weather {
