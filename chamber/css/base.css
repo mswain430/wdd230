@@ -255,7 +255,8 @@ main {
 }
 .hero {
   grid-row: 1;
-  background-image: url('../images/imgp8973_sm.jpg');
+  /* background-image: url('../images/imgp8973_sm.jpg'); */
+  background-image: url('../images/wdd230-org-sm.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
