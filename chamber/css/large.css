@@ -1,4 +1,5 @@
 /* Media Queries */
+/* 64rem = 1024px  */
 @media only screen and (min-width: 64rem) {
 
 /* Flex *********************/
@@ -127,6 +128,7 @@ main {
 .events {
   grid-row-start: 1;
    grid-column: 1;
+   align-items: center;
    min-width: 200px;
   width: 200px;
   max-width: 200px;
@@ -134,9 +136,10 @@ main {
   background-color: #eee;
   border:1px solid #9c9b9b;
   margin-top: 10px;
+  margin-right: 10px;
 }
 .events ul {justify-content: center;}
-li.upevents {margin-left: -30px;}
+li.upevents {margin-left: 0px;justify-self: center;}
 span.md {font-size: .8em;text-align:left; }
 span.up { height: 18px;text-align: left;}
 li.upevents:nth-child(4){display:none;}
