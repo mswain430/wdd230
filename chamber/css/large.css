@@ -122,7 +122,6 @@ main {
   width: 400px;
   background-color: #eee;
   border:1px solid #9c9b9b;
-
   margin-top: 10px;
  }
 
@@ -139,7 +138,7 @@ main {
   margin-top: 10px;
   margin-right: 10px;
 }
-.events ul {justify-content: center;}
+.events ul {justify-content: start; margin-left: -20px}
 li.upevents {margin-left: 0px;justify-self: center;}
 span.md {font-size: .8em;text-align:left; }
 span.up { height: 18px;text-align: left;}
