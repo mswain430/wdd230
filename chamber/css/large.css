@@ -86,10 +86,9 @@ nav ul#primaryNav li:first-child {
   display: none;
 }
 footer .wrap {
-  border-top: 1px solid rgb(4, 82, 146);
-  display: inline-flex;
-  padding: 0;
-  margin: 0;
+  border-top: 2px solid rgb(4, 82, 146);
+  flex-direction: row;
+  padding: 5px;
   text-align: center;
 }
 footer .wrap span.modified {
@@ -117,9 +116,11 @@ main {
   -ms-grid-row-span: 2;
   /* background-image: url('../images/imgp8973_lg.jpg'); */
   background-image: url('../images/wdd230-org-lg.jpg');
+  background-size: 100% 100%;
   background-size: cover;
   height: 410px;
-  width: 400px;
+  min-width: 100%;
+  max-width: 400px;
   background-color: #eee;
   border:1px solid #9c9b9b;
   margin-top: 10px;
@@ -129,9 +130,8 @@ main {
   grid-row-start: 1;
    grid-column: 1;
    align-items: center;
-   min-width: 200px;
-  width: 200px;
   max-width: 200px;
+  min-width: 200px;
   height: 200px;
   background-color: #eee;
   border:1px solid #9c9b9b;
@@ -155,11 +155,18 @@ li.upevents:nth-child(4){display:none;}
 .news {
   grid-row-start: 3;
    grid-column: 2;
+   text-align:center;
    height: 200px;
-   width: 400px;
-  background-color: #eee;
-  border:1px solid #9c9b9b;
+   max-height: 200px;
+   min-width: 200px;
+   max-width: 400px;
+   background-color: #eee;
+   border:1px solid #9c9b9b;
    margin-top: 5px;
+   padding: 10px 20px;
+}
+.news .body {
+  max-width: 140px;
 }
 .spot {
   grid-row: 1/5;

@@ -7,6 +7,10 @@ body {
     font-size: 1em;
     display:block;
 }
+
+h2 {font-size: 2em;color: #046fb9}
+h3 {font-size: 1.6em;color: #CE5505}
+
 /*  ************* HEADER  ********* */
 header {
     display:flex;
@@ -31,7 +35,9 @@ header .wrap {
     background-color:rgb(15, 64, 119);
     margin: 0;
 }
-
+.topdiv {background-color:#046fb9;padding:5px}
+.banner {text-align: center; background-color:#1cb0a2;padding: 5px;}
+#dybanner {color: rgb(247, 245, 134);font-size: 1.5em;}
 picture {
     align-items: center;
     justify-content:center;
@@ -42,6 +48,7 @@ picture img {
     display:block;
     max-width: 65px;
     padding-left: 10px;
+    padding-right: 10px;
     justify-content: flex-start;
 }
 
@@ -52,8 +59,6 @@ picture img {
     align-self:flex-start;
     text-align: left;
     min-width: 150px;
-    margin: auto;
-
 }
 
 .heading h1 {
@@ -218,40 +223,50 @@ footer {
 }
 
 footer .address h2 {
-    font-size: 1em;
-    padding: 0;
+    font-size: 1.3em;
+    padding: 3px;
     margin: 5px auto;
     letter-spacing: 2px;
+    color: #1cb0a2;
 }
 .contactInfo {
     font-size: .9em;
     letter-spacing: 1px;
+    padding: 3px;
     margin: 15px auto
 }
 .contactInfo .contacts {
     padding:10px 0;
 }
-footer .wrap .copyright {
-    font-size: .8em;
-    padding: 5px;
-    flex-direction: row;
-}
-footer .wrap span.modified {
-    font-size: .8em;}
+div.contacts {line-height: 2em}
 footer .wrap {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align:center;
-
+    margin-bottom: 5px;
+    padding: 10px;
  }
+footer .wrap .copyright {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    font-size: .9em;
+    padding: 5px;
+    line-height: 1.4em;
+}
+footer .wrap span.author {font-size: 1.2em; font-weight: bold}
+footer .wrap span.project {font-size: .9}
+footer .wrap span.modified {
+    font-size: .9em;}
+
 main {
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 200px 200px 200px 200px 220px 220px;
     width: 100%;
     row-gap: 10px;
-
 }
 .hero {
   grid-row: 1;
@@ -269,10 +284,11 @@ main {
 
 }
 .hero h3 {Color: aliceblue; font-size: 1.5em; position: center;text-align: center; text-shadow: 2px 2px #333}
-.hero div.call {border:1px solid #55ACEE ; position: absolute; left: 30%;   width:175px; height: 25px; padding: 3px;text-align: center; background-color:rgba(101, 185, 245, 0.6); border-radius: 8px;
+.hero div.call {font-weight:bolder;background-color:rgb(247, 245, 134); color: #CE5505;  padding: 5px 20px; border: 1px solid #CE5505; position: absolute; bottom: 20%; right:2vw; width:175px; height: 25px; text-align: center; border-radius: 8px;
 }
 .events {
   grid-row-start: 2;
+  min-width: 400px;
   width: 100%;
   max-width: 100% important!;
   height: 200px;
@@ -280,6 +296,7 @@ main {
   margin:0;
   background-color: #eee;
   border:1px solid #333;
+  overflow: hidden;
 }
 .events h3 {margin: 3px 3px 10px 10px}
 .events ul {list-style-type: none; margin:0;display:flex;flex-direction: column;max-width: 80%;}
@@ -296,12 +313,27 @@ span.up {padding: 3px; font-size: .8em; text-align: left;}
 }
 .news {
   grid-row-start: 4;
+  min-width: 400px;
   max-width: 100%;
   height: 200px;
-  padding: 5px;
+  padding: 20px;
   background-color: #eee;
   border:1px solid #333;
+  text-align: left;
+  font-size: .9em;
+  line-height: 1.2em;
 }
+.news h2, .news h3 {
+  text-align: left;
+  font-size: 1.2em;
+  margin: 0; padding: 3px;
+}
+.news p {
+  text-align: left;
+  font-size: .9em;
+  margin: 0; padding: 3px;
+}
+
 .spot {
   grid-row: 5/7;
   min-height: 440px;
@@ -336,9 +368,21 @@ span.up {padding: 3px; font-size: .8em; text-align: left;}
 }
 .join {
   grid-row-start: 8;
-    height: 200px;
+  height: 200px;
   background-color: #eee;
   border:1px solid #333;
   display:none;
 
+
 }
+.join button  {
+  background-color:rgb(247, 245, 134);
+  color: #CE5505;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 10px auto 5px auto;
+  padding: 5px 20px;
+  border: 1px solid #CE5505;
+  border-radius: 10px;
+}
+.join p {padding: 5px 10px;}
