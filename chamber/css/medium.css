@@ -1,6 +1,6 @@
 /* Media Queries */
 /* 32.5rem = 520 px */
-@media only screen and (min-width: 35.5rem) {
+@media only screen and (min-width: 35rem) {
 
 /* Flex *********************/
 
@@ -8,6 +8,7 @@ header {
   max-height: 80px;
   width: 100%;
   justify-content: center;
+  position:relative;
 }
 
 picture {min-width: 100px;}
@@ -20,7 +21,8 @@ picture img {
   margin-top: 0;
   min-width: 250px;
   text-align: left;
-  padding-bottom: 5px;
+  margin-top: 1vh 2vw;
+  padding: 2px 0;
 }
 .heading h1 {
   font-size: 1.8em;
@@ -29,8 +31,10 @@ picture img {
   font-size: 1.2em
 }
 
-.social {justify-content: flex-end;order: 3}
+.social {justify-content: flex-start;
+  padding-right: 2vw;order: 0}
 
+/* ************************* NAVIGATION - MEDIUM ***********************  */
 nav#primaryNav {
   display:flex;
   flex-direction: column;

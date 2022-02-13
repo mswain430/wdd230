@@ -13,8 +13,9 @@
 
 header {
    min-height: 120px;
-   justify-content: space-around;
+   justify-content: center;
    min-width: 100%;
+   padding: 2vh 5vw;
 
 }
 
@@ -56,35 +57,26 @@ header .social {
   justify-content: flex-start;
   align-items: flex-start;
 }
-nav button.hambutton{
+button#ham{
     display:none;
-    }
- nav#primaryNav {
-     display:flex;
-    flex-direction: row;
-    align-items: flex-end;
-    width: 730px;
-
-}
-
-nav button.ham {display:none}
-nav ul li a {
-        padding: .5rem 1rem;
     }
 nav ul#primaryNav {
   display:flex;
-  flex-direction: row;
+  justify-content: flex-start; /* left aligned */
+  /*justify-content: flex-end; /* right aligned */
+  /*justify-content: center; */ /* center */
+  margin-left: 2vw;
 }
-nav ul#primaryNav li {
-  display:block;
-  flex: 1 1 auto;
+nav ul li a {
+  border:none;
+  border-left: 1px solid rgba(0,0,0,.3);
+  border-right: 1px solid rgba(0,0,0,.3);
+  padding: .5rem 1rem;
 }
-nav ul#primaryNav li a {
-  text-align:center;
-}
-nav ul#primaryNav li:first-child {
-  display: none;
-}
+nav ul li a {
+        padding: .5rem 1rem;
+    }
+
 footer .wrap {
   border-top: 2px solid rgb(4, 82, 146);
   flex-direction: row;

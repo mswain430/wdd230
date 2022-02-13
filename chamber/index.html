@@ -18,8 +18,9 @@
     <script defer src="js/scripts.js"></script>
 </head>
 <body>
-  <div class="topdiv"></div>
-  <div class="banner"><span id="dybanner"></span></div>
+   <div class="banner"><span id="dybanner"></span></div>
+   <div class="topdiv"></div>
+
    <header>
        <picture>
           <source srcset="images/blanding-logo.png"
@@ -30,7 +31,13 @@
           <h1>Blanding</h1>
           <div class="sub">Chamber of Commerce</div>
         </section>
-        <nav><button id="ham" class="hambutton"><span>&#9776;</span><span>X</span></button>
+
+         <section class="social">
+          <a href="https://facebook.com"><img src="images/facebook.svg" alt="facebook" class="fa fa-facebook"/></a>
+          <a href="https://twitter.com"><img src="images/twitter.svg" alt="twitter" class="fa fa-twitter"/></a>
+        </section><button id="ham" class="hambutton"><span>&#9776;</span>
+          <span class="xbutton">X</span></button>
+          <nav>
             <ul id="primaryNav" class="navigation">
               <li><a href="index.html" class="active">Home</a></li>
               <li><a href="directory.html">Directory</a></li>
@@ -39,10 +46,6 @@
               <li><a href="discover.html">Discover</a></li>
           </ul>
         </nav>
-         <section class="social">
-          <a href="https://facebook.com"><img src="images/facebook.svg" alt="facebook" class="fa fa-facebook"/></a>
-          <a href="https://twitter.com"><img src="images/twitter.svg" alt="twitter" class="fa fa-twitter"/></a>
-        </section>
   </header>
 
   <div class="daydate"><p class="time"><span id="currentdate"></span></p></div>
