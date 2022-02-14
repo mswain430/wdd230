@@ -38,13 +38,14 @@ header .wrap {
 picture {
   justify-content: center;
   align-self: center;
+  width: 140px;
+  padding-left: 40px;
 }
 picture img {
     max-width: 100px;
-    padding-left: 10px;
 }
 section.heading {
-  padding: 20px;
+  padding: 20px 5px;
   margin: 2vh 2vw;
   min-width: 280px;
 }

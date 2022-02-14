@@ -156,7 +156,6 @@ main {
   background-color: #eee;
   border:1px solid #a9a5a5;
 }
-.events ul {min-width: 75%}
 li.upevents {max-height: 40px;line-height:.8em;text-align:left;}
 .weather {
   grid-row: 5;
