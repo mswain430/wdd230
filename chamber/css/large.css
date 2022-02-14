@@ -2,12 +2,22 @@
 /* 64rem = 1024px  */
 @media only screen and (min-width: 64rem) {
 
+  nav {
+    position: relative;
+    top: 5px;
+    left: 0;
+    right: 0;
+    width: 550px;
+    text-align: left;
+    background-color:transparent;
+  }
 
 /* Flex *********************/
 		nav ul {
       display: flex;
       flex-direction: row;
-      width: 500px;
+      justify-content: flex-start;
+      width: 550px;
      }
 		nav ul li { flex: 1 1 auto;
 }
@@ -16,8 +26,6 @@ header {
    min-height: 120px;
    justify-content: center;
    min-width: 100%;
-   padding: 2vh 5vw;
-
 }
 
 header .wrap {
