@@ -16,12 +16,13 @@
     <script defer src="js/currentdate.js"></script>
     <script defer src="js/lastmodified.js"></script>
     <script defer src="js/scripts.js"></script>
+    <script defer src="js/windchill.js"></script>
 </head>
 <body>
    <div class="banner"><span id="dybanner"></span></div>
    <div class="topdiv"></div>
 
-   <header>
+   <header class="clearfix">
        <picture>
           <source srcset="images/blanding-logo.png"
             media="(min-width: 65rem)">
@@ -37,7 +38,7 @@
           <a href="https://twitter.com"><img src="images/twitter.svg" alt="twitter" class="fa fa-twitter"/></a>
         </section><button id="ham" class="hambutton"><span>&#9776;</span>
           <span class="xbutton">X</span></button>
-          <nav>
+          <nav class="clearfix">
             <ul id="primaryNav" class="navigation">
               <li><a href="index.html" class="active">Home</a></li>
               <li><a href="directory.html">Directory</a></li>
@@ -49,8 +50,16 @@
   </header>
 
   <div class="daydate"><p class="time"><span id="currentdate"></span></p></div>
-  <main>
-       <div class="hero"><h3>Visit Blanding</h3>
+  <main class="clearfix">
+       <div class="hero">
+   <!--      <figure class="myphoto">
+           <img src="images/wdd230-org-sm.jpg" alt="hero" sizes="200vw"
+              srcset="images/wdd230-org-md.jpg 1200vw,
+                      images/wdd230-org-lg.jpg 400vw
+                      "
+           >
+          </figure><figcaption>hero image</figcaption>-->
+          <h3>Visit Blanding</h3>
         <div class="call">Join our Chamber</div></div>
 
       <div class="news">
@@ -68,10 +77,13 @@ Looking forward to seeing you there!</p>
 <li class="upevents"><span class="md">June 7</span><span class="up">Tech Summit</span><span class="read"><a href="#" class="more">MORE>></a></span></li>
 <li class="upevents"><span class="md">June 21</span><span class="up">Lunch & Learn-Social Media 101</span><span class="read"><a href="#" class="more">MORE>></a></span></li>
 </ul></div>
-      <div class="weather">weather</div>
+      <div class="weather"><h3>Weather</h3>
+        <div id="t">50</div><div id="s">10</div>
+        <p>Chill Factor is <span id="chill"></span></p>
+      </div>
         <div class="spot">
-          <div class="spot1">Spotlight1</div>
-          <div class="spot2" >Spotlight2</div>
+          <div id="spot1" class="spot1">Spotlight1</div>
+          <div id="spot2" class="spot2" >Spotlight2</div>
           <div class="spot3">Spotlight3</div>
        </div>
   </main>
@@ -81,7 +93,7 @@ Looking forward to seeing you there!</p>
       <div class="contactInfo">
         <img src="images/blanding-logo.png" class="ftrLogo" alt="logo" />
          <div class="address"><h2>Blanding Chamber of Commerce</h2>50 West 100 South<br>Blanding, UT xxxxx</div>
-         <div class="contacts">Blanding@chamber.com<br>(435) 678-2791<br> Location Map </div>
+         <div class="contacts">Blanding@chamber.com<br>(435) 678-2791<br> <a href="https://www.google.com/maps/dir/33.0030442,-117.0441006/blanding+city+office/@35.0461651,-117.7472662,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x8739d47751ab059d:0x14b197dc31c6550a!2m2!1d-109.4789557!2d37.62419" class="maplink">Location Map </a></div>
       </div>
     </div>
   <div class="wrap">
