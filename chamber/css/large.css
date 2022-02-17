@@ -162,7 +162,7 @@ li.upevents:nth-child(4){display:none;}
 .spot1 {
  /* grid-row: 1/2;
   grid-column: 3; */
-  flex: 1 ;
+  flex: 1;
   width: 220px;
   height: 220px;
 }
