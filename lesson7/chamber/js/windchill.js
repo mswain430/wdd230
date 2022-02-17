@@ -11,7 +11,7 @@ let s = parseFloat(document.querySelector("#speed").value);
 //let windchill = windchill(t,s);
 
 if (t <= 50 && s > 3){
-    let windchill = (35.74 + (0.6215 * t)) - ((35.75 * t) * (Math.pow(s,0.16))) + ((0.4275 * t) * (Math.pow(s,0.16)));
+    let windchill = 35.74 + (0.6215 * t) - (35.75 * t) * Math.pow(s,0.16) + (0.4275 * t) * Math.pow(s,0.16);
     windchill = Math.round(windchill);
     } else {
     windchill = "N/A";
