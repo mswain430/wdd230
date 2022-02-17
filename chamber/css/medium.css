@@ -168,8 +168,8 @@ li.upevents {max-height: 40px;line-height:.8em;text-align:left;}
 }
 .news .body {max-width: 140px;}
 .spot {
-  grid-row: 3 / 4;
-  grid-column: 1 / 4;
+  grid-row: 3/4;
+  grid-column: 1/4;
   display:flex;
   flex-direction: row;
   justify-content: center;
