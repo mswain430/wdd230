@@ -3,3 +3,8 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9,1fr);
 }
+img {
+    width: 300px;
+    height: 400px;
+    border: 1px solid red;
+}
