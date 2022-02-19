@@ -421,8 +421,8 @@ li.upevents span.read  { text-align: right}
 .join {
   grid-row-start: 8;
   background-color: rgba(38, 144, 186, 0.9);
-  border:1px solid #333;
-  display:none;
+  border: 1px solid #333;
+  display: none;
   color: white;
 }
 .join button, .hero button  {

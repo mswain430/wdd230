@@ -98,7 +98,7 @@ footer .wrap {
 }
 footer .wrap span.modified {
   font-size: 1em;}
-.copyright {display:inline}
+.copyright {display: inline}
 .mod {display: inline;
   justify-content: flex-end;
   padding: 0;
@@ -125,7 +125,7 @@ main {
   background-size: 100% 100%;
   background-size: cover;
   background-color: #eee;
-  border:1px solid #9c9b9b;
+  border:1px solid #333;
  }
  .hero picture.hero-img {
    justify-content: center;
@@ -143,15 +143,15 @@ main {
  }
 .events {
   grid-row: 1;
-   grid-column: 1;
-   align-items: center;
-  border:1px solid #9c9b9b;
+  grid-column: 1;
+  align-items: center;
+  border:1px solid #333;
 }
 .events ul {justify-content: start; margin-left: -20px}
 li.upevents {margin-left: 0px;justify-self: center;}
-span.md {font-size: .8em;text-align:left; }
+span.md {font-size: .8em;text-align: left; }
 span.up { height: 18px;text-align: left;}
-li.upevents:nth-child(4){display:none;}
+li.upevents:nth-child(4){display: none;}
 .weather {
   grid-row: 2;
   grid-column: 1;
@@ -160,7 +160,6 @@ li.upevents:nth-child(4){display:none;}
   grid-row: 3;
    grid-column: 2/3;
    text-align:center;
-   border:1px solid #9c9b9b;
    padding: 10px 20px;
 }
 .news .body {
@@ -176,8 +175,6 @@ li.upevents:nth-child(4){display:none;}
   padding: 10px;
 }
 #spot1 {
- /* grid-row: 1/2;
-  grid-column: 3; */
   flex: 1;
   width: 220px;
   min-height: 220px;
@@ -185,18 +182,14 @@ li.upevents:nth-child(4){display:none;}
   max-height: 220px;
 }
 #spot2 {
- /* grid-row: 2/3;
-  grid-column: 3; */
   flex: 2;
   width: 220px;
-  min-height: 200px;
-  height: 200px;
-  max-height: 200px;
+  min-height: 220px;
+  height: 220px;
+  max-height: 220px;
  }
 #spot3 {
   display:block;
-  /*grid-row: 3/4;
-  grid-column: 3; */
   flex:3;
   width: 220px;
   min-height: 220px;
