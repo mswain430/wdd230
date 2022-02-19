@@ -129,10 +129,10 @@ main {
  }
  .hero picture.hero-img {
    justify-content: center;
-   align-self: center; 
+   align-self: center;
    max-width: 440px;
    height:450px;
-   
+
  }
  .hero picture.hero-img img {
      width: 440px;
@@ -175,27 +175,25 @@ li.upevents:nth-child(4){display:none;}
   min-height: 670px;
   padding: 10px;
 }
-.spot1 {
+#spot1 {
  /* grid-row: 1/2;
   grid-column: 3; */
   flex: 1;
   width: 220px;
   min-height: 220px;
   height: 220px;
-  max-height: 220ppx;
-  background: #379683 url('../images/spot1_square_large.png') no-repeat bottom right;
+  max-height: 220px;
 }
-.spot2 {
+#spot2 {
  /* grid-row: 2/3;
   grid-column: 3; */
   flex: 2;
   width: 220px;
-  min-height: 220px;
-  height: 220px;
-  max-height: 220px;
-  background: #379683 url('../images/spot2-square_large.png') no-repeat bottom right;
-}
-.spot3 {
+  min-height: 200px;
+  height: 200px;
+  max-height: 200px;
+ }
+#spot3 {
   display:block;
   /*grid-row: 3/4;
   grid-column: 3; */
@@ -204,12 +202,21 @@ li.upevents:nth-child(4){display:none;}
   min-height: 220px;
   height: 220px;
   max-height: 220px;
-  background: #379683 url('../images/spot3-square_large.png') no-repeat bottom right;
+}
+
+.spot2 picture img, .spot1 picture img, .spot3 picture img {
+  object-fit: cover;
+  height: 220px;
+}
+.spot3 picture img {
+  object-fit: cover;
+  height: 220px;
 }
 .join {
   display:block;
   grid-row: 3;
   grid-column: 1;
+  padding: 10px;
 }
 
 }

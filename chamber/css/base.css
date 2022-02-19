@@ -322,8 +322,8 @@ main {
  /* justify-content: center;
   align-self: center; */
   min-width: 400px;
-  
-  
+
+
 }
 .hero picture.hero-img img {
     min-width: 500px;
@@ -390,13 +390,13 @@ li.upevents span.read  { text-align: right}
   grid-column: 1/3;
   height: 200px;
   border:1px solid #333;
-  background: #379683 url('../images/spot1-dinoMuseum.jpg') no-repeat bottom right;
+ /* background: #379683 url('../images/spot1-dinoMuseum.jpg') no-repeat bottom right;*/
 }
+
 .spot1 img {
-  
   object-fit: cover;
   width: 100%;
-  
+  height: 200px;
 }
 
 .spot2 {
@@ -405,7 +405,11 @@ li.upevents span.read  { text-align: right}
   height: 200px;
   background-color:rgba(83, 171, 238, 0.4);
   border:1px solid #333;
-  background: #fec834 url('../images/spot2-edge.jpg') no-repeat bottom right;
+}
+.spot2 img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
 }
 .spot3 {
   grid-row: 5;
