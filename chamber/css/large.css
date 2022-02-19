@@ -21,7 +21,10 @@
      }
 		nav ul li { flex: 1 1 auto;
 }
+nav ul li a {
+  color: white;
 
+}
 header {
    min-height: 120px;
    justify-content: center;
@@ -180,6 +183,7 @@ li.upevents:nth-child(4){display:none;}
   min-height: 220px;
   height: 220px;
   max-height: 220ppx;
+  background: #379683 url('../images/spot1_square_large.png') no-repeat bottom right;
 }
 .spot2 {
  /* grid-row: 2/3;
@@ -189,6 +193,7 @@ li.upevents:nth-child(4){display:none;}
   min-height: 220px;
   height: 220px;
   max-height: 220px;
+  background: #379683 url('../images/spot2-square_large.png') no-repeat bottom right;
 }
 .spot3 {
   display:block;
@@ -199,6 +204,7 @@ li.upevents:nth-child(4){display:none;}
   min-height: 220px;
   height: 220px;
   max-height: 220px;
+  background: #379683 url('../images/spot3-square_large.png') no-repeat bottom right;
 }
 .join {
   display:block;
