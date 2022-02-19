@@ -1,5 +1,3 @@
-
-
 body {
     margin:0;
     padding:0;
@@ -66,7 +64,7 @@ header picture.logo img {
     display:flex;
     justify-content: flex-start;
     flex-direction: column;
-    margin-top: 2vh 2vw;
+    margin-top: 2vh;
     padding: 10px 0;
     align-self:flex-start;
     text-align: left;
@@ -171,7 +169,7 @@ nav {
     margin:0;
     z-index: 1000;
     display:flex;
-    justify-content: flex-left;
+    justify-content:left;
     align-items: center;
     position: absolute;
     top: 85px;
@@ -291,9 +289,8 @@ footer .wrap .copyright {
     line-height: 1.4em;
 }
 footer .wrap span.author {font-size: 1.2em; font-weight: bold}
-footer .wrap span.project {font-size: .9}
-footer .wrap span.modified {
-    font-size: .9em;}
+footer .wrap span.project {font-size: .9em}
+footer .wrap span.modified { font-size: .9em; }
 footer a.maplink {color:#1cb0a2;}
 main {
     display:grid;
@@ -331,8 +328,8 @@ main {
     height: 210px;
     object-fit: cover;
 }
- .hero h3 {Color: #1cf0f0; font-size: 1.5em; position: center;text-align: center; text-shadow: 2px 2px #333; position: absolute; top: 6vh; left:4vw; }
-.hero div.call {font-weight:bolder;background-color:rgb(247, 245, 134); color: #0f4077;  padding: 5px 20px; border: 1px solid #CE5505; position: absolute; bottom: 2vw; right:2vw; width:175px; height: 25px; text-align: center; border-radius: 8px;
+.hero h3 {Color: #1cf0f0; font-size: 1.5em; text-align: center; text-shadow: 2px 2px #333; position: absolute; top: 6vh; left:4vw; }
+.hero div.call {font-weight: bolder;background-color: rgb(247, 245, 134); color: #0f4077;  padding: 5px 20px; border: 1px solid #CE5505; position: absolute; bottom: 2vw; right: 2vw; width:175px; height: 25px; text-align: center; border-radius: 8px;
 }
 .events {
   grid-row: 2;
@@ -340,21 +337,22 @@ main {
   background-color: #2690ba;
   border:1px solid #333;
 }
-.events h3 {margin: 3px 3px 10px 3px; background-color: #046fb9; padding:5px 3px ;}
+.events h3 {margin: 0px 0px 10px 0px; background-color: #046fb9; padding:5px 3px ;}
 .events ul {list-style-type: none; margin:0;display:flex;flex-direction: column;max-width: 80%;}
 li.upevents {background-color: aliceblue; border: 1px solid #000; border-radius: 4px; max-height: 30px;padding:3px;margin:3px;margin-left: -10px;}
 span.md {height: 20px;width: 20px;margin-right: 10px;padding: 3px;font-size: .8em; text-align: left;}
 span.up {padding: 3px; font-size: .8em; text-align: left; }
 .more {font-size: .6em; color:#CE5505   }
-ul li.upevents span:nth:child(3) {text-align: right}
+ul li.upevents span:nth-child(3) {text-align: right}
 li.upevents span.read  { text-align: right}
 .weather {
   grid-row: 3;
   grid-column: 1/3;
   background-color:rgba(38, 144, 186, 0.9);
   border:1px solid #333;
+  padding: 5px 10px;
 }
-.weather h3 {margin: 3px 3px 10px 3px; background-color: #046fb9; padding:3px;}
+.weather h3 {margin: -6px -10px 10px -10px; background-color: #046fb9; padding:5px}
 .news {
   grid-row: 4;
   grid-column: 1/3;
