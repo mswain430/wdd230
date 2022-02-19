@@ -158,7 +158,7 @@ main {
      width: 100%;
      height: 300px;
  }
- .hero h3 {color: #1cf0f0; font-size: 2.5em; text-align: center; text-shadow: 2px 2px #333; position: absolute; top: 10vh; left:8vw; }
+.hero h3 {color: #1cf0f0; font-size: 2.5em; text-align: center; text-shadow: 2px 2px #333; position: absolute; top: 10vh; left:8vw; }
 .hero div.call {position: absolute; bottom: 3vw; right:2vw;
 }
 .events {
@@ -166,7 +166,7 @@ main {
   grid-column: 1/3;
   border:1px solid #333;
 }
-li.upevents {max-height: 40px;line-height:.8em;text-align:left;}
+li.upevents {max-height: 40px;line-height:.8em;text-align: left;}
 .weather {
   grid-row: 5;
   grid-column: 3/4;
@@ -176,9 +176,11 @@ li.upevents {max-height: 40px;line-height:.8em;text-align:left;}
   grid-column: 1/4;
   background-color: #eee;
   border:1px solid #333;
-  padding: 10px 30px;
+  padding: 10px 20px;
 }
-.news .body {max-width: 140px;}
+.news .body {
+  max-width: 140px;
+}
 .spot {
   grid-row: 3/4;
   grid-column: 1/4;
@@ -210,7 +212,7 @@ li.upevents {max-height: 40px;line-height:.8em;text-align:left;}
   padding: 20px;
 }
 .join button {
-  padding: 20px 30px;
+  padding: 20px;
 }
 
 }

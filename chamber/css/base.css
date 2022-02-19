@@ -7,12 +7,12 @@ body {
     background-color: rgba(28, 176, 162, .8);
 }
 
-h2 {font-size: 2em; color: white;  background-color: #0f4077;}
+h2 {font-size: 2em; padding: 5px 10px; color: white;  background-color: #0f4077;}
 footer h2 {font-size: 2em; color: #1cb0a2; }
-h3 {font-size: 1.6em;color: white;padding:3px; background-color: #0f4077}
+h3 {font-size: 1.6em;color: white;padding: 5px 10px; background-color: #0f4077}
 .hero h2, .hero h3 {background-color: transparent; line-height: 1.1em}
 a.maplink { display:block}
-.contacts img { width:32px; height:32px;}
+.contacts img { width: 32px; height: 32px;}
 /*  ************* HEADER  ********* */
 header {
     display:flex;
@@ -372,8 +372,8 @@ li.upevents span.read  { text-align: right}
 }
 .news h2, .news h3 {
   text-align: left;
-  margin: -10px -20px 10px -20px;
-  padding: 8px
+  margin: -10px -10px 10px -10px;
+  padding: 10px 20px;
 }
 .news p {
   text-align: left;
