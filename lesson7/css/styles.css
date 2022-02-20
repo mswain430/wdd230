@@ -3,7 +3,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9,1fr);
 }
-img {
+.grid img {
     width: 300px;
     height: 400px;
 }
@@ -15,7 +15,7 @@ picture img[data-src] {
   filter: blur(0.2em);
 }*/
 
-picture img {
+.grid picture img {
   filter: blur(0em);
   transition: filter 0.5s;
 }
