@@ -148,7 +148,7 @@ main {
   border:1px solid #333;
 }
 .events ul {justify-content: start; margin-left: -20px}
-li.upevents {margin-left: 0px;justify-self: center;}
+li.upevents {justify-self: center;}
 span.md {font-size: .8em;text-align: left; }
 span.up { height: 18px;text-align: left;}
 li.upevents:nth-child(4){display: none;}
@@ -159,7 +159,7 @@ li.upevents:nth-child(4){display: none;}
 .news {
   grid-row: 3;
    grid-column: 2/3;
-   text-align:center;
+   text-align:left;
    padding: 10px 20px;
 }
 .news .body {
