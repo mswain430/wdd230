@@ -212,4 +212,26 @@ li.upevents:nth-child(4){display: none;}
   padding: 10px;
 }
 
+ main.discover {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 660px 660px 660px 100px;
+    width: 100%;
+    row-gap: 10px;
+    column-gap: 10px;
+    background-color: rgb(28, 176, 162);
+    background-color: rgba(28, 176, 162, .3);
+    justify-content: space-around;
+    text-align:center;
+    margin: auto;
+}
+
+main.discover h2 {
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+main.discover section {
+  min-width: 960px;
+  max-width: 960px;
+}
 }
