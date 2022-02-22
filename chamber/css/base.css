@@ -48,9 +48,10 @@ header .wrap {
 
 .topdiv {
   background-color: #046fb9;
+  text-align: center;
   padding: 3px;
   width: 100%;
-  margin: 0;
+  margin: auto;
 }
 
 #dybanner {
