@@ -458,7 +458,7 @@ li.upevents span.read  { text-align: right}
  main.discover {
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 120px 660px 660px 660px 660px 660px 660px 660px 660px 660px ;
+    grid-template-rows: 140px 660px 660px 660px 660px 660px 660px 660px 660px 660px ;
     width: 100%;
     row-gap: 10px;
     column-gap: 10px;
