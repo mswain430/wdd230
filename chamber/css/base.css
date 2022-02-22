@@ -531,7 +531,7 @@ main.discover card picture img {
   border-radius:10px;
   border: 1px solid #ccc;
   background: #fff;
-
+  margin: 10px auto;
 }
 .card:hover {
   box-shadow: 0 0 11px rgba(33,33,33,.5);
