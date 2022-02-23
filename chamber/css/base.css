@@ -350,7 +350,7 @@ main {
     object-fit: cover;
 }
 .hero h2 {color: #1cf0f0; font-size: 1.5em; text-align: center; text-shadow: 2px 2px #333; position: absolute; bottom: 1vh; left:1vw; background-color: #0f4077 }
-.hero div.call {font-weight: bolder;background-color: rgb(247, 245, 134); color: #0f4077;  padding: 5px 20px; border: 1px solid #CE5505; position: absolute; bottom: 0vw; right: 0vw; width:150px; height: 20px; text-align: center; border-radius: 8px;
+.hero div.call {font-weight: bolder;background-color: rgb(247, 245, 134); color: #0f4077;  padding: 5px 20px; border: 1px solid #CE5505; position: absolute; bottom: 0vw; right: 0vw; width:150px; height: 20px; text-align: center; border-radius: 4px;
 }
 .events {
   grid-row: 2;
