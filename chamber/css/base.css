@@ -274,7 +274,7 @@ footer .address h2 {
     padding: 3px;
     margin: 5px auto;
     letter-spacing: 2px;
-    color: #1cb0a2;
+    color: #24dbc9;
     text-shadow: 1px 1px #000;
 }
 .contactInfo {
@@ -345,8 +345,8 @@ main {
     height: 210px;
     object-fit: cover;
 }
-.hero h3 {Color: #1cf0f0; font-size: 1.5em; text-align: center; text-shadow: 2px 2px #333; position: absolute; top: 6vh; left:4vw; background-color: transparent }
-.hero div.call {font-weight: bolder;background-color: rgb(247, 245, 134); color: #0f4077;  padding: 5px 20px; border: 1px solid #CE5505; position: absolute; bottom: 2vw; right: 2vw; width:175px; height: 25px; text-align: center; border-radius: 8px;
+.hero h3 {color: #1cf0f0; font-size: 1.5em; text-align: center; text-shadow: 2px 2px #333; position: absolute; bottom: 0vh; left:0vw; background-color: #0f4077 }
+.hero div.call {font-weight: bolder;background-color: rgb(247, 245, 134); color: #0f4077;  padding: 5px 20px; border: 1px solid #CE5505; position: absolute; bottom: 0vw; right: 0vw; width:150px; height: 20px; text-align: center; border-radius: 8px;
 }
 .events {
   grid-row: 2;
