@@ -307,7 +307,7 @@ footer .wrap .copyright {
 footer .wrap span.author {font-size: 1.2em; font-weight: bold}
 footer .wrap span.project {font-size: .9em}
 footer .wrap span.modified { font-size: .9em; }
-footer a.maplink {color:#1cb0a2;}
+footer a.maplink {color: #1cf0f0; font-weight: bold; }
 main {
     display:grid;
     grid-template-columns: 1fr;
@@ -345,7 +345,7 @@ main {
     height: 210px;
     object-fit: cover;
 }
-.hero h3 {color: #1cf0f0; font-size: 1.5em; text-align: center; text-shadow: 2px 2px #333; position: absolute; bottom: 0vh; left:0vw; background-color: #0f4077 }
+.hero h2 {color: #1cf0f0; font-size: 1.5em; text-align: center; text-shadow: 2px 2px #333; position: absolute; bottom: 0vh; left:0vw; background-color: #0f4077 }
 .hero div.call {font-weight: bolder;background-color: rgb(247, 245, 134); color: #0f4077;  padding: 5px 20px; border: 1px solid #CE5505; position: absolute; bottom: 0vw; right: 0vw; width:150px; height: 20px; text-align: center; border-radius: 8px;
 }
 .events {
