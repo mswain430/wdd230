@@ -40,7 +40,7 @@ table.acme th.title {
 table.acme th {
     color: white;
     font-size: .9em;
-    background-color: #628ca6;
+    background-color:  #4c6b7e;
     font-weight: bold;
     padding: 10px;
     border:1px solid rgb(207, 210, 211);
@@ -60,7 +60,7 @@ tr:nth-child(odd) {
     background-color: #e7f0ed;
 }
 td.highlight {
-    background-color: #628ca6;
+    background-color: #4c6b7e;
     color: white;
 }
 tr.footer {
