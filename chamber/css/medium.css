@@ -166,7 +166,7 @@ main {
   text-align: center;
   text-shadow: 2px 2px #333;
   position: absolute;
-  bottom: 0vh;
+  bottom: 1vh;
   left:1vw;
 }
 .hero div.call {
