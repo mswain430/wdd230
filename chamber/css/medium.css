@@ -39,6 +39,7 @@ header picture.logo img {
   color: rgb(248, 245, 64);;
   font-size: 1em;
   font-weight: bold;
+  text-shadow: 1px 1px #000;
 
 }
 
