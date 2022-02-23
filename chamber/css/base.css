@@ -40,12 +40,16 @@ header .wrap {
 }
 .banner {
   text-align: center;
-  background-color: #1cb0a2;
+  background-color: #168b80;
+  background-color:rgb(15, 64, 119);
   width: 100%;
   padding: 10px 3px;
   margin: 0;
 }
-
+.topdiv-green {
+  background-color: #1fc2b2;
+  padding: 1px;
+}
 .topdiv {
   background-color: #046fb9;
   text-align: center;
@@ -80,7 +84,7 @@ header picture.logo img {
     display:flex;
     justify-content: flex-start;
     flex-direction: column;
-    margin-top: 2vh;
+    margin-top: 0;
     padding: 10px 0;
     align-self:flex-start;
     text-align: left;
