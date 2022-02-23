@@ -35,6 +35,13 @@ header picture.logo img {
 .social {justify-content: flex-start;
   padding-right: 2vw;order: 0}
 
+#dybanner {
+  color: rgb(248, 245, 64);;
+  font-size: 1em;
+  font-weight: bold;
+
+}
+
 /* ************************* NAVIGATION - MEDIUM ***********************  */
 nav#primaryNav {
   display:flex;

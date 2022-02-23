@@ -55,8 +55,9 @@ header .wrap {
 }
 
 #dybanner {
-  color: rgb(247, 245, 134);
+  color: rgb(248, 245, 64);;
   font-size: .9em;
+  font-weight: bold;
   width: 100%;
   text-align:center;
 }
@@ -336,8 +337,6 @@ main {
  /* justify-content: center;
   align-self: center; */
   min-width: 400px;
-
-
 }
 .hero picture.hero-img img {
     min-width: 500px;
