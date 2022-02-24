@@ -4,14 +4,16 @@ const visitDisplay = document.querySelector(".visits");
 //get the stored value in localstorage
 let numVisits = Number(window.localStorage.getItem("visits-ls"));
 //determine if this is the first visit or display the number of visits
-if(numVisits !== 0) {
-    visitDisplay.textContent = numVisits;
-} else {
-    visitDisplay.textContent = `This is your first visit`;
-}
-
 // increment the number of visits
 numVisits++;
+if(numVisits !== 0) {
+    visitDisplay.textContent = "You have visited: " + numVisits + " times";
+
+} else {
+    visitDisplay.textContent = `This is your first visit. Welcome to the site!`;
+}
+
+
 // store the number of visits value
 localStorage.setItem("visits-ls", numVisits)
 
@@ -22,9 +24,7 @@ todayDisplay.textContent = Date.now();
 const lastvisit = localStorage.getItem("lastvisit");
 const FACTOR = 1000 * 60 * 60 * 24 //milliseconds
 let daysbetween = Date.now() - lastvisit;
-console.log(daysbetween)
 let numberofdays = daysbetween / FACTOR;
-console.log(numberofdays)
 //discovery page
 localStorage.setItem("lastvisit", Date.now());
 

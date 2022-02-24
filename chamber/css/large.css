@@ -111,7 +111,7 @@ footer .wrap span.modified {
   margin:0;
 }
 
-main {
+.home-grid {
     display:grid;
     grid-template-columns: 240px 500px 245px;
     grid-template-rows: 220px 220px 230px;
@@ -217,11 +217,11 @@ li.upevents:nth-child(4){display: none;}
   grid-column: 1;
   padding: 10px;
 }
-
- main.discover {
+/* ************************** DISCOVER PAGE ************************ */
+ .grid-discover {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 110px 660px 660px 660px 660px 660px 660px 660px 660px 660px ;
+    grid-template-rows: 110px 660px 660px 670px  ;
     width: 100%;
     row-gap: 10px;
     column-gap: 10px;
@@ -232,12 +232,21 @@ li.upevents:nth-child(4){display: none;}
     margin: auto;
 }
 
-main.discover h2 {
+.grid-discover h2 {
   grid-column: 1 / 4;
   grid-row: 1;
 }
-main.discover section {
+.grid-discover {
   min-width: 960px;
   max-width: 960px;
 }
+
+/* --------------FORM STYLING ----- */
+
+  form label.sbs {
+      padding: .4rem 0;
+  }
+
+form p.member-message {display:block}
+
 }

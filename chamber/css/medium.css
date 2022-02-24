@@ -70,6 +70,7 @@ nav ul.open {
     display:block;
 }
 nav ul li a {
+  display:block;
   border: none;
   padding: .5rem 1rem;
   max-width: 100%;
@@ -138,7 +139,7 @@ footer .wrap .copyright {
   font-weight: 300;
 } */
 
-main {
+.home-grid {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 200px 240px 200px 220px;
@@ -244,11 +245,10 @@ li.upevents {
   padding: 20px;
 }
 
-main .discover .grid {
-    display:grid;
-    grid-template-columns: 1fr 1fr ;
-    justify-content: space-around;
-    align-self: center;
+.grid-join section{
+  min-width: 500px;
+  margin: auto;
+  padding: 5px;
 }
 
 
