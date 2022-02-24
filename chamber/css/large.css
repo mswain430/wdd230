@@ -246,7 +246,16 @@ li.upevents:nth-child(4){display: none;}
   form label.sbs {
       padding: .4rem 0;
   }
-
+  .grid-join section{
+  min-width: 500px;
+  margin: auto;
+  padding: 25px;
+}
+form {
+  align-self: center;
+  text-align: left;
+  max-width: 50rem;
+}
 form p.member-message {display:block}
 
 }
