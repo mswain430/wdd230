@@ -51,31 +51,41 @@
   <div class="daydate"><p class="time"><span id="currentdate"></span></p></div>
   <main class="grid-join">
     <section>
- <h1>Blanding<br/> Chamber of Commerce<br/> Membership Application</h1>
- <form method="get" action="thankyou.html">
+ <h2>Blanding<br/> Chamber of Commerce<br/> Membership Application</h2>
+ <form method="get" action="thankyou.html" autocomplete="on">
   <fieldset>
   <legend>Applicant Information</legend>
   <label class="top">First Name*<input type="text" name="fname" required></label>
   <label class="top">Last Name* <input type="text" name="lname" required></label>
-  <label class="top">Position<input type="text" name="position" pattern="/[A-z]\-\\ \/"></label>
+  <label class="top">Position<input type="text" name="position" pattern="^[a-zA-Z- ].{7,}$"></label>
   <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
   <label class="top">Cell Phone* <input type="tel" name="phone" placeholder="1234567890" required></label>
   <label class="top">Name of your Business <input type="text" name="biztitle" required></label>
 </fieldset>
 <fieldset>
     <legend>Membership Level</legend>
-   <div class="top">Audience</div>
-    <label class="sbs"><input type="radio" name="membership" value="np"> NP Membership</label>
-    <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
-    <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
-    <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
-    <div class="sbs"><p class="member-message">These memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc.</p></div>
-</fieldset>
+   <div class="top">Membership Opportunities</div>
+    <label class="sbs">
+      <input type="radio" name="membership" value="np"> NP Membership</input>
+      <p class="member-message">These memberships have free training and networking ...</p>
+    </label>
+    <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</input>
+   <p class="member-message">These memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc.</p>
+    </label>
+    <label class="sbs"><input type="radio" name="membership" value="silver"> Silver membership</input>
+    <p class="member-message">These memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc.</p>
+    </label>
+    <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</input>
+    <p class="member-message">These memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc.</p>
+     </label>
+  </fieldset>
 <fieldset>
   <legend>Business Information</legend>
   <label class="top">Please describe your business<textarea id="biz" name="bizInfo"></textarea></label>
 </fieldset>
-<input class="submitBtn" type="submit" value="Join our Blanding Chamber">
+<input type="hidden" value="Date.now()">
+<input class="button submitBtn" type="submit" value="Join our Blanding Chamber">
+
 </form>
 </section>
 </main>

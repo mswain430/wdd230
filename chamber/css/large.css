@@ -243,12 +243,10 @@ li.upevents:nth-child(4){display: none;}
 
 /* --------------FORM STYLING ----- */
 
-  form label.sbs {
-      padding: .4rem 0;
-  }
+
   .grid-join section{
-  min-width: 500px;
-  margin: auto;
+  min-width: 400px;
+  margin: 20px auto;
   padding: 25px;
 }
 form {
@@ -256,6 +254,13 @@ form {
   text-align: left;
   max-width: 50rem;
 }
-form p.member-message {display:block}
+form label.top input, form label.top select, form label.top textarea {
+  font-size: 1.2rem;
+  max-width: 22rem;
+}
+form label.sbs p.member-message {
+  display:inline-flex;
+
+}
 
 }
