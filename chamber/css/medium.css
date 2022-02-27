@@ -256,23 +256,22 @@ form label.top input, form label.top select, form label.top textarea {
   max-width: 22rem;
 }
 
-  .grid-join section{
-  min-width: 500px;
+.grid-join section {
+  min-width: 400px;
   margin: 20px auto;
-  padding: 15px;
+  padding: 25px;
 }
 form {
   align-self: center;
   text-align: left;
-  min-width: 400px;
-  max-width: 500px;
+  max-width: 50rem;
 }
 form label.top input, form label.top select, form label.top textarea {
   font-size: 1.2rem;
   max-width: 22rem;
 }
 p.member-message {
-  display:block;
+  display:inline-block;
   font-weight: 400;
   margin: 5px;
 }
