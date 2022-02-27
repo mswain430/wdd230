@@ -604,9 +604,9 @@ form label.top {
 form div {
     display: block;
     padding-top: 1rem;
-    color:  #CE5505;
+    color:  #b84d07;
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 form label.top input, form label.top select, form label.top textarea {
