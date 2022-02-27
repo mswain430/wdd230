@@ -315,7 +315,7 @@ footer .wrap span.project {font-size: .9em}
 footer .wrap span.modified { font-size: .9em; }
 footer a.maplink {color: #1cf0f0; font-weight: bold; }
 home-grid {
-       display:grid;
+    display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 200px 200px 200px 220px 225px 225px;
     width: 100%;
@@ -323,7 +323,6 @@ home-grid {
     column-gap: 10px;
     background-color: rgb(28, 176, 162);
     background-color: rgba(28, 176, 162, .3);
-
 }
 
 .hero {
@@ -565,7 +564,7 @@ picture img[data-src] {
   box-shadow: 0 10px 15px rbga(0,0,0,.5);
   border-radius: 4px;
   min-width: 100%;
-  max-width: 350px;
+  max-width: 375px;
   margin:0 auto;
   padding: 0px;
 }
@@ -585,7 +584,7 @@ form fieldset {
     border: 2px solid #0f4077;
     border-radius: 10px;
     padding: .5rem 2%;
-    min-width: 22rem;
+    min-width: 20rem;
 
 }
 form legend {
@@ -595,12 +594,19 @@ form legend {
     font-size: 1.3em;
     font-weight: bold;
 }
-form label.top, form div {
+form label.top {
     display: block;
     padding-top: 1rem;
     color:  #0f4077;
     font-size: 1rem;
     font-weight: normal;
+}
+form div {
+    display: block;
+    padding-top: 1rem;
+    color:  #CE5505;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 form label.top input, form label.top select, form label.top textarea {
@@ -613,7 +619,7 @@ form label.top input, form label.top select, form label.top textarea {
     color: #0f4077;
     padding: .75rem;
     width: 100%;
-    max-width: 20rem;
+    max-width: 18rem;
     background-color: rgba(0,0,0, .1);
     background-color:rgba(15, 64, 119,.1)
 }
@@ -627,9 +633,9 @@ form label.sbs {
     color: #0f4077;
     font-weight: bold;
 }
-form label.sbs p {
-  font-weight: 400;
-  margin: 5px;
+
+p.member-message {
+  display:none;
 }
 form input.submitBtn {
     border:none;
@@ -639,7 +645,7 @@ form input.submitBtn {
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
     width: 98%;
-    max-width: 24rem;
+    max-width: 20rem;
     font-weight: bold;
 }
 

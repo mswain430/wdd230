@@ -258,9 +258,10 @@ form label.top input, form label.top select, form label.top textarea {
   font-size: 1.2rem;
   max-width: 22rem;
 }
-form label.sbs p.member-message {
-  display:inline-flex;
-
+p.member-message {
+  display:inline-block;
+  font-weight: 400;
+  margin: 5px;
 }
 
 }

@@ -244,7 +244,7 @@ li.upevents {
 .join button {
   padding: 20px;
 }
-
+/* ***************************************** Join page ******************* */
 .grid-join section{
   min-width: 500px;
   margin: auto;
@@ -253,27 +253,30 @@ li.upevents {
 
 form label.top input, form label.top select, form label.top textarea {
   font-size: 1.2rem;
-  max-width: 20rem;
+  max-width: 22rem;
 }
 
   .grid-join section{
-  min-width: 400px;
+  min-width: 500px;
   margin: 20px auto;
-  padding: 25px;
+  padding: 15px;
 }
 form {
   align-self: center;
   text-align: left;
-  max-width: 50rem;
+  min-width: 400px;
+  max-width: 500px;
 }
 form label.top input, form label.top select, form label.top textarea {
   font-size: 1.2rem;
   max-width: 22rem;
 }
-form label.sbs p.member-message {
-  display:block  important!;
+p.member-message {
+  display:block;
+  font-weight: 400;
+  margin: 5px;
 }
-
+/* ****************************** Thank-you page ********************** */
   .grid-ty section {
   grid-template-columns: 1fr;
   grid-template-rows: 200px 200px;
@@ -303,4 +306,16 @@ grid-ty section p {
   grid-row: 2;
   max-width: 200px;
 }
+.grid-ty section p {
+  grid-column: 1;
+  grid-row: 3;
+  display:block;
+  justify-content: center;
+  width: 350px;
+  padding: 5px 20px;
+  border:2px dashed rgb(255, 115, 0);
+  margin: 10px auto;
+  background-color: white;
+}
+
 }
