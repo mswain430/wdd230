@@ -1,18 +1,3 @@
-body {
-    margin:0;
-    padding:0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    display:block;
-    background-color: rgba(28, 176, 162, .8);
-}
-
-h2 {font-size: 2em; padding: 5px 10px; color: white;  background-color: #0f4077;}
-footer h2 {font-size: 2em; color: #1cb0a2; }
-h3 {font-size: 1.6em;color: white;padding: 5px 10px; background-color: #0f4077}
-.hero h2, .hero h3 {background-color: transparent; line-height: 1.1em}
-a.maplink { display:block}
-.contacts img { width: 32px; height: 32px;}
 /*  ************* HEADER  ********* */
 header {
     display:flex;
@@ -115,8 +100,8 @@ header picture.logo img {
     justify-content: center;
     text-align:right;
     margin: 0 5px;
-
 }
+
 /* Style all font awesome icons */
 .fa {
   padding: 5px;
@@ -124,7 +109,7 @@ header picture.logo img {
   width: 24px;
   text-align: center;
   text-decoration: none;
-  margin: 1vh 2vw;
+  margin: 1vh 1vw;
 }
 
 /* Add a hover effect if you want */
@@ -162,7 +147,7 @@ p.time {
     justify-content: center;
     width: 100%;
     padding: 5px;
-    margin:5px 3px;
+    margin:5px auto;
     background-color:rgba(78, 139, 209, 0.6);
     border:1px solid #046fb9;
 }
@@ -172,7 +157,7 @@ p.time {
  button#ham {
     justify-content: flex-start;
     align-self: center;
-    text-align: left;
+    text-align: center;
     border: 1px solid #a3d3f5;
     border: none;
     border-radius: 4px;
@@ -182,10 +167,11 @@ p.time {
     max-width: 2.0em;
     height: 44px;
     width: 44px;
+    padding: 0 10px 0 0;
 }
 nav {
     /*background-color:#eee; */
-    margin: 1vh auto;
+    margin: 2vh auto;
     color: #000;
     margin:0;
     z-index: 1000;
@@ -193,7 +179,7 @@ nav {
     justify-content:left;
     align-items: center;
     position: absolute;
-    top: 85px;
+    top: 75px;
     right: 40%;
     width: 200px;
     right: 0;
@@ -201,10 +187,15 @@ nav {
     background-color:#046fb9;
 }
 nav ul {
-  list-style-type: none;
+  display: none;
+}
+nav ul#primaryNav li {
   display:block;
-	padding: 0;
-	margin: 0;
+  background: linear-gradient(90deg, transparent, yellow, transparent) top /
+		var(--d, 0) 5px no-repeat;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
 }
 nav ul li a {
   display: block;
@@ -219,6 +210,7 @@ nav ul li a {
 	font-size: 1rem;
   font-family: "merriweather", serif;
   letter-spacing: .1em;
+  min-width: 100%;
   max-width: 100%;
   /* font-weight:500; */
 	background: linear-gradient(90deg, transparent, yellow, transparent) top /
@@ -236,25 +228,35 @@ nav ul li a:hover {
     --d: 75%;
 }
 
-nav ul {
-  display: none;
-}
+
 nav ul.open {
-  display: block
+  display: block;
+  align-items: center;
+  width: 100%;
 }
 
 nav ul.open li a {
   display: block;
 	padding: 0.75rem;
-	text-align: left;
+	text-align: center;
 	text-decoration: none;
-  color: black;
+  color: white;
 	font-weight: 700;
 	transition: 0.5s;
 	font-size: clamp(1rem, 2vmin, 1.5rem);
   border-bottom:#55ACEE;
-}
+  min-width: 100%;
+  max-width: 100%;
 
+}
+nav ul.open li a:hover {
+  color: yellow;
+    --d: 75%;
+}
+nav ul.open li a:active {
+  color: rgb(248, 146, 12);
+    --d: 75%;
+}
 #ham span:nth-child(1) {display:block}
 #ham span:nth-child(2) {display:none}
 
@@ -578,21 +580,21 @@ picture img[data-src] {
 form {
   align-self: center;
   text-align: left;
-  max-width: 24rem;
+  max-width: 18rem;
   }
 form fieldset {
     margin: 2rem 0;
     border: 2px solid #0f4077;
     border-radius: 10px;
     padding: .5rem 2%;
-    min-width: 20rem;
+    min-width: 16rem;
 
 }
 form legend {
     color: #0f4077;
     margin: 0 1rem;
     padding: 0 .5rem;
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: bold;
 }
 form label.top {
@@ -606,27 +608,30 @@ form div {
     display: block;
     padding-top: 1rem;
     color: #0f4077;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bolder;
 }
 
 form label.top input, form label.top select, form label.top textarea {
     -webkit-appearance: none;
     display: block;
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 400;
     border: 1px solid #999;
     border-radius: 4px;
     color: #0f4077;
     padding: .75rem;
     width: 100%;
-    max-width: 18rem;
+    max-width: 14rem;
     background-color: rgba(0,0,0, .1);
     background-color:rgba(15, 64, 119,.1)
 }
 form label.top textarea {
   font-size: 1em;
   font-weight: bold;
+  color:rgba(243, 105, 13, 0.6);
+  text-shadow:1px 1px black;
+
 }
 form label.sbs {
     display: block;
@@ -646,7 +651,7 @@ form input.submitBtn {
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
     width: 98%;
-    max-width: 20rem;
+    max-width: 16rem;
     font-weight: bold;
 }
 
