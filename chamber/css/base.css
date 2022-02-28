@@ -87,7 +87,7 @@ header picture.logo img {
     padding: 10px 0;
     align-self:flex-start;
     text-align: left;
-    min-width: 150px;
+    min-width: 128px;
 }
 
 .heading h1 {
@@ -101,7 +101,7 @@ header picture.logo img {
 }
 
 .sub  {
-    font-size: .8em;
+    font-size: .7em;
     margin-top: 0;
     padding:0;
     text-align: left;
@@ -113,7 +113,7 @@ header picture.logo img {
     align-items:center;
     justify-content: center;
     text-align:right;
-    margin: 0 5px;
+    margin: 0 0;
 }
 
 /* Style all font awesome icons */
@@ -482,8 +482,8 @@ li.upevents span.read  { text-align: right}
     column-gap: 10px;
     background-color: rgb(28, 176, 162);
     background-color: rgba(28, 176, 162, .3);
-    justify-content: center;
-    align-content: center;
+ /*   justify-content: center;
+    align-content: center; */
     text-align:center;
     margin: auto;
 }
