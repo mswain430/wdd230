@@ -50,15 +50,15 @@ nav#primaryNav {
   background-color: #046fb9;
   text-align: center;
 /*box-shadow: 0 2px 5px rgb(39, 89, 146); */
- right: 50%;
+  right: 70%;
 }
 
 nav ul {
-	list-style-type: none;
+/*	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
-    display:none;
+	overflow: hidden;*/
+  display:none;
 }
 nav ul.open {
     display:block;
@@ -73,7 +73,6 @@ nav ul li a {
   display:block;
   border: none;
   padding: .5rem 1rem;
-  max-width: 100%;
 }
 
 footer {

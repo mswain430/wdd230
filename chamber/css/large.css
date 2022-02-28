@@ -4,6 +4,7 @@
 
   nav {
     position: relative;
+    flex-direction: row;
     top: 5px;
     left: 0;
     right: 0;
@@ -13,21 +14,31 @@
   }
 
 /* Flex *********************/
-		nav ul {
+	/*	nav ul {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
-      width: 550px;
-     }
-		nav ul li { flex: 1 1 auto;
+
+     } */
+
+/* nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+} */
+
+nav ul li {
+  flex: 1 1 auto;
 }
+
 nav ul li a {
   color: white;
-
 }
+
 header {
    min-height: 120px;
-   justify-content: center;
+   justify-content: space-evenly;
    min-width: 100%;
 }
 
@@ -76,9 +87,7 @@ button#ham{
 nav ul#primaryNav {
   display:flex;
   justify-content: flex-start; /* left aligned */
-  /*justify-content: flex-end; /* right aligned */
-  /*justify-content: center; */ /* center */
-  margin-left: 2vw;
+  margin-left: 0;
 }
 nav ul li a {
   border:none;
@@ -86,9 +95,7 @@ nav ul li a {
   border-right: 1px solid rgba(0,0,0,.3);
   padding: .5rem 1rem;
 }
-nav ul li a {
-        padding: .5rem 1rem;
-    }
+
 #dybanner {
   color: rgb(248, 245, 64);
   font-size: 1.2em;
@@ -103,9 +110,12 @@ footer .wrap {
   text-align: center;
 }
 footer .wrap span.modified {
-  font-size: 1em;}
-.copyright {display: inline}
-.mod {display: inline;
+  font-size: 1em;
+}
+.copyright {display: inline
+}
+.mod {
+  display: inline;
   justify-content: flex-end;
   padding: 0;
   margin:0;
@@ -128,7 +138,7 @@ footer .wrap span.modified {
   -ms-grid-row-span: 2;
   /* background-image: url('../images/imgp8973_lg.jpg'); */
  /* background-image: url('../images/wdd230-org-lg.jpg'); */
-  background-size: 100% 100%;
+  background-size: 100%;
   background-size: cover;
   background-color: #eee;
   border:1px solid #333;
