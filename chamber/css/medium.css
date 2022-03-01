@@ -279,14 +279,18 @@ p.member-message {
   margin: 5px;
 }
 /* ****************************** Thank-you page ********************** */
-  .grid-ty section {
+
+
+.grid-ty section {
   grid-template-columns: 1fr;
   grid-template-rows: 200px 200px;
   padding: 25px;
   max-width:500px;
   justify-content: center;
+  padding: 25px;
   margin: auto;
   border: 3px solid #000;
+  background-color: aliceblue;
 
 
 }
@@ -306,17 +310,16 @@ grid-ty h2 {
 grid-ty section p {
   grid-column: 1;
   grid-row: 2;
-  max-width: 200px;
+
 }
 .grid-ty section p {
   grid-column: 1;
   grid-row: 3;
   display:block;
   justify-content: center;
-  width: 350px;
+  width: 500px;
   padding: 5px 20px;
-  border:2px dashed rgb(255, 115, 0);
-  margin: 10px auto;
+  margin: 0 auto;
   background-color: white;
 }
 

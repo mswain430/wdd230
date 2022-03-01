@@ -480,14 +480,13 @@ li.upevents span.read  { text-align: right}
     row-gap: 10px;
     background-color: rgb(28, 176, 162);
     background-color: rgba(28, 176, 162, .3);
-    justify-content:center;
-    align-content: center;
+    justify-content:flex-start;
     text-align:center;
-    margin: 10px;
+    margin: 0;
 }
-.grid-discover section {
-  justify-content:flex-start;
+.grid-discover section.card-grid {
   display:flex;
+  justify-content:flex-start;
   flex-direction: column;
   justify-content: flex-start;
   margin:0;
@@ -581,8 +580,11 @@ picture img[data-src] {
 }
 .grid-join section h2 {
   border-radius: 4px 4px 0 0;
-  margin-top: 0;
+  margin: 0 ;
+  padding: 10px;
   font-size: 1.5em;
+  background-color: #0f4077;
+  color:rgb(230, 228, 228)
 }
 /* ----------------- FORM STYLING */
 form {
@@ -659,17 +661,16 @@ form input.submitBtn {
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
     width: 98%;
-    max-width: 16rem;
+    max-width: 22rem;
     font-weight: bold;
+    transition-duration: 0.4s;
 }
 
-.submitBtn {
-  transition-duration: 0.4s;
-}
-
-.submitBtn .button:hover {
-  background-color: #4CAF50; /* Green */
+form input.submitBtn  {
+  background-color: #046fb9; /* orange */
+  font-weight: bold;
   color: white;
+  box-shadow:5px 5px 5px rgb(28, 176, 162)
 }
 /*form input.submitBtn :hover {
   text-shadow:0 12px 15px rgba(0,0,0,.3);
@@ -682,14 +683,20 @@ form label.top input:required:valid {
     border: 1px solid green;
 }
 /* ********************** THANKYOU PAGE ************************** */
-.grid-ty section{
+grid-ty-bg{
+  display:grid;
+  grid-template-columns: 1fr;
+}
+
+section.grid-ty {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 90px 1fr 110px;
-  max-width: 100%;
+  grid-template-rows: 120px 1fr 110px;
+  max-width: 500px;
+  margin: auto;
 
 }
-.grid-ty section h2 {
+section.grid-ty  h2 {
   grid-column: 1;
   grid-row: 1;
   height: 80px;
@@ -697,22 +704,25 @@ form label.top input:required:valid {
   margin:0;
   font-size: 1.3em;
   justify-content: center;
+  background-color: #0f4077;
+  color:rgb(230, 228, 228)
 }
-.grid-ty section picture img {
+section.grid-ty  picture img {
   grid-column: 1;
   grid-row: 2;
   width: 100%;
   max-width: 500px;
+  text-align: center;
   justify-content: center;
 }
-.grid-ty section p {
+section.grid-ty  p {
   grid-column: 1;
   grid-row: 3;
   display:block;
   justify-content: center;
-  width: 350px;
+  max-width: 500px;
   padding: 5px 20px;
-  border:2px dashed rgb(255, 115, 0);
+  border:2px solid rgb(255, 115, 0);
   margin: 10px auto;
   background-color: white;
 }

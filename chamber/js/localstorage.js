@@ -1,5 +1,5 @@
 // initialize display elements
-//const todayDisplay = document.querySelector(".today");
+const todayDisplay = document.querySelector(".today");
 const visitDisplay = document.querySelector(".visits");
 //get the stored value in localstorage
 let numVisits = Number(window.localStorage.getItem("visits-ls"));
@@ -18,7 +18,7 @@ if(numVisits !== 0) {
 localStorage.setItem("visits-ls", numVisits)
 
 // show todays date
-todayDisplay.textContent = Date.now();
+//todayDisplay.textContent = Date.now();
 
 // Time between dates if null "Welcome to the site"
 const lastvisit = localStorage.getItem("lastvisit");
