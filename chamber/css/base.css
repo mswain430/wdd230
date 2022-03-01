@@ -16,7 +16,7 @@ h3 {font-size: 1.6em;color: white;padding:3px;}
 header {
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items:center;
     color:rgb(242, 243, 248);
     width: 100%;
@@ -67,7 +67,7 @@ header .wrap {
 }
 header picture.logo {
     align-items: center;
-    justify-content:center;
+    justify-content:right;
     min-width:75px;
 }
 
@@ -111,7 +111,6 @@ header picture.logo img {
     display: flex;
     justify-content: flex-start;
     align-items:center;
-    justify-content: center;
     text-align:right;
     margin: 0 0;
 }
@@ -188,7 +187,7 @@ nav {
     justify-content:left;
     align-items: center;
     /*background-color:#eee; */
-    margin: 2vh auto;
+    margin: 2vh 0;
     color: #000;
     margin:0;
     z-index: 1000;
@@ -211,7 +210,7 @@ nav ul#primaryNav li {
 }
 nav ul li a {
   display: block;
-  padding: .8rem 2vw;
+  padding: .8rem 0vw;
   text-decoration: none;
   /*color: #333;
   border-top: 1px solid rgba(0,0,0,0.5);*/
@@ -473,26 +472,26 @@ li.upevents span.read  { text-align: right}
 .clearfix {clear: both;}
 
 /* ********************** DISCOVER PAGE ************************** */
- .grid-discover {
+.grid-discover {
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 140px 660px 660px 660px 660px 660px 660px 660px 660px 670px ;
+    grid-template-rows: 1fr auto 1fr;
     width: 100%;
     row-gap: 10px;
-    column-gap: 10px;
     background-color: rgb(28, 176, 162);
     background-color: rgba(28, 176, 162, .3);
- /*   justify-content: center;
-    align-content: center; */
+    justify-content:center;
+    align-content: center;
     text-align:center;
-    margin: auto;
+    margin: 10px;
 }
-/*.grid-discover section {
-  justify-content:center;
+.grid-discover section {
+  justify-content:flex-start;
   display:flex;
   flex-direction: column;
-  justify-content: center;
-} */
+  justify-content: flex-start;
+  margin:0;
+}
 /*
 .discover .grid {
     display:grid;
@@ -511,7 +510,7 @@ li.upevents span.read  { text-align: right}
 .card {
   display:flex;
   flex-direction: column;
-  height: 640px;
+  height: 520px;
   margin: 5px auto;
 
 }
@@ -545,13 +544,13 @@ picture img[data-src] {
 .card {
   transition: box-shadow .3s;
   width: 300px;
-  height: 640px;
+  height: 560px;
   border-radius:10px;
   border: 1px solid #ccc;
   background: #fff;
   margin: 10px auto;
 }
-.card:hover {
+.card:hover, .card .img:hover {
   box-shadow: 0 0 11px rgba(33,33,33,.5);
 }
 .card .container {

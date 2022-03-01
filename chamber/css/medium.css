@@ -12,14 +12,18 @@ header {
   margin:0;
 }
 
-header picture.logo {min-width: 100px;}
+header picture.logo {
+  justify-content: right;
+  min-width: 100px;
+}
 header picture.logo img {
-  justify-content: center;
+  justify-content: right;
     max-width: 75px;
 
 }
 .heading {
   margin-top: 0;
+  justify-content:flex-start;
   min-width: 250px;
   text-align: left;
   margin-top: 1vh;
@@ -33,7 +37,7 @@ header picture.logo img {
 }
 
 .social {justify-content: flex-start;
-  padding-right: 2vw;order: 0}
+  padding-right: 0;order: 0}
 
 #dybanner {
   color: rgb(248, 245, 64);;
@@ -49,8 +53,8 @@ nav#primaryNav {
   flex-direction: column;
   background-color: #046fb9;
   text-align: center;
-/*box-shadow: 0 2px 5px rgb(39, 89, 146); */
-  right: 70%;
+/*box-shadow: 0 2px 5px rgb(39, 89, 146);
+  right: 70%;*/
 }
 
 nav ul {

@@ -8,7 +8,7 @@
     top: 5px;
     left: 0;
     right: 0;
-    width: 550px;
+    width: 540px;
     text-align: left;
     background-color:transparent;
   }
@@ -38,7 +38,7 @@ nav ul li a {
 
 header {
    min-height: 120px;
-   justify-content: space-evenly;
+   justify-content: center;
    min-width: 100%;
 }
 
@@ -50,31 +50,32 @@ header .wrap {
 }
 
 header picture.logo {
-  justify-content: center;
+  justify-content: right;
   align-self: center;
-  width: 140px;
-  padding-left: 40px;
+  width: 150px;
+  padding-left: 10px;
 }
 header picture.logo img {
-    max-width: 100px;
+    max-width: 120px;
 }
 section.heading {
-  padding: 20px 5px;
+  padding: 20px;
   margin: 2vh 1vw;
   min-width: 270px;
+  max-width: 270px;
 }
 
 .heading h1 {
-  justify-content: space-around;
-  align-items:flex-start;
-  font-size: 2.4rem;
+  justify-content: flex-start;
+  align-items:center;
+  font-size: 2.3rem;
   line-height: .9em;
-  margin:0;
+  margin:0 5px;
 }
 .heading .sub {
   grid-column: 2;
   grid-row: 1;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 header .social {
   order: 3;
@@ -87,7 +88,7 @@ button#ham{
 nav ul#primaryNav {
   display:flex;
   justify-content: flex-start; /* left aligned */
-  margin-left: 0;
+  margin-left: -5em;
 }
 nav ul li a {
   border:none;
@@ -228,28 +229,7 @@ li.upevents:nth-child(4){display: none;}
   padding: 10px;
 }
 /* ************************** DISCOVER PAGE ************************ */
- .grid-discover {
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 110px 660px 660px 660px 660px 660px 660px 660px 660px 670px  ;
-    width: 100%;
-    row-gap: 10px;
-    column-gap: 10px;
-    background-color: rgb(28, 176, 162);
-    background-color: rgba(28, 176, 162, .3);
-    justify-content: flex-start;
-    text-align:center;
-    margin: auto;
-}
 
-.grid-discover h2 {
-  grid-column: 1 / 4;
-  grid-row: 1;
-}
-.grid-discover {
-  min-width: 960px;
-  max-width: 960px;
-}
 
 /* --------------FORM STYLING ----- */
 
