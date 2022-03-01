@@ -722,8 +722,6 @@ section.grid-ty  p {
   justify-content: center;
   max-width: 500px;
   padding: 5px 20px;
-  border:2px solid rgb(255, 115, 0);
-  margin: 10px auto;
   background-color: white;
 }
 
