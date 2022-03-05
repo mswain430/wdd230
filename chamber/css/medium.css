@@ -256,7 +256,7 @@ li.upevents {
 
 form label.top input, form label.top select, form label.top textarea {
   font-size: 1.2rem;
-  max-width: 22rem;
+  max-width: 80%;
 }
 
 .grid-join section {
@@ -271,12 +271,13 @@ form {
 }
 form label.top input, form label.top select, form label.top textarea {
   font-size: 1.2rem;
-  max-width: 22rem;
+  max-width: 80%;
 }
 div.membership{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto-fit(1fr) 1fr;
   grid-template-rows: auto;
+  column-gap: 2vw;
 }
 label {
   grid-column: 1;
