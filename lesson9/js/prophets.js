@@ -46,12 +46,12 @@ function displayProphets(prophet) {
   portrait.setAttribute('loading', 'lazy');
 
   // Add/append the section(card) with the h2 element
-
+  card.appendChild(portrait);
   card.appendChild(h2);
   card.appendChild(p);
   card.appendChild(p2);
   card.appendChild(p3);
-  card.appendChild(portrait);
+
 
   // Add/append the existing HTML div with the cards class with the section(card)
   cards.appendChild(card);
