@@ -268,7 +268,8 @@ form label.top input, form label.top select, form label.top textarea {
 form {
   align-self: center;
   text-align: left;
-  max-width: 70rem;
+  min-width: 500px;
+  max-width: 500px;
 }
 form fieldset {
   min-width: 90%;
@@ -280,7 +281,7 @@ form label.top input, form label.top select, form label.top textarea {
 }
 div.membership{
   display: grid;
-  grid-template-columns: auto-fit(1fr) 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   column-gap: 2vw;
 }

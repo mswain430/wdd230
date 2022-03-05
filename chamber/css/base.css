@@ -240,7 +240,6 @@ nav ul li a:hover {
 
 nav ul.open {
   display: block;
-  align-items: left;
 }
 
 nav ul.open li a {
