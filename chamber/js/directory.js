@@ -1,6 +1,6 @@
 const requestURL = 'https://mswain430.github.io/wdd230/chamber/data/data.json';
 const bizcards = document.querySelector('.biz-cards');
-const bizlist = document.querySelector('.biz-list');
+// const bizlist = document.querySelector('.biz-list');
 
 fetch(requestURL)
   .then(function (response) {

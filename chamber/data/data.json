@@ -1,4 +1,3 @@
-{
     "localbusiness": [
     {
         "name": "Edge of the Cedars",
@@ -144,5 +143,4 @@
         "order": 16,
         "logo": "images/logos/art.png"
     }
- ]
-}
+ ];

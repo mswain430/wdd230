@@ -17,7 +17,8 @@
     <script defer src="js/currentdate.js"></script>
     <script defer src="js/lastmodified.js"></script>
     <script defer src="js/scripts.js"></script>
-    <script defer src="js/directory.js"></script>
+   <script defer src="js/directory.js"></script>
+ <!--    <script defer src="js/directorytable.js"></script> -->
 </head>
 <body>
    <div class="banner"><span id="dybanner"></span></div>
@@ -55,8 +56,10 @@
   <h2>Local Businesses who support the Blanding Chamber of Commerce:</h2>
 </header>
 <main class="dir">
+  <input class="dirinput" type="button" onclick="displayBusinessTable()" value="Table"/>
+  <input class="dirinput" type="button" onclick="displayBusiness()" value="Tiles" />
+  <div id="showData" class="biz-list"></div>
   <div class="biz-cards"></div>
-   <div class="biz-list"></div>
 </main>
   <footer>
     <div class="footer-addlogo">
