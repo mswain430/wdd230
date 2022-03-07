@@ -19,22 +19,46 @@ function displayBusiness(localbusiness) {
   card.setAttribute('class', 'card');
   let logo = document.createElement('img');
   let h2 = document.createElement('h2');
-  let p = document.createElement('p');
-  let p2 = document.createElement('p');
-  let p3 = document.createElement('p');
+  let addr = document.createElement('p');
+  let phone = document.createElement('p');
+  let web = document.createElement('p');
+  let mem = document.createElement('p');
+  let ordersuffix = ``;
 
-  /* let ordersuffix = ``;
-
-  if(prophet.order === 1){
-      prophet.order = `${prophet.order}st`;
-  }  else if (prophet.order === 2) {
-      prophet.order = `${prophet.order}nd`;
-  }  else if (prophet.order === 3) {
-      prophet.order = `${prophet.order}rd`;
+  if(localbusiness.order === 1){
+      localbusiness.order = `${localbusiness.order}`;
+  }  else if (localbusiness.order === 2) {
+      localbusiness.order = `${localbusiness.order}`;
+  }  else if (localbusiness.order === 3) {
+      localbusiness.order = `${localbusiness.order}`;
+  }  else if (localbusiness.order === 4) {
+      localbusiness.order = `${localbusiness.order}`;
+  }  else if (localbusiness.order === 5) {
+      localbusiness.order = `${localbusiness.order}`;
+  }  else if (localbusiness.order === 6) {
+      localbusiness.order = `${localbusiness.order}`;
+  }  else if (localbusiness.order === 7) {
+      localbusiness.order = `${localbusiness.order}`;
+   }  else if (localbusiness.order === 8) {
+      localbusiness.order = `${localbusiness.order}`;
+  }  else if (localbusiness.order === 9) {
+      localbusiness.order = `${localbusiness.order}`;
+  }  else if (localbusiness.order === 10) {
+      localbusiness.order = `${localbusiness.order}`;
+        }  else if (localbusiness.order === 11) {
+      localbusiness.order = `${localbusiness.order}`;
+        }  else if (localbusiness.order === 12) {
+      localbusiness.order = `${localbusiness.order}`;
+        }  else if (localbusiness.order === 13) {
+      localbusiness.order = `${localbusiness.order}`;
+        }  else if (localbusinesst.order === 14) {
+      localbusiness.order = `${localbusiness.order}`;
+        }  else if (localbusiness.order === 15) {
+      localbusiness.order = `${localbusiness.order}`;
   }  else {
-      prophet.order = `${prophet.order}th`;
+      localbusiness.order = `${localbusiness.order}`;
   }
-*/
+
  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
 
   logo.setAttribute('src', localbusiness.logo);
@@ -42,21 +66,24 @@ function displayBusiness(localbusiness) {
   logo.setAttribute('class', 'logo');
   logo.setAttribute('loading', 'lazy');
 
-  // Change the textContent property of the h2 element to contain the prophet's full name
+  // Change the textContent property of the h2 element to contain the business' info
   h2.innerHTML = `${localbusiness.name}`;
-  p.innerHTML = `${localbusiness.address}`;
-  p2.innerHTML = `${localbusiness.phone}`;
-  p3.innerHTML = ` ${localbusiness.website} `;
+  addr.innerHTML = `${localbusiness.address}`;
+  phone.innerHTML = `${localbusiness.phone}`;
+  web.innerHTML = ` ${localbusiness.website} `;
+  mem.innerHTML = `${localbusiness.membership}`;
 
   // Add/append the section(card) with the h2 element
-  card.appendChild(logo);
+
   card.appendChild(h2);
-  card.appendChild(p);
-  card.appendChild(p2);
-  card.appendChild(p3);
+  card.appendChild(logo);
+  card.appendChild(addr);
+  card.appendChild(phone);
+  card.appendChild(web);
+  card.appendChild(mem);
 
 
   // Add/append the existing HTML div with the cards class with the section(card)
   biz_cards.appendChild(card);
- // biz_list.appendChild(card);
+  //biz_list.appendChild(table);
 }
