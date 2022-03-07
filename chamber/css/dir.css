@@ -1,8 +1,7 @@
 
-main .dir {
-
+main.dir {
   text-align:center;
-  margin:auto;
+  margin: 25px auto;
 }
 h2 {padding: 20px}
 /*.grid {
