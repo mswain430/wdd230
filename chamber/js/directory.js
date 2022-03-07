@@ -10,6 +10,7 @@ fetch(requestURL)
     console.table(jsonObject);  // temporary checking for valid response and data parsing
     const localbusiness = jsonObject['localbusiness'];
     localbusiness.forEach(displayBusiness);
+    localbusiness.forEach(displayBusinessTable);
 });
 
 
@@ -24,13 +25,6 @@ function displayBusiness(localbusiness) {
   let web = document.createElement('p');
   let mem = document.createElement('p');
   let ordersuffix = ``;
-
-
- /* if(localbusiness.order === 1){
-      localbusiness.order = `${localbusiness.order}`;
-  }  else if (localbusiness.order === 2) {
-      localbusiness.order = `${localbusiness.order}`;
- */
 
  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
 
@@ -55,12 +49,30 @@ function displayBusiness(localbusiness) {
   bizcard.appendChild(web);
   bizcard.appendChild(mem);
 
-function displayBusinessTable(localbusiness) {
-
-
-}
-
   // Add/append the existing HTML div with the cards class with the section(card)
     bizcards.appendChild(bizcard);
-  //  bizlist.appendChild(bizcard);
+}
+
+function displayBusinessTable(localbusiness) {
+     let table = document.createElement('table');
+     let row = document.createElement('tr');
+     let name = document.createElement('td');
+     let addr = document.createElement('td');
+     let phone = document.createElement('td');
+     let web = document.createElement('td');
+
+    name.innerHTML = `${locallist.name}`;
+    addr.innerHTML = `${locallist.address}`;
+    phone.innerHTML = `${locallist.phone}`;
+    web.innerHTML = `<a href="${localbusiness.website}">website</a>`;
+    mem.innerHTML = `${localbusiness.membership}`;
+
+    row.appendChild(name);
+    row.appendChild(addr);
+    row.appendChild(phone);
+    row.appendChild(web);
+    row.appendChild(mem);
+
+
+    bizlist.appendChild(row)
 }
