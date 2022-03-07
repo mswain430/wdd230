@@ -1,4 +1,4 @@
-    "localbusiness": [
+{    "localbusiness": [
     {
         "name": "Edge of the Cedars",
         "address": "660 W 400 N Blanding UT 84511",
@@ -143,4 +143,6 @@
         "order": 16,
         "logo": "images/logos/art.png"
     }
- ];
+ ]
+
+ }
