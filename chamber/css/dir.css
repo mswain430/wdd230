@@ -65,3 +65,20 @@ img.logo {
   border: 2px solid rgb(193, 196, 204);
   border-radius: 8px 8px 8px 8px ;
 }
+
+ th, td {
+            font-size: 14px;
+            font-family: "open sans", sans-serif;
+        }
+        table, th, td
+        {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+        th {
+            font-weight:bold;
+            background-color:rgb(241, 240, 217);
+            color:rgb(0, 0, 0);
+        }
