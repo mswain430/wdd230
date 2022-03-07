@@ -1,6 +1,6 @@
 const requestURL = 'https://mswain430.github.io/wdd230/chamber/data/data.json';
 const bizcards = document.querySelector('.biz-cards');
-// const bizlist = document.querySelector('.biz-list');
+const bizlist = document.querySelector('.biz-list');
 
 fetch(requestURL)
   .then(function (response) {
@@ -55,8 +55,12 @@ function displayBusiness(localbusiness) {
   bizcard.appendChild(web);
   bizcard.appendChild(mem);
 
+function displayBusinessTable(localbusiness) {
 
+
+}
 
   // Add/append the existing HTML div with the cards class with the section(card)
     bizcards.appendChild(bizcard);
+  //  bizlist.appendChild(bizcard);
 }
