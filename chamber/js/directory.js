@@ -51,7 +51,7 @@ function displayBusiness(localbusiness) {
       localbusiness.order = `${localbusiness.order}`;
         }  else if (localbusiness.order === 13) {
       localbusiness.order = `${localbusiness.order}`;
-        }  else if (localbusinesst.order === 14) {
+        }  else if (localbusines.order === 14) {
       localbusiness.order = `${localbusiness.order}`;
         }  else if (localbusiness.order === 15) {
       localbusiness.order = `${localbusiness.order}`;
