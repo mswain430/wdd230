@@ -45,15 +45,15 @@ function displayBusiness(localbusiness) {
       localbusiness.order = `${localbusiness.order}`;
   }  else if (localbusiness.order === 10) {
       localbusiness.order = `${localbusiness.order}`;
-        }  else if (localbusiness.order === 11) {
+  }  else if (localbusiness.order === 11) {
       localbusiness.order = `${localbusiness.order}`;
-        }  else if (localbusiness.order === 12) {
+  }  else if (localbusiness.order === 12) {
       localbusiness.order = `${localbusiness.order}`;
-        }  else if (localbusiness.order === 13) {
+  }  else if (localbusiness.order === 13) {
       localbusiness.order = `${localbusiness.order}`;
-        }  else if (localbusines.order === 14) {
+  }  else if (localbusines.order === 14) {
       localbusiness.order = `${localbusiness.order}`;
-        }  else if (localbusiness.order === 15) {
+  }  else if (localbusiness.order === 15) {
       localbusiness.order = `${localbusiness.order}`;
   }  else {
       localbusiness.order = `${localbusiness.order}`;
