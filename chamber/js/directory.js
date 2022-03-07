@@ -1,6 +1,6 @@
 const requestURL = 'https://mswain430.github.io/wdd230/chamber/data/data.json';
-const biz_cards = document.querySelector('.biz-cards');
-const biz_list = document.querySelector('.biz-list');
+const bizcards = document.querySelector('.biz-cards');
+const bizlist = document.querySelector('.biz-list');
 
 fetch(requestURL)
   .then(function (response) {
@@ -26,39 +26,11 @@ function displayBusiness(localbusiness) {
   let ordersuffix = ``;
 
 
-  if(localbusiness.order === 1){
+ /* if(localbusiness.order === 1){
       localbusiness.order = `${localbusiness.order}`;
   }  else if (localbusiness.order === 2) {
       localbusiness.order = `${localbusiness.order}`;
-  }  else if (localbusiness.order === 3) {
-      localbusiness.order = `${localbusiness.order}`;
-  }  else if (localbusiness.order === 4) {
-      localbusiness.order = `${localbusiness.order}`;
-  }  else if (localbusiness.order === 5) {
-      localbusiness.order = `${localbusiness.order}`;
-  }  else if (localbusiness.order === 6) {
-      localbusiness.order = `${localbusiness.order}`;
-  }  else if (localbusiness.order === 7) {
-      localbusiness.order = `${localbusiness.order}`;
-   }  else if (localbusiness.order === 8) {
-      localbusiness.order = `${localbusiness.order}`;
-  }  else if (localbusiness.order === 9) {
-      localbusiness.order = `${localbusiness.order}`;
-  }  else if (localbusiness.order === 10) {
-      localbusiness.order = `${localbusiness.order}`;
-  }  else if (localbusiness.order === 11) {
-      localbusiness.order = `${localbusiness.order}`;
-  }  else if (localbusiness.order === 12) {
-      localbusiness.order = `${localbusiness.order}`;
-  }  else if (localbusiness.order === 13) {
-      localbusiness.order = `${localbusiness.order}`;
-  }  else if (localbusiness.order === 14) {
-      localbusiness.order = `${localbusiness.order}`;
-  }  else if (localbusiness.order === 15) {
-      localbusiness.order = `${localbusiness.order}`;
-  }  else {
-      localbusiness.order = `${localbusiness.order}`;
-  }
+ */
 
  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
 
@@ -84,7 +56,7 @@ function displayBusiness(localbusiness) {
   bizcard.appendChild(mem);
 
 
+
   // Add/append the existing HTML div with the cards class with the section(card)
-  biz_cards.appendChild(bizcard);
-  //biz_list.appendChild(table);
+    bizcards.appendChild(bizcard);
 }
