@@ -82,7 +82,7 @@
         "logo": "images/logos/blue.png"
     },
     {
-        "name": "Arch Canyon In",
+        "name": "Arch Canyon Inn",
         "address": "755 S Main St Blanding Ut 84511",
         "phone": "(435) 678-3880",
         "website": "http://www.archcanyoninnblanding.com",
@@ -97,7 +97,7 @@
         "website": "https://www.utahscanyoncountry.com/canyon-country-bowling-center",
         "membership": "silver",
         "order": 11,
-        "logo": "images/logos/canyon.png"
+        "logo": "images/logos/bowl.png"
     },
     {
         "name": "San Juan Theatre",
@@ -106,7 +106,7 @@
         "website": "https://www.utahscanyoncountry.com/canyon-country-bowling-center",
         "membership": "bronze",
         "order": 12,
-        "logo": "images/logos/san.png"
+        "logo": "images/logos/theatre.png"
     },
     {
         "name": "Blanding City Visitors center",
@@ -133,7 +133,7 @@
         "website": "https://www.homesteadsteakhouseut.com",
         "membership": "bronze",
         "order": 15,
-        "logo": "images/logos/homestead.png"
+        "logo": "images/logos/steak.png"
         },
         {
         "name": "Blue Mountain Artisans",
@@ -142,7 +142,7 @@
         "website": "https://www.facebook.com/Blue-Mountain-Artisans",
         "membership": "gold",
         "order": 16,
-        "logo": "images/logos/homestead.png"
+        "logo": "images/logos/art.png"
     }
  ]
 }
