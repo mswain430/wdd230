@@ -66,3 +66,7 @@ img.portrait {
   border: 1px solid white;
   border-radius: 8px 8px 0 0 ;
 }
+
+footer {
+  text-align:center;
+}
