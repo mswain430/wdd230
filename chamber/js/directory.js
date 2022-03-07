@@ -9,7 +9,7 @@ fetch(requestURL)
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
     const localbusiness = jsonObject['localbusiness'];
-    prophets.forEach(displayBusiness);
+    localbusiness.forEach(displayBusiness);
 });
 
 
