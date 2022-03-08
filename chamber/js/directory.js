@@ -1,6 +1,7 @@
 const requestURL = 'https://mswain430.github.io/wdd230/chamber/data/data.json';
-const bizcards = document.querySelector('.biz-cards');
-const bizlist = document.querySelector('.biz-list');
+
+const bizcards = document.querySelector('.bizcards');
+const bizlist = document.querySelector('.bizbody');
 
 fetch(requestURL)
   .then(function (response) {
@@ -10,7 +11,7 @@ fetch(requestURL)
     console.table(jsonObject);  // temporary checking for valid response and data parsing
     const localbusiness = jsonObject['localbusiness'];
     localbusiness.forEach(displayBusiness);
-    localbusiness.forEach(displayBusinessTable);
+
 });
 
 
@@ -47,34 +48,42 @@ function displayBusiness(localbusiness) {
   bizcard.appendChild(addr);
   bizcard.appendChild(phone);
   bizcard.appendChild(web);
-  bizcard.appendChild(mem);
+
 
   // Add/append the existing HTML div with the cards class with the section(card)
-    bizcards.appendChild(bizcard);
+    bizcards.prepend(bizcard);
 }
 
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    const localbusiness = jsonObject['localbusiness'];
+    localbusiness.forEach(displayBusinessTable);
+});
 function displayBusinessTable(localbusiness) {
 
-     let table = document.createElement('table');
-     let row = document.createElement('tr');
-     let name = document.createElement('td');
-     let addr = document.createElement('td');
-     let phone = document.createElement('td');
-     let web = document.createElement('td');
-     let mem = document.createElement('td');
+    let row = document.createElement('tr');
+    let name = document.createElement('td');
+    let addr = document.createElement('td');
+    let phone = document.createElement('td');
+    let web = document.createElement('td');
+
 
     name.innerHTML = `${localbusiness.name}`;
     addr.innerHTML = `${localbusiness.address}`;
     phone.innerHTML = `${localbusiness.phone}`;
     web.innerHTML = `<a href="${localbusiness.website}">website</a>`;
-    mem.innerHTML = `${localbusiness.membership}`;
 
     row.appendChild(name);
     row.appendChild(addr);
     row.appendChild(phone);
     row.appendChild(web);
-    row.appendChild(mem);
 
 
     bizlist.appendChild(row)
+
+
 }

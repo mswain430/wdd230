@@ -1,7 +1,7 @@
 
 main.dir {
   text-align:center;
-  margin: 25px auto;
+  margin: 20px auto;
 }
 h2 {padding: 20px; color: aliceblue}
 /*.grid {
@@ -18,11 +18,16 @@ h2 {padding: 20px; color: aliceblue}
     border-radius: 8px 8px;
 
  }
+bizlist{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
 th, td, input {
             font-size: 14px;
             font-family: "open sans", sans-serif;
         }
-table, th, td
+table.biztable, th, td
 {
     border: solid 1px #DDD;
     border-collapse: collapse;
@@ -33,6 +38,10 @@ th {
     font-weight:bold;
     background-color:rgb(241, 240, 217);
     color:rgb(0, 0, 0);
+}
+td {
+    text-align: left;
+    padding: 5px;
 }
 .biz-cards {
     display:none;
