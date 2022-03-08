@@ -56,12 +56,14 @@
   <h2>Local Businesses who support the Blanding Chamber of Commerce:</h2>
 </header>
 <main class="dir">
-  <input class="dirinput" type="button" onclick="displayBusinessTable()" value="Table"/>
-  <input class="dirinput" type="button" onclick="displayBusiness()" value="Tiles" />
+  <div class="buttongrid">
+    <button id="list" class="dirinputList" onclick="displayBusinessTable()"><img src="images/list.png" alt="list" class="list" loading="lazy"/></button>
+    <button id="grid" class="dirinputGrid" onclick="displayBusiness()"><img src="images/grid.png" alt="list" class="grid" loading="lazy"/></button>
+</div>
+
   <div id="showData" class="bizlist">
     <table class="biztable">
        <tbody class="bizbody">
-
 
        </tbody>
     </table>

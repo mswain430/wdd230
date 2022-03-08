@@ -29,7 +29,7 @@ function displayBusiness(localbusiness) {
 
  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
 
-  logo.setAttribute('src', localbusiness.logo);
+  logo.setAttribute('src', `${localbusiness.logo}`);
   logo.setAttribute('alt', `logo for ${localbusiness.name}`);
   logo.setAttribute('class', 'logo');
   logo.setAttribute('loading', 'lazy');
@@ -64,26 +64,24 @@ fetch(requestURL)
     localbusiness.forEach(displayBusinessTable);
 });
 function displayBusinessTable(localbusiness) {
-
     let row = document.createElement('tr');
-    let name = document.createElement('td');
+    let fname = document.createElement('td');
     let addr = document.createElement('td');
     let phone = document.createElement('td');
     let web = document.createElement('td');
 
 
-    name.innerHTML = `${localbusiness.name}`;
+    fname.innerHTML = `${localbusiness.name}`;
     addr.innerHTML = `${localbusiness.address}`;
     phone.innerHTML = `${localbusiness.phone}`;
     web.innerHTML = `<a href="${localbusiness.website}">website</a>`;
 
-    row.appendChild(name);
+    row.appendChild(fname);
     row.appendChild(addr);
     row.appendChild(phone);
     row.appendChild(web);
 
 
     bizlist.appendChild(row)
-
-
 }
+

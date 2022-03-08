@@ -3,7 +3,7 @@ main.dir {
   text-align:center;
   margin: 20px auto;
 }
-h2 {padding: 20px; color: aliceblue}
+h2 {padding: 10px; color: aliceblue; font-size:1.2em;}
 /*.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -11,16 +11,42 @@ h2 {padding: 20px; color: aliceblue}
 } */
 
 /*  ****************************  Directory Table ********* */
- input.dirinput {
-    padding: 10px;
+ .buttongrid {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+button.dirinputList {
+    padding:0px 10px;
     margin: 10px;
-    font-size: 44px;
+    font-size: 40px;
+    vertical-align: center ;
     border-radius: 8px 8px;
+    border:1px solid rgb(15, 80, 138);
 
+ }
+  button.dirinputGrid {
+    padding:0 10px;
+    margin: 10px;
+    font-size: 40px;
+    vertical-align: center ;
+    border-radius: 8px 8px;
+    border:1px solid rgb(15, 80, 138);
+
+ }
+img.grid, img.list {
+    width:25px;
+    height:25px;
+    padding: 0 5px;
  }
 bizlist{
     justify-content: center;
     text-align: center;
+    padding: 5px;
+    margin:10px;
+}
+table.biztable {
+    max-width: 700px;
     margin: auto;
 }
 th, td, input {
@@ -33,7 +59,7 @@ table.biztable, th, td
     border-collapse: collapse;
     padding: 2px 3px;
     text-align: center;
-}
+  }
 th {
     font-weight:bold;
     background-color:rgb(241, 240, 217);
@@ -48,6 +74,9 @@ td {
 }
 /* ******************************* tiles directory ************  */
 @media only screen and (min-width:32rem) {
+    h2 {
+        font-size:1.6em
+    }
     .biz-cards {
         display:grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
