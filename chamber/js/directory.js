@@ -65,18 +65,18 @@ fetch(requestURL)
 });
 function displayBusinessTable(localbusiness) {
     let row = document.createElement('tr');
-    let fname = document.createElement('td');
+    let bizname = document.createElement('td');
     let addr = document.createElement('td');
     let phone = document.createElement('td');
     let web = document.createElement('td');
 
 
-    fname.innerHTML = `${localbusiness.bizname}`;
+    bizname.innerHTML = `${localbusiness.bizname}`;
     addr.innerHTML = `${localbusiness.address}`;
     phone.innerHTML = `${localbusiness.phone}`;
     web.innerHTML = `<a href="${localbusiness.website}">website</a>`;
 
-    row.appendChild(fname);
+    row.appendChild(bizname);
     row.appendChild(addr);
     row.appendChild(phone);
     row.appendChild(web);
