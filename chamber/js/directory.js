@@ -19,7 +19,7 @@ function displayBusiness(localbusiness) {
   // Create elements to add to the document
   let bizcard = document.createElement('section');
   bizcard.setAttribute('class', 'bizcard');
-  let logo = document.createElement('img');
+  let pic = document.createElement('img');
   let h3 = document.createElement('h3');
   let addr = document.createElement('p');
   let phone = document.createElement('p');
@@ -29,24 +29,24 @@ function displayBusiness(localbusiness) {
 
  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
 
-  logo.setAttribute('src', `${localbusiness.logo}`);
-  logo.setAttribute('alt', `logo for ${localbusiness.name}`);
-  logo.setAttribute('class', 'logo');
-  logo.setAttribute('loading', 'lazy');
+  pic.setAttribute('src', `${localbusiness.logo}`);
+  pic.setAttribute('alt', `logo for ${localbusiness.name}`);
+  pic.setAttribute('class', '.logo');
+  pic.setAttribute('loading', 'lazy');
 
   // Change the innerHTML property of the h3 element to contain the business' info
   h3.innerHTML = `${localbusiness.name}`;
-  addr.innerHTML = `${localbusiness.address}`;
   phone.innerHTML = `${localbusiness.phone}`;
+  addr.innerHTML = `${localbusiness.address}`;
   web.innerHTML = `<a href="${localbusiness.website}">website</a>`;
   mem.innerHTML = `${localbusiness.membership} sponsor`;
 
   // Add/append the section(card) with the h2 element
 
   bizcard.appendChild(h3);
-  bizcard.appendChild(logo);
-  bizcard.appendChild(addr);
+  bizcard.appendChild(pic);
   bizcard.appendChild(phone);
+  bizcard.appendChild(addr);
   bizcard.appendChild(web);
 
 
