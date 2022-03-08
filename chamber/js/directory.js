@@ -54,6 +54,7 @@ function displayBusiness(localbusiness) {
 }
 
 function displayBusinessTable(localbusiness) {
+
      let table = document.createElement('table');
      let row = document.createElement('tr');
      let name = document.createElement('td');
@@ -61,9 +62,9 @@ function displayBusinessTable(localbusiness) {
      let phone = document.createElement('td');
      let web = document.createElement('td');
 
-    name.innerHTML = `${locallist.name}`;
-    addr.innerHTML = `${locallist.address}`;
-    phone.innerHTML = `${locallist.phone}`;
+    name.innerHTML = `${localbusiness.name}`;
+    addr.innerHTML = `${localbusiness.address}`;
+    phone.innerHTML = `${localbusiness.phone}`;
     web.innerHTML = `<a href="${localbusiness.website}">website</a>`;
     mem.innerHTML = `${localbusiness.membership}`;
 
