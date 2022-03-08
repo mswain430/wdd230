@@ -1,6 +1,6 @@
 {    "localbusiness": [
     {
-        "name": "Edge of the Cedars",
+        "bizname": "Edge of the Cedars",
         "address": "660 W 400 N Blanding UT 84511",
         "phone": "(435) 678-2238",
         "website": "https://stateparks.utah.gov/parks/edge-of-the-cedars",
@@ -9,7 +9,7 @@
         "logo": "images/logos/edge.png"
     },
     {
-        "name": "The dinasaur museum",
+        "bizname": "The dinasaur museum",
         "address": "754 S 200 W Blanding UT 84511",
         "phone": "(435) 678-3454",
         "website": "http://dinosaur-museum.org",
@@ -18,7 +18,7 @@
         "logo": "images/logos/dinasaur.png"
     },
     {
-        "name": "Four Corners Inn",
+        "bizname": "Four Corners Inn",
         "address": "131 E Center St Blanding UT 84511",
         "phone": "(435) 678-3257",
         "website": "https://fourcornersinnblanding.com",
@@ -27,7 +27,7 @@
         "logo":"images/logos/four.png"
     },
     {
-        "name": "Bears Ears National Monument",
+        "bizname": "Bears Ears National Monument",
         "address": "365 N Main Monticello UT 84535",
         "phone": "(435) 587-1500",
         "website": "https://www.blm.gov/visit/bears-ears-national-monument",
@@ -36,7 +36,7 @@
         "logo": "images/logos/bears.png"
     },
     {
-        "name": "Natural Bridges National Monument",
+        "bizname": "Natural Bridges National Monument",
         "address": "HC-60 Box 1 Lake Powell UT 84533",
         "phone": "(435) 692-1234 x616",
         "website": "https://www.nps.gov/nabr/index.htm",
@@ -45,7 +45,7 @@
         "logo": "images/logos/natural.png"
     },
     {
-        "name": "Goosenecks stake Park",
+        "bizname": "Goosenecks stake Park",
         "address": "660 W 400 N Blanding UT 84511",
         "phone": "(435) 692-1234 x616",
         "website": "https://stateparks.utah.gov/parks/goosenecks/directions/",
@@ -54,7 +54,7 @@
         "logo": "images/logos/goosenecks.png"
     },
     {
-        "name": "Abaja Haven Guest Ranch",
+        "bizname": "Abaja Haven Guest Ranch",
         "address": "5440 N Cedar edge Ln Blanding UT 84511",
         "phone": "(435) 979-3126",
         "website": "http://abajohaven.com",
@@ -63,7 +63,7 @@
         "logo": "images/logos/abaja.png"
     },
     {
-        "name": "Stone Lizard Lodge",
+        "bizname": "Stone Lizard Lodge",
         "address": "88 W Center St Blanding UT 84511",
         "phone": "(866) 437-9903",
         "website": "https://www.stonelizardlodge.com",
@@ -72,7 +72,7 @@
         "logo": "images/logos/stone.png"
     },
     {
-        "name": "Blue Mountain RV park",
+        "bizname": "Blue Mountain RV park",
         "address": "1930 S Main St Blanding UT 84511",
         "phone": "(866) 437-437-9904",
         "website": "https://www.bluemountainrvpark.com",
@@ -81,7 +81,7 @@
         "logo": "images/logos/blue.png"
     },
     {
-        "name": "Arch Canyon Inn",
+        "bizname": "Arch Canyon Inn",
         "address": "755 S Main St Blanding Ut 84511",
         "phone": "(435) 678-3880",
         "website": "http://www.archcanyoninnblanding.com",
@@ -90,7 +90,7 @@
         "logo": "images/logos/arch.png"
     },
     {
-        "name": "Canyon Country Bowling Center",
+        "bizname": "Canyon Country Bowling Center",
         "address": "12 W Center St Blanding UT 84511",
         "phone": "(435) 678-3900",
         "website": "https://www.utahscanyoncountry.com/canyon-country-bowling-center",
@@ -99,7 +99,7 @@
         "logo": "images/logos/bowl.png"
     },
     {
-        "name": "San Juan Theatre",
+        "bizname": "San Juan Theatre",
         "address": "12 W Center St Blanding UT 84511",
         "phone": "(801) 435-3900",
         "website": "https://www.utahscanyoncountry.com/canyon-country-bowling-center",
@@ -108,7 +108,7 @@
         "logo": "images/logos/theatre.png"
     },
     {
-        "name": "Blanding City Visitors center",
+        "bizname": "Blanding City Visitors center",
         "address": "12 N Grayson Pkwy Blanding UT 84511",
         "phone": "(801) 435-3900",
         "website": "https://www.utahscanyoncountry.com/blanding-visitor-center",
@@ -117,7 +117,7 @@
         "logo": "images/logos/visitors.png"
     },
     {
-        "name": "Blanding City Wellness Center",
+        "bizname": "Blanding City Wellness Center",
         "address": "1013 South 300 West Blanding Utah 84511",
         "phone": "(435) 678-3457",
         "website": "https://www.blanding-ut.gov/wellness-center",
@@ -126,7 +126,7 @@
         "logo": "images/logos/wellness.png"
     },
     {
-        "name": "Homestead Steak House",
+        "bizname": "Homestead Steak House",
         "address": "121 E Center St Blanding UT 84511",
         "phone": "(435) 678-3456",
         "website": "https://www.homesteadsteakhouseut.com",
@@ -135,7 +135,7 @@
         "logo": "images/logos/steak.png"
         },
         {
-        "name": "Blue Mountain Artisans",
+        "bizname": "Blue Mountain Artisans",
         "address": "215 E Center St Blanding UT 84511",
         "phone": "(435) 678-3456",
         "website": "https://www.facebook.com/Blue-Mountain-Artisans",

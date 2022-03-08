@@ -35,7 +35,7 @@ function displayBusiness(localbusiness) {
   pic.setAttribute('loading', 'lazy');
 
   // Change the innerHTML property of the h3 element to contain the business' info
-  h3.innerHTML = `${localbusiness.name}`;
+  h3.innerHTML = `${localbusiness.bizname}`;
   phone.innerHTML = `${localbusiness.phone}`;
   addr.innerHTML = `${localbusiness.address}`;
   web.innerHTML = `<a href="${localbusiness.website}">website</a>`;
@@ -71,7 +71,7 @@ function displayBusinessTable(localbusiness) {
     let web = document.createElement('td');
 
 
-    fname.innerHTML = `${localbusiness.name}`;
+    fname.innerHTML = `${localbusiness.bizname}`;
     addr.innerHTML = `${localbusiness.address}`;
     phone.innerHTML = `${localbusiness.phone}`;
     web.innerHTML = `<a href="${localbusiness.website}">website</a>`;
