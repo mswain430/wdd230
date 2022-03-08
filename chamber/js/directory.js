@@ -61,6 +61,7 @@ function displayBusinessTable(localbusiness) {
      let addr = document.createElement('td');
      let phone = document.createElement('td');
      let web = document.createElement('td');
+     let mem = document.createElement('td');
 
     name.innerHTML = `${localbusiness.name}`;
     addr.innerHTML = `${localbusiness.address}`;
