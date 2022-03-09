@@ -1,3 +1,17 @@
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #046fb9;
+    --secondary-color: #CE5505;
+    --accent1-color: #2690ba;
+    --accent2-color: #ffda00;
+    --neutral-color: #ddd;
+    --neutral2-color: #264664;
+
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Merriweather" , serif;
+    --paragraph-font: "Open Sans", Helvetica, sans-serif;
+  }
+
 body {
     margin:0;
     padding:0;

@@ -1,15 +1,16 @@
 function toggleMenu() {
-    document.querySelector('.gridviewBtn').classList.toggle("open");
-    document.querySelector('.listviewBtn').classList.toggle("open");
-    document.querySelector('.bizcards').classList.toggle("open");
+    document.getElementById('#gridviewBtn').classList.toggle("open");
+    document.getElementById('#listviewBtn').classList.toggle("open");
+    document.getElementById('#bizDir').classList.toggle("open");
 }
-    const xo = document.querySelector(".gridviewBtn");
-        xo.onclick = toggleMenu;
-    const ox = document.querySelector(".listviewBtn");
-        ox.onclick = toggleMenu;
+const lv = document.querySelector("#listviewBtn");
+    lv.onclick = toggleMenu;
+const gv = document.querySelector("#gridviewBtn");
+    gv.onclick = toggleMenu;
 
-    let viewtype = "O";
-    let ww = window.innerWidth;
+
+let viewtype = "O";
+let ww = window.innerWidth;
 
     if (ww >= 592 && ww <= 991) {
         toggleMenu();

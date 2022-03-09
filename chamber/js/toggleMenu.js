@@ -1,13 +1,13 @@
- function toggleMenu2() {
-   document.getElementById("bgrid").classList.toggle("open");
-   document.getElementById("blist").classList.toggle("open");
+ function toggleMenu() {
+   document.getElementById("gridviewBtn").classList.toggle("open");
+   document.getElementById("listviewBtn").classList.toggle("open");
 }
 
 function hideGrid() {
-  var x = document.getElementById("bizcards");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  const gv = document.getElementById("bizDir");
+  if (gv.style.display === "none") {
+    gv.style.display = "block";
   } else {
-    x.style.display = "none";
+    gv.style.display = "none";
   }
 }
