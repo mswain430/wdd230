@@ -1,7 +1,7 @@
 let viewtype = "O";
 let ww = window.innerWidth;
 
-    if (ww >= 592 && ww <= 991) {
+    if (ww >= 600 && ww <= 1000) {
         toggleView();
         viewtype = "M";
     }
@@ -20,9 +20,9 @@ const gv = document.querySelector("#gridviewBtn");
 
 function checkWidth() {
     ww = window.innerWidth;
-    if (ww >= 592 && ww <= 991 ){
+    if (ww >= 600 && ww <= 1000 ){
        if (viewtype != "M") {
-           toggleMenu();
+           toggleView();
            viewtype = "M";
        }
     } else {
