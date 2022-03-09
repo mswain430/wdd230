@@ -11,15 +11,14 @@ fetch(requestURL)
     console.table(jsonObject);  // temporary checking for valid response and data parsing
     const localbusiness = jsonObject['localbusiness'];
     localbusiness.forEach(displayBusiness);
-
+    localbusiness.forEach(displayBusinessTable);
 });
 
 
 function displayBusiness(localbusiness) {
   // Create elements to add to the document
   let bizcard = document.createElement('section');
-  bizcard.setAttribute('class', 'bizcard');
-  let pic = document.createElement('img');
+  let logo = document.createElement('img');
   let h3 = document.createElement('h3');
   let addr = document.createElement('p');
   let phone = document.createElement('p');
@@ -27,12 +26,13 @@ function displayBusiness(localbusiness) {
   let mem = document.createElement('p');
   let ordersuffix = ``;
 
+  bizcard.setAttribute('class', 'bizcard');
  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
 
-  pic.setAttribute('src', `${localbusiness.logo}`);
-  pic.setAttribute('alt', `logo for ${localbusiness.name}`);
-  pic.setAttribute('class', '.logo');
-  pic.setAttribute('loading', 'lazy');
+  logo.setAttribute('src', `${localbusiness.logourl}`);
+  logo.setAttribute('alt', `logo for ${localbusiness.name}`);
+  logo.setAttribute('class', '.logo');
+  logo.setAttribute('loading', 'lazy');
 
   // Change the innerHTML property of the h3 element to contain the business' info
   h3.innerHTML = `${localbusiness.bizname}`;
@@ -44,7 +44,7 @@ function displayBusiness(localbusiness) {
   // Add/append the section(card) with the h2 element
 
   bizcard.appendChild(h3);
-  bizcard.appendChild(pic);
+  bizcard.appendChild(logo);
   bizcard.appendChild(phone);
   bizcard.appendChild(addr);
   bizcard.appendChild(web);
@@ -54,15 +54,6 @@ function displayBusiness(localbusiness) {
     bizcards.prepend(bizcard);
 }
 
-fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const localbusiness = jsonObject['localbusiness'];
-    localbusiness.forEach(displayBusinessTable);
-});
 function displayBusinessTable(localbusiness) {
     let row = document.createElement('tr');
     let bizname = document.createElement('td');

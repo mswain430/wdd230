@@ -18,7 +18,7 @@
     <script defer src="js/lastmodified.js"></script>
     <script defer src="js/scripts.js"></script>
    <script defer src="js/directory.js"></script>
- <!--    <script defer src="js/directorytable.js"></script> -->
+   <script defer src="js/toggleviewer.js"></script>
 </head>
 <body>
    <div class="banner"><span id="dybanner"></span></div>
@@ -57,8 +57,8 @@
 </header>
 <main class="dir">
   <div class="buttongrid">
-    <button id="list" class="dirinputList" onclick="displayBusinessTable()" ><img src="images/list.png" alt="list" class="list" loading="lazy"/></button>
-    <button id="grid" class="dirinputGrid" onclick="displayBusiness()" ><img src="images/grid.png" alt="grid" class="grid" loading="lazy"/></button>
+    <button id="blist" class="listviewBtn" onclick.toggleBtn() ><img src="images/list.png" alt="list" class="list" loading="lazy"/></button>
+    <button id="bgrid" class="gridviewBtn" onclick.toggleBtn() ><img src="images/grid.png" alt="grid" class="grid" loading="lazy"/></button>
 </div>
 
   <div id="showData" class="bizlist">

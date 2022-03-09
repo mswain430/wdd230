@@ -6,7 +6,7 @@
         "website": "https://stateparks.utah.gov/parks/edge-of-the-cedars",
         "membership": "gold",
         "order": 1,
-        "logo": "images/logos/edge.png"
+        "logourl": "images/logos/edge.png"
     },
     {
         "bizname": "The dinasaur museum",
@@ -15,7 +15,7 @@
         "website": "http://dinosaur-museum.org",
         "membership": "silver",
         "order": 2,
-        "logo": "images/logos/dinasaur.png"
+        "logourl": "images/logos/dinasaur.png"
     },
     {
         "bizname": "Four Corners Inn",
@@ -24,7 +24,7 @@
         "website": "https://fourcornersinnblanding.com",
         "membership": "bronze",
         "order": 3,
-        "logo":"images/logos/four.png"
+        "logourl":"images/logos/four.png"
     },
     {
         "bizname": "Bears Ears National Monument",
@@ -33,7 +33,7 @@
         "website": "https://www.blm.gov/visit/bears-ears-national-monument",
         "membership": "gold",
         "order": 4,
-        "logo": "images/logos/bears.png"
+        "logourl": "images/logos/bears.png"
     },
     {
         "bizname": "Natural Bridges National Monument",
@@ -42,7 +42,7 @@
         "website": "https://www.nps.gov/nabr/index.htm",
         "membership": "silver",
         "order": 5,
-        "logo": "images/logos/natural.png"
+        "logourl": "images/logos/natural.png"
     },
     {
         "bizname": "Goosenecks stake Park",
@@ -51,7 +51,7 @@
         "website": "https://stateparks.utah.gov/parks/goosenecks/directions/",
         "membership": "bronze",
         "order": 6,
-        "logo": "images/logos/goosenecks.png"
+        "logourl": "images/logos/goosenecks.png"
     },
     {
         "bizname": "Abaja Haven Guest Ranch",
@@ -60,7 +60,7 @@
         "website": "http://abajohaven.com",
         "membership": "gold",
         "order": 7,
-        "logo": "images/logos/abaja.png"
+        "logourl": "images/logos/abaja.png"
     },
     {
         "bizname": "Stone Lizard Lodge",
@@ -69,7 +69,7 @@
         "website": "https://www.stonelizardlodge.com",
         "membership": "silver",
         "order": 8,
-        "logo": "images/logos/stone.png"
+        "logourl": "images/logos/stone.png"
     },
     {
         "bizname": "Blue Mountain RV park",
@@ -78,7 +78,7 @@
         "website": "https://www.bluemountainrvpark.com",
         "membership": "bronze",
         "order": 9,
-        "logo": "images/logos/blue.png"
+        "logourl": "images/logos/blue.png"
     },
     {
         "bizname": "Arch Canyon Inn",
@@ -87,7 +87,7 @@
         "website": "http://www.archcanyoninnblanding.com",
         "membership": "gold",
         "order": 10,
-        "logo": "images/logos/arch.png"
+        "logourl": "images/logos/arch.png"
     },
     {
         "bizname": "Canyon Country Bowling Center",
@@ -96,7 +96,7 @@
         "website": "https://www.utahscanyoncountry.com/canyon-country-bowling-center",
         "membership": "silver",
         "order": 11,
-        "logo": "images/logos/bowl.png"
+        "logourl": "images/logos/bowl.png"
     },
     {
         "bizname": "San Juan Theatre",
@@ -105,7 +105,7 @@
         "website": "https://www.utahscanyoncountry.com/canyon-country-bowling-center",
         "membership": "bronze",
         "order": 12,
-        "logo": "images/logos/theatre.png"
+        "logourl": "images/logos/theatre.png"
     },
     {
         "bizname": "Blanding City Visitors center",
@@ -114,7 +114,7 @@
         "website": "https://www.utahscanyoncountry.com/blanding-visitor-center",
         "membership": "gold",
         "order": 13,
-        "logo": "images/logos/visitors.png"
+        "logourl": "images/logos/visitors.png"
     },
     {
         "bizname": "Blanding City Wellness Center",
@@ -123,7 +123,7 @@
         "website": "https://www.blanding-ut.gov/wellness-center",
         "membership": "silver",
         "order": 14,
-        "logo": "images/logos/wellness.png"
+        "logourl": "images/logos/wellness.png"
     },
     {
         "bizname": "Homestead Steak House",
@@ -132,7 +132,7 @@
         "website": "https://www.homesteadsteakhouseut.com",
         "membership": "bronze",
         "order": 15,
-        "logo": "images/logos/steak.png"
+        "logourl": "images/logos/steak.png"
         },
         {
         "bizname": "Blue Mountain Artisans",
@@ -141,7 +141,7 @@
         "website": "https://www.facebook.com/Blue-Mountain-Artisans",
         "membership": "gold",
         "order": 16,
-        "logo": "images/logos/art.png"
+        "logourl": "images/logos/art.png"
     }
  ]
 
