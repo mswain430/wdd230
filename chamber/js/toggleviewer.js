@@ -1,21 +1,22 @@
-function toggleMenu() {
-    document.getElementById('#gridviewBtn').classList.toggle("open");
-    document.getElementById('#listviewBtn').classList.toggle("open");
-    document.getElementById('#bizDir').classList.toggle("open");
-}
-const lv = document.querySelector("#listviewBtn");
-    lv.onclick = toggleMenu;
-const gv = document.querySelector("#gridviewBtn");
-    gv.onclick = toggleMenu;
-
-
 let viewtype = "O";
 let ww = window.innerWidth;
 
     if (ww >= 592 && ww <= 991) {
-        toggleMenu();
+        toggleView();
         viewtype = "M";
     }
+
+function toggleView() {
+    document.getElementById('gridviewBtn').classList.toggle("open");
+    document.getElementById('listviewBtn').classList.toggle("open");
+    document.getElementById('bizDir').classList.toggle("open");
+}
+
+const lv = document.querySelector("#listviewBtn");
+    lv.onclick = toggleView();
+const gv = document.querySelector("#gridviewBtn");
+    gv.onclick = toggleView();
+
 
 function checkWidth() {
     ww = window.innerWidth;
@@ -26,8 +27,9 @@ function checkWidth() {
        }
     } else {
         if (viewtype == "M") {
-            toggleMenu();
+            toggleView();
             viewtype = "O"
         }
     }
 }
+
