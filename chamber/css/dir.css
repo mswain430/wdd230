@@ -143,23 +143,7 @@ section.bizcard {
 #bizDir.open section p:nth-child(6){
     margin: auto;
 }
-/*  */
- #bizDir section p:nth-child(7) {
-    margin: auto;
-}
-/*  */
-#bizDir.open section p:nth-child(7){
-    margin: auto;
-}
 
-/* */
- #bizDir section p:nth-child(8) {
-    margin: auto;
-}
-/*  */
-#bizDir.open section p:nth-child(8){
-    margin: auto;
-}
 /* **************************** MEDIUM VIEW ********************* */
 @media only screen and (min-width:35rem) {
 #view {
