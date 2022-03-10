@@ -32,7 +32,7 @@ function displayBusiness(localbusiness) {
  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
 
   logo.setAttribute('src', `${localbusiness.logourl}`);
-  logo.setAttribute('alt', `logo for ${localbusiness.name}`);
+  logo.setAttribute('alt', `logo for ${localbusiness.bizname}`);
   logo.setAttribute('class', '.logo');
   logo.setAttribute('loading', 'lazy');
 
