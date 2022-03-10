@@ -63,16 +63,18 @@ main.dir {
     margin:2%;
 }
 h2 {padding: 10px; color: aliceblue; font-size:1.2em;text-align:center;margin:auto}
-
+/* If closed show menu plain */
 #bizDir.open section:nth-child(odd) {
     background-color: aliceblue;
 }
+/* If open show menu as card */
 #bizDir.open section {
     align-items: flex-start;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(39, 40, 41);
     box-shadow: none;
     margin: 0;
 }
+
 section.bizcard h3 {
     margin: 0px;
     padding: 5px 20px;
