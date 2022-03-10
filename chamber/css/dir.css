@@ -65,13 +65,23 @@ main.dir {
 h2 {padding: 10px; color: aliceblue; font-size:1.2em;text-align:center;margin:auto}
 
 /* If closed show menu plain */
-
+#bizDir section.bizcard {
+    display:block;
+    border-radius: 0;
+    padding: 5px;
+    align-items: flex-start;
+    border: 1px solid rgb(100, 168, 236);
+    box-shadow: none;
+    margin: 10px 0;
+    box-shadow: 2px 10px rgb(29, 138, 123)
+}
 /* If open show menu as card */
 #bizDir.open section {
     align-items: flex-start;
-    border: 1px solid rgb(39, 40, 41);
+    border: 1px solid rgb(100, 168, 236);
     box-shadow: none;
     margin: 0;
+    box-shadow: none;
 }
 /* h3 bizname */
 section.bizcard h3 {
@@ -83,7 +93,7 @@ section.bizcard h3 {
     color:rgb(10, 52, 88);
 
 }
-
+/* phone*/
 #bizDir p {
     margin:0;
     padding: 2px 10px;
@@ -95,13 +105,6 @@ section.bizcard h3 {
 main #view section {
     display:flex;
     flex-direction: column;
-}
-
-section.bizcard {
-    display:block;
-    border-radius: 0;
-    padding: 5px;
-
 }
 
 #bizDir img {
