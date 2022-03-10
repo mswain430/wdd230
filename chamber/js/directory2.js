@@ -40,7 +40,7 @@ function displayBusiness(localbusiness) {
   p1.innerHTML = `${localbusiness.phone}`;
   p2.innerHTML = `${localbusiness.address} ${localbusiness.city} ${localbusiness.zip}`;
   p3.innerHTML = `${localbusiness.address} <br> ${localbusiness.city} ${localbusiness.zip}`;
-  p4.innerHTML = `<a href="${localbusiness.website}">${localbusiness.website}</a>`;
+  p4.innerHTML = `<a href="${localbusiness.website}">website</a>`;
   p5.innerHTML = `<a href="${localbusiness.contact}">${localbusiness.contact}</a>`;
   mem.innerHTML = `${localbusiness.membership} sponsor`;
 
