@@ -23,6 +23,7 @@ function displayBusiness(localbusiness) {
   let p2 = document.createElement('p');
   let p3 = document.createElement('p');
   let p4 = document.createElement('p');
+  let p5 = document.createElement('p');
   let mem = document.createElement('p');
   let ordersuffix = ``;
 
