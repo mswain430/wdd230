@@ -40,7 +40,7 @@ button#listviewBtn {
  }
  button#listviewBtn:focus {
   background-color:rgb(137, 221, 247);
-  background-color: blanchedalmond;
+
  }
  button#gridviewBtn:hover {
     background-color:rgb(137, 221, 247);
@@ -48,7 +48,7 @@ button#listviewBtn {
  }
  button#gridviewBtn focus {
   background-color:rgb(137, 221, 247);
-  background-color: blanchedalmond;
+
  }
  button#gridviewBtn.open {
     background-color:rgb(247, 199, 137);
