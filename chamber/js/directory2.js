@@ -19,10 +19,10 @@ function displayBusiness(localbusiness) {
   let bizcard = document.createElement('section');
   let logo = document.createElement('img');
   let h3 = document.createElement('h3');
-  let addr = document.createElement('p');
-  let addr2 = document.createElement('p');
-  let phone = document.createElement('p');
-  let web = document.createElement('p');
+  let p1 = document.createElement('p');
+  let p2 = document.createElement('p');
+  let p3 = document.createElement('p');
+  let p4 = document.createElement('p');
   let mem = document.createElement('p');
   let ordersuffix = ``;
 
@@ -36,20 +36,21 @@ function displayBusiness(localbusiness) {
 
   // Change the innerHTML property of the h3 element to contain the business' info
   h3.innerHTML = `${localbusiness.bizname}`;
-  phone.innerHTML = `${localbusiness.phone}`;
-  addr.innerHTML = `${localbusiness.address} ${localbusiness.city} ${localbusiness.zip}`;
-  addr2.innerHTML = `${localbusiness.address} <br> ${localbusiness.city} ${localbusiness.zip}`;
-  web.innerHTML = `<a href="${localbusiness.website}">website</a>`;
+  p1.innerHTML = `${localbusiness.phone}`;
+  p2.innerHTML = `${localbusiness.address} ${localbusiness.city} ${localbusiness.zip}`;
+  p3.innerHTML = `${localbusiness.address} <br> ${localbusiness.city} ${localbusiness.zip}`;
+  p4.innerHTML = `<a href="${localbusiness.website}">website</a>`;
   mem.innerHTML = `${localbusiness.membership} sponsor`;
 
   // Add/append the section(card) with the h2 element
 
   bizcard.appendChild(h3);
   bizcard.appendChild(logo);
-  bizcard.appendChild(phone);
-  bizcard.appendChild(addr);
-  bizcard.appendChild(addr2);
-  bizcard.appendChild(web);
+  bizcard.appendChild(p1);
+  bizcard.appendChild(p2);
+  bizcard.appendChild(p3);
+  bizcard.appendChild(p4);
+
 
 
   // Add/append the existing HTML div with the cards class with the section(card)

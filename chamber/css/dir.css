@@ -63,10 +63,9 @@ main.dir {
     margin:2%;
 }
 h2 {padding: 10px; color: aliceblue; font-size:1.2em;text-align:center;margin:auto}
+
 /* If closed show menu plain */
-#bizDir.open section:nth-child(odd) {
-    background-color: aliceblue;
-}
+
 /* If open show menu as card */
 #bizDir.open section {
     align-items: flex-start;
@@ -74,30 +73,31 @@ h2 {padding: 10px; color: aliceblue; font-size:1.2em;text-align:center;margin:au
     box-shadow: none;
     margin: 0;
 }
-
+/* h3 bizname */
 section.bizcard h3 {
     margin: 0px;
     padding: 5px 20px;
     font-size: 1em;
     font-weight: bold;
     background-color:rgba(00,00,00,.2)  ;
-    color:rgb(15, 80, 138);
+    color:rgb(10, 52, 88);
 
 }
+
 #bizDir p {
     margin:0;
-    padding: 2px 20px;
+    padding: 2px 10px;
 }
-#bizdir.open p {
-    margin:0;
-    padding:0;
+#bizDir.open p {
+    margin:3px;
+    padding: 2px 10px;
 }
 main #view section {
     display:flex;
     flex-direction: column;
 }
 
-section.card {
+section.bizcard {
     display:block;
     border-radius: 0;
     padding: 5px;
@@ -116,30 +116,48 @@ section.card {
     background-color:rgba(199, 231, 241, 0.8)
 }
 #bizDir.open section:nth-child(odd) {
-    background-color: white;
+    background-color: aliceblue;
 }
-
+/* address */
 #bizDir section p:nth-child(4) {
     margin:0;
-    padding:0;
+    padding:2px 10px;
 }
-
+/* address */
 #bizDir.open section p:nth-child(4){
-     padding: 2px 20px;
+     padding: 2px 10px;
 }
+/*  */
 #bizDir section p:nth-child(5) {
     display:none;
 }
-
+/*  */
 #bizDir.open section p:nth-child(5){
     margin: auto;
 }
+/*  */
  #bizDir section p:nth-child(6) {
-
+    margin: auto;
+}
+/*  */
+#bizDir.open section p:nth-child(6){
+    margin: auto;
+}
+/*  */
+ #bizDir section p:nth-child(7) {
+    margin: auto;
+}
+/*  */
+#bizDir.open section p:nth-child(7){
     margin: auto;
 }
 
-#bizDir.open section p:nth-child(6){
+/* */
+ #bizDir section p:nth-child(8) {
+    margin: auto;
+}
+/*  */
+#bizDir.open section p:nth-child(8){
     margin: auto;
 }
 /* **************************** MEDIUM VIEW ********************* */
@@ -147,7 +165,6 @@ section.card {
 #view {
     grid-column: 1/4;
     grid-row: 1/3;
-
 }
 #bizDir {
     display: grid;
