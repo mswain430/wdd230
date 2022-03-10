@@ -9,16 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
-    <link rel="stylesheet" href="css/dir.css">
-    <script defer src="js/currentdate.js"></script>
-    <script defer src="js/lastmodified.js"></script>
-    <script defer src="js/scripts.js"></script>
-   <script defer src="js/directory2.js"></script>
- <!-- //  <script defer src="js/toggleviewer.js"></script>  -->
+    <link rel="stylesheet" href="../chamber/css/normalize.css">
+    <link rel="stylesheet" href="../chamber/css/base.css">
+    <link rel="stylesheet" href="../chamber/css/medium.css">
+    <link rel="stylesheet" href="../chamber/css/large.css">
+    <script defer src="../chamber/js/currentdate.js"></script>
+    <script defer src="../chamber/js/lastmodified.js"></script>
+    <script defer src="../chamber/js/scripts.js"></script>
+    <script defer src="../chamber/js/windchill.js"></script>
+    <script defer src="../chamber/weatherapi.js"></script>
 </head>
 <body>
    <div class="banner"><span id="dybanner"></span></div>
@@ -35,7 +34,6 @@
           <h1>Blanding</h1>
           <div class="sub">Chamber of Commerce</div>
         </section>
-
          <div class="social">
           <a href="https://facebook.com"><img src="images/facebook.svg" alt="facebook" class="fa fa-facebook"/></a>
           <a href="https://twitter.com"><img src="images/twitter.svg" alt="twitter" class="fa fa-twitter"/></a>
@@ -43,34 +41,24 @@
           <span class="xbutton">X</span></button>
           <nav class="clearfix">
             <ul id="primaryNav" class="navigation">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="directory.html" class="active">Directory</a></li>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="directory.html">Directory</a></li>
               <li><a href="join.html">Join</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="contact.html" class="active">Contact</a></li>
               <li><a href="discover.html">Discover</a></li>
           </ul>
         </nav>
   </header>
+
   <div class="daydate"><p class="time"><span id="currentdate"></span></p></div>
-<main class="directory">
-  <section class="cards">
-    <h2>Business Directory</h2>
-    <div class="list-view-btn">
-    <button id="listBtn" class="listviewBtn">
-      <img src="images/list.png" alt="list" class="list" loading="lazy"/>
-    </button>
-    <button id="cardBtn" class="gridviewBtn">
-      <img src="images/grid.png" alt="grid" class="grid" loading="lazy"/>
-    </button>
-  </div>
-   <div class="cards list-view"></div>
-   </section>
-</main>
+  <main>
+  weather info here.
+  </main>
   <footer>
     <div class="footer-addlogo">
      <!-- <div class="ftrLogo"> </div> -->
       <div class="contactInfo">
-        <img src="images/blanding-logo.png" class="ftrLogo" alt="logo" />
+        <img src="../chamber/images/blanding-logo.png" class="ftrLogo" alt="logo" />
          <div class="address"><h2>Blanding Chamber of Commerce</h2>50 West 100 South<br>Blanding, UT 84511</div>
          <div class="contacts">Blanding@chamber.com<br>(435) 678-2791<br> <a href="https://www.google.com/maps/dir/33.0030442,-117.0441006/blanding+city+office/@35.0461651,-117.7472662,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x8739d47751ab059d:0x14b197dc31c6550a!2m2!1d-109.4789557!2d37.62419" class="maplink"><img src="images/map-42871.svg" alt="map pin"/>Location Map </a></div>
       </div>

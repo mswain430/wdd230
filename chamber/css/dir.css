@@ -1,23 +1,23 @@
 /* ******************* DIRECTORY ************ */
-#view {
+.list-view-btn {
     display:flex;
     flex-direction: row;
     justify-content: center;
 }
-#view img {
+.list-view-btn img {
     width: 50px;
 }
-#view button {
+.list-view-btn button {
     background-color: aliceblue;
     margin: 0;
     padding: 0;
     border: none;
 }
-#view button img {
+.list-view-btn button img {
     width: 100%;
     border: 2px solid --secondary-color;
 }
-button#listviewBtn {
+button#listBtn {
     padding:5px 10px;
     margin: 10px;
     font-size: 40px;
@@ -26,7 +26,7 @@ button#listviewBtn {
     border:1px solid rgb(15, 80, 138);
  }
 
- button#gridviewBtn {
+ button#cardBtn {
     padding:5px 15px;
     margin: 10px;
     font-size: 40px;
@@ -34,209 +34,284 @@ button#listviewBtn {
     border-radius: 4px 4px;
     border:1px solid rgb(15, 80, 138);
  }
- button#listviewBtn:hover {
+ button#listBtn:hover {
     background-color:rgb(137, 221, 247);
     border: 3px solid --secondary-color;
  }
- button#listviewBtn:focus {
+ button#listBtn:focus {
   background-color:rgb(137, 221, 247);
 
  }
- button#gridviewBtn:hover {
+ button#cardBtn:hover {
     background-color:rgb(137, 221, 247);
     border: 3px solid --secondary-color;
  }
- button#gridviewBtn focus {
+ button#cardBtn focus {
   background-color:rgb(137, 221, 247);
 
  }
 
-main.dir {
+main.directory {
     display:block;
     display:flex;
     flex-direction: column;
     margin:2%;
 }
-h2 {padding: 10px; color: aliceblue; font-size:1.2em;text-align:center;margin:auto}
+.directory h2 {
+    background-color: rgb(10, 52, 88);
+     padding: 10px;
+     color: aliceblue;
+     font-size:1.2em;
+     text-align:center;
+     margin:auto}
 
-/* If closed show menu plain */
-#bizDir section.bizcard {
-    display:block;
+.directory {
+    text-align: center;
+}
+
+.list-view img, card-view section h2 {
+    display:none;
+}
+
+.list-view section {
+    display:grid;
+    grid-template-columns: 1fr;
+    border-radius: 15px;
+    border: 2px solid white;
+    padding: 0 0 15px 0;
     border-radius: 0;
-    padding: 5px;
-    align-items: flex-start;
-    border: 1px solid rgb(100, 168, 236);
-    box-shadow: none;
-    margin: 10px 0;
-    box-shadow: 2px 10px rgb(29, 138, 123)
+    margin: .5vw 2%;
 }
-/* If open show menu as card */
-#bizDir.open section {
-    align-items: flex-start;
-    border: 1px solid rgb(100, 168, 236);
-    box-shadow: none;
+.list-view section h2{
+    grid-column:1;
     margin: 0;
-    box-shadow: none;
-}
-/* h3 bizname */
-section.bizcard h3 {
-    margin: 0px;
-    padding: 5px 20px;
+    padding: 10px 10px;
+    text-align: left;
     font-size: 1em;
     font-weight: bold;
-    background-color:rgba(00,00,00,.2)  ;
+    background-color:rgba(00,00,00,.2);
     color:rgb(10, 52, 88);
+ }
+.card-view section h2 {
+    grid-column:1;
+    margin: -10px -10px 10px -10px;
+    padding: 10px ;
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: rgb(10, 52, 88);
+    color:aliceblue;
+}
+.list-view p {
+    justify-items: left;
+}
+.list-view  a {
+    color:rgb(10, 52, 88);
+    font-size: 1em;
+}
+.list-view  a:visited {
+    color:rgb(243, 114, 8);
+    font-size: .9em;
+}
+.list-view p2 {
+    display: block;
+    text-align:left;
 
 }
-/* phone*/
-#bizDir p {
-    margin:0;
-    padding: 2px 10px;
-}
-#bizDir.open p {
-    margin:3px;
-    padding: 2px 10px;
-}
-main #view section {
-    display:flex;
-    flex-direction: column;
+.card-view section {
+    display:grid;
+    grid-template-columns: 1fr;
 }
 
-#bizDir img {
-    height: 100px;
+.card-view img {
     display:block;
+    width: 100px;
+    margin:10px auto;
+    padding: 5px;
+    border-radius: 100%;
+    border-style: groove;
+    border:3px rgb(21, 81, 85) solid;
+    background-color:rgba(137, 221, 247, .3);
+    transition: transform 0.2s ease-in-out;
 }
-#bizDir.open img {
-    display:none;
+
+.card-view {
+    display:grid;
+    grid-template-columns: 1fr;
 }
-#bizDir a {
-    font-size: .8em;
-}
-#bizDir.open section:nth-child(even){
-    background-color:rgba(199, 231, 241, 0.8)
-}
-#bizDir.open section:nth-child(odd) {
+
+.card-view section {
+    padding: 4%;
+    margin: 2%;
+    border-radius: 0;
+    border: 3px solid rgba(10, 52, 88, .8);
+    box-shadow:2px 8px 8px rgba(10, 52, 88, .4);
     background-color: aliceblue;
 }
-/* address */
-#bizDir section p:nth-child(4) {
-    margin:0;
-    padding:2px 10px;
+
+.list-view section p1,.list-view section p2, .list-view section p4, .list-view section p5, .list-view section mem {
+    display:block;
+    align-items: left;
+    margin-left:5px;
+    margin-right: 2%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1em;
+    text-align:left;
+    color: #000;
+    padding: 5px 5px;
 }
-/* address */
-#bizDir.open section p:nth-child(4){
-     padding: 2px 10px;
+.list-view section:nth-child(even){
+     background-color:rgb(137, 221, 247);
 }
-/*  */
-#bizDir section p:nth-child(5) {
-    display:none;
+.list-view section:nth-child(odd){
+     background-color: aliceblue;
 }
-/*  */
-#bizDir.open section p:nth-child(5){
-    margin: auto;
+
+/* .list-view section p1,p2,p3 {
+    margin-left:0;
+    margin-right: 0;
+    font-size: 1em;
+    text-align:left;
+    color: #000;
+} */
+
+.card-view section p1, p4, p5, mem {
+    display: block;
+    align-content: center;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 5px;
+    font-size: 1em;
+    text-align:center;
+    color: #000;
 }
-/*  */
- #bizDir section p:nth-child(6) {
-    margin: auto;
+/* .list-view section p1,p2,p3 {
+    margin-left:0;
+    margin-right: 0;
+    font-size: 1em;
+    text-align:left;
+    color: #000;
+} */
+
+.list-view section p2{
+     display: block;
 }
-/*  */
-#bizDir.open section p:nth-child(6){
-    margin: auto;
+
+.card-view section p2{
+     display: block;
+     text-align: left;
+     margin: auto;
+     padding: 5px 20px;
 }
+
+.card-view section p3{
+     display: none;
+}
+
+.list-view section p3{
+     display: none;
+}
+
+
 
 /* **************************** MEDIUM VIEW ********************* */
-@media only screen and (min-width:35rem) {
-#view {
-    grid-column: 1/4;
-    grid-row: 1/3;
-}
-#bizDir section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 1 /4;
-    grid-row: 3/11;
+@media only screen and (min-width:32rem) {
+
+
+.list-view section p2{
+     display: block;
 }
 
-#bizdir section:nth-child(1) {
-    grid-column: 1/2;
-    grid-row: 3/4;
-
-}
-#bizdir section:nth-child(2) {
-    grid-column: 1/2;
-    grid-row: 4/5;
-
+.card-view section p2{
+     display: block;
+     padding: 5px 20px;
 }
 
-#bizdir section:nth-child(3) {
-    grid-column: 3/4;
-    grid-row: 3/4;
-
-}
-#bizdir section:nth-child(4) {
-    grid-column: 3/4;
-    grid-row: 4/5;
-
+.card-view section p3{
+     display: none;
 }
 
+.list-view section p3{
+     display: none;
+}
+    .list-view section p1,p2,p3,p4, p5, mem {
+        padding: 5px;
+        font-size: 1em;
+        text-align: left;
+        color: black;
+    }
+    .card-view section p1,p2,p3,p4 {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1em;
+        text-align: center;
+        color: black;
+    }
+    .list-view p2 {
+        display:none;
+    }
+    .card-view {
+    grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* ******************************* LARGE VIEW Directory ***************************** */
 @media only screen and (min-width:62rem) {
-    #bizDir {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column: 1 / 4;
-        grid-row: 3/10;
+    .card-view {
+        grid-template-columns: repeat(3,1fr) ;
     }
-    #bizDir section:nth-child(2){
-        grid-column: 1/2;
+    .list-view section {
+        grid-template-columns: 30% 20% 20% 30%;
+        grid-template-rows: repeat(2, 1fr);
+        font-size: .9em;
+}
+    .list-view section h2 {
+        grid-column: 1;
+        grid-row: 1;
+        display:block;
+        font-size: 1.3em;
+        background-color: transparent;
     }
-    #bizDir section:nth-child(3){
-        grid-column: 2/3;
+
+    .list-view section p3 {
+        display:block;
+        grid-column: 2;
+        grid-row: 1;
+        text-align: left;
     }
-    #bizDir section:nth-child(4){
-        grid-column: 3/4;
+    .list-view section p1 {
+        grid-column: 3;
+        grid-row: 1;
     }
-    #bizDir section:nth-child(5){
-        grid-column: 4/5;
+
+    .list-view section p4 {
+        grid-column: 4;
+        grid-row: 1;
     }
-    #bizDir.open {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-column: 1 / 4;
-        grid-row: 3/ 10;
+    .list-view section mem {
+        grid-column: 1;
+        grid-row: 2;
+}
+    .list-view section p5 {
+        grid-column: 4;
+        grid-row: 2;
+}
+
+    .list-view section p2{
+        display: none;
     }
-   #bizDir.open section {
-       display: grid;
-       grid-template-columns: repeat(4, lfr);
-       grid-column: 1 / 5;
-   }
-   #bizDir.open section h3:nth-child(1) {
-       grid-column: 1/2;
-       grid-row: 1 / 3;
-   }
-   #bizDir.open section p:nth-child(3) {
-       display:none;
-   }
-   #bizDir.open section p:nth-child(4){
-       display: block;
-       grid-column: 2/3;
-       grid-row: 1/3;
-   }
-   #bizDir.open section p:nth-child(5){
-       grid-column: 3/4;
-   }
-   #bizDir.open section p:nth-child(6){
-       grid-column: 4/5;
-       grid-row: 1/2;
-       text-align: right;
-   }
-   #bizDir.open section p:nth-child(7){
-       grid-column: 4/5;
-       grid-row: 2/3;
-       text-align: right;
-   }
+
+    .card-view section p2{
+        display: none;
+    }
+
+    .card-view section p3{
+        display: block;
+    }
+
+    .list-view section p3{
+        display: block;
+    }
 
 }
