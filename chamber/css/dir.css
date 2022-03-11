@@ -1,8 +1,10 @@
 /* ******************* DIRECTORY ************ */
+
 .list-view-btn {
     display:flex;
     flex-direction: row;
     justify-content: center;
+    box-sizing: border-box;
 }
 .list-view-btn img {
     width: 50px;
@@ -15,7 +17,7 @@
 }
 .list-view-btn button img {
     width: 100%;
-    border: 2px solid rgb(243, 114, 8);
+    border: none;
 }
 button#listBtn {
     align-self: center;
@@ -37,21 +39,19 @@ button#listBtn {
     border:1px solid rgb(15, 80, 138);
  }
  button#listBtn:hover {
+    border: 1px solid rgb(243, 114, 8);
     background-color:rgb(137, 221, 247);
-    border: 3px solid rgb(243, 114, 8);
- }
+  }
  button#listBtn:focus {
   background-color:rgb(137, 221, 247);
-
  }
  button#cardBtn:hover {
+     border: 1px solid rgb(243, 114, 8);
     background-color:rgb(137, 221, 247);
-    border: 3px solid rgb(243, 114, 8);
  }
  button#cardBtn focus {
   background-color:rgb(137, 221, 247);
-
- }
+  }
 
 main.directory {
     display:block;
