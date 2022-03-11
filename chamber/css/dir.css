@@ -279,16 +279,19 @@ main.directory {
         display:block;
         grid-column: 2;
         grid-row: 1;
+        padding-top: 10px;
         text-align: left;
     }
     .list-view section p1 {
         grid-column: 3;
         grid-row: 1;
+        padding-top: 10px;
     }
 
     .list-view section p4 {
         grid-column: 4;
         grid-row: 1;
+        padding-top: 10px;
     }
     .list-view section mem {
         grid-column: 1;
