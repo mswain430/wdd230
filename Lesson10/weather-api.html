@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../chamber/css/base.css">
     <link rel="stylesheet" href="../chamber/css/medium.css">
     <link rel="stylesheet" href="../chamber/css/large.css">
+    <link rel="stylesheet" href="css/weather.css">
     <script defer src="../chamber/js/currentdate.js"></script>
     <script defer src="../chamber/js/lastmodified.js"></script>
     <script defer src="../chamber/js/scripts.js"></script>
@@ -41,7 +42,7 @@
           <span class="xbutton">X</span></button>
           <nav class="clearfix">
             <ul id="primaryNav" class="navigation">
-                    <li><a href="../chamber/index.html">Home</a></li>
+              <li><a href="../chamber/index.html">Home</a></li>
               <li><a href="../chamber/directory.html">Directory</a></li>
               <li><a href="../chamber/join.html">Join</a></li>
               <li><a href="../chamber/contact.html" class="active">Contact</a></li>
@@ -52,14 +53,19 @@
 
   <div class="daydate"><p class="time"><span id="currentdate"></span></p></div>
   <main>
-    <h1>OpenWeatherMap.org API Test</h1>
-<p>The current temperature in Blanding, Utah is <span id="current-temp"></span> &deg;F</p>
-<p>The current conditions icon path is "<span id="icon-src"></span>"</p><figure><img src="" alt="" id="weathericon" />  <figcaption></figcaption></figure>
-  <div id="weathericon"></div>
-<div id="current-temp"></div>
-  <div id="windspeed"></div>
-  <div id="chill"></div>
-  </main>
+    <section class="weather">
+    <h1>Blanding Weather</h1>
+    <figure><img src="" alt="" id="weathericon" />
+   <figcaption></figcaption></figure>
+     <p>Current temperature in Blanding, Utah is <span id="current-temp"></span> &#8457</p>
+     <p><span id="windspeed"></span></p>
+     <p>Current windchill in Blanding, Utah is <span id="windchill"></span> </p>
+     <div id="windchill"></div>
+   <div class="humidity"></div>
+   <div class="chill"></div>
+   <p>&nbsp;</p>
+ </section>
+ </main>
   <footer>
     <div class="footer-addlogo">
      <!-- <div class="ftrLogo"> </div> -->
@@ -77,8 +83,8 @@
     <span class="project"> WDD 230 Project </span>
   </div>
   <div class="mod"><span class="modified">  Last Updated:</span> <span class="modified" id="lastmod"></span></div>
-  </div>
-
+</div>
+<div class="api">Thanks to <a class="credits" href="https://openweathermap.org/">OpenWeatherMap </a>for the weather API </div>
 </footer>
 </body>
 </html>
