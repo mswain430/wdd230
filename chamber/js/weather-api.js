@@ -1,4 +1,4 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=blanding&units=imperial&appid=3fb6f8f674efc66c36c4937fc382eb03";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=blanding&units=imperial&appid=803cd4031476c2dd2b8c10d59a9e1bde";
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {

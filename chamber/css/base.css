@@ -739,6 +739,28 @@ section.grid-ty  p {
   padding: 5px 20px;
   background-color: white;
 }
+/* **************************** WEATHER ************************ */
 
+section.weather{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    background-color: aliceblue;
+    padding: 4%;
+}
+
+section.weather figure {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+div.api {
+    padding: 5px;
+}
+div.app a.credits {
+    color:aliceblue
+}
 /* ********************** CONTACTS PAGE ************************** */
 /* ********************** DIRECTORY PAGE ************************** */
