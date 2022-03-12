@@ -14,11 +14,12 @@
     <link rel="stylesheet" href="../chamber/css/medium.css">
     <link rel="stylesheet" href="../chamber/css/large.css">
     <link rel="stylesheet" href="css/weather.css">
-    <script defer src="../chamber/js/currentdate.js"></script>
+       <script defer src="../chamber/js/currentdate.js"></script>
     <script defer src="../chamber/js/lastmodified.js"></script>
     <script defer src="../chamber/js/scripts.js"></script>
+     <script defer src="js/weather-api.js"></script>
    <!-- <script defer src="../chamber/js/windchill.js"></script> -->
-    <script defer src="js/weather-api.js"></script>
+
 </head>
 <body>
    <div class="banner"><span id="dybanner"></span></div>
@@ -56,14 +57,12 @@
     <section class="weather">
     <h1>Blanding Weather</h1>
     <figure><img src="" alt="" id="weathericon" />
-   <figcaption></figcaption></figure>
+     <figcaption></figcaption></figure>
      <p>Current temperature in Blanding, Utah is <span id="current-temp"></span> &#8457</p>
      <p><span id="windspeed"></span></p>
+     <div class="humidity"></div>
      <p>Current windchill in Blanding, Utah is <span id="windchill"></span> </p>
-     <div id="windchill"></div>
-   <div class="humidity"></div>
-   <div class="chill"></div>
-   <p>&nbsp;</p>
+     <p>&nbsp;</p>
  </section>
  </main>
   <footer>

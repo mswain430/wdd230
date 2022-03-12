@@ -4,25 +4,24 @@ fetch(apiURL)
   .then((jsObject) => {
     console.log(jsObject);
    document.querySelector('#current-temp').textContent = jsObject.main.temp;
-
+  document.querySelector('#windspeed').textContent = jsObject.wind.temp;
 const iconsrc= `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
 const desc = jsObject.weather[0].description;
 document.querySelector('#icon-src').textContent = iconsrc;
 document.querySelector('#weathericon').setAttribute('src', iconsrc);
 document.querySelector('#weathericon').setAttribute('alt', desc);
 document.querySelector('figcaption').textContent = desc;
-document.querySelector('.humidity').innerHTML = `Humidity: ${jsObject.main.humidity} mph;`
-document.querySelector('#windspeed').textContent = `Current windspeed in Blanding, Utah is: is ${jsObject.wind.speed} mph`;
+document.querySelector('.humidity').innerHTML=`Humidity: ${jsObject.main.humidity}`;
 
 const temp = jsObject.main.temp;
 const speed = jsObject.wind.temp;
 // temp needs to be less than 50 and wind needs to be greater than 3
 if(temp <= 50 && speed > 3){
     const windchill = 35.74 + (0.6215 * temp) - 35.75 * Math.pow(speed, 0.16) + (0.4275 * temp) * Math.pow(speed, 0.16);
-    document.querySelector('#windchill').innerHTML = `${Math.round(windchill).toFixed(2)} &#8457`;
-} else {
+    document.querySelector('#windchill').innerHTML = `${Math.round(windchill).toFixed(2)}`;
+ } else {
     document.querySelector('#windchill').innerHTML = `N/A`;
-}
+ }
 
 });
 
