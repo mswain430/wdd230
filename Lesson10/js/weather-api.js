@@ -1,4 +1,4 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=blanding&units=imperial&appid=3fb6f8f674efc66c36c4937fc382eb03";
+const apiURL = "http://api.openweathermap.org/geo/1.0/zip?zip=84511,US&p=Blanding&units=imperial&appid=3fb6f8f674efc66c36c4937fc382eb03";
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -23,4 +23,3 @@ if(temp <= 50 && speed > 3){
  }
 
 });
-
