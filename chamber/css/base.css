@@ -399,6 +399,9 @@ li.upevents span.read  { text-align: right}
   padding: 5px 10px;
 }
 .weather h3 {margin: -6px -10px 10px -10px; background-color: #0f4077; padding:5px 10px; text-align: left;}
+.weather #icon-src {
+  display:none;
+}
 .news {
   grid-row: 4;
   grid-column: 1/3;
