@@ -745,25 +745,61 @@ section.grid-ty  p {
 /* **************************** WEATHER ************************ */
 
 section.weather{
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     width: 90%;
     margin: auto;
     background-color: aliceblue;
-    padding: 4%;
+    padding:2% 2%;
+}
+#icon-src {
+  display: none;
+  height: 10px;
 }
 
-section.weather figure {
-    display:flex;
+.weather figcaption {
+  font-size: 1.4em;
+  font-weight: 400;
+  padding: 5px;
+  margin: 5px;
+}
+.weather figure {
+    display: flex;
     flex-direction: row;
     align-items: center;
+    max-height: 25px;
 }
-div.api {
+hr .color {
+  margin: 5px;
+  border-top:1px dashed #0f4077;
+  }
+
+  div.api {
     padding: 5px;
 }
-div.app a.credits {
-    color:aliceblue
+footer div.api a.credits, a.visited .credits {
+    color: aliceblue;
 }
 /* ********************** CONTACTS PAGE ************************** */
+.section-team {
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: aliceblue;
+}
+.layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.div-block {
+  display:flex;
+  flex-direction: column;
+}
+.div-block img {
+  max-width: 200px;
+
+}
 /* ********************** DIRECTORY PAGE ************************** */
