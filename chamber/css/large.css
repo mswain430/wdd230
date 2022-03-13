@@ -155,7 +155,7 @@ footer .wrap span.modified {
      width: 440px;
      height: 450px;
  }
- .hero h2 { margin-left: 0; color: #1cf0f0; font-size: 2.3em; line-height: 1em; text-align: center; text-shadow: 2px 2px #333; position: absolute; bottom: 1vh; left:1vw; }
+ .hero h2 { margin-left: 0; color: #1cf0f0; font-size: 2.3em; line-height: 1em; text-align: center; text-shadow: 2px 2px #333;  }
  .hero div.call {position: absolute; bottom: 0vw; right:0vw;
  }
 .events {
