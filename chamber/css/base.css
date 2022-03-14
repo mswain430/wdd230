@@ -519,7 +519,8 @@ section.card-grid {
 .dis-card {
   display: flex;
   flex-direction: column;
-  transition: box-shadow .3s;
+  transition: box-shadow .2s;
+  box-shadow:1px 10px 10px #0f4077;
   width: 300px;
   height: 450px;
   border-radius:10px;
@@ -532,7 +533,7 @@ section.card-grid {
     min-height: 300px;
 }
 picture img[data-src] {
-  filter: blur(0.2em);
+  filter: blur(0.02em);
 }
 
 .dis-card picture img {
@@ -540,7 +541,7 @@ picture img[data-src] {
   transition: filter 0.5s;
 }
 .dis-card h3 {
-  margin:-5px 0 0 0;
+  margin:0px 0 0 0;
   padding: 5px 0;
   background-color:rgb(15, 64, 119);
   color: aliceblue;
@@ -554,21 +555,13 @@ picture img[data-src] {
 .dis-card .container {
   padding: 2px 16px;
 }
-.dis-card picture img .img-card {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
 img.img-card {
   opacity: 1;
   display: block;
   width: 100%;
   height: auto;
   transition: .5s ease;
-  backface-visibility: hidden;
+  border-radius: 8px 8px 0 0;
 }
 
 .dis-card .middle {
@@ -582,20 +575,13 @@ img.img-card {
   text-align: center;
 }
 
-.dis-card .container:hover .image {
+.dis-card  img:hover {
   opacity: 0.3;
+  transition: .5s ease;
+  -webkit-filter: grayscale(35%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(35%);
 }
 
-.dis-card .container:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color: #04AA6D;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
 /* ********************** JOIN PAGE ************************** */
 .grid-join {
   text-align:center;
