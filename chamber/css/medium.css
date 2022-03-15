@@ -7,10 +7,8 @@
 header {
   max-height: 80px;
   width: 100%;
-  justify-content: center;
   position:relative;
-  margin:0;
-}
+  }
 
 header picture.logo {
   justify-content: right;
@@ -39,13 +37,9 @@ header picture.logo img {
 .social {justify-content: flex-start;
   padding-right: 0;order: 0}
 
-#dybanner {
-  color: rgb(248, 245, 64);;
+ #dybanner {
   font-size: 1em;
-  font-weight: bold;
-  text-shadow: 1px 1px #000;
-
-}
+} 
 
 /* ************************* NAVIGATION - MEDIUM ***********************  */
 nav#primaryNav {
