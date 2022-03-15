@@ -1052,7 +1052,7 @@ main.directory {
   text-align: left;
   font-size: 1em;
   font-weight: bold;
-  background-color: rgba(169, 208, 253, 0.2);
+  background-color: aliceblue;
   color:rgb(10, 52, 88);
 }
 .card-view section h2 {
@@ -1124,7 +1124,7 @@ main.directory {
   padding: 5px 5px;
 }
 .list-view section:nth-child(even){
-   background-color:rgb(137, 221, 247);
+   background-color:rgba(137, 221, 247, .8);
 }
 .list-view section:nth-child(odd){
    background-color: aliceblue;
