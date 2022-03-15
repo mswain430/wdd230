@@ -224,6 +224,7 @@ li.upevents:nth-child(4){display: none;}
   grid-row: 3;
   grid-column: 1;
   padding: 10px;
+  font-size: 1.2em;
 }
 /* ************************** DISCOVER PAGE ************************ */
 
