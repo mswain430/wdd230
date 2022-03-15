@@ -21,9 +21,9 @@ body {
     background-color: rgba(28, 176, 162, .8);
 }
 
-h2 {font-size: 2em;color: #0f4077;}
+h2 {font-size: 1.7em;color: #0f4077;}
 footer h2 {font-size: 2em;color: #1cb0a2; }
-h3 {font-size: 1.6em;color: white;padding:3px; background-color: #0f4077;}
+h3 {font-size: 1.4em;color: white;padding:3px; background-color: #0f4077;}
 .contacts img { width:32px; height:32px;}
 
 /*  ************* HEADER  ********* */
@@ -1019,7 +1019,7 @@ main.directory {
   margin:2%;
 }
 .directory h2 {
-  background-color: rgb(10, 52, 88);
+  background-color:#0f4077;
    padding: 10px;
    color: aliceblue;
    font-size:1.2em;
@@ -1050,7 +1050,7 @@ main.directory {
   text-align: left;
   font-size: 1em;
   font-weight: bold;
-  background-color:rgba(00,00,00,.2);
+  background-color: rgba(169, 208, 253, 0.2);
   color:rgb(10, 52, 88);
 }
 .card-view section h2 {
@@ -1060,7 +1060,7 @@ main.directory {
   width: 100%;
   font-size: 1.3em;
   font-weight: bold;
-  background-color: rgb(10, 52, 88);
+  background-color: #0f4077;
   color:aliceblue;
 }
 .list-view p {
