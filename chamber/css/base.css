@@ -387,12 +387,12 @@ footer div.api a.credits, a.visited .credits {
   border:1px solid #333;
 }
 .events h3 {margin: 0px 0px 20px 0px; background-color: #0f4077; padding:5px 10px;}
-.events ul {list-style-type: none; margin: 0px -30px;display: flex;flex-direction: column;max-width: 95%;}
-li.upevents {display:block; font-weight: bold; background-color: rgba(38, 144, 186, .3); border: 1px solid rgba(230, 228, 228, .2); border-radius: 4px; padding:5px 0;margin:0;}
-ul.events li.upevents {text-shadow:1px 2px #697897}
+.events ul {list-style-type: none; margin: 0px -30px;display: flex;flex-direction: column;max-width: 200px;}
+li.upevents {display:block; font-weight: bold; background-color: rgba(38, 144, 186, .3); border: 1px solid rgba(230, 228, 228, .2); border-radius: 4px; padding:5px 0;margin:2px;}
+ul.events li.upevents {text-shadow:1px 2px #697897; max-width: 210px;}
 li.upevents a { color:rgb(15, 64, 119)}
 span.md {width: 20px;margin-right: 5px;padding: 8px; font-size: .8em; text-align: left;}
-span.up {padding: 8px; font-size: .8em; text-align: left; }
+span.up {padding: 8px 3px; font-size: .8em; text-align: left; }
 .more {font-size: .6em; color:#CE5505   }
 ul li.upevents span:nth-child(3) {text-align: right}
 li.upevents span.read  { text-align: right}
@@ -505,7 +505,7 @@ li.upevents span.read  { text-align: right}
   border: 1px solid #CE5505;
   border-radius: 4px;
 }
-.join p {padding: 5px 10px;}
+.join p {padding: 5px 10px;font-size: 1em}
 .clearfix {clear: both;}
 
 /* ********************** DISCOVER PAGE ************************** */
@@ -855,7 +855,7 @@ main .contacts-grid {
 }
  h2.team {
   margin: 0 ;
-  padding: 10px 20px;
+  padding: 10px 10px;
   font-size: 1.5em;
   background-color: #0f4077;
   color:rgb(230, 228, 228);
@@ -866,12 +866,13 @@ div.general {
   grid-column: 1;
   grid-row: 1;
   margin: auto;
-  padding: 10px;
+  padding: 10px 3px;
 }
 div.general h3 {
   border-radius: 8px;
   padding: 8px;
   font-size: 1.3em;
+  max-width: 200px;
 }
 div.general h4 {
   border-radius: 8px;
