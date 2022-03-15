@@ -405,7 +405,7 @@ li.upevents span.read  { text-align: right}
 }
 .weather-grid {
   grid-template-columns: 1fr ;
-  grid-template-rows: 1fr 0 1fr 1fr fr ;
+  grid-template-rows: 1fr 0 1fr 1fr 1fr ;
 }
 .weather h3 {
   grid-column: 1;
@@ -538,7 +538,7 @@ section.card-grid {
   grid-row: 2;
   display:grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(1fr, 9);
+  grid-template-rows: repeat(19, 1fr);
   justify-content:start;
   text-align: left;
 }
