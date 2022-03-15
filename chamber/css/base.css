@@ -831,14 +831,26 @@ section.weather{
     margin: auto;
     background-color: aliceblue;
     padding:2% 2%;
+    font-size: .9em;
 }
+.weather:nth-child(even){
+  background-color:rgb(230, 228, 228);
+  color:rgb(243, 114, 8);
+}
+.wbox {
+  padding: 10px;
+  min-width: 320px;
+  margin:auto;
+  border: 1px dashed rgb(231, 157, 19);
+}
+
 #icon-src {
   display: none;
   height: 10px;
 }
 
 .weather figcaption {
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: 400;
   padding: 5px;
   margin: 5px;
@@ -848,7 +860,8 @@ section.weather{
     flex-direction: row;
     align-items: center;
     max-height: 25px;
-    color: aliceblue;
+    color: #000;
+    
 }
 hr .color {
   margin: 5px;
