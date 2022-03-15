@@ -50,31 +50,41 @@
   </header>
 
   <div class="daydate"><p class="time"><span id="currentdate"></span></p></div>
-  <main class="contact-grid">
+  <main class="contacts-grid">
     <h2 class="team">Blanding Chamber Contacts</h2>
-<div class="section-team">
-    <h3 class="team">Some of Our Team</h2>
-    <div class="layout-grid">
-        <div class="div-block">
-        <img src="image/renae.png" loading="lazy" alt="Rene Rampkin" class="img-circle" >
-        <h6 class="heading-70">Rene Rampkin | Employee Experience</h6>
-        <div  class="comment">My favorite thing about Blanding is...
-        </div>
-      </div>
-      <div class="div-block">
-        <img src="image/darrell.png" loading="lazy" alt="Kevin McMartin" >
-        <h6 class="heading-70">Kevin McMartin | Employee Experience</h6>
-        <div class="comment">MMy favorite thing about Blanding Chamber is...
-        </div>
+    <section class="section-contacts">
+  <div class="general" >
+    <h3>General Information</h3>
+    <h4>Physical Address:</h4>
+    <p>Blanding City Hall, 50W 100S
+    Blanding, Ut 84511</p>
+    <h4>Mailing Address:</h4>
+    <p>PO BOX 154<br/>
+    Blanding, Utah 84511</p>
+    <h4>Phone Number</h4>
+    <p>(801) 678-2791</p>
+    <h4>Email</h4>
+    <p>Mark@blandingChamber.com</p>
+     <div class="gmap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25282.29913265522!2d-109.49801209678695!3d37.618927106422255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x873778b85120df81%3A0x6243e12ff6100d99!2sBlanding%2C%20UT%2084511!5e0!3m2!1sen!2sus!4v1647318974926!5m2!1sen!2sus" max-width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-      <div class="div-block">
-        <img src="imageJames.png" loading="lazy" alt="James McCracken" >
-        <h6 class="heading-70">James McCracken | Employee Experience</h6>
-        <div class="comment">My favorite thing about the Blanding Chamber is...
-        </div>
+</div>
+    <div class="contact-form"><form method="post" action="mailto:chamber@blandingchamber.com" autocomplete="on">
+    <fieldset>
+      <legend><h3>Contact the Chamber</h3></legend>
+      <label class="top">First Name*<input type="text" name="flname" required></label>
+        <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+          <p>&nbsp;</p>
+        <legend>Your comments are important to us!</legend>
+        <label class="top">Comments<textarea id="comments" name="comments"></textarea></label>
+        <p>&nbsp;</p>
+        <input type="hidden" value="Date.now()">
+        <input class="button submitBtn" type="submit" value="My comments to the Chamber">
+    </fieldset>
+    </form>
     </div>
- </div>
 
+  </section>
   </main>
   <footer>
     <div class="footer-addlogo">

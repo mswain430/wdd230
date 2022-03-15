@@ -39,7 +39,7 @@ header picture.logo img {
 
  #dybanner {
   font-size: 1em;
-} 
+}
 
 /* ************************* NAVIGATION - MEDIUM ***********************  */
 nav#primaryNav {
@@ -200,6 +200,7 @@ li.upevents {
   background-color: #eee;
   border:1px solid #333;
   padding: 10px 20px;
+  font-size: 1.1em;
 }
 .news .body {
   max-width: 140px;
@@ -234,6 +235,7 @@ li.upevents {
   text-align:center;
   padding: 20px;
 }
+.join p {font-size: 1.5em; margin: 5px;}
 .join button {
   padding: 20px;
 }
