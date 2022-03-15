@@ -3,7 +3,9 @@ const requestURL = 'https://mswain430.github.io/wdd230/chamber/data/data.json';
 const cards = document.querySelector('div.cards');
 const listBtn = document.querySelector('#listBtn');
 const cardBtn = document.querySelector('#cardBtn');
-
+const spot1 = document.querySelector('#spot1');
+const spot2 = document.querySelector('#spot2');
+const spot3 = document.querySelector('#spot3');
  fetch(requestURL)
   .then(function (response) {
     return response.json();
@@ -27,6 +29,7 @@ function displayBusiness(localbusiness) {
   let p5 = document.createElement('p5');
   let mem = document.createElement('mem');
   let ordersuffix = ``;
+
 
  // card.setAttribute('class', 'bizcard');
  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).

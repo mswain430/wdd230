@@ -26,6 +26,7 @@ const FACTOR = 1000 * 60 * 60 * 24 //milliseconds
 let daysbetween = Date.now() - lastvisit;
 let numberofdays = daysbetween / FACTOR;
 //discovery page
+
 localStorage.setItem("lastvisit", Date.now());
 
 

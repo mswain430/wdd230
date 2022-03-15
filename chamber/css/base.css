@@ -796,24 +796,18 @@ footer div.api a.credits, a.visited .credits {
     color: aliceblue;
 }
 /* ********************** CONTACTS PAGE ************************** */
-.section-team {
-  display:grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  background-color: aliceblue;
-}
-.layout-grid {
+.contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 1fr 1fr;
+  background-color: aliceblue;
+  text-align: center;
+  margin: 2%;
+}
+.contact-grid h2 {
+  grid-column: 1;
+  grid-row: 1;
 }
 
-.div-block {
-  display:flex;
-  flex-direction: column;
-}
-.div-block img {
-  max-width: 200px;
 
-}
 /* ********************** DIRECTORY PAGE ************************** */
