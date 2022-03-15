@@ -549,7 +549,7 @@ section.card-grid {
   transition: box-shadow .2s;
   box-shadow:1px 10px 10px #0f4077;
   width: 300px;
-  height: 450px;
+  height: 425px;
   border-radius:10px;
   border: 1px solid #ccc;
   background: #fff;
@@ -580,7 +580,10 @@ picture img[data-src] {
   box-shadow: 0 0 11px rgba(33,33,33,.5);
 }
 .dis-card .container {
-  padding: 2px 16px;
+  padding: 2px 8px;
+}
+.dis-card .container p {
+  font-size: .8em;
 }
 img.img-card {
   opacity: 1;
@@ -698,7 +701,7 @@ form div {
     font-size: 1rem;
     font-weight: bolder;
 }
-
+.hint{font-size: .7em}
 form label.top input, form label.top select, form label.top textarea {
     -webkit-appearance: none;
     display: block;
@@ -718,7 +721,18 @@ form label.top textarea {
   font-weight: bold;
   color:rgba(243, 105, 13, 0.6);
   text-shadow:1px 1px black;
-
+}
+form label textarea#biz {
+  font-size: .9em;
+  font-weight: normal;
+  color: #000;
+  text-shadow: none;
+}
+form label textarea#comments {
+  font-size: .9em;
+  font-weight: normal;
+  color: #000;
+  text-shadow: none;
 }
 form label.sbs {
     display: block;
@@ -737,7 +751,7 @@ form input.submitBtn {
     background-color: #046fb9;
     color: white;
     border-radius: 8px;
-    padding: .75rem 1.5rem;
+    padding: 2rem 1.5rem;
     margin: 0 0 2rem 2%;
     width: 98%;
     max-width: 98%;
@@ -915,7 +929,7 @@ div.contact-form {
 
 .section-contacts form input.submitBtn {
   width: 95%;
-  padding: 10px 5px;
+  padding: 20px 5px;
   text-align: center;
 }
 .section-contacts textarea#comments {

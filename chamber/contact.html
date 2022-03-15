@@ -69,21 +69,24 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25282.29913265522!2d-109.49801209678695!3d37.618927106422255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x873778b85120df81%3A0x6243e12ff6100d99!2sBlanding%2C%20UT%2084511!5e0!3m2!1sen!2sus!4v1647318974926!5m2!1sen!2sus" max-width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 </div>
-    <div class="contact-form"><form method="post" action="mailto:chamber@blandingchamber.com" autocomplete="on">
+    <div class="contact-form">
+      <div class="formbox">
+     <div class="feedback"></div>
+      <form method="get" action="thankyou.html" autocomplete="on">
     <fieldset>
       <legend><h3>Contact the Chamber</h3></legend>
-      <label class="top">First and Last Name*<input type="text" name="flname" required></label>
+      <label class="top">First and Last Name*<input type="text" name="name" required></label>
         <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
           <p>&nbsp;</p>
         <legend>Your comments are important to us!</legend>
-        <label class="top">Comments<textarea id="comments" name="comments"></textarea></label>
+        <label class="top">Comments<textarea id="comments" name="comments"  rows="6" cols="30"></textarea></label>
         <p>&nbsp;</p>
         <input type="hidden" value="Date.now()">
         <input class="button submitBtn" type="submit" value="My comments to the Chamber">
     </fieldset>
     </form>
     </div>
-
+  </div>
   </section>
   </main>
   <footer>
@@ -106,5 +109,22 @@
   </div>
 
 </footer>
+<script>
+  // get the feedback div element so we can do something with it.
+  const feedbackElement = document.getElementById("feedback");
+  // get the form so we can read what was entered in it.
+  const formElement = document.forms[0];
+  // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+  formElement.addEventListener("submit", function(e) {
+    // stop the form from doing the default action
+    e.preventDefault();
+    // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+    feedbackElement.innerHTML = `Hello  ${formElement.flname.value} ! Thank you for your message. We will get back with you as soon as possible!`;
+    // make the feedback element visible.
+    feedbackElement.style.display = "block";
+    // add a class to move everything down so our message doesn't cover it.
+    document.body.classList.toggle("moveDown");
+  });
+</script>
 </body>
 </html>
