@@ -12,7 +12,7 @@ fetch(apiURL)
    let imgsrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
     let imgalt = jsObject.weather[0].description;
 
-document.querySelector('#icon-src').textContent = iconsrc;
+document.querySelector('#icon-src').textContent = imgsrc;
 document.querySelector('#weathericon').setAttribute('src', imgsrc);
 document.querySelector('#weathericon').setAttribute('alt', imgalt);
 document.querySelector('figcaption').textContent = caption;
