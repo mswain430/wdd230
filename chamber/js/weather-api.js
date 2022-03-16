@@ -16,7 +16,7 @@ document.querySelector('.humidity').innerHTML = `Humidity: ${jsObject.main.humid
 document.querySelector('#windspeed').textContent = `Windspeed: ${jsObject.wind.speed} mph`;
 
 const temp = jsObject.main.temp;
-const speed = jsObject.wind.temp;
+const speed = jsObject.wind.speed;
 // temp needs to be less than 50 and wind needs to be greater than 3
 if(temp <= 50 && speed > 3){
     const windchill = 35.74 + (0.6215 * temp) - 35.75 * Math.pow(speed, 0.16) + (0.4275 * temp) * Math.pow(speed, 0.16);
