@@ -139,8 +139,6 @@ footer .wrap .copyright {
 .hero {
   grid-row: 1/2;
   grid-column: 1/4;
-  /* background-image: url('../images/imgp8973_md.jpg'); */
- /*  background-image: url('../images/wdd230-org-md.jpg'); */
   background-size: cover;
   border:1px solid #333;
 }
@@ -320,6 +318,9 @@ grid-ty section p {
   background-color: white;
 }
 
+section.stats {
+  display:block;
+}
 }
 /* **************************** MEDIUM VIEW ********************* */
 @media only screen and (min-width:32rem) {
