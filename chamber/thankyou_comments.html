@@ -16,7 +16,6 @@
     <script defer src="js/currentdate.js"></script>
     <script defer src="js/lastmodified.js"></script>
     <script defer src="js/scripts.js"></script>
-
 </head>
 <body>
    <div class="banner"><span id="dybanner"></span></div>
@@ -42,60 +41,30 @@
           <span class="xbutton">X</span></button>
           <nav class="clearfix">
             <ul id="primaryNav" class="navigation">
-               <li><a href="index.html">Home</a></li>
-               <li><a href="directory.html">Directory</a></li>
-              <li><a href="join.html">Join</a></li>
-              <li><a href="contact.html" class="active">Contact</a></li>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="directory.html">Directory</a></li>
+              <li><a href="join.html" class="active">Join</a></li>
+              <li><a href="contact.html">Contact</a></li>
               <li><a href="discover.html">Discover</a></li>
           </ul>
         </nav>
   </header>
 
   <div class="daydate"><p class="time"><span id="currentdate"></span></p></div>
-  <main class="contacts-grid">
-    <h2 class="team">Blanding Chamber Contacts</h2>
-    <section class="section-contacts">
-  <div class="general" >
-    <h3>General Information</h3>
-    <h4>Physical Address:</h4>
-    <p>Blanding City Hall, 50W 100S
-    Blanding, Ut 84511</p>
-    <h4>Mailing Address:</h4>
-    <p>PO BOX 154<br/>
-    Blanding, Utah 84511</p>
-    <h4>Phone Number</h4>
-    <p>(801) 678-2791</p>
-    <h4>Email</h4>
-    <p>Mark@blandingChamber.com</p>
-     <div class="gmap">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25282.29913265522!2d-109.49801209678695!3d37.618927106422255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x873778b85120df81%3A0x6243e12ff6100d99!2sBlanding%2C%20UT%2084511!5e0!3m2!1sen!2sus!4v1647318974926!5m2!1sen!2sus" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-</div>
-    <div class="contact-form">
-      <div class="formbox">
-     <div id="feedback"></div>
-      <form method="get" action="thankyou_comments.html" autocomplete="on">
-    <fieldset>
-      <legend><h3>Contact the Chamber</h3></legend>
-      <label class="top">First and Last Name*<input type="text" name="name" required></label>
-        <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-          <p>&nbsp;</p>
-        <p class="imp">Your comments are important to us!</p>
-        <label class="top">Comments<textarea id="comments" name="comments"  rows="6" cols="30"></textarea></label>
-        <p>&nbsp;</p>
-        <input type="hidden" value="Date.now()">
-        <input class="button submitBtn" type="submit" value="My comments to the Chamber">
-    </fieldset>
-    </form>
-    </div>
-  </div>
-  </section>
-  </main>
+  <main class="grid-ty-bg">
+    <section class="grid-ty">
+       <h2>Blanding City<br/>Chamber of Commerce</h2>
+      <picture>
+        <img src="images/TYcard.webp" loading="lazy">
+      </picture>
+
+     <p>Thank-you for sending us your comments concerning the Blanding Chamber of Commerce. We will get back to you soon.</p>
+  </section></main>
   <footer>
     <div class="footer-addlogo">
      <!-- <div class="ftrLogo"> </div> -->
       <div class="contactInfo">
-        <img src="images/blanding-logo.png" class="ftrLogo" alt="logo" />
+        <img src="images/blanding-logo.webp" class="ftrLogo" alt="logo" />
          <div class="address"><h2>Blanding Chamber of Commerce</h2>50 West 100 South<br>Blanding, UT 84511</div>
          <div class="contacts">Blanding@chamber.com<br>(435) 678-2791<br> <a href="https://www.google.com/maps/dir/33.0030442,-117.0441006/blanding+city+office/@35.0461651,-117.7472662,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x8739d47751ab059d:0x14b197dc31c6550a!2m2!1d-109.4789557!2d37.62419" class="maplink"><img src="images/map-42871.svg" alt="map pin"/>Location Map </a></div>
       </div>
@@ -111,6 +80,5 @@
   </div>
 
 </footer>
-
 </body>
 </html>
