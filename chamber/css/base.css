@@ -936,7 +936,7 @@ div.contact-form {
   padding: 5px 8px;
   border-radius: 8px;
 }
-
+p.imp {font-weight: bolder}
 .section-contacts form input.submitBtn {
   width: 95%;
   padding: 20px 5px;
