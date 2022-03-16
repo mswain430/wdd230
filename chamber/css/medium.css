@@ -47,15 +47,10 @@ nav#primaryNav {
   flex-direction: column;
   background-color: #046fb9;
   text-align: center;
-/*box-shadow: 0 2px 5px rgb(39, 89, 146);
-  right: 70%;*/
+
 }
 
 nav ul {
-/*	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;*/
   display:none;
 }
 nav ul.open {
@@ -71,6 +66,7 @@ nav ul li a {
   display:block;
   border: none;
   padding: .5rem 1rem;
+  color: aliceblue;
 }
 
 footer {
@@ -129,12 +125,6 @@ footer .wrap .copyright {
     padding: 5px;
     line-height: 1.4em;
 }
-
-/*span.author::before {
-  content: " | ";
-  color:  aliceblue;
-  font-weight: 300;
-} */
 
 .home-grid {
     display:grid;
@@ -338,16 +328,16 @@ grid-ty section p {
   .list-view section p2{
        display: block;
   }
-  
+
   .card-view section p2{
        display: block;
        padding: 5px 20px;
   }
-  
+
   .card-view section p3{
        display: none;
   }
-  
+
   .list-view section p3{
        display: none;
   }

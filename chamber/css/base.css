@@ -200,14 +200,12 @@ nav {
     display:flex;
     justify-content:left;
     align-items: center;
-    /*background-color:#eee; */
     margin: 2vh 0;
     color: #000;
     margin:0;
     z-index: 1000;
     position: absolute;
     top: 75px;
-    right: 40%;
     width: 200px;
     right: 0;
     text-align: left;
@@ -226,7 +224,7 @@ nav ul li a {
   display: block;
   padding: .8rem 0vw;
   text-decoration: none;
-  color: #fff;
+  color: aliceblue;
 	text-align: center;
 	text-decoration: none;
   cursor: pointer;
@@ -257,7 +255,7 @@ nav ul.open li a {
 	padding: 0.75rem;
 	text-align: center;
 	text-decoration: none;
-  color: white;
+  color: aliceblue;
 	font-weight: 700;
 	transition: 0.5s;
 	font-size: clamp(1rem, 2vmin, 1.5rem);
