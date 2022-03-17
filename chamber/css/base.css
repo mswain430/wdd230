@@ -832,7 +832,7 @@ section.weather{
   padding: 10px;
   min-width: 320px;
   margin:auto;
-  border: 1px dashed rgb(231, 157, 19);
+  border: 2px dashed rgb(231, 157, 19);
 }
 
 #icon-src {

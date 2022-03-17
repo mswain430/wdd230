@@ -179,6 +179,7 @@ li.upevents {
   grid-row: 5;
   grid-column: 3/4;
 }
+
 .news h2, .news h3 {
   margin: -10px -20px 10px -20px;
   padding: 10px 20px;
@@ -288,9 +289,8 @@ p.member-message {
   margin: auto;
   border: 3px solid #000;
   background-color: aliceblue;
-
-
 }
+
 .grid-ty section picture {
   grid-column: 1;
   grid-row: 2;
