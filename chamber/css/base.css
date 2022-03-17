@@ -835,7 +835,9 @@ section.weather{
   display: none;
   height: 10px;
 }
-
+.icon-pic {
+  width: 60px;
+}
 .weather figcaption {
   font-size: 1.3em;
   font-weight: 400;
