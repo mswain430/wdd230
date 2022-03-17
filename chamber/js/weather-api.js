@@ -13,14 +13,14 @@ document.querySelector('#weathericon').setAttribute('src', iconsrc);
 document.querySelector('#weathericon').setAttribute('alt', desc);
 document.querySelector('figcaption').textContent = desc;
 document.querySelector('.humidity').innerHTML = `Humidity: ${jsObject.main.humidity}&percnt;`;
-document.querySelector('#windspeed').textContent = `Windspeed: ${jsObject.wind.speed}`;
+document.querySelector('#windspeed').textContent = `Windspeed: ${jsObject.wind.speed}.toFixed(1)`;
 
 const temp = jsObject.main.temp;
 const speed = jsObject.wind.speed;
 // temp needs to be less than 50 and wind needs to be greater than 3
 if(temp <= 50 && speed > 3){
     const windchill = 35.74 + (0.6215 * temp) - 35.75 * Math.pow(speed, 0.16) + (0.4275 * temp) * Math.pow(speed, 0.16);
-    document.querySelector('#windchill').innerHTML = `Windchill: ${Math.round(windchill).toFixed(2)}`;
+    document.querySelector('#windchill').innerHTML = `Windchill: ${Math.round(windchill).toFixed(1)}`;
 } else {
     document.querySelector('#windchill').innerHTML = `N/A`;
 }
