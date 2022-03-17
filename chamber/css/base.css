@@ -201,7 +201,7 @@ nav {
     justify-content:left;
     align-items: center;
     margin: 2vh 0;
-    color: #000;
+    color: aliceblue;
     margin:0;
     z-index: 1000;
     position: absolute;
@@ -234,6 +234,9 @@ nav ul li a {
 	background: linear-gradient(90deg, transparent, yellow, transparent) top /
 		var(--d, 0) 5px no-repeat;
 	transition: 0.5s;
+}
+nav ul li a:link {
+  color: aliceblue;
 }
 nav ul li a.active  {
   background-color: rgba(0,0,0,.2);
