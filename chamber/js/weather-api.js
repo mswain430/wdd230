@@ -13,7 +13,7 @@ document.querySelector('#weathericon').setAttribute('src', iconsrc);
 document.querySelector('#weathericon').setAttribute('alt', desc);
 document.querySelector('figcaption').textContent = desc;
 document.querySelector('.humidity').innerHTML = `Humidity: ${jsObject.main.humidity}&percnt;`;
-document.querySelector('#windspeed').textContent = `Windspeed: ${jsObject.wind.speed}.toFixed(1)`;
+document.querySelector('#windspeed').textContent = `Windspeed: ${jsObject.wind.speed}mph`;
 
 const temp = jsObject.main.temp;
 const speed = jsObject.wind.speed;
