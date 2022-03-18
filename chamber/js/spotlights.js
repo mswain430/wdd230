@@ -14,10 +14,10 @@ let spot3 = document.querySelector('#spot3');
     localbusiness.forEach(displayBusiness); 
     let goldbusiness1 = localbusiness.filter(x => (x.membership === 'gold') && (x.order === '1'));
     goldbusiness1.forEach(displaySpot1);
-    let goldbusiness2 = localbusiness.filter(y => (x.membership === 'gold') && (y.order === '2'));
-    goldbusiness2.forEach(displaySpot2);
-    let goldbusiness3 = localbusiness.filter(z => (x.membership === 'gold') && (z.order === '3'));
-    goldbusiness3.forEach(displaySpot3);
+ //   let goldbusiness2 = localbusiness.filter(y => (x.membership === 'gold') && (y.order === '2'));
+ //   goldbusiness2.forEach(displaySpot2);
+ //   let goldbusiness3 = localbusiness.filter(z => (x.membership === 'gold') && (z.order === '3'));
+  //  goldbusiness3.forEach(displaySpot3);
 });
 
 function displaySpot1(goldbusiness1) {
