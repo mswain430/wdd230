@@ -325,41 +325,36 @@ section.stats {
 /* **************************** MEDIUM VIEW ********************* */
 @media only screen and (min-width:32rem) {
 
-
-  .list-view section p2{
-       display: block;
+  .list-view section {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: .9em;
   }
 
-  .card-view section p2{
+  .card-view section p3 {
        display: block;
        padding: 5px 20px;
   }
 
-  .card-view section p3{
-       display: none;
+  .list-view section p1,p3,p4 {
+      padding: 5px;
+      font-size: .9em;
+      text-align: left;
+      color: black;
   }
+  .card-view section p1,p2,p3,p4 {
+      margin-left: auto;
+      margin-right: auto;
+      font-size: .9em;
+      text-align: center;
+      color: black;
+  }
+  .list-view p2, p5, mem {
+      display: none;
+  }
+  .card-view {
+  grid-template-columns: repeat(2, 1fr);
+  } 
 
-  .list-view section p3{
-       display: none;
-  }
-      .list-view section p1,p2,p3,p4, p5, mem {
-          padding: 5px;
-          font-size: 1em;
-          text-align: left;
-          color: black;
-      }
-      .card-view section p1,p2,p3,p4 {
-          margin-left: auto;
-          margin-right: auto;
-          font-size: 1em;
-          text-align: center;
-          color: black;
-      }
-      .list-view p2 {
-          display:none;
-      }
-      .card-view {
-      grid-template-columns: repeat(2, 1fr);
-      }
-  }
+}
 

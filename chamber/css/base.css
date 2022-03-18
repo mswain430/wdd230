@@ -1056,6 +1056,7 @@ main.directory {
   padding: 0 0 15px 0;
   border-radius: 0;
   margin: .5vw 2%;
+  font-size: .9em;
 }
 .list-view section h2{
   grid-column:1;
@@ -1064,7 +1065,7 @@ main.directory {
   text-align: left;
   font-size: 1em;
   font-weight: bold;
-  background-color: aliceblue;
+  background-color: transparent;
   color:rgb(10, 52, 88);
 }
 .card-view section h2 {
@@ -1130,7 +1131,7 @@ main.directory {
   margin-right: 2%;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1em;
+  font-size: .9em;
   text-align:left;
   color: #000;
   padding: 5px 5px;

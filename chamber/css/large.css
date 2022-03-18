@@ -267,7 +267,7 @@ div.gmap {
 
 }
 /* ******************************* LARGE VIEW Directory ***************************** */
-@media only screen and (min-width:62rem) {
+@media only screen and (min-width:67rem) {
   .card-view {
       grid-template-columns: repeat(3,1fr) ;
   }
@@ -284,12 +284,15 @@ div.gmap {
       background-color: transparent;
   }
 
-  .list-view section p3 {
+  .list-view section p2 {
       display:block;
       grid-column: 2;
       grid-row: 1;
       padding-top: 10px;
       text-align: left;
+  }
+  .list-view section p3 {
+    display: none;
   }
   .list-view section p1 {
       grid-column: 3;
@@ -311,20 +314,8 @@ div.gmap {
       grid-row: 2;
 }
 
-  .list-view section p2{
-      display: none;
-  }
-
-  .card-view section p2{
-      display: none;
-  }
-
   .card-view section p3{
-      display: block;
-  }
-
-  .list-view section p3{
-      display: block;
+      display: none;
   }
 
 }
