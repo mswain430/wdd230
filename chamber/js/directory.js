@@ -11,7 +11,7 @@ const spot3 = document.querySelector('#spot3');
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
+   //  console.table(jsonObject);  temporary checking for valid response and data parsing
     const localbusiness = jsonObject['localbusiness'];
     localbusiness.forEach(displayBusiness);
    /* localbusiness.forEach(displayBusinessTable); */
@@ -64,8 +64,10 @@ function displayBusiness(localbusiness) {
 
 listBtn.addEventListener("click", ()=> {
    cards.classList.replace("card-view","list-view")
+   
 });
 
 cardBtn.addEventListener("click", ()=> {
-   cards.classList.replace("list-view","card-view")
+  cardBtn.classList.add("activeBtn")
+  cards.classList.replace("list-view","card-view")
 });

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blanding Chamber of Commerce, Blanding Utah">
+    <title>Blanding Chamber of Commerce</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/currentdate.js"></script>
+    <script defer src="js/lastmodified.js"></script>
+    <script defer src="js/scripts.js"></script>
+    <script defer src="js/weather-api.js"></script>
+    <script defer src="js/spotlights.js"></script>
+</head>
+<body>
+   <div class="banner"><span id="dybanner"></span></div>
+   <div class="topdiv-green"></div>
+   <div class="topdiv"></div>
+
+   <header class="clearfix">
+      <picture class="logo">
+          <source srcset="images/blanding-logo.webp"
+            media="(max-width: 35rem)">
+          <source srcset="images/blanding.webp"
+            media="(min-width: 65rem)">
+            <img src="images/blanding-xs1.webp" alt="Blanding City Chamber of Commerce logo" />
+      </picture>
+        <section class="heading">
+          <h1>Blanding</h1>
+          <div class="sub">Chamber of Commerce</div>
+        </section>
+         <div class="social">
+          <a href="https://facebook.com"><img src="images/facebook.svg" alt="facebook" class="fa fa-facebook"/></a>
+          <a href="https://twitter.com"><img src="images/twitter.svg" alt="twitter" class="fa fa-twitter"/></a>
+         </div>
+         <button id="ham" class="hambutton"><span>&#9776;</span>
+          <span class="xbutton">X</span></button>
+          <nav>
+            <ul id="primaryNav" class="navigation">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="directory.html">Directory</a></li>
+              <li><a href="join.html">Join</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="discover.html">Discover</a></li>
+          </ul>
+        </nav>
+  </header>
+
+  <div class="daydate"><p class="time"><span id="currentdate"></span></p></div>
+  <main class="home-grid">
+       <div class="hero">
+        <picture class="hero-img">
+          <source srcset="images/IMGP8973_med.webp" media="(min-width: 35rem)">
+          <source srcset="images/IMGP8973_lg.webp" media="(min-width: 63.5rem)" >
+          <img src="images/IMGP8973_sm.webp" alt="hero image practice">
+        </picture>
+          <h2>Visit Blanding <br/> Discover<br/> Earth's Secrets</h2>
+       <div class="call"><a href="join.html">Join our Chamber</a></div></div>
+
+  <div class="news">
+     <h3>News Minute</h3>
+   <div class="news-body">
+<p><span class="greeting">Dear Business Community Members:</span>
+Mark your calendars and plan to join us for our <b>April Chamber lunch meeting.</b> <b>Thursday, April 10th, City Council Meeting Hall</b>, Blanding City Hall,
+1:00 lunch and presentation. <b>Guest speaker John Johns, from National Forest System</b>. They will give tips on great places to encourage visitors to frequent.</p>
+
+</div></div>
+      <div class="join" ><button onclick="window.location.href='join.html';">Join Today!</button><p>Discover how you can join the Chamber and how it can benefit your organization.</p></div>
+      <div class="events"><h3>Upcoming Events</h3>
+   <ul>
+    <li class="upevents"><a href="#" ><span class="md">Apr 22</span><span class="up">Awards-Installataion</span></a></li>
+    <li class="upevents"><a href="#"><span class="md">May 15</span><span class="up">Connect 4 Lunch</span></a></li>
+    <li class="upevents"><a href="#"><span class="md">June 7</span><span class="up">Tech Summit</span></a></li>
+    </ul></div>
+     <div class="weather weather-grid">
+       <h3>Blanding Weather</h3>
+       <div class="icon-pic"><span id="icon-src"></span></div>
+       <div><figure><img src="images/sun.GIF" alt="blandingweather" id="weathericon"/><figcaption></figcaption></figure></div>
+      <hr class="color">
+      <p>Temperature: <span id="current-temp"></span>&#8457;</p>
+      <p><span id="windspeed"></span></p>
+      <p><span class="humidity"></span></p>
+      <p><span id="windchill"></span>&#8457;</p>
+     </div>
+        <div class="spot">
+          <div id="spot1" class="spot1">
+               
+            </div>
+          <div id="spot2" class="spot2" >
+              
+          </div>
+          <div id="spot3" class="spot3">
+               
+          </div>
+       </div>
+  </main>
+  <footer>
+    <div class="footer-addlogo">
+       <div class="contactInfo">
+        <img src="images/blanding-logo.webp" class="ftrLogo" alt="Blanding Chamber of Commerce" />
+         <div class="address"><h2>Blanding Chamber of Commerce</h2>50 West 100 South<br>Blanding, UT 84511</div>
+         <div class="contacts">Blanding@chamber.com<br>(435) 678-2791<br> <a href="https://www.google.com/maps/dir/33.0030442,-117.0441006/blanding+city+office/@35.0461651,-117.7472662,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x8739d47751ab059d:0x14b197dc31c6550a!2m2!1d-109.4789557!2d37.62419" class="maplink"><img src="images/map-42871.svg" alt="map pin"/>Location Map </a></div>
+      </div>
+    </div>
+  <div class="wrap">
+    <div class="copyright">
+      <div>&#169; <span id="year" class="year">  2021 </span>
+      <span class="sm_name"> Blanding Chamber </span></div>
+      <span class="author">&nbsp; Millie Swain &nbsp; </span>
+    <span class="project"> WDD 230 Project </span>
+  </div>
+  <div class="mod"><span class="modified">  Last Updated:</span> <span class="modified" id="lastmod"></span></div>
+  </div>
+<div class="api">Weather Data Source: <a class="credits" href="https://openweathermap.org/">OpenWeatherMap</a></div>
+</footer>
+</body>
+</html>

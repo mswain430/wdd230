@@ -1188,4 +1188,7 @@ main.directory {
    display: none;
 }
 
+.activeBtn {
+  background-color:rgba(137, 221, 247, .8);
+}
 
