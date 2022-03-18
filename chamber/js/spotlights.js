@@ -21,7 +21,7 @@ let spot3 = document.querySelector('#spot3');
 });
 
 function displaySpot1(goldbusiness1) {
-    let card = document.createElement('article');
+    let card = document.createElement('section');
     let logo = document.createElement('img');
     let h3 = document.createElement('h3');
     let p1 = document.createElement('p1');
