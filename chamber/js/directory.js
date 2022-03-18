@@ -65,6 +65,7 @@ function displayBusiness(localbusiness) {
 listBtn.addEventListener("click", ()=> {
    cards.classList.replace("card-view","list-view")
 });
+
 cardBtn.addEventListener("click", ()=> {
    cards.classList.replace("list-view","card-view")
 });
