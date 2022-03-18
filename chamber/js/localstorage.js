@@ -5,7 +5,7 @@ const visitsDisplay = document.querySelector(".visits");
 const lastvisit2Display = document.querySelector(".lastvisit2");
 
 let lastvisit = Number(window.localStorage.getItem('last-visit-date'));
-let thisvisit = Date.now();
+//let thisvisit = Date.now();
 
 if(lastvisit != 0) {
     let thisvisit = Date.now();
@@ -23,12 +23,12 @@ if(lastvisit != 0) {
     window.localStorage.setItem('last-visit-date', Date.now());
     document.querySelector('#lastvisit2').innerHTML =`This is your first visit! Welcome!`;
 }
-
+// ********************************************************* # of visits* */
 //get the stored value in localstorage
 let numVisits = Number(window.localStorage.getItem("visit"));
-let lastVisit = Number(window.localStorage.getItem(""));
-//determine if this is the first visit or display the number of visits
 
+
+//determine if this is the first visit or display the number of visits
 if(numVisits !== 0) {
    visitsDisplay.innerHTML = `You have visited ${numVisits} times`;
 
@@ -38,7 +38,7 @@ if(numVisits !== 0) {
 // increment the number of visits
 numVisits++;
 // store the number of visits value
-localStorage.setItem("visit", numVisits)
-
+window.localStorage.setItem("visit", numVisits)
+//window.localStorage.setItem('last-visit-date', thisvisit)
 // show todays date
 //todayDisplay.textContent = Date.now();

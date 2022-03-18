@@ -1008,7 +1008,9 @@ button#cardBtn:hover {
 button#cardBtn focus {
 background-color:rgb(137, 221, 247);
 }
-
+button#cardBtn .cards .card-view {
+  background-color:rgb(137, 221, 247);
+}
 main.directory {
   display:block;
   display:flex;
