@@ -625,6 +625,10 @@ ul.statsli li {
 section.stats {
   display: none;
 }
+.topdiv-green {
+  text-align:center;
+
+}
 
 /* ********************** JOIN PAGE ************************** */
 .grid-join {
