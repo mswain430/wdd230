@@ -9,39 +9,42 @@ let spot3 = document.querySelector('.spot3');
     return response.json();
   })
   .then(function (jsonObject) {
-   //  console.table(jsonObject);  temporary checking for valid response and data parsing
+   //  temporary checking for valid response and data parsing
     const localbusiness = jsonObject['localbusiness'];
-    localbusiness.forEach(displayBusiness);
-    let goldbusiness1 = localbusiness.filter(x => (x.membership === 'gold') && (x.order === '1'));
-    goldbusiness1.forEach(displaySpot1);
- //   let goldbusiness2 = localbusiness.filter(y => (x.membership === 'gold') && (y.order === '2'));
- //   goldbusiness2.forEach(displaySpot2);
- //   let goldbusiness3 = localbusiness.filter(z => (x.membership === 'gold') && (z.order === '3'));
-  //  goldbusiness3.forEach(displaySpot3);
+   // localbusiness.forEach(displayBusiness);
+    let goldbusiness = localbusiness.filter(x => (x.membership === 'gold') && (x.order === '1'));
+      goldbusiness.forEach(displaySpot);
+
+   let goldbusiness2 = localbusiness.filter(y => (y.membership === 'gold') && (y.order === '4'));
+      goldbusiness2.forEach(displaySpot2);
+
+   let goldbusiness3 = localbusiness.filter(z => (z.membership === 'gold') && (z.order === '7'));
+      goldbusiness3.forEach(displaySpot3);
+   console.log();
 });
 
-function displaySpot1(goldbusiness1) {
+function displaySpot(goldbusiness, card) {
     let card = document.createElement('section');
-    let logo = document.createElement('img');
     let h3 = document.createElement('h3');
+    let logo = document.createElement('img');
     let p1 = document.createElement('p1');
     let p3 = document.createElement('p3');
     let p4 = document.createElement('p4');
     let mem = document.createElement('mem');
 
 
-    card.setAttribute('class', 'spotcard');
+    card.setAttribute('class', 'card');
  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-    logo.setAttribute('src', `${goldbusiness1.logourl}`);
-    logo.setAttribute('alt', `logo for ${goldbusiness1.bizname}`);
+    logo.setAttribute('src', `${goldbusiness.logourl}`);
+    logo.setAttribute('alt', `logo for ${goldbusiness.bizname}`);
     logo.setAttribute('class', '.logo');
 
   // Change the innerHTML property of the h3 element to contain the business' info
-    h3.innerHTML = `${goldbusiness1.bizname}`;
-    p1.innerHTML = `${goldbusiness1.phone}`;
-    p3.innerHTML = `${goldbusiness1.address} <br> ${goldbusiness1.city} ${goldbusiness1.zip}`;
-    p4.innerHTML = `<a href="${goldbusiness1.website}">website</a>`;
-    mem.innerHTML = `${goldbusiness1.membership} sponsor`;
+    h3.innerHTML = `${goldbusiness.bizname}`;
+    p1.innerHTML = `${goldbusiness.phone}`;
+    p3.innerHTML = `${goldbusiness.address} <br> ${goldbusiness.city} ${goldbusiness.zip}`;
+    p4.innerHTML = `<a href="${goldbusiness.website}">website</a>`;
+    mem.innerHTML = `${goldbusiness.membership} sponsor`;
 
   // Add/append the section(card) with the h2 element
 
@@ -54,8 +57,10 @@ function displaySpot1(goldbusiness1) {
     card.appendChild(mem);
 
   // Add/append the existing HTML div with the cards class with the section(card)
-  spot1.appendChild();
+  card.appendChild();
 }
 
-
+         spot1 = spot1.displaySpot(goldbusiness, card);
+         spot2 = spot2.displaySpot(goldbusiness2, card);
+         spot3 = spot3.displaySpot(goldbusiness3, card);
 
