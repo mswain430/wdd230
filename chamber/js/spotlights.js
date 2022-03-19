@@ -1,5 +1,5 @@
 const requestURL = 'https://mswain430.github.io/wdd230/chamber/data/data.json';
-
+const cards = document.querySelector('div.cards');
 let spot1 = document.querySelector('#spot1');
 let spot2 = document.querySelector('#spot2');
 let spot3 = document.querySelector('#spot3');
@@ -34,7 +34,7 @@ function displaySpot1(goldbusiness1) {
  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     logo.setAttribute('src', `${goldbusiness1.logourl}`);
     logo.setAttribute('alt', `logo for ${goldbusiness1.bizname}`);
-    logo.setAttribute('class', '.spotimg');
+    logo.setAttribute('class', '.logo');
 
   // Change the innerHTML property of the h3 element to contain the business' info
     h3.innerHTML = `${goldbusiness1.bizname}`;
