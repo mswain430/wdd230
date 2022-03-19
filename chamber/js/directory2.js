@@ -16,6 +16,11 @@ const cardBtn = document.querySelector('#cardBtn');
     localbusiness.forEach(displayBusiness);
    /* localbusiness.forEach(displayBusinessTable); */
 });
+function isGold(value) {
+  return localbusiness.membership === 'Gold';
+}
+
+let filtered = localbusiness.filter(isGold)
 
 function displayBusiness(localbusiness) {
   // Create elements to add to the document

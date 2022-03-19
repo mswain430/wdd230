@@ -1,8 +1,8 @@
 const requestURL = 'https://mswain430.github.io/wdd230/chamber/data/data.json';
 const cards = document.querySelector('div.cards');
-let spot1 = document.querySelector('#spot1');
-let spot2 = document.querySelector('#spot2');
-let spot3 = document.querySelector('#spot3');
+let spot1 = document.querySelector('.spot1');
+let spot2 = document.querySelector('.spot2');
+let spot3 = document.querySelector('.spot3');
 
  fetch(requestURL)
   .then(function (response) {
@@ -11,7 +11,7 @@ let spot3 = document.querySelector('#spot3');
   .then(function (jsonObject) {
    //  console.table(jsonObject);  temporary checking for valid response and data parsing
     const localbusiness = jsonObject['localbusiness'];
-    localbusiness.forEach(displayBusiness); 
+    localbusiness.forEach(displayBusiness);
     let goldbusiness1 = localbusiness.filter(x => (x.membership === 'gold') && (x.order === '1'));
     goldbusiness1.forEach(displaySpot1);
  //   let goldbusiness2 = localbusiness.filter(y => (x.membership === 'gold') && (y.order === '2'));
@@ -28,8 +28,8 @@ function displaySpot1(goldbusiness1) {
     let p3 = document.createElement('p3');
     let p4 = document.createElement('p4');
     let mem = document.createElement('mem');
- 
-  
+
+
     card.setAttribute('class', 'spotcard');
  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     logo.setAttribute('src', `${goldbusiness1.logourl}`);
@@ -52,7 +52,7 @@ function displaySpot1(goldbusiness1) {
     card.appendChild(p4);
 
     card.appendChild(mem);
- 
+
   // Add/append the existing HTML div with the cards class with the section(card)
   spot1.appendChild();
 }
