@@ -267,7 +267,7 @@ div.gmap {
 
 }
 /* ******************************* LARGE VIEW Directory ***************************** */
-@media only screen and (min-width:67rem) {
+@media only screen and (min-width:68rem) {
   .card-view {
       grid-template-columns: repeat(3,1fr) ;
   }
