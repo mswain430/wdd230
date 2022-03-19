@@ -1,4 +1,4 @@
-//loading = 'lazy'
+
 let imagesToLoad = document.querySelectorAll('img[data-src]');
 const loadImages = (image) => {
   image.setAttribute('src', image.getAttribute('data-src'));
@@ -10,3 +10,4 @@ const loadImages = (image) => {
 imagesToLoad.forEach((img) => {
   loadImages(img);
 });
+

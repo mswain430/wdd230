@@ -205,12 +205,12 @@ li.upevents {
 
 }
 
-#spot1 {
+.spot1 {
   -webkit-flex: 1;
   flex: 1;
   min-width: 50%;
 }
-#spot2 {
+.spot2 {
    flex: 2;
    min-width: 50%;
 }
@@ -352,7 +352,7 @@ section.stats {
   }
   .card-view {
   grid-template-columns: repeat(2, 1fr);
-  } 
+  }
 
 }
 
