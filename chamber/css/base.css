@@ -405,8 +405,8 @@ footer div.api a.credits, a.visited .credits {
 li.upevents {display:block; font-weight: bold; background-color: rgba(38, 144, 186, .3); border: 1px solid rgba(230, 228, 228, .2); border-radius: 4px; padding:5px 0;margin:2px;}
 ul.events li.upevents {text-shadow:1px 2px #697897; max-width: 90%}
 li.upevents a { color:rgb(15, 64, 119)}
-span.md {width: 20px;margin-right: 5px;padding: 8px; font-size: .8em; text-align: left;}
-span.up {padding: 8px 3px; font-size: .8em; text-align: left; }
+span.md {width: 20px;margin-right: 5px;padding: 8px; font-size: 1em; text-align: left;}
+span.up {padding: 8px 3px; font-size: 1em; text-align: left; }
 .more {font-size: .6em; color:#CE5505   }
 ul li.upevents span:nth-child(3) {text-align: right}
 li.upevents span.read  { text-align: right}
@@ -459,33 +459,35 @@ li.upevents span.read  { text-align: right}
   margin: 0; padding: 3px;
 }
 
-.spot {
+.spot  {
   grid-row: 5/7;
   grid-column: 1/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color:rgba(38, 144, 186, 0.9);
   border:1px solid #333;
   padding: 20px 5px;
-}
-
-.spot section {
-  border: 1px solid rgba(0,0,0,.3);
+  border: 2px solid rgba(0,0,0,.3);
   border-radius: 0;
   padding: 5px 0;
   margin: 5px 0;
+  width: 100%;
 }
-.spot {
+.spot section {
   display:flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   text-align: center;
   min-width: 100%;
   max-width: 100%;
+  width: 100%;
   max-height: 200px;
   border: 2px rgba(10, 52, 88, .8) solid;
   font-size: .9em;
   line-height: .9em;
-
 }
+
 .spot1 a, .spot2 a,.spot3 a {
   color:rgb(172, 71, 4);
   color: #ffda00;
@@ -519,30 +521,37 @@ li.upevents span.read  { text-align: right}
   background-color:aliceblue;
   transition: transform 0.2s ease-in-out;
 }
-.spot1 {
-  grid-row: 5/6;
-  grid-column: 1/3;
+section.spot1 {
+  flex: auto;
+  display:flex;
+  flex-direction: column; 
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  
   height: 200px;
   border:1px solid #333;
+  line-height: 1em;
  }
 
 .spot1 img {
-  object-fit: cover;
   width: 100%;
-  height: 50px;
+  height: 80px;
 }
 
-.spot2 {
-  grid-row: 6/7;
-  grid-column: 1/3;
+section.spot2 {
+  display:flex;
+  flex-direction: column;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
   height: 200px;
   background-color:rgba(83, 171, 238, 0.4);
   border:1px solid #333;
 }
 .spot2 img {
-  object-fit: cover;
   width: 100%;
-  height: 200px;
+  height: 80px;
 }
 .spot3 {
   grid-row: 5;
@@ -1243,4 +1252,4 @@ main.directory {
   background-color:rgba(137, 221, 247, .8);
 }
 
-/*  SPOTLIGHTS   */
+
