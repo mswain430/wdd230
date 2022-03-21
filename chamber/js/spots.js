@@ -78,7 +78,7 @@ function findSpotlight(goldbusiness) {
 
 //  for (let i = 0; i < 3; i++) {
 //   spot.appendChild(card)
-
+//   += spots[i]
  //    += i ;
 //
 //}
