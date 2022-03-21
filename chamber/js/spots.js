@@ -49,7 +49,8 @@ function displaySpotlight(goldbusiness) {
     card.appendChild(mem);
 
   // Add/append the existing HTML div with the cards class with the section(card)
-   spot1.appendChild(card);
+
+ spot1.appendChild(card);
  //  spot2.appendChild(card);
  //  spot3.appendChild(card);
 }
@@ -74,3 +75,10 @@ function findSpotlight(goldbusiness) {
         spotFilled++;
     }
 }
+
+//  for (let i = 0; i < 3; i++) {
+//   spot.appendChild(card)
+
+ //    += i ;
+//
+//}

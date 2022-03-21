@@ -52,7 +52,7 @@ function displaySpotlight(goldbusiness, card) {
     card.appendChild(mem);
 
   // Add/append the existing HTML div with the cards class with the section(card)
-  cards.appendChild();
+    spot.appendChild();
 
 
 }
