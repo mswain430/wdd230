@@ -11,13 +11,10 @@ let spotFilled = 0;
   .then(function (jsonObject) {
    //  temporary checking for valid response and data parsing
     const localbusiness = jsonObject['localbusiness'];
-     console.log();
    // localbusiness.forEach(displayBusiness);
     let goldbusiness = localbusiness.filter(x => (x.membership === 'gold'));
       goldbusiness.forEach(displaySpotlight);
    //   localbusiness.filter(function(currentValue, index, arr), thisValue)
-
-   console.log();
 });
 
 function displaySpotlight(goldbusiness) {
@@ -28,7 +25,6 @@ function displaySpotlight(goldbusiness) {
     let p3 = document.createElement('p3');
     let p4 = document.createElement('p4');
     let mem = document.createElement('mem');
-
 
     card.setAttribute('class', 'spotcard');
  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
@@ -53,10 +49,12 @@ function displaySpotlight(goldbusiness) {
     card.appendChild(mem);
 
   // Add/append the existing HTML div with the cards class with the section(card)
-  spot.appendChild(card);
+    spot.appendChild(card);
 
-// card.appendChild(goldbusiness[0]);
-// card.appendChild(goldbusiness[1]);
-//card.appendChild(goldbusiness[2]);
 
+}
+
+for (let i in goldbusiness.card) {
+  x <= 2;
+  x += goldbusiness.card[i];
 }

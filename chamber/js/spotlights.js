@@ -29,7 +29,7 @@ function displaySpotlight(goldbusiness, card) {
     let mem = document.createElement('mem');
 
 
-    card.setAttribute('class', 'bizcard');
+    card.setAttribute('class', 'spotcard');
  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     logo.setAttribute('src', `${goldbusiness.logourl}`);
     logo.setAttribute('alt', `logo for ${goldbusiness.bizname}`);
@@ -52,12 +52,8 @@ function displaySpotlight(goldbusiness, card) {
     card.appendChild(mem);
 
   // Add/append the existing HTML div with the cards class with the section(card)
-  spot1.appendChild(goldbusiness[0]);
-  spot2.appendChild(goldbusiness[1]);
-  spot3.appendChild(goldbusiness[2]);
- // card.appendChild(goldbusiness[0]);
- // card.appendChild(goldbusiness[1]);
-//  card.appendChild(goldbusiness[2]);
+  cards.appendChild();
+
 
 }
 // Create elements to add to the document
