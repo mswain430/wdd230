@@ -15,7 +15,6 @@ let spotFilled = 0;
     let goldbusiness = localbusiness.filter((x,index) => index < 3);
     goldbusiness.forEach((business, index) => displaySpotlight(business, index+1));
    //   localbusiness.filter(function(currentValue, index, arr), thisValue)
-   console.log(goldbusiness)
 });
 
 function displaySpotlight(goldbusiness, index) {
@@ -52,34 +51,7 @@ function displaySpotlight(goldbusiness, index) {
   // Add/append the existing HTML div with the cards class with the section(card)
 
  spot.appendChild(card);
- //  spot2.appendChild(card);
- //  spot3.appendChild(card);
+
 }
 
-// Create elements to add to the document
-function findSpotlight(goldbusiness) {
-    if (spotFilled == 3)
-        return;
-    else {
-        if (spotFilled == 0) {
-            let spot1 = document.querySelector('.spot1');
-            displaySpotlight(goldbusiness[0], spot1);
-        }
-        if (spotFilled == 1) {
-            let spot2 = document.querySelector('.spot2');
-            displaySpotlight(goldbusiness[1], spot2);
-        }
-        if (spotFilled == 2) {
-            let spot3 = document.querySelector('.spot3');
-            displaySpotlight(goldbusiness[2], spot3);
-        }
-        spotFilled++;
-    }
-}
 
-//  for (let i = 0; i < 3; i++) {
-//   spot.appendChild(card)
-//   += spots[i]
- //    += i ;
-//
-//}
