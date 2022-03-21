@@ -458,6 +458,13 @@ li.upevents span.read  { text-align: right}
   font-size: .9em;
   margin: 0; padding: 3px;
 }
+.bizcard {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 .spot {
   grid-row: 5/7;
@@ -466,14 +473,17 @@ li.upevents span.read  { text-align: right}
   border:1px solid #333;
   padding: 20px 10px;
 }
+.spot section {
+  border: 1px solid rgba(0,0,0,.3);
+  border-radius: 0;
+}
 
 .spot1 {
   grid-row: 5/6;
   grid-column: 1/3;
   height: 200px;
   border:1px solid #333;
- /* background: #379683 url('../images/spot1-dinoMuseum.jpg') no-repeat bottom right;*/
-}
+ }
 
 .spot1 img {
   object-fit: cover;
@@ -502,6 +512,7 @@ li.upevents span.read  { text-align: right}
   display:none;
 
 }
+
 .join {
   grid-row-start: 8;
   background-color: rgba(38, 144, 186, 0.9);
@@ -1083,11 +1094,11 @@ main.directory {
 }
 .list-view  a {
   color:rgb(10, 52, 88);
-  
+
 }
 .list-view a:visited {
   color:rgb(243, 114, 8);
-  
+
 }
 .list-view p2 {
   display: block;
@@ -1191,3 +1202,4 @@ main.directory {
   background-color:rgba(137, 221, 247, .8);
 }
 
+/*  SPOTLIGHTS   */

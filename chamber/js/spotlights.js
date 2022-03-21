@@ -3,7 +3,7 @@ const cards = document.querySelector('div.cards');
 let spot1 = document.querySelector('.spot1');
 let spot2 = document.querySelector('.spot2');
 let spot3 = document.querySelector('.spot3');
-
+let spotFilled = 0;
  fetch(requestURL)
   .then(function (response) {
     return response.json();
@@ -12,18 +12,14 @@ let spot3 = document.querySelector('.spot3');
    //  temporary checking for valid response and data parsing
     const localbusiness = jsonObject['localbusiness'];
    // localbusiness.forEach(displayBusiness);
-    let goldbusiness = localbusiness.filter(x => (x.membership === 'gold') && (x.order === '1'));
-      goldbusiness.forEach(displaySpot);
+    let goldbusiness = localbusiness.filter(x => (x.membership === 'gold'));
+      goldbusiness.forEach(displaySpotlight);
+   //   localbusiness.filter(function(currentValue, index, arr), thisValue)
 
-   let goldbusiness2 = localbusiness.filter(y => (y.membership === 'gold') && (y.order === '4'));
-      goldbusiness2.forEach(displaySpot2);
-
-   let goldbusiness3 = localbusiness.filter(z => (z.membership === 'gold') && (z.order === '7'));
-      goldbusiness3.forEach(displaySpot3);
    console.log();
 });
 
-function displaySpot(goldbusiness, card) {
+function displaySpotlight(goldbusiness, card) {
     let card = document.createElement('section');
     let h3 = document.createElement('h3');
     let logo = document.createElement('img');
@@ -33,7 +29,7 @@ function displaySpot(goldbusiness, card) {
     let mem = document.createElement('mem');
 
 
-    card.setAttribute('class', 'card');
+    card.setAttribute('class', 'bizcard');
  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     logo.setAttribute('src', `${goldbusiness.logourl}`);
     logo.setAttribute('alt', `logo for ${goldbusiness.bizname}`);
@@ -53,14 +49,38 @@ function displaySpot(goldbusiness, card) {
     card.appendChild(p1);
     card.appendChild(p3);
     card.appendChild(p4);
-
     card.appendChild(mem);
 
   // Add/append the existing HTML div with the cards class with the section(card)
-  card.appendChild();
+  spot1.appendChild(goldbusiness[0]);
+  spot2.appendChild(goldbusiness[1]);
+  spot3.appendChild(goldbusiness[2]);
+ // card.appendChild(goldbusiness[0]);
+ // card.appendChild(goldbusiness[1]);
+//  card.appendChild(goldbusiness[2]);
+
 }
-
-         spot1 = spot1.displaySpot(goldbusiness, card);
-         spot2 = spot2.displaySpot(goldbusiness2, card);
-         spot3 = spot3.displaySpot(goldbusiness3, card);
-
+// Create elements to add to the document
+function findSpotlight(goldbusiness) {
+    if (spotFilled == 3)
+        return;
+    else {
+        if (spotFilled == 0) {
+            let spot1 = document.querySelector('.spot1');
+            displaySpotlight(goldbusiness[0], spot1);
+        }
+        if (spotFilled == 1) {
+            let spot2 = document.querySelector('.spot2');
+            displaySpotlight(goldbusiness[1], spot2);
+        }
+        if (spotFilled == 2) {
+            let spot3 = document.querySelector('.spot3');
+            displaySpotlight(goldbusiness[2], spot3);
+        }
+        spotFilled++;
+    }
+}
+  async function getSpotlight() {
+    let shuffledList = goldbusiness.sort((a, b) => 0.5 - Math.random());
+    shuffledList.forEach(findSpotlight);
+  }
