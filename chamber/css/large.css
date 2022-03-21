@@ -176,38 +176,45 @@ ul.events li.upevents {text-shadow:1px 2px #697897; max-width: 240px;}
   flex-direction:row;
   flex-flow: column;
   min-height: 670px;
-  padding: 10px;
+  padding: 8px 0;
+
+}
+.spot section {
+  border: 2px solid #1cf0f0;
 }
 .spot1 {
   flex: 1;
+  display: flex;
+  flex-direction: column;
   width: 220px;
-  min-height: 220px;
-  height: 220px;
-  max-height: 220px;
+  min-height: 200px;
+  height: 200px;
+  max-height: 200px;
 }
 .spot2 {
   flex: 2;
+  display: flex;
+  flex-direction: column;
   width: 220px;
-  min-height: 220px;
-  height: 220px;
-  max-height: 220px;
+  min-height: 200px;
+  height: 200px;
+  max-height: 200px;
  }
 .spot3 {
-  display:block;
+  display: flex;
+  flex-direction: column;
   flex:3;
   width: 220px;
-  min-height: 220px;
-  height: 220px;
-  max-height: 220px;
+  min-height: 200px;
+  height: 200px;
+  max-height: 200px;
 }
 
-.spot2 picture img, .spot1 picture img, .spot3 picture img {
-  object-fit: cover;
-  height: 220px;
+.spot2 img, .spot1 img, .spot3 img {
+  height: 60px;
 }
-.spot3 picture img {
-  object-fit: cover;
-  height: 220px;
+.spot3 img {
+  height: 60px;
 }
 .join {
   display:block;

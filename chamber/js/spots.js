@@ -1,7 +1,7 @@
 const requestURL = 'https://mswain430.github.io/wdd230/chamber/data/data.json';
-let spot1 = document.querySelector('div.spot1');
-let spot2 = document.querySelector('div.spot2');
-let spot3 = document.querySelector('div.spot3');
+let spot1 = document.querySelector('.spot1');
+let spot2 = document.querySelector('.spot2');
+let spot3 = document.querySelector('.spot3');
 let spot = document.querySelector('.spot');
 let spotFilled = 0;
  fetch(requestURL)
@@ -12,12 +12,13 @@ let spotFilled = 0;
    //  temporary checking for valid response and data parsing
     const localbusiness = jsonObject['localbusiness'];
    // localbusiness.forEach(displayBusiness);
-    let goldbusiness = localbusiness.filter(x => (x.membership === 'gold'));
-      goldbusiness.forEach(displaySpotlight);
+    let goldbusiness = localbusiness.filter((x,index) => index < 3);
+    goldbusiness.forEach((business, index) => displaySpotlight(business, index+1));
    //   localbusiness.filter(function(currentValue, index, arr), thisValue)
+   console.log(goldbusiness)
 });
 
-function displaySpotlight(goldbusiness) {
+function displaySpotlight(goldbusiness, index) {
     let card = document.createElement('section');
     let h3 = document.createElement('h3');
     let logo = document.createElement('img');
@@ -26,7 +27,7 @@ function displaySpotlight(goldbusiness) {
     let p4 = document.createElement('p4');
     let mem = document.createElement('mem');
 
-    card.setAttribute('class', 'spotcard');
+    card.setAttribute('class', `spot${index}`);
  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     logo.setAttribute('src', `${goldbusiness.logourl}`);
     logo.setAttribute('alt', `logo for ${goldbusiness.bizname}`);
@@ -50,7 +51,7 @@ function displaySpotlight(goldbusiness) {
 
   // Add/append the existing HTML div with the cards class with the section(card)
 
- spot1.appendChild(card);
+ spot.appendChild(card);
  //  spot2.appendChild(card);
  //  spot3.appendChild(card);
 }
