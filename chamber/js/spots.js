@@ -49,12 +49,28 @@ function displaySpotlight(goldbusiness) {
     card.appendChild(mem);
 
   // Add/append the existing HTML div with the cards class with the section(card)
-    spot.appendChild(card);
+   spot1.appendChild(card);
 
 
 }
 
-for (let i in goldbusiness.card) {
-  x <= 2;
-  x += goldbusiness.card[i];
+// Create elements to add to the document
+function findSpotlight(goldbusiness) {
+    if (spotFilled == 3)
+        return;
+    else {
+        if (spotFilled == 0) {
+            let spot1 = document.querySelector('.spot1');
+            displaySpotlight(goldbusiness[0], spot1);
+        }
+        if (spotFilled == 1) {
+            let spot2 = document.querySelector('.spot2');
+            displaySpotlight(goldbusiness[1], spot2);
+        }
+        if (spotFilled == 2) {
+            let spot3 = document.querySelector('.spot3');
+            displaySpotlight(goldbusiness[2], spot3);
+        }
+        spotFilled++;
+    }
 }
