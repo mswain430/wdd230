@@ -358,9 +358,9 @@ footer div.api a.credits, a.visited .credits {
 .home-grid {
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 200px 200px 220px 225px 225px;
+    grid-template-rows: 200px 200px 200px 250px 460px;
     width: 100%;
-    row-gap: 10px;
+    row-gap: 5px;
     column-gap: 10px;
     background-color: rgb(28, 176, 162);
     background-color: rgba(28, 176, 162, .3);
@@ -381,11 +381,13 @@ footer div.api a.credits, a.visited .credits {
  /* justify-content: center;
   align-self: center; */
   min-width: 320px;
+  width: 320px;
   max-width: 100%;
 }
 .hero picture.hero-img img {
-    min-width: 500px;
+    min-width: 320px;
     width: 100%;
+    max-width: 100%;
     height: 210px;
     object-fit: cover;
 }
@@ -397,8 +399,9 @@ footer div.api a.credits, a.visited .credits {
 .events {
   grid-row: 2;
   grid-column: 1/3;
+  justify-content: center;
   background-color: rgba(38, 144, 186, .5);
-  border:1px solid #333;
+  border:2px solid #333;
 }
 .events h3 {margin: 0px 0px 20px 0px; background-color: #0f4077; padding:5px 10px;}
 .events ul {list-style-type: none; margin: 0px -30px;display: flex;flex-direction: column; max-width: 90%}
@@ -414,7 +417,7 @@ li.upevents span.read  { text-align: right}
   grid-row: 3;
   grid-column: 1/3;
   background-color:rgba(38, 144, 186, 0.9);
-  border:1px solid #333;
+  border:2px solid #333;
   padding: 5px 10px;
 }
 .weather-grid {
@@ -442,7 +445,7 @@ li.upevents span.read  { text-align: right}
   grid-row: 4;
   grid-column: 1/3;
   background-color: white;
-  border:1px solid #333;
+  border:2px solid #333;
   text-align: left;
   font-size: .9em;
   line-height: 1.2em;
@@ -460,32 +463,33 @@ li.upevents span.read  { text-align: right}
 }
 
 .spot  {
-  grid-row: 5/7;
+  grid-row: 5/6;
   grid-column: 1/3;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   background-color:rgba(38, 144, 186, 0.9);
   border:1px solid #333;
-  padding: 20px 5px;
+  padding: 5px 5px;
   border: 2px solid rgba(0,0,0,.3);
   border-radius: 0;
   padding: 5px 0;
   margin: 5px 0;
+  height: 440px;
   width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+
 }
 .spot section {
   display:flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  min-width: 100%;
   max-width: 100%;
-  width: 100%;
-  max-height: 200px;
+  min-width: 100%;
   border: 2px rgba(10, 52, 88, .8) solid;
   font-size: .9em;
   line-height: .9em;
+  margin: 2%;
 }
 
 .spot1 a, .spot2 a,.spot3 a {
@@ -502,7 +506,7 @@ li.upevents span.read  { text-align: right}
 }
 .spot h3 {
   font-size: 1em;
-  margin: -5px 0;
+  margin: 0px 0;
   padding: 8px 0;
 }
 .spot img.logo {
@@ -525,11 +529,9 @@ section.spot1 {
   flex: auto;
   display:flex;
   flex-direction: column; 
-  min-width: 100%;
-  width: 100%;
+  min-width: 180px;
   max-width: 100%;
-  
-  height: 200px;
+  min-height: 200px;
   border:1px solid #333;
   line-height: 1em;
  }
@@ -542,10 +544,9 @@ section.spot1 {
 section.spot2 {
   display:flex;
   flex-direction: column;
-  min-width: 100%;
-  width: 100%;
+  min-width: 180px;
   max-width: 100%;
-  height: 200px;
+  max-height: 200px;
   background-color:rgba(83, 171, 238, 0.4);
   border:1px solid #333;
 }
@@ -553,14 +554,8 @@ section.spot2 {
   width: 100%;
   height: 80px;
 }
-.spot3 {
-  grid-row: 5;
-  grid-column: 1/3;
-  height: 220px;
-  background-color:rgba(83, 171, 238, 0.4);
-  border:1px solid #333;
+section.spot3 {
   display:none;
-
 }
 
 .join {

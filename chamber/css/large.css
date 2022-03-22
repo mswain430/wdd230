@@ -173,14 +173,16 @@ ul.events li.upevents {text-shadow:1px 2px #697897; max-width: 240px;}
   grid-row: 1/4;
   grid-column: 3;
   display:flex;
-  flex-direction:row;
-  flex-flow: column;
+  flex-direction: column;
+  width: 220px;
   min-height: 670px;
   padding: 8px 0;
+  margin: 0;
 
 }
 .spot section {
   border: 2px solid #1cf0f0;
+  margin: 5px;
 }
 .spot1 {
   flex: 1;
