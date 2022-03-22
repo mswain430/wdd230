@@ -129,7 +129,7 @@ footer .wrap .copyright {
 .home-grid {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 200px 240px 200px 220px;
+    grid-template-rows: 275px 220px 280px 200px 220px;
     min-width: 32.5rem;
     margin:0;
     padding:0;
@@ -168,17 +168,19 @@ footer .wrap .copyright {
   grid-row: 5;
   grid-column: 1/3;
   border:1px solid #333;
+  margin: 2% 0;
 }
 li.upevents {
   max-height: 40px;
   line-height: .8em;
   text-align: left;
   width: 90%;
-  
+
 }
 .weather {
   grid-row: 5;
   grid-column: 3/4;
+  margin: 2% 0;
 }
 
 .news h2, .news h3 {
@@ -192,6 +194,7 @@ li.upevents {
   border:1px solid #333;
   padding: 10px 20px;
   font-size: 1.1em;
+  margin: 2% 0;
 }
 .news .body {
   max-width: 140px;
@@ -203,20 +206,47 @@ li.upevents {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 250px;
-  
-}
+  min-width: 100%;
+  max-width: 100%;
+  height: 260px;
+  margin: 2% 0;
 
+}
+.spot section  {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-center;
+  min-width: 50%;
+  max-width: 50%;
+  margin: 2%;
+}
+section.spot1 h3, section.spot2 h3{
+  padding: 8px;
+  margin: 0;
+}
+section.spot1 img.logo, section.spot2 img.logo {
+  flex: auto;
+  padding: 10px;
+}
+.spot2 img {
+  height: 60px;
+}
 section.spot1 {
   -webkit-flex: 1;
   flex: 1;
-  min-width: 50%;
-  max-height: 220px;
+  min-width: 48%;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-center;
+  max-height: 240px;
   margin: 2%;
 }
 section.spot2 {
    flex: 2;
-   min-width: 50%;
+   display:flex;
+   flex-direction: column;
+   justify-content: flex-center;
+   min-width: 48%;
    max-height: 220px;
    margin: 2%;
 }
