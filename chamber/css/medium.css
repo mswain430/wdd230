@@ -234,7 +234,7 @@ section.spot1 {
   min-width: 48%;
   display:flex;
   flex-direction: column;
-  justify-content: flex-center;
+  justify-content: center;
   max-height: 240px;
   margin: 2%;
 }
@@ -242,7 +242,7 @@ section.spot2 {
    flex: 2;
    display:flex;
    flex-direction: column;
-   justify-content: flex-center;
+   justify-content: center;
    min-width: 48%;
    max-height: 220px;
    margin: 2%;
