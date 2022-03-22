@@ -128,17 +128,13 @@ footer .wrap span.modified {
   background-color: #eee;
   border:1px solid #333;
  }
- .hero picture.hero-img {
+ .hero picture img {
    justify-content: center;
-   align-self: center;
-   max-width: 440px;
-   height:450px;
+   max-width: 100%;
+   object-fit: cover;
 
  }
- .hero picture.hero-img img {
-     width: 440px;
-     height: 450px;
- }
+
  .hero h2 { margin-left: 0; color: #1cf0f0; font-size: 2.3em; line-height: 1em; text-align: center; text-shadow: 2px 2px #333;  }
  .hero div.call {position: absolute; bottom: 0vw; right:0vw;
  }
@@ -178,49 +174,67 @@ ul.events li.upevents {text-shadow:1px 2px #697897; max-width: 240px;}
   width: 240px;
   min-height: 670px;
   padding: 8px 0;
-  margin: 0;
-
 }
+
 .spot section {
   border: 2px solid #1cf0f0;
-  margin: 5px;
-  width: 100%;
-  min-width: 100%;
   max-width: 100%;
-}
-.spot1 {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-height: 200px;
-  height: 200px;
-  max-height: 200px;
-}
-.spot2 {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-height: 200px;
-  height: 200px;
-  max-height: 200px;
- }
-.spot3 {
-  flex:3;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-height: 200px;
-  height: 200px;
-  max-height: 200px;
+  height: 170px;
 }
 
 .spot2 img, .spot1 img, .spot3 img {
   height: 60px;
 }
-.spot3 img {
-  height: 60px;
+section.spot1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  min-height: 200px;
+  height: 200px;
+  max-height: 200px;
+}
+section.spot2 {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  min-height: 200px;
+  height: 200px;
+  max-height: 200px;
+ }
+section.spot3 {
+  display:block;
+}
+section.spot3 {
+  flex:3;
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  min-height: 200px;
+  height: 200px;
+  max-height: 200px;
+}
+section.spot3 h3 {
+  font-size: 1em;
+  margin: -3px -1px;
+  padding: 8px 0;
+}
+section.spot3 img {
+  height: 50px;
+}
+section.spot3 img.logo {
+  flex: auto;
+  display:block;
+  width: 50px;
+  max-height: 50px;
+  margin:5px auto;
+  padding: 5px;
+  border-radius: 100%;
+  border-style: groove;
+  border:3px rgb(21, 81, 85) solid;
+  background-color:aliceblue;
+  transition: transform 0.2s ease-in-out;
 }
 .join {
   display:block;

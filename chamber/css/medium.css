@@ -213,7 +213,6 @@ li.upevents {
 .spot section  {
   display:flex;
   flex-direction: row;
-  justify-content: flex-center;
   min-width: 50%;
   max-width: 50%;
   margin: 2%;
