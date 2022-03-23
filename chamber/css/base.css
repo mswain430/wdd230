@@ -481,13 +481,11 @@ li.upevents span.read  { text-align: right}
   font-size: .9em;
   line-height: 1.2em;
   margin: 1%;
-
-
 }
 .news h2, .news h3 {
   text-align: left;
   padding: 5px 10px;
-  margin: -10px;
+  margin: -1px;
 }
 .news div.news-body p {
   text-align: left;
