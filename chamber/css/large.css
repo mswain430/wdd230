@@ -110,10 +110,11 @@ footer .wrap span.modified {
 .home-grid {
     display:grid;
     grid-template-columns: 240px 500px 245px;
-    grid-template-rows: 220px 220px 240px;
+    grid-template-rows: 220px 220px 260px;
     max-width: 960px;
     text-align:center;
     margin: auto;
+    justify-content: start;
     padding: 10px 20px;
     row-gap:10px;
     column-gap: 10px;
@@ -146,7 +147,8 @@ footer .wrap span.modified {
   grid-row: 1;
   grid-column: 1;
   align-items: center;
-  border:1px solid #333;
+  text-align: left;
+  margin-top: -1px;
 }
 .events ul {justify-content: start; margin-left: -25px}
 li.upevents {justify-self: center;}
@@ -175,16 +177,16 @@ ul.events li.upevents {text-shadow:1px 2px #697897; max-width: 240px;}
   display:flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-height: 670px;
+  min-height: 650px;
   padding: 8px 0;
   margin: 2%;
-}
+  }
 
 .spot section {
   border: 2px solid #1cf0f0;
   max-width: 100%;
   height: 180px;
-  margin: 1%;
+  margin: 2%;
 }
 
 .spot2 img, .spot1 img, .spot3 img {
@@ -196,9 +198,9 @@ section.spot1 {
   display: flex;
   flex-direction: column;
   width: 200px;
-  min-height: 205px;
+  min-height: 212px;
   height: 200px;
-  max-height: 205px;
+  max-height: 212px;
   margin: 2%;
 }
 section.spot2 {
@@ -206,9 +208,9 @@ section.spot2 {
   display: flex;
   flex-direction: column;
   width: 200px;
-  min-height: 205px;
+  min-height: 212px;
   height: 200px;
-  max-height: 205px;
+  max-height: 212px;
   margin: 2%;
  }
 section.spot3 {
@@ -219,9 +221,9 @@ section.spot3 {
   display: flex;
   flex-direction: column;
   width: 200px;
-  min-height: 205px;
+  min-height: 212px;
   height: 200px;
-  max-height: 210px;
+  max-height: 212px;
   margin: 2%;
   border: 2px solid #1cf0f0;
 
