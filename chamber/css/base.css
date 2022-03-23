@@ -953,9 +953,13 @@ section.weather{
   padding: 10px;
   min-width: 320px;
   margin:auto;
+  justify-content: center;
   border: 0px dashed rgb(231, 157, 19);
 }
-
+.wbox section.weather2  figure figcaption {
+  font-size: 1.5em;
+  color:black;
+}
 #icon-src {
   display: none;
   height: 10px;
