@@ -366,7 +366,7 @@ footer div.api a.credits, a.visited .credits {
 .home-grid {
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 210px 220px 240px 200px 490px 60px;
+    grid-template-rows: 210px 220px 240px 200px 490px 20px;
     background-color: rgb(28, 176, 162);
     background-color: rgba(28, 176, 162, .3);
     column-gap: 1%;
