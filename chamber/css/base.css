@@ -366,11 +366,11 @@ footer div.api a.credits, a.visited .credits {
 .home-grid {
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 210px 220px 240px 200px 500px 40px;
+    grid-template-rows: 210px 210px 240px 200px 500px 5px;
     background-color: rgb(28, 176, 162);
     background-color: rgba(28, 176, 162, .3);
-    column-gap: 1%;
-    row-gap: 1%;
+    column-gap: 1em;
+    row-gap: 1em;
 }
 
 .hero {
@@ -430,7 +430,6 @@ footer div.api a.credits, a.visited .credits {
   justify-content: center;
   background-color: rgba(38, 144, 186, .5);
   border:2px solid rgba(10, 52, 88, .8);
-  margin: 1%;
 }
 .events h3 {margin: 0px 0px 20px 0px; background-color: #0f4077; padding:5px 10px;}
 .events ul {list-style-type: none; margin: 0px -30px;display: flex;flex-direction: column; max-width: 90%}
@@ -448,7 +447,6 @@ li.upevents span.read  { text-align: right}
   background-color:rgba(38, 144, 186, 0.9);
   border:2px solid rgba(10, 52, 88, .8);
   padding: 5px 20px;
-  margin: 1%;
 }
 .weather-grid {
   grid-template-columns: 1fr ;
@@ -480,7 +478,7 @@ li.upevents span.read  { text-align: right}
   text-align: left;
   font-size: .9em;
   line-height: 1.2em;
-  margin: 1%;
+
 }
 .news h2, .news h3 {
   text-align: left;
@@ -500,7 +498,6 @@ li.upevents span.read  { text-align: right}
   border: 2px solid rgba(10, 52, 88, .8);
   border-radius: 0;
   padding: 5px 0;
-  margin-bottom: 2%;
 
 }
 .spot section {

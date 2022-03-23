@@ -132,7 +132,7 @@ footer .wrap .copyright {
 .home-grid {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 298px 200px 270px 240px 290px;
+    grid-template-rows: 298px 200px 275px 220px 240px;
 }
 
 .hero {
@@ -178,8 +178,6 @@ li.upevents {
   grid-row: 5;
   grid-column: 3/4;
   max-height: 210px;
-  margin: 1%;
-  column-gap: 1%;
 }
 
 .news h2, .news h3 {
