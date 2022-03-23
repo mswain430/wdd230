@@ -585,9 +585,9 @@ section.spot3 {
 .join {
   grid-row-start: 8;
   background-color: rgba(38, 144, 186, 0.9);
-  border: 1px solid #333;
+  border: 2px solid rgba(10, 52, 88, .8);;
   display: none;
-  color: white;
+  color: aliceblue;
 }
 .join button, .hero button  {
   background-color:rgb(247, 245, 134);
