@@ -13,8 +13,12 @@ let spotFilled = 0;
    //  temporary checking for valid response and data parsing
     const localbusiness = jsonObject['localbusiness'];
    // localbusiness.forEach(displayBusiness);
-    let goldbusiness = localbusiness.filter((x,index) => index < 3);
-    goldbusiness.forEach((business, index) => displaySpotlight(business, index+1));  
+     let spotlightbusiness = localbusiness.filter(x=>(x.membership === "gold" || x.membership === "silver"));
+     spotlightbusiness.sort((a, b) => 0.5 - Math.random());
+     let goldbusiness = spotlightbusiness.filter((x,index) => index < 3);
+    goldbusiness.forEach((business, index) => displaySpotlight(business, index+1));
+ //   let goldbusiness = localbusiness.filter((x,index) => index < 3);
+ //   goldbusiness.forEach((business, index) => displaySpotlight(business, index+1));
 });
 
 function displaySpotlight(goldbusiness, index) {
