@@ -139,8 +139,8 @@ footer .wrap .copyright {
   grid-row: 1/2;
   grid-column: 1/4;
   background-size: cover;
-
 }
+
 .hero picture.hero-img {
    justify-content: center;
    align-self: center;
@@ -160,8 +160,13 @@ footer .wrap .copyright {
 }
 .hero div.call {
   position: absolute;
-  bottom: 1em;
   padding: 10px;
+  bottom: 1em;
+  }
+.hero .call a {
+  font-size: 1.3em;
+  color:rgb(15, 64, 119);
+  padding: 0 10px;
 }
 .events {
   grid-row: 5;
@@ -260,6 +265,7 @@ section.spot3 {
 .join p {font-size: 1.5em; margin: 5px;}
 .join button {
   padding: 20px;
+  font-size: 1.3em;
 }
 /* ***************************************** Join page ******************* */
 .grid-join section{
