@@ -441,6 +441,17 @@ span.up {padding: 8px 3px; font-size: 1em; text-align: left; }
 .more {font-size: .6em; color:#CE5505   }
 ul li.upevents span:nth-child(3) {text-align: right}
 li.upevents span.read  { text-align: right}
+api-weather-box {
+  width: 80%;
+  border: 2px solid #1cf0f0;
+  background-color: aliceblue;
+  color:rgb(10, 52, 88);
+}
+weather-main {
+  width: 80%;
+  background-color: aliceblue;
+  min-height: 50%;
+}
 .weather {
   grid-row: 3;
   grid-column: 1/3;
@@ -448,7 +459,18 @@ li.upevents span.read  { text-align: right}
   border:2px solid rgba(10, 52, 88, .8);
   padding: 5px 20px;
 }
+.weather2 {
+  grid-row: 3;
+  grid-column: 1/3;
+  background-color:rgba(38, 144, 186, 0.9);
+  border:2px solid rgba(10, 52, 88, .8);
+  padding: 5px 20px;
+}
 .weather-grid {
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr 0 1fr 1fr 1fr ;
+}
+.weather-grid2 {
   grid-template-columns: 1fr ;
   grid-template-rows: 1fr 0 1fr 1fr 1fr ;
 }
@@ -931,7 +953,7 @@ section.weather{
   padding: 10px;
   min-width: 320px;
   margin:auto;
-  border: 2px dashed rgb(231, 157, 19);
+  border: 0px dashed rgb(231, 157, 19);
 }
 
 #icon-src {
