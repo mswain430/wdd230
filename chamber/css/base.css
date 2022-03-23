@@ -528,13 +528,13 @@ section.spot1 a, section.spot2 a, section.spot3 a {
 }
 section.spot1 h3 {
   font-size: 1em;
-  margin: -8px -1px;
+  margin: -2px -1px;
   padding: 8px 0;
 }
 
 section.spot2 h3 {
   font-size: 1em;
-  margin: -3px -1px;
+  margin: -2px -1px;
   padding: 8px 0;
 }
 section.spot1 img.logo, section.spot2 img.logo {
