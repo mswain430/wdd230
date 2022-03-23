@@ -151,7 +151,7 @@ footer .wrap span.modified {
   margin-top: -1px;
 }
 .events ul {justify-content: start; margin-left: -25px}
-li.upevents {justify-self: center;}
+li.upevents {justify-self: center; max-width: 85%}
 span.md {font-size: .8em;text-align: left; }
 span.up { height: 18px;text-align: left;font-size: .8em}
 .events ul {list-style-type: none; margin: 0px -30px;display: flex;flex-direction: column;max-width: 240px;}
@@ -167,6 +167,7 @@ ul.events li.upevents {text-shadow:1px 2px #697897; max-width: 240px;}
    text-align:left;
    padding: 10px 20px;
    font-size: 1.1em;
+   margin: 1px;
 }
 .news .body {
   max-width: 140px;
