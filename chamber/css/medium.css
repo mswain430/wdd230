@@ -358,6 +358,10 @@ grid-ty section p {
 
 section.stats {
   display:block;
+  font-size: .9em;
+}
+section.stats h3 {
+  padding: 20px 5px;
 }
 }
 /* **************************** MEDIUM VIEW ********************* */
