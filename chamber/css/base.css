@@ -645,7 +645,7 @@ section.spot3 {
   grid-row: 1;
   background-color:#0f4077;
   color: aliceblue;
-  padding: 20px;
+  padding: 20px 5px;
   font-size: 1.2em;
   border-radius: 8px;
 }
