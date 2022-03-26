@@ -719,7 +719,7 @@ img.img-card {
 section.stats {
   grid-column: 2;
   grid-row: 1;
-  margin: 0 25px;
+  margin: 0;
   padding: 0 25px;
   background-color: aliceblue;
   font-size: 1.2em;
@@ -731,7 +731,7 @@ section.stats h3 {
   font-size: 1.3em;
   background-color: #0f4077;
   color: aliceblue;
-  padding: 20px;
+  padding: 20px 5px;
   max-height: 100px;
   border-radius: 8px;
 }
