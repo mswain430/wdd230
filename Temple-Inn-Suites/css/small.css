@@ -1,0 +1,14 @@
+:root {
+    --primary-color: #648caf;    /* #648caf */
+    --secondary-color: #B7E1FF;  /* #B7E1FF */
+    --accent1-color: #BF9DB7;  /* #BF9DB7 */
+    --accent2-color: #ADE3C1;  /* #ADE3C1 */
+    --neutral-color: aliceblue;
+    --neutral2-color: #FFDA9A;   /* #FFDA9A */
+    --heading-font: "Prata" , serif;
+    --paragraph-font: "Railway", Helvetica, sans-serif;
+    --cursive: 'Sansita Swashed', cursive;
+   /* font-family: 'Prata', serif;
+      font-family: 'Raleway', sans-serif;
+      font-family: 'Sansita Swashed', cursive; */
+  }
