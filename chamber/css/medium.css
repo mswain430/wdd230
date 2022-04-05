@@ -82,23 +82,8 @@ footer .contactInfo img {
   margin:5px;
   max-width: 100px
 }
-div.contacts {line-height: 1.6em}
-footer .footer-addlogo .contactInfo {
-  display:flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items:center;
-  background-color:rgb(15, 64, 119);
-  max-width: 800px;
-  margin: auto;
-  }
-footer .wrap {
-  border-top: 2px solid rgb(4, 82, 146);
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
+div.contacts {line-height: 1.6em}
 span.sm_name::after {
   content: "  ";
   content: "  |  ";
@@ -120,13 +105,6 @@ span.project::after {
   content: "  |  ";
   color:  aliceblue;
   font-weight: 300;
-}
-footer .wrap .copyright {
-   flex-direction: row;
-  flex-basis: auto;
-   font-size: .9em;
-    padding: 5px;
-    line-height: 1.4em;
 }
 
 .home-grid {

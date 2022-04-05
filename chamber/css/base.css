@@ -214,6 +214,9 @@ nav {
 nav ul {
   display: none;
 }
+nav ul#primaryNav {
+  width: 100%;
+}
 nav ul#primaryNav li {
   display:block;
   background: linear-gradient(90deg, transparent, yellow, transparent) top /
@@ -273,6 +276,11 @@ nav ul.open li a {
   width: 100%;
   max-width: 100%;
 
+}
+nav#primaryNav.navigation.open ul {
+  min-width: 100%;
+  display:block;
+  border:1px solid #0f4077;
 }
 nav#primaryNav.navigation.open ul li {
   width: 100%;

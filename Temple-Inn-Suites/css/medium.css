@@ -2,5 +2,115 @@
 /* 32.5rem = 520 px */
 @media only screen and (min-width: 35rem) {
 
+ #dybanner {
+  font-size: 1em;
+}
+.topdiv {
+  display: grid;
+  grid-template-columns: 110px auto 50px;
+  height: 60px;
+}
+div.social {
+  grid-row: 1;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+}
+div.hambtn {margin-top: 5px;justify-content: space-around; align-items:center;}
+/* Grid *********************/
+  /*  ************* HEADER  ********* */
+header {
+    position:relative;
+    display:grid;
+    grid-template-columns:50px auto 50px;
+    grid-template-rows: 1fr;
+    min-width: 550px;
+    justify-content: left;
+}
+header picture.logo {
+  justify-content: left;
+  min-width: 250px;
+}
+header picture.logo img {
+  justify-content: right;
+    min-width: 250px;
+    align-items: center;
+}
+.hero.call {right: center;text-align: center}
+.hero h2 { right: center; padding:30px; bottom: 20vh;
+  right: 10em;}
+ a.btn_call {
+  bottom: 1em;
+  right: 2em;
+  text-align: center;
+  margin:auto; }
+
+/* ************************* NAVIGATION - MEDIUM ***********************  */
+nav#primaryNav {
+  display:flex;
+  flex-direction: column;
+  background-color: #046fb9;
+  text-align: center;
+  max-width: 320px;
+  }
+nav {max-width: 320px;}
+nav ul {
+  display:none;
+}
+nav ul.open {
+    display:block;
+
+}
+nav ul li {
+  flex: 1 1 auto;
+}
+nav ul.open {
+    display:block;
+
+}
+nav ul li a {
+  display:block;
+  border: none;
+  padding: .5rem 1rem;
+  color: aliceblue;
+}
+
+/* ****************** FOOTER ************************** */
+
+img.ftrLogo { min-width: 100px;}
+div.contacts {line-height: 1.2em}
+span.sm_name::after {
+  content: "  ";
+  content: "  |  ";
+  color:  aliceblue;
+  font-weight: 300;
+}
+span.author::before {
+  content: "  ";
+}
+span.author::after {
+  content: "  ";
+}
+span.project::before {
+  content: "  |  ";
+  color:  aliceblue;
+  font-weight: 300;
+}
+span.project::after {
+  content: "  |  ";
+  color:  aliceblue;
+  font-weight: 300;
+}
+footer .copyright {
+   font-size: .9em;
+   padding: 5px;
+   line-height: 1.4em;
+}
+
+footer .wrap {
+  display: flex;
+  flex-direction: column;
+}
 
 }

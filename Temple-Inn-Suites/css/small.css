@@ -1,14 +1,375 @@
 :root {
-    --primary-color: #648caf;    /* #648caf */
+    --primary-color: Lightblue;   /* #648caf */
+    --primary-color: #3a57a8;   /* #648caf */
     --secondary-color: #B7E1FF;  /* #B7E1FF */
     --accent1-color: #BF9DB7;  /* #BF9DB7 */
     --accent2-color: #ADE3C1;  /* #ADE3C1 */
     --neutral-color: aliceblue;
     --neutral2-color: #FFDA9A;   /* #FFDA9A */
-    --heading-font: "Prata" , serif;
-    --paragraph-font: "Railway", Helvetica, sans-serif;
-    --cursive: 'Sansita Swashed', cursive;
-   /* font-family: 'Prata', serif;
-      font-family: 'Raleway', sans-serif;
-      font-family: 'Sansita Swashed', cursive; */
+    --heading-font: 'Roboto Serif', serif;
+    --paragraph-font:  'Lato', sans-serif;
+     /* font-family: 'Lato', sans-serif;
+      font-family: 'Roboto Serif', serif;
+       */
   }
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    display:block;
+    background-color: rgb(241, 245, 250);
+}
+h1, h2, h3, h4 {
+  font-family: 'Roboto Serif', serif;
+  color: #3a57a8;
+  font-size: 1.5em;
+}
+h2 {font-size: 1.3em}
+h3 {font-size: 1.1em}
+h4 {font-size: 1em}
+
+.topdiv {
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  grid-template-rows: 1fr 1fr;
+  background-color: #dfe7f8;
+  border-bottom: 1px solid rgb(132, 171, 248);
+  width: 100%;
+  text-align: center;
+  height: 100px;
+}
+div.social {
+    grid-column: 1;
+    grid-row: span 2;
+    justify-content: space-around;
+    align-items:center;
+    text-align:left;
+    margin: 5px 5px;
+    padding-bottom: 5px;
+}
+div.mid {
+    grid-column:2;
+    grid-row: 1;
+    min-width: 180px;
+    margin: 8px 10px;
+
+}
+div.hambtn {
+    grid-column: 3;
+    grid-row: span 2;
+    justify-content:center;
+    justify-items:center;
+    align-content: center;
+    height: 100px;
+    padding-top: 10px;
+    padding-right: 10px;
+
+}
+.banner {
+  grid-column: span 3;
+  justify-content: center;
+  text-align: center;
+  background-color: #ADE3C1;
+  background-color: #B7E1FF;
+  background-color: lightblue;
+  width: 100%;
+  max-width: 100%;
+  padding: 10px 3px;
+  margin: 0;
+}
+#dybanner {
+  color:#046fb9;
+  font-size: .9em;
+  font-weight: bold;
+  width: 100%;
+  text-align:center;
+
+}
+
+  /*  ************* HEADER  ********* */
+header {
+    position:relative;
+    display:grid;
+    grid-template-columns:50px auto 50px;
+    grid-template-rows: 1fr;
+    width: 100%;
+    justify-content: center;
+    align-items:center;
+    color:rgb(28, 48, 146);
+    background-color:rgb(241, 245, 250);
+    border-radius: 0px;
+}
+header picture.logo {
+    align-items: center;
+    justify-content: center;
+}
+
+header picture.logo img {
+    display:block;
+    max-width: 250px;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 5px;
+  font-size: 24px;
+  width: 24px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1vh 1vw;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #697897;
+  color: white;
+  border-radius: 50%;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  border-radius: 50%;
+}
+
+/* NAVIGATION ***************** */
+
+ button#ham {
+    flex: 1;
+    justify-content: space-between;
+    align-self: center;
+    text-align: center;
+    border: 2px solid #235bf5;
+    border-radius: 4px;
+    font-size: 2em;
+    color: #235bf5;
+    background-color: transparent;
+    max-width: 1.3em;
+    height: 40px;
+    width: 40px;
+    padding:0;
+    }
+ nav {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 0;
+    color: aliceblue;
+    margin:0;
+    z-index: 1000;
+    position: absolute;
+    top: 60px;
+   /*width: 200px; */
+   background-color:#8498cf;
+   min-width: 320px;
+   max-width: 100%;
+    right: 0;
+    text-align: left;
+
+}
+nav ul {
+  display: none;
+}
+nav ul#primaryNav {
+  width: 100%;
+  max-width: 960px;
+
+}
+nav ul#primaryNav li {
+  display:block;
+  background: linear-gradient(90deg, transparent, yellow, transparent) top /
+		var(--d, 0) 5px no-repeat;
+  width: 100%;
+}
+nav ul li a {
+  display: block;
+  padding: .8rem 0vw;
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+  cursor: pointer;
+	font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: .1em;
+  margin-left: -40px;
+	background: linear-gradient(90deg, transparent, yellow, transparent) top /
+		var(--d, 0) 5px no-repeat;
+	transition: 0.5s;
+}
+nav ul li a:link {
+  color: aliceblue;
+}
+nav ul li a.active  {
+  background-color: rgba(0,0,0,.2);
+  color: rgb(248, 146, 12);
+}
+nav ul li a:hover {
+  background-color: rgba(0,0,0,.3);
+  background-color: transparent;
+  color: yellow;
+    --d: 75%;
+}
+
+nav ul.open {
+  display: block;
+
+}
+nav ul.open li {
+  display: block;
+
+}
+
+nav ul.open li a {
+  display: block;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+  color: aliceblue;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+  border-bottom:#55ACEE;
+  border-top:2px solid #b9c1f0;
+  border-bottom:1px solid #263575;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+
+}
+
+nav#primaryNav.navigation.open ul li {
+  width: 100%;
+  display:block;
+  border:1px solid #0f4077;
+}
+nav ul.open li a:hover {
+  color: yellow;
+    --d: 75%;
+    width: 100%;
+}
+nav ul.open li a:active {
+  color: rgb(248, 146, 12);
+    --d: 75%;
+    width: 100%;
+}
+#ham span:nth-child(1) {display:block}
+#ham span:nth-child(2) {display:none}
+
+#ham.open span:nth-child(1) {display:none}
+#ham.open span:nth-child(2) {display:block}
+
+ .intro {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+/* ******************************** Hero ******************** */
+.hero {
+  grid-row: 1;
+  grid-column: 1/3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color:rgba(91, 129, 212, 0.9);
+  border:1px solid #333;
+  position: relative;
+}
+.hero picture.hero-img {
+ /* justify-content: center;
+  align-self: center; */
+  min-width: 320px;
+  max-width: 100%;
+}
+.hero picture.hero-img img {
+    min-width: 320px;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+.hero h2 {
+  color: #f2f6f8;
+  font-size: 1.5em;
+  text-align: center;
+  text-shadow: 2px 2px #333;
+  padding:10px;
+  position: absolute;
+  bottom: 20vh;
+  right: 2em;
+  background-color: rgba(27, 58, 216, 0.6)
+ }
+ .call {background-color: rgba(247, 245, 134, .6);}
+ a.btn_call {
+  font-weight: bolder;
+  background-color: rgba(247, 245, 134, .6);
+  color: #1c4df1;
+  font-size: 1.4em;
+  padding: 20px 0;
+  border: 1px solid #ccce7e;
+  position: absolute;
+  bottom: 1em;
+  right: 2em;
+  text-align: center;
+  margin:auto;
+  width: 275px;
+  border-radius: 0px;
+}
+ a:hover .btn_call { color:#a4f4f4; text-decoration: green wavy underline; }
+ .call a:link .btn_call  { color:#1533f4; padding: 5px; text-decoration: none; right:2vw}
+
+/*  ************************************ FOOTER *********************************** */
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 200px;
+    line-height: 1.3em;
+    color:rgb(28, 48, 146);
+    background-color: #dfe7f8;
+    font-family: 'Loto', sans-serif;
+    border-radius: 0px;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+img.ftrLogo { min-width: 70px;}
+footer h2 {
+    font-size: 1.4em;
+    padding: 3px;
+    margin: 5px auto;
+    letter-spacing: 2px;
+    color: #415bd1;
+    border-bottom: 2px solid #415bd1;
+
+}
+
+footer .address {
+  padding: 10px;
+}
+footer .wrap {margin: 5px;}
+footer .copyright { padding: 5px;}
+p.api, p.mod {margin: 0; padding: 5px;}
+footer .fmap {
+  align-items: center;
+  align-self: center;
+}
+footer .fmap iframe {
+  border: 1px solid #697897;
+  box-shadow: 2px 2px 10px rgba(0,0,0,.3);
+}
+
+footer .wrap {
+  display: flex;
+  flex-direction: column;
+}
