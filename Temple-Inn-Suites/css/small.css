@@ -258,8 +258,9 @@ nav ul.open li a:hover {
     width: 100%;
 }
 nav ul.open li a:active {
-  color: rgb(248, 146, 12);
+  color: rgb(48, 193, 237);
     --d: 75%;
+    background-color:#ADE3C1;
     width: 100%;
 }
 #ham span:nth-child(1) {display:block}
