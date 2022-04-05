@@ -23,11 +23,9 @@ nav {
     right: 0;
     width: 100%;
     text-align: center;
-    background-color:transparent;
     min-width: 750px;
     max-width: 100%;
-    border-bottom: 2px solid lightblue;
-    margin:0;
+    margin:auto;
   }
 nav ul li {
   flex: 1 1 auto;
@@ -36,13 +34,13 @@ nav ul li {
 nav ul li a {
   color: aliceblue;
   padding: 10px 10px;
+  max-width: 60px;
 }
 nav ul#primaryNav {
   display:flex;
-  background-color: #B7E1FF;
-  justify-content: space-evenly; /* left aligned */
-   margin-right: 0;
-   max-width: 100%;
+  background-color: transparent;
+  justify-content: center; /* left aligned */
+  max-width: 960px;
 }
 
 nav ul li a {
@@ -54,11 +52,22 @@ nav ul li a {
   font-size: 1.3em;
   letter-spacing: .03em;
 }
+/* ************************** HOME ************************* */
+
+main .home-grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
+   justify-content: center;
+   align-content: center;
+   max-width: 1200px
+}
   .intro {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     max-width: 1200px;
+    justify-content: center;
 }
 .hero {
   grid-column: span 3;

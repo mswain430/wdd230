@@ -20,6 +20,10 @@ body {
     display:block;
     background-color: rgb(241, 245, 250);
 }
+main {
+  display:block;
+  margin:auto;
+}
 h1, h2, h3, h4 {
   font-family: 'Roboto Serif', serif;
   color: #3a57a8;
@@ -211,7 +215,7 @@ nav ul li a:link {
 }
 nav ul li a.active  {
   background-color: rgba(0,0,0,.2);
-  color: rgb(248, 146, 12);
+  color: #0aec5d;
 }
 nav ul li a:hover {
   background-color: rgba(0,0,0,.3);
@@ -268,6 +272,14 @@ nav ul.open li a:active {
 
 #ham.open span:nth-child(1) {display:none}
 #ham.open span:nth-child(2) {display:block}
+/* ************************* HOME ***************************** */
+main .home-grid {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
+   justify-content: center;
+   align-content: center;
+}
 
  .intro {
     display:grid;
