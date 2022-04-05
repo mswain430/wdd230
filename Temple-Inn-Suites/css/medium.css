@@ -40,11 +40,15 @@ header picture.logo img {
 .hero.call {right: center;text-align: center}
 .hero h2 { right: center; padding:30px; bottom: 20vh;
   right: 10em;}
+
  a.btn_call {
   bottom: 1em;
   right: 2em;
   text-align: center;
-  margin:auto; }
+  margin:auto;
+  border:2px solid rgb(244, 212, 50);
+  border-radius: 4px;
+}
 
 /* ************************* NAVIGATION - MEDIUM ***********************  */
 nav#primaryNav {

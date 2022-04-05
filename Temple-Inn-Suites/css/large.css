@@ -65,7 +65,8 @@ nav ul li a {
   right: center;
   background-color: rgba(27, 58, 216, 0.6)
  }
-.hero div.call a.btn_call {text-align: center;width: 500px}
+.hero div.call a.btn_call {text-align: center;width: 500px; border:2px solid rgb(244, 212, 50);
+  border-radius: 4px;}
 /* ****************** FOOTER ************************** */
 footer {
   grid-template-columns: 1fr 1fr 1fr;
