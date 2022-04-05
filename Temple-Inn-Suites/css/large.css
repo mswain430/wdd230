@@ -59,13 +59,16 @@ nav ul li a {
   font-size: 1.8em;
   text-align: center;
   text-shadow: 2px 2px #333;
-  padding:40px;
+  padding:40px 20px;
   position: absolute;
-  bottom: 25vh;
-  right: center;
+  top: 10rem;
+  right:8rem;
+  max-height: 240px;
+  max-width: 400px;
   background-color: rgba(27, 58, 216, 0.6)
  }
-.hero div.call a.btn_call {text-align: center;width: 500px; border:2px solid rgb(244, 212, 50);
+.hero div.call a.btn_call {top: 4rem;
+  right:8rem;text-align: center;width: 250px; border:2px solid rgb(244, 212, 50);
   border-radius: 4px;}
 /* ****************** FOOTER ************************** */
 footer {
