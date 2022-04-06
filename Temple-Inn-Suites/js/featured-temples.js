@@ -1,4 +1,4 @@
-const requestURL = 'https://mswain430.github.io/wdd230/temple-Inn-Suites/data/temples.json';
+/*const requestURL = 'https://mswain430.github.io/wdd230/temple-Inn-Suites/data/temples.json';
 
 const cards = document.querySelector('div.cards');
 const listBtn = document.querySelector('#listBtn');
@@ -13,8 +13,8 @@ const cardBtn = document.querySelector('#cardBtn');
     const localtemple = jsonObject['temples'];
     localtemple.forEach(displaytemple);
    /* localbusiness.forEach(displayBusinessTable); */
-});
-
+/*}); */
+/*
 function displaytemple(localtemple) {
   // Create elements to add to the document
   let card = document.createElement('section');
@@ -57,23 +57,17 @@ function displaytemple(localtemple) {
   card.appendChild(mem);
   // Add/append the existing HTML div with the cards class with the section(card)
   cards.appendChild(card);
-}
+} */
 
-listBtn.addEventListener("click", ()=> {
-   cards.classList.replace("card-view","list-view")
-
-});
-
-cardBtn.addEventListener("click", ()=> {
-  cardBtn.classList.add("activeBtn")
-  cards.classList.replace("list-view","card-view")
-});
 
 /* ****************** DISPLAY FEATURED TEMPLES**************** */
-let spot1 = document.querySelector('.featured1');
-let spot2 = document.querySelector('.featured2');
-let spot3 = document.querySelector('.featured3');
-let spot = document.querySelector('.featuredtemples');
+const requestURL = 'https://mswain430.github.io/wdd230/temple-Inn-Suites/data/temples.json';
+
+
+let featured1 = document.querySelector('.featured1');
+let featured2 = document.querySelector('.featured2');
+let featured3 = document.querySelector('.featured3');
+let featuredtemples = document.querySelector('.featuredtemples');
 let featuredFilled = 0;
  fetch(requestURL)
   .then(function (response) {
@@ -102,9 +96,9 @@ function displaytemple(specialtemple, index) {
 
     card.setAttribute('class', `featured${index}`);
  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-    logo.setAttribute('src', `${specialtemple.logourl}`);
-    logo.setAttribute('alt', `picture of ${specialtemple.name} temple`);
-    logo.setAttribute('class', 'logo');
+    templeimg.setAttribute('src', `${specialtemple.logourl}`);
+    templeimg.setAttribute('alt', `picture of ${specialtemple.name} temple`);
+    templeimg.setAttribute('class', 'templeimg');
 
   // Change the innerHTML property of the h3 element to contain the business' info
     h3.innerHTML = `${specialtemple.name}`;
