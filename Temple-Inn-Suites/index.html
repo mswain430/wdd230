@@ -20,7 +20,7 @@
     <script defer src="js/currentdate.js"></script>
     <script defer src="js/toggle.js"></script>
     <script defer src="js/weather-api.js"></script>
-    <script defer src="js/spotlights.js"></script>
+    <script defer src="js/featured-temples.js"></script>
     </head>
 <body>
       <div class="topdiv">
@@ -50,14 +50,12 @@
           <li><a href="temples.html">Locations</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="reception.html">Receptions</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contacts.html">Contact</a></li>
           </ul>
         </nav>
 
 
  <main class="home-grid">
-<section class="intro">
-<h1>Temple Inn and Suites</h1>
    <div class="hero">
         <picture class="hero-img">
           <source srcset="images/san-diego1.webp"
@@ -67,12 +65,26 @@
             <img src="images/san-diego1.webp" alt="Temple Inn and Suites features San Diego Temple" />
       </picture>
         <h2>Check out a Temple<br/> package today!</h2>
-       <div class="call"><a href="join.html" class="btn_call">Check Availability Now</a></div></div>
+       <div class="call"><a href="reservation.html" class="btn_call">Check Availability Now</a>
       </div>
-       <div class="featured"></div>
-      <div></div>
-      <div></div>
-      <div></div>
+    </div>
+    <div class="weather weather-grid">
+        <h1>San Diego Weather</h1>
+        <p><span id="icon-src"></span></p>
+        <figure><img src="http://openweathermap.org/img/wn/10d.png" alt="CA Temple Weather" id="weathericon" /><figcaption></figcaption></figure>
+      <p><span id="current-temp"></span>&#8457;<br/>
+        <span class="humidity"></span><br/>
+        <span id="windspeed"></span></p>
+        <span id="current-weather"></span>
+        <span id="current-weather1"></span>
+        <span id="current-weather2"></span>
+        <span id="current-weather3"></span>
+    </div>
+    <div class="featuredtemples">
+
+    </div>
+   <div></div>
+   <div></div>
 </section>
 
 </main>

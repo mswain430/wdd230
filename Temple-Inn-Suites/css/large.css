@@ -1,6 +1,8 @@
 @media only screen and (min-width: 58rem) {
 div.topdiv {height: 60px;}
 .hambtn {display:none}
+
+/* ******************************** Header Info ***************** */
 header picture.logo {
     align-items: center;
     justify-content: left;
@@ -34,7 +36,7 @@ nav ul li {
 nav ul li a {
   color: aliceblue;
   padding: 10px 10px;
-  max-width: 60px;
+  margin: 0 2%;
 }
 nav ul#primaryNav {
   display:flex;
@@ -43,36 +45,20 @@ nav ul#primaryNav {
   max-width: 960px;
 }
 
-nav ul li a {
-  border:none;
-  border-left: 0px solid rgba(0,0,0,.2);
-  border-right: 0px solid rgba(0,0,0,.1);
-  padding: .5rem 1rem;
-  color: rgb(35, 95, 185);
-  font-size: 1.3em;
-  letter-spacing: .03em;
-}
 /* ************************** HOME ************************* */
 
 main .home-grid {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
    justify-content: center;
    align-content: center;
-   max-width: 1200px
+   max-width: 100%;
 }
-  .intro {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    max-width: 1200px;
-    justify-content: center;
-}
+
 .hero {
   grid-column: span 3;
   grid-row: 1;
-  max-width: 1200px;
   object-fit: cover;
   object-fit: center;
 }
@@ -89,7 +75,7 @@ main .home-grid {
   max-width: 400px;
   background-color: rgba(27, 58, 216, 0.6)
  }
-.hero div.call a.btn_call {top: 4rem;
+ a.btn_call {top: 4rem;
   right:8rem;text-align: center;width: 250px; border:2px solid rgb(244, 212, 50);
   border-radius: 4px;}
 /* ****************** FOOTER ************************** */

@@ -3,9 +3,9 @@ const requestURL = 'https://mswain430.github.io/wdd230/chamber/data/data.json';
 const cards = document.querySelector('div.cards');
 const listBtn = document.querySelector('#listBtn');
 const cardBtn = document.querySelector('#cardBtn');
-const spot1 = document.querySelector('#spot1');
-const spot2 = document.querySelector('#spot2');
-const spot3 = document.querySelector('#spot3');
+const spot1 = document.querySelector('.featured1');
+const spot2 = document.querySelector('.featured1');
+const spot3 = document.querySelector('.featured1');
  fetch(requestURL)
   .then(function (response) {
     return response.json();
@@ -64,7 +64,7 @@ function displayBusiness(localbusiness) {
 
 listBtn.addEventListener("click", ()=> {
    cards.classList.replace("card-view","list-view")
-   
+
 });
 
 cardBtn.addEventListener("click", ()=> {
