@@ -652,7 +652,7 @@ main.directory {
 .list-view section img.templeimg {
     grid-column: 1;
     grid-row: span 2;
-    width: 100px;
+    width: 200px;
 
 }
 .list-view p {
@@ -678,12 +678,12 @@ main.directory {
 
 .card-view img {
   display:block;
-  width: 100px;
+  width: 200px;
   margin:10px auto;
   padding: 5px;
   border-radius: 100%;
   border-style: groove;
-  border:3px rgb(21, 81, 85) solid;
+  border:3px rgb(21, 44, 85) solid;
   background-color:rgba(137, 221, 247, .3);
   transition: transform 0.2s ease-in-out;
 }
@@ -727,7 +727,7 @@ main.directory {
   color: #000;
 } */
 
-.card-view section p1, p4, p5, mem {
+.card-view section p1, p4, p5 {
   display: block;
   align-content: center;
   margin-left:auto;
