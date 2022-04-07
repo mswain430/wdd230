@@ -650,7 +650,8 @@ main.directory {
   color:aliceblue;
 }
 .list-view section img.templeimg {
-    display: block;
+    grid-column: 1;
+    grid-row: span 2;
     width: 100px;
 
 }
