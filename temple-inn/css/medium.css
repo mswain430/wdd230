@@ -1,0 +1,206 @@
+/* Media Queries */
+/* 32.5rem = 520 px */
+@media only screen and (min-width: 35rem) {
+
+ #dybanner {
+  font-size: 1em;
+}
+.topdiv {
+  display: grid;
+  grid-template-columns: 110px auto 50px;
+  height: 60px;
+}
+div.social {
+  grid-row: 1;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+}
+
+/* Grid *********************/
+  /*  ************* HEADER  ********* */
+header {
+    position:relative;
+    display:grid;
+    grid-template-columns:50px auto 50px;
+    grid-template-rows: 1fr;
+    min-width: 550px;
+    justify-content: left;
+}
+header picture.logo {
+  justify-content: left;
+  min-width: 250px;
+}
+header picture.logo img {
+  justify-content: right;
+    min-width: 250px;
+    align-items: center;
+}
+
+
+/* ************************* NAVIGATION - MEDIUM ***********************  */
+nav#primaryNav {
+  display:flex;
+  flex-direction: column;
+  background-color: #046fb9;
+  text-align: center;
+  max-width: 320px;
+  }
+nav {max-width: 320px;}
+nav ul {
+  display:none;
+}
+nav ul.open {
+    display:block;
+}
+nav ul li {
+  flex: 1 1 auto;
+}
+nav ul.open {
+    display:block;
+
+}
+nav ul li a {
+  display:block;
+  border: none;
+  padding: .5rem 1rem;
+  color: aliceblue;
+}
+/*  ****************************** HOME ************************ */
+
+main .home-grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 200px 200px 1fr;
+}
+.hero {object-fit: cover;}
+.hero.call {right: center;text-align: center}
+.hero h2 { align-items: center;max-width: 300px; min-height: 220px;font-size: 1.8em;padding:20px 10px; bottom: 20%;
+  right: 10%;
+  left: 60%;
+  }
+
+ a.btn_call {
+  bottom: 5%;
+  right: 2rem;
+  font-size: 1.5rem;
+  max-height: 100px;
+  max-width: 250px;
+  text-align: center;
+  border:2px solid rgb(244, 212, 50);
+  border-radius: 4px;
+}
+
+.featuredtemples {
+  grid-column: span 3;
+  grid-row: 4;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.featuredtemples h2 {
+  grid-column: span;
+  grid-row: 1;
+}
+.featuredtemples section {
+  grid-row: 2;
+  display:flex;
+  flex-direction: column;
+  max-height: 350px;
+  text-align: center;
+  background-color:rgb(193, 200, 235);
+  border: 2px solid rgba(98, 135, 236, 0.8);
+  border-radius: 8px;
+  align-items: center;
+  font-size: .9em;
+  line-height: .9em;
+  margin: 2%;
+  padding: .25rem;
+}
+.featuredtemples section > p {
+  min-height: 50px;
+}
+.featuredtemples img.templeimg {
+  min-width: 180px;
+  max-width: 200px;
+  box-shadow: 0 1px 12px #ccc;
+  border: 1px solid rgb(59, 96, 245);
+  border-radius: 8px;
+  background-color: aliceblue;
+}
+
+/* ****************** FOOTER ************************** */
+
+img.ftrLogo { min-width: 100px;}
+div.contacts {line-height: 1.2em}
+span.sm_name::after {
+  content: "  ";
+  content: "  |  ";
+  color:  aliceblue;
+  font-weight: 300;
+}
+span.author::before {
+  content: "  ";
+}
+span.author::after {
+  content: "  ";
+}
+span.project::before {
+  content: "  |  ";
+  color:  aliceblue;
+  font-weight: 300;
+}
+span.project::after {
+  content: "  |  ";
+  color:  aliceblue;
+  font-weight: 300;
+}
+footer .copyright {
+   font-size: .9em;
+   padding: 5px;
+   line-height: 1.4em;
+}
+
+footer .wrap {
+  display: flex;
+  flex-direction: column;
+}
+}
+/* **************************** DIRECTORY MEDIUM VIEW ********************* */
+@media only screen and (min-width:32rem) {
+
+  .list-view section {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: .9em;
+  }
+    .card-view section {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .card-view section p3 {
+       display: block;
+       padding: 5px 5px;
+
+  }
+
+  .list-view section p1,p3,p4 {
+      padding: 5px;
+      text-align: left;
+      color: black;
+  }
+  .card-view section p1,p2,p3,p4 {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      color: black;
+  }
+  .list-view p2 {
+      display: none;
+  }
+  .card-view {
+  grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+

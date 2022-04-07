@@ -20,6 +20,10 @@ body {
     display:block;
     background-color: rgb(241, 245, 250);
 }
+main {
+  display:block;
+  margin:auto;
+}
 h1, h2, h3, h4 {
   font-family: 'Roboto Serif', serif;
   color: #3a57a8;
@@ -34,7 +38,7 @@ h4 {font-size: 1em}
   grid-template-columns: 50px auto 50px;
   grid-template-rows: 1fr 1fr;
   background-color: #dfe7f8;
-  border-bottom: 1px solid rgb(132, 171, 248);
+  /* border-bottom: 1px solid rgb(132, 171, 248); */
   width: 100%;
   text-align: center;
   height: 100px;
@@ -161,7 +165,7 @@ header picture.logo img {
     display:flex;
     justify-content: center;
     align-items: center;
-    margin: 2vh 0;
+    margin: 0;
     color: aliceblue;
     margin:0;
     z-index: 1000;
@@ -170,7 +174,7 @@ header picture.logo img {
    /*width: 200px; */
    background-color:#8498cf;
    min-width: 320px;
-   max-width: 100%;
+   width: 100%;
     right: 0;
     text-align: left;
 
@@ -180,14 +184,12 @@ nav ul {
 }
 nav ul#primaryNav {
   width: 100%;
-  max-width: 960px;
-
-}
+  margin-left: -40px;
+  }
 nav ul#primaryNav li {
   display:block;
   background: linear-gradient(90deg, transparent, yellow, transparent) top /
 		var(--d, 0) 5px no-repeat;
-  width: 100%;
 }
 nav ul li a {
   display: block;
@@ -201,23 +203,22 @@ nav ul li a {
 	font-size: 1rem;
   font-family: 'Lato', sans-serif;
   letter-spacing: .1em;
-  margin-left: -40px;
 	background: linear-gradient(90deg, transparent, yellow, transparent) top /
 		var(--d, 0) 5px no-repeat;
 	transition: 0.5s;
+  margin: 0;
 }
 nav ul li a:link {
   color: aliceblue;
 }
 nav ul li a.active  {
   background-color: rgba(0,0,0,.2);
-  color: rgb(248, 146, 12);
+  color: #0aec5d;
 }
 nav ul li a:hover {
   background-color: rgba(0,0,0,.3);
   background-color: transparent;
   color: yellow;
-    --d: 75%;
 }
 
 nav ul.open {
@@ -238,9 +239,8 @@ nav ul.open li a {
 	font-weight: 700;
 	transition: 0.5s;
 	font-size: clamp(1rem, 2vmin, 1.5rem);
-  border-bottom:#55ACEE;
-  border-top:2px solid #b9c1f0;
-  border-bottom:1px solid #263575;
+  /* border-top:2px solid #b9c1f0;
+  border-bottom:1px solid #263575; */
   min-width: 100%;
   width: 100%;
   max-width: 100%;
@@ -252,14 +252,20 @@ nav#primaryNav.navigation.open ul li {
   display:block;
   border:1px solid #0f4077;
 }
-nav ul.open li a:hover {
+nav ul.open li a:visited {
   color: yellow;
     --d: 75%;
     width: 100%;
 }
-nav ul.open li a:active {
-  color: rgb(248, 146, 12);
+nav ul.open li a:hover {
+  color: rgb(106, 255, 0);
     --d: 75%;
+    width: 100%;
+}
+nav ul.open li a:active {
+  color: rgb(15, 248, 30);
+    --d: 75%;
+    background-color:#ADE3C1;
     width: 100%;
 }
 #ham span:nth-child(1) {display:block}
@@ -267,6 +273,7 @@ nav ul.open li a:active {
 
 #ham.open span:nth-child(1) {display:none}
 #ham.open span:nth-child(2) {display:block}
+<<<<<<< HEAD
 
 /* ******************************* HOME ***************************** */
 main.home-grid {
@@ -284,7 +291,17 @@ main.home-grid {
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+=======
+/* ************************* HOME ***************************** */
+main .home-grid {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   justify-content: center;
+   align-content: center;
+>>>>>>> 8e5aec381680e175e8ca713775ae368736296074
 }
+
 /* ******************************** Hero ******************** */
 .hero {
   grid-row: 1;
@@ -315,8 +332,8 @@ main.home-grid {
   text-shadow: 2px 2px #333;
   padding:10px;
   position: absolute;
-  top: 20vh;
-  right: 2em;
+  top: 8rem;
+  right: 2rem;
   background-color: rgba(27, 58, 216, 0.6)
  }
  .call {background-color: rgba(247, 245, 134, .6);}
@@ -327,18 +344,36 @@ main.home-grid {
   font-size: 1.2em;
   padding: 10px 5px;
   border: 2px solid #f2f2e0;
+  text-decoration: none;
   position: absolute;
-  top: 2em;
-  right: 2em;
+  top: 1rem;
+  right: 2rem;
   text-align: center;
+  padding: 5px;
   margin:auto;
   width: 250px;
   border-radius: 4px;
+  border:2px solid rgb(244, 212, 50);
+  border-radius: 4px;
 }
 
- .call a:link .btn_call  { color:#1533f4; padding: 5px; text-decoration: none; right:2vw;  border:2px solid rgb(244, 212, 50);
-  border-radius: 4px;}
-a:hover .btn_call { color:#a4f4f4; text-decoration: green wavy underline; }
+  a:hover .btn_call {
+    color:#a4f4f4;
+    text-decoration: green wavy underline;
+  }
+/* ********************************** Weather ************************ */
+.weather-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.weather {
+  background-color:rgba(42, 61, 159, 0.4);
+  color: rgb(30, 45, 146);
+  min-width: 300px;
+  padding: 10px;
+  margin: 2%;
+}
 /*  ************************************ FOOTER *********************************** */
 footer {
     display: grid;

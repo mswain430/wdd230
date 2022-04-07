@@ -1,6 +1,8 @@
 @media only screen and (min-width: 58rem) {
 div.topdiv {height: 60px;}
 .hambtn {display:none}
+
+/* ******************************** Header Info ***************** */
 header picture.logo {
     align-items: center;
     justify-content: left;
@@ -23,10 +25,13 @@ nav {
     right: 0;
     width: 100%;
     text-align: center;
-    background-color:transparent;
     min-width: 750px;
     max-width: 100%;
+<<<<<<< HEAD
     margin:0;
+=======
+    margin:auto;
+>>>>>>> 8e5aec381680e175e8ca713775ae368736296074
   }
 nav ul li {
   flex: 1 1 auto;
@@ -35,23 +40,31 @@ nav ul li {
 nav ul li a {
   color: aliceblue;
   padding: 10px 10px;
+  margin: 0 2%;
 }
 nav ul#primaryNav {
   display:flex;
-  background-color: #B7E1FF;
-  justify-content: space-evenly; /* left aligned */
-   margin-right: 0;
+  background-color: transparent;
+  justify-content: center; /* left aligned */
+  max-width: 960px;
+}
+
+/* ************************** HOME ************************* */
+
+main .home-grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   justify-content: center;
+   align-content: center;
    max-width: 100%;
 }
 
-nav ul li a {
-  border:none;
-  border-left: 0px solid rgba(0,0,0,.2);
-  border-right: 0px solid rgba(0,0,0,.1);
-  padding: .5rem 1rem;
-  color: rgb(35, 95, 185);
-  font-size: 1.3em;
-  letter-spacing: .03em;
+.hero {
+  grid-column: span 3;
+  grid-row: 1;
+  object-fit: cover;
+  object-fit: center;
 }
 
 /* ******************************* HOME ***************************** */
@@ -77,7 +90,7 @@ main.home-grid {
   max-width: 400px;
   background-color: rgba(27, 58, 216, 0.6)
  }
-.hero div.call a.btn_call {top: 4rem;
+ a.btn_call {top: 4rem;
   right:8rem;text-align: center;width: 250px; border:2px solid rgb(244, 212, 50);
   border-radius: 4px;}
 /* ****************** FOOTER ************************** */
@@ -93,19 +106,7 @@ footer .wrap {
   display: flex;
   flex-direction: column;
 }
-   .intro {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    max-width: 1200px;
-}
-.hero {
-  grid-column: span 3;
-  grid-row: 1;
-  max-width: 1200px;
-  object-fit: cover;
-  object-fit: center;
-}
+
 .temple-home {
   grid-column: span 3;
   grid-row: 2;

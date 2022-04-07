@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn and Suites</title>
+     <meta name="description" content="Temple Inn and Suites cater to temple patrons and visitors in the areas of California">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+   <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/currentdate.js"></script>
+    <script defer src="js/toggle.js"></script>
+    </head>
+<body>
+      <div class="topdiv">
+          <div class="social">
+          <a href="https://facebook.com"><img src="images/facebook.svg" alt="facebook" class="fa fa-facebook"/></a>
+          <a href="https://twitter.com"><img src="images/twitter.svg" alt="twitter" class="fa fa-twitter"/></a>
+           </div>
+         <div class="mid"><span id="currentdate"></span><br/><span id="dybanner"></span></div>
+         <div class="hambtn">
+           <button id="ham" class="hambutton"><span>&#9776;</span>
+           <span class="xbutton">X</span></button>
+          </div>
+    </div>
+      <header>
+         <div></div>
+          <picture class="logo">
+            <source srcset="images/TIS-logo-purple.png" media="(max-width: 35rem)">
+            <source srcset="images/TIS-logo-purple.png" media="(min-width: 65rem)">
+                <img src="images/TIS-logo-purple.png" alt="Temple Inn and Suites logo" />
+        </picture>
+        <div></div>
+       </header>
+         <nav>
+            <ul id="primaryNav" class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="reservation.html">Reservations</a></li>
+          <li><a href="temples.html">Locations</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="reception.html" class="active" >Receptions</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+          </ul>
+        </nav>
+
+
+ <main class="home-grid">
+<section class="intro">
+<h1>Temple Inn and Suites</h1>
+   <div class="hero">
+        <picture class="hero-img">
+          <source srcset="images/san-diego1.webp"
+            media="(max-width: 35rem)">
+          <source srcset="images/san-diego2.webp"
+            media="(min-width: 57rem)">
+            <img src="images/san-diego1.webp" alt="Temple Inn and Suites features San Diego Temple" />
+      </picture>
+        <h2>Check out a Temple<br/> package today!</h2>
+       <div class="call"><a href="join.html" class="btn_call">Check Availability Now</a></div></div>
+      </div>
+       <div class="featured"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+</section>
+
+</main>
+ <footer>
+    <div class="flogo"><img src="images/templeIcon-lavendar.svg" class="ftrLogo" alt="Temple Inn Suites" /></div>
+    <div class="address"><h2>Temple Inn and Suites</h2>4800 Montgomery Ln #300<br>Bethesda, MD 20814<br/>
+    templeInn@templeInnSuites<br>(435) 678-2791</div>
+    <div class="fmap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3471.164528805527!2d-77.09831782729026!3d38.98336648648815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1648967988492!5m2!1sen!2sus" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+   <div class="wrap">
+     <div class="copyright">&#169; <span id="year" class="year">  2021 </span><span class="sm_name"> Temple Inn and Suites </span>
+      <p class="api">Weather Data Source: <a class="credits" href="https://openweathermap.org/">OpenWeatherMap</a></p>
+      <p  class="mod"><span class="modified">Last Updated: </span><span class="modified" id="lastmod"></span></p>
+   </div>
+</footer>
+</body>
+</html>
