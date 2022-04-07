@@ -90,6 +90,7 @@ footer .wrap {
   flex-direction: column;
 }
 
+/* *************************** featured temples ************** */
 .temple-home {
   grid-column: span 3;
   grid-row: 2;
@@ -112,13 +113,12 @@ footer .wrap {
 .featured:nth-child(1){
   flex: 1fr;
 }
-
 }
 /* ******************************* LARGE VIEW Directory ***************************** */
 
 @media only screen and (min-width:68rem) {
   .card-view {
-      grid-template-columns: repeat(3,1fr) ;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   .list-view section {
       grid-template-columns: 30% 20% 20% 30%;

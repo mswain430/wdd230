@@ -91,7 +91,44 @@ main .home-grid {
   border:2px solid rgb(244, 212, 50);
   border-radius: 4px;
 }
-.featuredtemples {max-height: 400px; }
+
+.featuredtemples {
+  grid-column: span 3;
+  grid-row: 4;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.featuredtemples h2 {
+  grid-column: span;
+  grid-row: 1;
+}
+.featuredtemples section {
+  grid-row: 2;
+  display:flex;
+  flex-direction: column;
+  max-height: 350px;
+  text-align: center;
+  background-color:rgb(193, 200, 235);
+  border: 2px solid rgba(98, 135, 236, 0.8);
+  border-radius: 8px;
+  align-items: center;
+  font-size: .9em;
+  line-height: .9em;
+  margin: 2%;
+  padding: .25rem;
+}
+.featuredtemples section > p {
+  min-height: 50px;
+}
+.featuredtemples img.templeimg {
+  min-width: 180px;
+  max-width: 200px;
+  box-shadow: 0 1px 12px #ccc;
+  border: 1px solid rgb(59, 96, 245);
+  border-radius: 8px;
+  background-color: aliceblue;
+}
+
 /* ****************** FOOTER ************************** */
 
 img.ftrLogo { min-width: 100px;}
@@ -137,10 +174,14 @@ footer .wrap {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     font-size: .9em;
   }
-
+    .card-view section {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
   .card-view section p3 {
        display: block;
-       padding: 5px 20px;
+       padding: 5px 5px;
+
   }
 
   .list-view section p1,p3,p4 {

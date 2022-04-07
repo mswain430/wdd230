@@ -280,18 +280,14 @@ main .home-grid {
    grid-template-rows: 280px 100px 400px 600px 400px;
    justify-content: center;
    align-content: center;
-   border: 2px solid red;
-
 }
 /* ******************************** Hero ******************** */
 .hero {
   grid-row: 1;
   grid-column: 1/3;
-  min-height: 280px;
   background-repeat: no-repeat;
   background-position: top center;
   background-color:rgba(249, 251, 253, 0.9);
-  border:1px solid #333;
   position: relative;
 }
 .hero picture.hero-img {
@@ -353,7 +349,6 @@ main .home-grid {
   align-content: center;
   display: flex;
   flex-direction: row;
-  border: 2px solid red;
 }
 
 /* ********************************** HOME- Weather ************************ */
@@ -362,15 +357,15 @@ main .home-grid {
   grid-row: 3;
   justify-content: center;
   align-content: center;
-  min-height: 400px;
+  min-height: 200px;
   background-color: aliceblue;
-  border: 2px solid red;
 }
 /* grid */
 .weather-grid {
   grid-template-columns: 1fr ;
   grid-template-rows: 1fr 0 1fr 1fr 1fr ;
 }
+.weather-grid h2 {text-align: center;}
 /* or flex */
 .weather-grid-flex {
   display: flex;
@@ -379,9 +374,9 @@ main .home-grid {
 }
 api-weather-box {
   width: 80%;
-  border: 2px solid #1cf0f0;
+  border: 2px solid #97a9f7;
   background-color: aliceblue;
-  color:rgb(10, 52, 88);
+  color:rgb(36, 82, 247);
 }
 
 .weather {
@@ -418,21 +413,27 @@ api-weather-box {
   grid-column: span 3;
   grid-row: 4;
   display: flex;
-  flex-direction: row;
-  min-height: 600px;
+  flex-direction: column;
   justify-content: center;
   justify-content:left;
-  border: 2px solid red;
 }
+.featuredtemples h2 {text-align: center;}
 .featuredtemples section {
   display:flex;
   flex-direction: column;
-  max-height: 200px;
+  min-height: 380px;
   text-align: center;
-  border: 2px rgba(10, 52, 88, .8) solid;
-  font-size: .9em;
+  background-color:rgb(180, 188, 230);
+  font-size: .9em; font-weight: bolder;
   line-height: .9em;
   margin: 2%;
+  border: 2px solid rgba(20, 106, 181, 0.8) ;
+  border-radius: 8px;
+  }
+section.featuredtemples h3 {
+  flex: auto;
+  min-height: 40px;
+  font-size: 1.4em;
 }
 
 section.featured1 a, section.featured2 a, section.featured3 a {
@@ -446,35 +447,32 @@ section.featured1 a, section.featured2 a, section.featured3 a {
   font-weight: bold;
   letter-spacing: .04em;
 }
-section.featuredtemples h3 {
-  font-size: 1em;
-}
 
-.featuredtemples img .templeimg {
+
+.featuredtemples img.templeimg {
   display:block;
-  width: 100%;
-  max-height: 100px;
-  margin:12px auto;
+  min-width: 250px;
+  max-width: 260px;
+  margin:5px auto 10px auto;
   padding: 5px;
-  border-radius: 100%;  /*circle */
-  border-style: groove;
-  border:3px rgb(17, 75, 168) solid;
-  background-color:aliceblue;
+  padding-bottom: 5px;
+  box-shadow: 1px 1px 8px #3d4e7d;
+  border:1px rgb(17, 75, 168) solid;
+  border-radius: 8px;
   transition: transform 0.2s ease-in-out;
 }
 section.featured1, section.featured2,section.featured3 {
   flex: auto;
   display:flex;
-  flex-direction: column;
   justify-content: flex-start;
-  min-height: 220px;
-  max-height: 220px;
-  background-color:rgba(83, 171, 238, 0.4);
-  border: 2px solid rgba(10, 52, 88, .8);
+
+  background-color:rgba(193, 202, 241, 0.4);
+  border: 2px solid rgba(104, 111, 248, 0.8);
   line-height: 1em;
   margin: 2%;
-  border: 2px solid red;
   }
+
+
 /* **************************HOME  hottopic **************** */
  .hottopic {
    grid-column: span 3;
@@ -494,11 +492,11 @@ section.featured1, section.featured2,section.featured3 {
 footer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 100px ;
     justify-content: center;
     text-align: center;
     width: 100%;
-    min-height: 200px;
+    min-height: 400px;
     line-height: 1.3em;
     color:rgb(28, 48, 146);
     background-color: #dfe7f8;
@@ -507,6 +505,7 @@ footer {
     padding: 10px 0;
     margin-bottom: 0;
 }
+footer wrap .social {justify-content: center; max-width: 100px; margin-top: -20px;margin: auto;}
 img.ftrLogo { min-width: 70px;}
 footer h2 {
     font-size: 1.4em;
@@ -521,7 +520,7 @@ footer h2 {
 footer .address {
   padding: 10px;
 }
-footer .wrap {margin: 5px;}
+footer .wrap {margin: 5px;margin-top: -20px}
 footer .copyright { padding: 5px;}
 p.api, p.mod {margin: 0; padding: 5px;}
 footer .fmap {
@@ -641,13 +640,14 @@ main.directory {
 }
 .card-view section h3 {
   grid-column:1;
-  margin: -10px -10px 10px -10px;
-  padding: 10px ;
+  margin: -10px -5px 0 -5px;
+  padding: 10px 0 ;
   width: 100%;
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-weight: bold;
   background-color: #8498cf;
   color:aliceblue;
+  border-radius: 8px;
 }
 .list-view section img.templeimg {
     grid-column: 1;
@@ -769,3 +769,5 @@ main.directory {
 .activeBtn {
   background-color:rgba(137, 221, 247, .8);
 }
+
+/* ************************ FEATURED TEMPLES ******************** */
