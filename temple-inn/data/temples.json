@@ -278,27 +278,27 @@
         "featured": 7
        },
        {
-        "name": "Las Vegas Nevada Temple",
-        "address": "827 Temple View Dr",
-        "city": "Las Vegas",
-        "state": "NV",
-        "zip": "89110-2920",
+        "name": "Yorba Linda Temple",
+        "address": "17142 Bastanchury Rd,",
+        "city": "Yorba Linda",
+        "state": "CA",
+        "zip": "92886",
         "phone": "(1) 702-452-5011",
-        "logourl": "images/temples/los-vegas-sm.webp",
-        "website": "https://www.churchofjesuschrist.org/temples/details/las-vegas-nevada-temple",
+        "logourl": "images/temples/yorba-linda-ca-sm.webp",
+        "website": "https://www.churchofjesuschrist.org/temples/details/yorba-linda-california-temple",
         "email": "Log in to send email to temple",
         "services": [
             {
-            "Clothing rental": "available",
+            "Clothing rental": "not available",
             "Cafeteria": "not available",
             "patron housing": "not available",
-            "Distribution center": "nearby"
+            "Distribution center": "not nearby"
         }],
         "milestones": [
             {
-            "7 Apr 1984": "Announced",
-            "30 November 1985": "Groundbreaking",
-            "16 December 1989": "Dedication"
+            "4 April 2021": "Announced",
+            "18 June 2022": "Groundbreaking",
+            "TBD": "Dedication"
         }],
         "ordinance-schedule": "Tues-Sat, 8:00am - 8:00pm",
         "session-schedule": "Tues-Sat, 8:00am - 8:00pm",
@@ -311,10 +311,10 @@
                 "December": "Saturday, 24 December 2022"
                  }]
             }],
-        "appointments": "Appointments Only",
+        "appointments": "No Appointments Yet",
         "prayer-roll": "https://id.churchofjesuschrist.org/temples/prayer-roll",
-        "dedicatory-prayer": "https://www.churchofjesuschrist.org/temples/details/las-vegas-nevada-temple/prayer/1989-12-16?lang=eng",
-        "map": "https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=las-vegas-nevada-temple",
+        "dedicatory-prayer": "https://www.churchofjesuschrist.org/temples?lang=eng",
+        "map": "https://www.google.com/maps/place/Yorba+Linda+California+Temple",
         "featured": 8
        }
     ]
