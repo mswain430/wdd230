@@ -1,4 +1,4 @@
-/*const requestURL = 'https://mswain430.github.io/wdd230/temple-Inn-Suites/data/temples.json';
+/*const requestURL = 'https://mswain430.github.io/wdd230/temple-inn/data/temples.json';
 
 const cards = document.querySelector('div.cards');
 const listBtn = document.querySelector('#listBtn');
@@ -61,7 +61,7 @@ function displaytemple(localtemple) {
 
 
 /* ****************** DISPLAY FEATURED TEMPLES**************** */
-const requestURL = 'https://mswain430.github.io/wdd230/temple-Inn-Suites/data/temples.json';
+const requestURL = 'https://mswain430.github.io/wdd230/temple-inn/data/temples.json';
 
 
 let featured1 = document.querySelector('.featured1');

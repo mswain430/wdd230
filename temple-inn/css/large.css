@@ -64,19 +64,17 @@ main .home-grid {
 }
 .hero h2 {
   color: #f2f6f8;
-  font-size: 1.8em;
+  font-size: 2.5rem;
   text-align: center;
   text-shadow: 2px 2px #333;
   padding:40px 20px;
   position: absolute;
-  top: 10rem;
+  top: 25%;
   right:8rem;
-  max-height: 240px;
-  max-width: 400px;
   background-color: rgba(27, 58, 216, 0.6)
  }
- a.btn_call {top: 4rem;
-  right:8rem;text-align: center;width: 250px; border:2px solid rgb(244, 212, 50);
+ a.btn_call {bottom: 6rem;
+  right:8rem;text-align: center;min-width: 260px; border:2px solid rgb(244, 212, 50);
   border-radius: 4px;}
 /* ****************** FOOTER ************************** */
 footer {

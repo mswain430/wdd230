@@ -1,4 +1,4 @@
-const requestURL = 'https://mswain430.github.io/wdd230/temple-Inn-Suites/data/temples.json';
+const requestURL = 'https://mswain430.github.io/wdd230/temple-inn/data/temples.json';
 
 const cards = document.querySelector('div.cards');
 const listBtn = document.querySelector('#listBtn');
@@ -14,41 +14,41 @@ const cardBtn = document.querySelector('#cardBtn');
     localtemple.forEach(displaytemple);
    /* localbusiness.forEach(displayBusinessTable); */
 });
-/*
+
 function displaytemple(localtemple) {
   // Create elements to add to the document
   let card = document.createElement('section');
   let templeimg = document.createElement('img');
-  let h2 = document.createElement('h2');
+  let h3 = document.createElement('h3');
   let p1 = document.createElement('p1');
   let p2 = document.createElement('p2');
   let p3 = document.createElement('p3');
   let p4 = document.createElement('p4');
   let p5 = document.createElement('p5');
-  let mem = document.createElement('mem');
+  let more = document.createElement('more');
   let ordersuffix = ``;
 
 
  // card.setAttribute('class', 'bizcard');
  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
 
-  logo.setAttribute('src', `${localtemple.logourl}`);
-  logo.setAttribute('alt', `logo for ${localtemple.name}`);
-  logo.setAttribute('class', '.templeimg');
-  logo.setAttribute('loading', 'lazy');
+  templeimg.setAttribute('src', `${localtemple.logourl}`);
+  templeimg.setAttribute('alt', `logo for ${localtemple.name}`);
+  templeimg.setAttribute('class', '.templeimg');
+  templeimg.setAttribute('loading', 'lazy');
 
   // Change the innerHTML property of the h3 element to contain the business' info
-  h2.innerHTML = `${localtemple.name}`;
+  h3.innerHTML = `${localtemple.name}`;
   p1.innerHTML = `${localtemple.phone}`;
-  p2.innerHTML = `${localtemple.address} ${localtemple.city} ${localtemple.zip}`;
-  p3.innerHTML = `${localtemple.address} <br> ${localtemple.city} ${localtemple.zip}`;
+  p2.innerHTML = `${localtemple.address} ${localtemple.city} ${localtemple.state} ${localtemple.zip}`;
+  p3.innerHTML = `${localtemple.address} <br> ${localtemple.city} ${localtemple.state} ${localtemple.zip}`;
   p4.innerHTML = `<a href="${localtemple.website}">website</a>`;
   p5.innerHTML = `<a href="${localtemple.email}">${localtemple.email}</a>`;
 
   // Add/append the section(card) with the h2 element
 
   card.appendChild(h2);
-  card.appendChild(logo);
+  card.appendChild(templeimg);
   card.appendChild(p1);
   card.appendChild(p2);
   card.appendChild(p3);
@@ -62,15 +62,16 @@ function displaytemple(localtemple) {
 listBtn.addEventListener("click", ()=> {
    cards.classList.replace("card-view","list-view")
 
-}); */
+});
 
 cardBtn.addEventListener("click", ()=> {
   cardBtn.classList.add("activeBtn")
   cards.classList.replace("list-view","card-view")
 });
 
+
 /* ****************** DISPLAY FEATURED TEMPLES**************** */
-let spot1 = document.querySelector('.featured1');
+/*let spot1 = document.querySelector('.featured1');
 let spot2 = document.querySelector('.featured2');
 let spot3 = document.querySelector('.featured3');
 let spot = document.querySelector('.featuredtemples');
@@ -125,4 +126,4 @@ function displaytemple(specialtemple, index) {
   // Add/append the existing HTML div with the cards class with the section(card)
  featuredtemples.appendChild(card);
 
-}
+} */

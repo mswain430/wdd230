@@ -37,20 +37,7 @@ header picture.logo img {
     min-width: 250px;
     align-items: center;
 }
-.hero.call {right: center;text-align: center}
-.hero h2 { width: 200px;max-height: 175px;font-size: 1.5em;right: center; padding:20px 10px; top: 8rem;
-  right: 3em;}
 
- a.btn_call {
-  top: 2rem;
-  right: 2rem;
-  font-size: 1.5rem;
-  max-height: 100px;
-  max-width: 250px;
-  text-align: center;
-  border:2px solid rgb(244, 212, 50);
-  border-radius: 4px;
-}
 
 /* ************************* NAVIGATION - MEDIUM ***********************  */
 nav#primaryNav {
@@ -84,12 +71,27 @@ nav ul li a {
 
 main .home-grid {
    display: grid;
-   grid-template-columns: 1fr 1fr;
    grid-template-columns: 1fr 1fr 1fr;
-   justify-content: center;
-   align-content: center;
+   grid-template-columns: 1fr 1fr 200px 200px 1fr;
 }
 
+.hero.call {right: center;text-align: center}
+.hero h2 { align-items: center;max-width: 300px; min-height: 220px;font-size: 1.8em;padding:20px 10px; bottom: 20%;
+  right: 10%;
+  left: 60%;
+  }
+
+ a.btn_call {
+  bottom: 5%;
+  right: 2rem;
+  font-size: 1.5rem;
+  max-height: 100px;
+  max-width: 250px;
+  text-align: center;
+  border:2px solid rgb(244, 212, 50);
+  border-radius: 4px;
+}
+.featuredtemples {max-height: 400px; }
 /* ****************** FOOTER ************************** */
 
 img.ftrLogo { min-width: 100px;}

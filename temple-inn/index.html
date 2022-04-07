@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/large.css">
     <script defer src="js/currentdate.js"></script>
     <script defer src="js/toggle.js"></script>
-    <script defer src="js/weather-api.js"></script>
+  <!-- <script defer src="js/weather-api.js"></script>-->
     <script defer src="js/featured-temples.js"></script>
     </head>
 <body>
@@ -37,9 +37,9 @@
       <header>
          <div></div>
           <picture class="logo">
-            <source srcset="images/TIS-logo-purple.png" media="(max-width: 35rem)">
-            <source srcset="images/TIS-logo-purple.png" media="(min-width: 65rem)">
-                <img src="images/TIS-logo-purple.png" alt="Temple Inn and Suites logo" />
+            <source srcset="images/tis-logo-purple.png" media="(max-width: 35rem)">
+            <source srcset="images/tis-logo-purple.png" media="(min-width: 65rem)">
+                <img src="images/tis-logo-purple.png" alt="Temple Inn and Suites logo" />
         </picture>
         <div></div>
        </header>
@@ -60,7 +60,7 @@
         <picture class="hero-img">
           <source srcset="images/san-diego1.webp"
             media="(max-width: 35rem)">
-          <source srcset="images/san-diego2.webp"
+          <source srcset="images/san-diego2-opt.webp"
             media="(min-width: 57rem)">
             <img src="images/san-diego1.webp" alt="Temple Inn and Suites features San Diego Temple" />
       </picture>
@@ -68,22 +68,28 @@
        <div class="call"><a href="reservation.html" class="btn_call">Check Availability Now</a>
       </div>
     </div>
-    <div class="weather weather-grid">
-        <h1>San Diego Weather</h1>
-        <p><span id="icon-src"></span></p>
-        <figure><img src="http://openweathermap.org/img/wn/10d.png" alt="CA Temple Weather" id="weathericon" /><figcaption></figcaption></figure>
-      <p><span id="current-temp"></span>&#8457;<br/>
-        <span class="humidity"></span><br/>
+    <div class="checkform">Check for availability form here</div>
+    <div class="weather-main">
+      <div class="weather-grid">
+      <div class="cards">
+        <h2>San Diego Weather</h2>
+       <!-- <span id="icon-src"></span>-->
+        <figure><img src="http://openweathermap.org/img/wn/01d.png" alt="San Diego Temple Weather" id="weathericon" /><figcaption></figcaption></figure>
+        <p><span id="current-temp"></span>&#8457;<br/>
+        <span id="description"></span><br/>
+        <span id="humidity"></span><br/>
         <span id="windspeed"></span></p>
         <span id="current-weather"></span>
         <span id="current-weather1"></span>
         <span id="current-weather2"></span>
         <span id="current-weather3"></span>
+      </div>
     </div>
+  </div>
     <div class="featuredtemples">
-
+    Featured temples here
     </div>
-   <div></div>
+   <div class="hottopic">Hot topic here</div>
    <div></div>
 </section>
 
