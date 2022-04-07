@@ -37,6 +37,15 @@ header picture.logo img {
     min-width: 250px;
     align-items: center;
 }
+/* ******************************* HOME ***************************** */
+main.home-grid {
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+}
 .hero.call {right: center;text-align: center}
 .hero h2 { width: 200px;max-height: 175px;font-size: 1.5em;right: center; padding:20px 10px; top: 8rem;
   right: 3em;}
