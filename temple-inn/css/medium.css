@@ -129,4 +129,38 @@ footer .wrap {
   flex-direction: column;
 }
 
+/* **************************** DIRECTORY MEDIUM VIEW ********************* */
+@media only screen and (min-width:32rem) {
+
+  .list-view section {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: .9em;
+  }
+
+  .card-view section p3 {
+       display: block;
+       padding: 5px 20px;
+  }
+
+  .list-view section p1,p3,p4 {
+      padding: 5px;
+      text-align: left;
+      color: black;
+  }
+  .card-view section p1,p2,p3,p4 {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      color: black;
+  }
+  .list-view p2, p5, mem {
+      display: none;
+  }
+  .card-view {
+  grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
 }

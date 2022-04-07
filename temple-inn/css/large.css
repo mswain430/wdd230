@@ -112,9 +112,11 @@ footer .wrap {
 .featured:nth-child(1){
   flex: 1fr;
 }
+
 }
 /* ******************************* LARGE VIEW Directory ***************************** */
-/* @media only screen and (min-width:68rem) { */
+
+@media only screen and (min-width:68rem) {
   .card-view {
       grid-template-columns: repeat(3,1fr) ;
   }
@@ -163,8 +165,6 @@ footer .wrap {
   .card-view section p3{
       display: none;
   }
-/*
-} */
-
 
 }
+
