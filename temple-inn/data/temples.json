@@ -6,6 +6,7 @@
         "state": "CA",
         "zip": "93711",
         "phone": "(1) 559-437-9451",
+        "logourl": "../images/temples/fresno-sm.webp",
         "website": "https://www.churchofjesuschrist.org/temples/details/fresno-california-temple",
         "email": "Log in to send email to temple",
         "services": [
@@ -36,8 +37,7 @@
         "prayer-roll": "https://id.churchofjesuschrist.org/temples/prayer-roll",
         "dedicatory-prayer": "https://www.churchofjesuschrist.org/temples/details/fresno-california-temple/prayer/2000-04-09",
         "map": "https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=fresno-california-temple",
-        "featured": 1,
-        "logourl": "images/temples/fresno-sm.webp"
+        "featured": 1
        },
        {
         "name": "Los Angeles California Temple",
@@ -46,6 +46,7 @@
         "state": "CA",
         "zip": "90025-4718",
         "phone": "(1) 310-474-5569",
+        "logourl": "../images/temples/los-angeles-sm.webp",
         "website": "https://www.churchofjesuschrist.org/temples/details/los-angeles-california-temple",
         "email": "Log in to send email to temple",
         "services": [
@@ -76,8 +77,7 @@
         "prayer-roll": "https://id.churchofjesuschrist.org/temples/prayer-roll",
         "dedicatory-prayer": "https://www.churchofjesuschrist.org/temples/details/los-angeles-california-temple/prayer/1956-03-11",
         "map": "https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=los-angeles-california-temple",
-        "featured": 2,
-        "logourl": "images/temples/los-angeles-sm.webp"
+        "featured": 2
        },
        {
         "name": "Newport Beach CA Temple",
@@ -86,6 +86,7 @@
         "state": "CA",
         "zip": "92660-9118",
         "phone": "(1) 949-644-1820",
+        "logourl": "../images/temples/newport-beach-sm.webp",
         "website": "https://www.churchofjesuschrist.org/temples/details/newport-beach-california-temple",
         "email": "Log in to send email to temple",
         "services": [
@@ -115,8 +116,7 @@
         "prayer-roll": "https://id.churchofjesuschrist.org/temples/prayer-roll",
         "dedicatory-prayer": "https://www.churchofjesuschrist.org/temples/details/newport-beach-california-temple/prayer/2005-08-28",
         "map": "https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=newport-beach-california-temple",
-        "featured": 3,
-        "logourl": "images/temples/newport-beach-sm.webp"
+        "featured": 3
        },
        {
         "name": "Oakland California Temple",
@@ -125,6 +125,7 @@
         "state": "CA",
         "zip": "94602-2535",
         "phone": "(1) 510-531-3200",
+        "logourl": "../images/temples/oakland-sm.webp",
         "website": "https://www.churchofjesuschrist.org/temples/details/oakland-california-temple",
         "email": "Log in to send email to temple",
         "services": [
@@ -156,8 +157,7 @@
         "prayer-roll": "https://id.churchofjesuschrist.org/temples/prayer-roll",
         "dedicatory-prayer": "https://www.churchofjesuschrist.org/temples/details/oakland-california-temple/prayer/2019-06-16",
         "map": "https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=oakland-california-temple",
-        "featured": 4,
-        "logourl": "images/temples/oakland-sm.webp"
+        "featured": 4
        },
        {
         "name": "Redlands California Temple",
@@ -166,6 +166,7 @@
         "state": "CA",
         "zip": "92374-5503",
         "phone": "(1) 909-389-7369",
+        "logourl": "../images/temples/redlands-sm.webp",
         "website": "https://www.churchofjesuschrist.org/temples/details/redlands-california-temple",
         "email": "Log in to send email to temple",
         "services": [
@@ -195,8 +196,7 @@
         "prayer-roll": "https://id.churchofjesuschrist.org/temples/prayer-roll",
         "dedicatory-prayer": "https://www.churchofjesuschrist.org/temples/details/redlands-california-temple/prayer/2003-09-14",
         "map": "https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=redlands-california-temple",
-        "featured": 5,
-        "logourl": "images/temples/redlands-sm.webp"
+        "featured": 5
        },
        {
         "name": "Sacramento California Temple",
@@ -205,6 +205,7 @@
         "state": "CA",
         "zip": "95742-6415",
         "phone": "(1) 916-357-5870",
+        "logourl": "../images/temples/sacramento-sm.webp",
         "website": "https://www.churchofjesuschrist.org/temples/details/sacramento-california-temple",
         "email": "Log in to send email to temple",
         "services": [
@@ -235,8 +236,7 @@
         "prayer-roll": "https://id.churchofjesuschrist.org/temples/prayer-roll",
         "dedicatory-prayer": "https://www.churchofjesuschrist.org/temples/details/sacramento-california-temple/prayer/2006-09-03",
         "map": "https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=sacramento-california-temple",
-        "featured": 6,
-        "logourl": "images/temples/sacramento-sm.webp"
+        "featured": 6
        },
        {
         "name": "San Diego California Temple",
@@ -245,6 +245,7 @@
         "state": "CA",
         "zip": "92122-5000",
         "phone": "(1) 858-622-0991",
+        "logourl": "../images/temples/san-deigo-sm.webp",
         "website": "https://www.churchofjesuschrist.org/temples/details/san-diego-california-temple",
         "email": "Log in to send email to temple",
         "services": [
@@ -274,8 +275,7 @@
         "prayer-roll": "https://id.churchofjesuschrist.org/temples/prayer-roll",
         "dedicatory-prayer": "https://www.churchofjesuschrist.org/temples/details/san-diego-california-temple/prayer/1993-04-25",
         "map": "https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=san-diego-california-temple",
-        "featured": 7,
-        "logourl": "images/temples/san-deigo-sm.webp"
+        "featured": 7
        },
        {
         "name": "Las Vegas Nevada Temple",
@@ -284,6 +284,7 @@
         "state": "NV",
         "zip": "89110-2920",
         "phone": "(1) 702-452-5011",
+        "logourl": "../images/temples/los-vegas-sm.webp",
         "website": "https://www.churchofjesuschrist.org/temples/details/las-vegas-nevada-temple",
         "email": "Log in to send email to temple",
         "services": [
@@ -314,8 +315,7 @@
         "prayer-roll": "https://id.churchofjesuschrist.org/temples/prayer-roll",
         "dedicatory-prayer": "https://www.churchofjesuschrist.org/temples/details/las-vegas-nevada-temple/prayer/1989-12-16?lang=eng",
         "map": "https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=las-vegas-nevada-temple",
-        "featured": 8,
-        "logourl": "images/temples/los-vegas-sm.webp"
+        "featured": 8
        }
     ]
 }

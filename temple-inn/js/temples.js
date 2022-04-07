@@ -47,14 +47,14 @@ function displaytemple(localtemple) {
 
   // Add/append the section(card) with the h2 element
 
-  card.appendChild(h2);
+
   card.appendChild(templeimg);
+  card.appendChild(h3);
   card.appendChild(p1);
   card.appendChild(p2);
   card.appendChild(p3);
   card.appendChild(p4);
   card.appendChild(p5);
-  card.appendChild(mem);
   // Add/append the existing HTML div with the cards class with the section(card)
   cards.appendChild(card);
 }
