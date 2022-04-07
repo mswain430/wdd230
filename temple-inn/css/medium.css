@@ -204,3 +204,63 @@ footer .wrap {
 
 }
 
+.join {
+  display:block;
+  grid-row: 4/5;
+  grid-column: 1/4;
+  text-align:center;
+  padding: 20px;
+  margin: 1%;
+}
+.join p {font-size: 1.5em; margin: 5px;}
+.join button {
+  padding: 20px;
+  font-size: 1.3em;
+}
+/* ***************************************** Reserve page ******************* */
+.grid-reserve section{
+  max-width: 320px;
+  margin: auto;
+  padding: 5px;
+}
+
+form label.top input, form label.top select, form label.top textarea {
+  font-size: 1.2rem;
+  min-width: 300px;
+  max-width: 80%;
+}
+
+.grid-reserve section {
+  min-width: 320px;
+  margin: 20px auto;
+  padding: 2%;
+}
+form {
+  align-self: center;
+  text-align: left;
+  min-width: 320px;
+  max-width: 320px;
+}
+form fieldset {
+  min-width: 320px;
+}
+form label.top input, form label.top select, form label.top textarea {
+  font-size: 1.2rem;
+  min-width: 80%;
+  max-width: 80%;
+}
+div.membership{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 2%;
+}
+label {
+  grid-column: 1;
+}
+p.member-message {
+  grid-column: 2;
+  font-weight: 400;
+  margin: 5px;
+  text-align: left;
+}

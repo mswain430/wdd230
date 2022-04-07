@@ -168,4 +168,34 @@ footer .wrap {
   }
 
 }
+/* ************************************** RESERVE *************************** */
+.reserve {
+  display:block;
+  grid-row: 3;
+  grid-column: 1;
+  padding: 10px;
 
+}
+.reservce p {font-size: 1.1em; margin: 5px;}
+/* --------------FORM STYLING ----- */
+
+
+.grid-reserve section{
+  min-width: 400px;
+  margin: 20px auto;
+  padding: 25px;
+}
+form {
+  align-self: center;
+  text-align: left;
+  max-width: 400px;
+}
+form label.top input, form label.top select, form label.top textarea {
+  font-size: 1.2rem;
+  max-width: 80%;
+}
+p.member-message {
+  display:inline-block;
+  font-weight: 400;
+  margin: 5px;
+}

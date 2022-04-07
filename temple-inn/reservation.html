@@ -52,29 +52,47 @@
           <li><a href="contacts.html">Contact</a></li>
           </ul>
         </nav>
-
-
- <main class="home-grid">
-<section class="intro">
-<h1>Temple Inn and Suites</h1>
-   <div class="hero">
-        <picture class="hero-img">
-          <source srcset="images/san-diego1.webp"
-            media="(max-width: 35rem)">
-          <source srcset="images/san-diego2.webp"
-            media="(min-width: 57rem)">
-            <img src="images/san-diego1.webp" alt="Temple Inn and Suites features San Diego Temple" />
-      </picture>
-        <h2>Check out a Temple<br/> package today!</h2>
-       <div class="call"><a href="join.html" class="btn_call">Check Availability Now</a></div></div>
-      </div>
-       <div class="featured"></div>
-      <div></div>
-      <div></div>
-      <div></div>
-</section>
-
-</main>
+        <main class="grid-reserve">
+          <section>
+       <h2>Reservation Service for Temple Inn and Suites </h2>
+       <form action="confirmation.html" method="get" autocomplete="on">
+        <fieldset>
+        <legend>Applicant Information</legend>
+        <label class="top">First Name*<input type="text" name="fname" required></label>
+        <label class="top">Last Name* <input type="text" name="lname" required></label>
+        <label class="top">Position <span class="hint">[**Must be alpha, more than 7 characters]</span><input type="text" name="position" pattern="^[a-zA-Z- ].{7,}$"></label>
+        <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+        <label class="top">Cell Phone* <input type="tel" name="phone" placeholder="1234567890" required></label>
+        <label class="top">Name of your Business <input type="text" name="biztitle" required></label>
+      </fieldset>
+      <fieldset class="membership">
+          <legend>Membership Level</legend>
+         <div class="top">Membership Opportunities</div>
+          <div class="membership">
+         <label class="sbs">
+            <input type="radio" name="membership" value="np"> NP Membership</label>
+            <p class="member-message">These memberships have free training and networking ...</p>
+      
+          <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+         <p class="member-message">These memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc.</p>
+      
+          <label class="sbs"><input type="radio" name="membership" value="silver"> Silver membership</label>
+          <p class="member-message">These memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc.</p>
+      
+          <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+          <p class="member-message">These memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc.</p>
+         </div>
+        </fieldset>
+      <fieldset>
+        <legend>Business Information</legend>
+        <label class="top">Please describe your business<textarea id="biz" name="bizInfo" rows="6" cols="30"></textarea></label>
+      </fieldset>
+      <input type="hidden" value="Date.now()">
+      <input class="button submitBtn" type="submit" value="Reserve your Spot today">
+      
+      </form>
+      </section>
+      </main>
  <footer>
     <div class="flogo"><img src="images/templeIcon-lavendar.svg" class="ftrLogo" alt="Temple Inn Suites" /></div>
     <div class="address"><h2>Temple Inn and Suites</h2>4800 Montgomery Ln #300<br>Bethesda, MD 20814<br/>
