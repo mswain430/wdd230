@@ -154,6 +154,7 @@ footer .wrap {
       padding-top: 10px;
   }
   .list-view section mem {
+     display:none;
       grid-column: 1;
       grid-row: 2;
 }
@@ -162,7 +163,7 @@ footer .wrap {
       grid-row: 2;
 }
 
-  .card-view section p3{
+  .card-view section p2{
       display: none;
   }
 
