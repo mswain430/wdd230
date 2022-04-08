@@ -285,12 +285,13 @@ main .home-grid {
   grid-row: 1;
   grid-column: 1;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .hero picture.hero-img {
   min-width: 320px;
   max-width: 100%;
-  left: 3%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .hero h2 {
   color: #f2f6f8;
@@ -335,18 +336,21 @@ main .home-grid {
 .checkform {
   grid-column: 1;
   grid-row: 2;
-  display: grid;
-  grid-template-rows: 1fr;
+  display: flex;
+  flex-direction: column;
   height: fit-content;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  margin: 2%;
 }
 .checkform form.check {
-  grid-column: 1;
-  grid-row: 1 / 6;
+  flex: auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 40px 80px 85px 85px 0px 85px;
-  background-color:rgb(204, 211, 245);
-  margin: 1%;
+  grid-template-rows: 40px 80px 85px 85px 85px;
+  margin: 4%;
+  justify-content: center;
 }
 
 .checkform form h3 {
@@ -372,7 +376,7 @@ main .home-grid {
 
 .checkform form input.submitBtn {
    height: 50px;
-   margin: 0;
+   margin: 4%;
    padding: 10px;
 }
 
@@ -933,7 +937,7 @@ form input.submitBtn {
     color: white;
     border-radius: 4px;
     padding: 1rem 1.5rem;
-    margin: 2rem 0 1rem 2%;
+    margin: 2%;
     width: 250px;
     max-width: 250px;
     font-weight: bold;

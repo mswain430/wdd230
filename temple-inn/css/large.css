@@ -224,7 +224,6 @@ form {
 }
 form label.top input, form label.top select, form label.top textarea {
   font-size: 1.2rem;
-  max-width: 80%;
 }
 p.member-message {
   display:inline-block;
