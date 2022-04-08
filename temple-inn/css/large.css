@@ -78,18 +78,48 @@ main .home-grid {
   border-radius: 4px;}
 /* ****************** FOOTER ************************** */
 footer {
-  grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 100px;
-    padding-top: 20px;
+  grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
 }
-img.ftrLogo { min-width: 200px;}
-footer .wrap {
+footer div.flogo {
+  grid-column: 1;
+  grid-row: 1;
+}
+.ftrlogo {
+  min-width: 100px;
+}
+footer .address {
+  grid-column: 1;
   grid-row: 2;
-  grid-column: span 3;
-  display: flex;
-  flex-direction: column;
 }
+footer .fmap {
+  grid-column-start: 1;
+  grid-row: 3;
+}
+footer .social {
+  grid-column: 1;
+  grid-row: 4;
+}
+footer .copyright {
+  grid-column: 1;
+  grid-row: 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.copyright:nth-child(1){
+  margin: 0;
+  padding: 5px 10px 0 5px;
+  justify-content: center;
+  align-content: center;
 
+}
+span.sm_name::after {
+  content: "  ";
+  content: "  |  ";
+  color:  rgb(67, 45, 235);
+  font-weight: 300;
+}
 /* *************************** featured temples ************** */
 .temple-home {
   grid-column: span 3;

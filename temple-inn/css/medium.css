@@ -131,40 +131,11 @@ main .home-grid {
 
 /* ****************** FOOTER ************************** */
 
-img.ftrLogo { min-width: 100px;}
-div.contacts {line-height: 1.2em}
-span.sm_name::after {
-  content: "  ";
-  content: "  |  ";
-  color:  aliceblue;
-  font-weight: 300;
-}
-span.author::before {
-  content: "  ";
-}
-span.author::after {
-  content: "  ";
-}
-span.project::before {
-  content: "  |  ";
-  color:  aliceblue;
-  font-weight: 300;
-}
-span.project::after {
-  content: "  |  ";
-  color:  aliceblue;
-  font-weight: 300;
-}
-footer .copyright {
-   font-size: .9em;
-   padding: 5px;
-   line-height: 1.4em;
-}
 
-footer .wrap {
-  display: flex;
-  flex-direction: column;
-}
+
+
+
+
 }
 /* **************************** DIRECTORY MEDIUM VIEW ********************* */
 @media only screen and (min-width:32rem) {
