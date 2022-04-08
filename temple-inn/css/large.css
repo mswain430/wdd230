@@ -213,3 +213,20 @@ main.services-grid section {
   display: row;
   padding: 4%;
 }
+/* *********************** HOME - CHECK FORM ************** */
+.checkform {
+  grid-column: 1/ 4;
+  grid-row: 2;
+  min-height: 100px;
+  justify-content: start;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  background-color:rgb(180, 188, 230);
+}
+.checkform form  {
+  display: flex;
+  flex-direction: row;
+  border: none;
+}
