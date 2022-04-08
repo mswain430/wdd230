@@ -811,7 +811,7 @@ main.directory {
   min-width: 320px;
   max-width:100%;
   margin:1%;
-  
+
 }
 .grid-reserve section h2 {
   border-radius: 4px;
@@ -833,7 +833,7 @@ form fieldset {
     border: 2px solid #0f4077;
     border-radius: 10px;
     padding: 1%;
-    
+
 }
 form legend {
     color: #0f4077;
@@ -910,8 +910,8 @@ form input.submitBtn {
     font-weight: bold;
     font-size: 1em;
     transition-duration: 0.4s;
-    background-color:  #2543ec; 
-    
+    background-color:  #2543ec;
+
 }
 form input.submitBtn:hover {
   text-shadow:0 12px 15px rgba(0,0,0,.3);
@@ -923,4 +923,33 @@ form label.top input:required {
 
 form label.top input:required:valid {
     border: 1px solid green;
+}
+
+/* *********************** SERVICES *************************** */
+main.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+main.services-grid section {
+  grid-column: auto;
+  min-height: 400px;
+  display: flex;
+  display: column;
+  border: 2px solid red;
+}
+main.services-grid section picture {
+  width: 300px;
+  margin: 5px;
+}
+picture.right {
+  float: right;
+  margin: 20px;
+}
+
+picture.left {
+  float: left;
+  margin: 20px;
 }

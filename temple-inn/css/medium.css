@@ -264,3 +264,13 @@ p.member-message {
   margin: 5px;
   text-align: left;
 }
+/* *********************** SERVICES *************************** */
+main.services-grid {
+  grid-template-columns: 1fr 1fr;
+}
+main.services-grid section {
+  grid-column: auto;
+  min-height: 600px;
+  display: flex;
+  display: row;
+}

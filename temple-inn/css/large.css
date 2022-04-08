@@ -199,3 +199,17 @@ p.member-message {
   font-weight: 400;
   margin: 5px;
 }
+
+/* *********************** SERVICES *************************** */
+main.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin:2% 4%;
+}
+main.services-grid section {
+  grid-column: auto;
+  min-height: 400px;
+  display: grid;
+  display: row;
+  padding: 4%;
+}
