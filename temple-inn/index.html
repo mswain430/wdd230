@@ -21,6 +21,7 @@
     <script defer src="js/toggle.js"></script>
    <script defer src="js/weather-api.js"></script>
     <script defer src="js/featured-temples.js"></script>
+    <script defer src="js/dropdown.js"></script>
     </head>
 <body>
       <div class="topdiv">
@@ -42,20 +43,22 @@
         </picture>
         <div class="btncontainer"><a href="reservation.html" class="btn_reserve">Make a Reservation</a></div>
        </header>
+
          <nav>
             <ul id="primaryNav" class="navigation">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="reservation.html">Reservations</a></li>
           <li><a href="temples.html">Locations</a></li>
-          <li><a href="services.html">Services</a>
-          <ul><li><a href="reception.html">Receptions</a></li>
-             <li><a href="temple-missionary.html">Temple Missionary Services</a></li>
-             <li><a href="weatherforcast.html">Weather Forcasts</a></li>
-          </ul>
-        </li>
-
           <li><a href="contacts.html">Contact</a></li>
           </ul>
+           <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Services</button>
+           <div id="myDropdown" class="dropdown-content">
+            <a href="reception.html">Receptions</a>
+            <a href="temple-missionary.html">Temple Missionary Services</a>
+            <a href="weatherforcast.html">Weather Forcasts</a>
+          </div>
+        </div>
         </nav>
  <main class="home-grid">
    <div class="hero">
@@ -121,7 +124,7 @@
     <div class="featuredtemples">
    <h2>Featured Temples</h2>
     </div>
-   <div class="hottopic"><h2>We provide many Services</h2><p><a href="services" ></a>Check out our services here</a>.</p>
+   <div class="hottopic"><h2>We provide many Services</h2><p><a href="services" >Check out our services here.</a></p>
    <picture class="service1"><img src="images/fresno-temple-lds-935867-sm.webp"/></picture>
   </div>
    <div>
