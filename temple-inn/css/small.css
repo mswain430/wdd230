@@ -375,7 +375,6 @@ main .home-grid {
   text-shadow: 2px 2px #333;
   padding: 10px 20px;
   width: 250px;
-  height: 60px;
   position: absolute;
   right: 1%;
   bottom: 20%;
@@ -579,18 +578,18 @@ section.featured1, section.featured2,section.featured3 {
 
 /* **************************HOME  hottopic **************** */
  .hottopic {
-   grid-column: 1 / 4;
+   grid-column: 1 / 3;
    grid-row: 5;
    min-height: 400px;
    display: flex;
    flex-direction: column;
    text-align: center;
-   margin: 4%;
+   margin: 1%;
    border: 1px solid blue;
  }
 
- picture .service1 {float: right;margin: 25px; padding:5px; background-color: white; border: 1px solid #0f4077}
-picture .service1 img {max-width: 300px; max-height: 400px;}
+ picture .service1 {width: 300px;background-color: white; border: 1px solid #0f4077}
+picture .service1 img {min-width: 300px;max-width: 300px; object-fit: cover;}
 
 
 

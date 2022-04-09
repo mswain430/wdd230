@@ -273,7 +273,6 @@ main.services-grid section {
 /* * *8********************** HOT TOPIC ****************** */
 
  .hottopic {
-   margin: 25px;
    grid-column: span 3;
    grid-template-columns: 1fr 1fr;
 
