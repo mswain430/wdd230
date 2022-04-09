@@ -18,8 +18,9 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <script defer src="js/currentdate.js"></script>
-    <script defer src="js/lastmodified.js"></script>
     <script defer src="js/toggle.js"></script>
+   <script defer src="js/weather-api.js"></script>
+    <script defer src="js/featured-temples.js"></script>
     </head>
 <body>
       <div class="topdiv">
@@ -34,63 +35,38 @@
           </div>
     </div>
       <header>
-         <div></div>
           <picture class="logo">
             <source srcset="images/tis-logo-purple.png" media="(max-width: 35rem)">
             <source srcset="images/tis-logo-purple.png" media="(min-width: 65rem)">
                 <img src="images/tis-logo-purple.png" alt="Temple Inn and Suites logo" />
         </picture>
-        <div></div>
+        <div class="btncontainer"><a href="reservation.html" class="btn_reserve">Make a Reservation</a></div>
        </header>
          <nav>
             <ul id="primaryNav" class="navigation">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="reservation.html">Reservations</a></li>
           <li><a href="temples.html">Locations</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="reception.html">Receptions</a></li>
-          <li><a href="contacts.html" class="active">Contact</a></li>
+          <li><a href="services.html">Services</a>
+          <ul><li><a href="reception.html">Receptions</a></li>
+             <li><a href="temple-missionary.html">Temple Missionary Services</a></li>
+             <li><a href="weatherforcast.html">Weather Forcasts</a></li>
+          </ul>
+        </li>
+
+          <li><a href="contacts.html">Contact</a></li>
           </ul>
         </nav>
+  <main class="grid-ty-bg">
+    <section class="grid-ty">
+       <h2>Blanding City<br/>Chamber of Commerce</h2>
+      <picture>
+        <img src="images/TYcard.webp"  alt="thank-you" loading="lazy">
+      </picture>
 
-
-<main class="contacts-grid">
-    <h2 class="team">Blanding Chamber Contacts</h2>
-    <section class="section-contacts">
-  <div class="general" >
-    <h3>General Information</h3>
-    <h4>Physical Address:</h4>
-    <p>48000 Montgomery Ln #30, Bethesda, MD 20814</p>
-    <h4>Mailing Address:</h4>
-    <p>48000 Montgomery Ln #30,<br/> Bethesda, MD 20814</p>
-    <h4>Phone Number</h4>
-    <p>1 (435) 678-2791</p>
-    <h4>Email</h4>
-    <p>templeInn@templeInnSuites</p>
-     <div class="gmap">
-         </div>
-</div>
-    <div class="contact-form">
-      <div class="formbox">
-     <div id="feedback"></div>
-      <form method="get" action="thankyou_comments.html" autocomplete="on">
-    <fieldset>
-      <legend><h3>Contact the Chamber</h3></legend>
-      <label class="top">First and Last Name*<input type="text" name="name" required></label>
-        <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-          <p>&nbsp;</p>
-        <p class="imp">Your comments are important to us!</p>
-        <label class="top">Comments<textarea id="comments" name="comments"  rows="6" cols="30"></textarea></label>
-        <p>&nbsp;</p>
-        <input type="hidden" value="Date.now()">
-        <input class="button submitBtn" type="submit" value="My comments to the Chamber">
-    </fieldset>
-    </form>
-    </div>
-  </div>
-  </section>
-  </main>
- <footer>
+     <p>Thank-you for sending us your comments concerning the Blanding Chamber of Commerce. We will get back to you soon.</p>
+  </section></main>
+<footer>
     <div class="flogo"><img src="images/templeIcon-lavendar.svg" class="ftrLogo" alt="Temple Inn Suites" /></div>
     <div class="address"><h2>Temple Inn and Suites</h2>4800 Montgomery Ln #300<br>Bethesda, MD 20814<br/>
     templeInn@templeInnSuites<br>(435) 678-2791</div>

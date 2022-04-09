@@ -1097,3 +1097,15 @@ h3 span#event{font-weight: bold}
 section.confirm {
   margin: 6%;
 }
+
+/* ************************** CONTACTS ***************************** */
+main .contacts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr ;
+  text-align:center;
+  margin:0 auto;
+  justify-content: center;
+  align-content: center;
+
+}

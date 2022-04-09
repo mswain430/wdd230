@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/large.css">
     <script defer src="js/currentdate.js"></script>
     <script defer src="js/toggle.js"></script>
+    <script defer src="js/temple0.js"></script>
     </head>
 <body>
       <div class="topdiv">
@@ -53,7 +54,7 @@
         </nav>
 
 
- <main class="home-grid">
+ <main class="temple-detail-grid">
 <section>
   <h3>Rate this page:</h3>
   <span class="heading">User Rating</span>
@@ -64,8 +65,21 @@
 <span class="fa fa-star"></span>
 <p>4.1 average based on 254 reviews.</p>
 <h1>Temple Summary</h1>
-
-   </section>
+   </section><form>
+<label for="temples">Choose a temple:
+  <input type="list" class="form-control" inputmode="numeric" id="temple_detail">
+  <datalist id="temple_detail" name="temple_detail" size="8">
+<option value="0">Fresno California Temple</option>
+<option value="1">Los Angeles California Temple</option>
+<option value="2">Newport Beach California Temple</option>
+<option value="3">Oakland California Temple</option>
+<option value="4">Redlands California Temple</option>
+<option value="5">Sacramento California Temple</option>
+<option value="6">San Diego California Temple</option>
+<option value="7">Yorba Linda California Temple</option>
+  </datalist>
+</label></fieldset></form>
+<div id="temple_detail"></div>
 </main>
 
  <footer>
