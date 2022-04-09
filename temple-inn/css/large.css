@@ -270,4 +270,9 @@ main.services-grid section {
   font-size: .9em;
 }
 
+/* * *8********************** HOT TOPIC ****************** */
 
+ .hottopic {
+   grid-template-columns: 1fr 1fr;
+
+ }

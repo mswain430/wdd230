@@ -529,16 +529,15 @@ section.featured1, section.featured2,section.featured3 {
 
 /* **************************HOME  hottopic **************** */
  .hottopic {
-   grid-column: span 3;
+   grid-column: 1;
    grid-row: 5;
-   min-height: 200px;
+   min-height: 400px;
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr;
    grid-row: 1fr;
-   border: 2px solid red;
  }
 
- picture .service1 {float: right;margin: 5px; padding:5px; background-color: white; border: 1px solid #0f4077}
+ picture .service1 {float: right;margin: 25px; padding:5px; background-color: white; border: 1px solid #0f4077}
 picture .service1 img {max-width: 300px; max-height: 400px;}
 
 
@@ -922,6 +921,7 @@ form label.top input, form label.top select, form label.top textarea {
     border-radius: 4px;
     color: #0f4077;
     padding: .75rem;
+    min-width: 90%;
     background-color: rgba(0,0,0, .1);
     background-color:rgba(15, 64, 119,.1)
 }

@@ -60,11 +60,9 @@
  <main class="home-grid">
    <div class="hero">
         <picture class="hero-img">
-          <source srcset="images/san-diego1.webp"
-            media="(min-width: 35rem)">
-          <source srcset="images/san-diego2-opt.webp"
-            media="(min-width: 57rem)">
-            <img src="images/san-diego-grounds.jpeg" alt="Temple Inn and Suites features San Diego Temple" />
+          <source srcset="images/san-diego1.webp" media="(max-width: 35rem)">
+          <source srcset="images/san-diego2-opt.webp" media="(min-width: 57rem)">
+            <img src="images/san-diego1.webp" alt="Temple Inn and Suites features San Diego Temple" />
       </picture>
         <h2>Check out a Temple<br/> package today!</h2>
        <div class="call"><a href="reservation.html" class="btn_call">Check Availability Now</a>
@@ -83,7 +81,7 @@
     <div class="weather-main">
       <div class="weather-grid">
          <h2>Weather Information</h2>
-      <div class="dis-card">
+          <div class="dis-card">
         <span id="icon-src"></span>
         <figure><img src="http://openweathermap.org/img/wn/01d.png" alt="San Diego Temple Weather" id="weathericon" /><figcaption></figcaption></figure>
         <p><span id="current-temp"></span>&#8457;<br/>
@@ -91,8 +89,11 @@
         <span id="humidity"></span><br/>
         <span id="windspeed"></span></p>
         <!-- Trigger/Open The Modal -->
-      <button id="myBtn">Weather Alert</button>
-     </div>
+        <br/>
+        <button id="myBtn">Weather Alert</button>
+        <br/><br/>
+         <p><a href="weatherforcast.html" >Weather forcast</a></p>
+       </div>
      <!-- The Modal -->
      <div id="myModal" class="modal">
 
@@ -120,8 +121,11 @@
     <div class="featuredtemples">
    <h2>Featured Temples</h2>
     </div>
-   <div class="hottopic">Hot topic here</div>
-   <div></div>
+   <div class="hottopic"><h2>We provide many Services</h2><p><a href="services" ></a>Check out our services here</a>.</p>
+   <picture class="service1"><img src="images/fresno-temple-lds-935867-sm.webp"/></picture>
+  </div>
+   <div>
+  </div>
 </section>
 
 </main>
