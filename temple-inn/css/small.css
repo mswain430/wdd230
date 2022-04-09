@@ -598,7 +598,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
   /*  grid-template-rows: 90px 160px 180px 70px 160px ; */
-  grid-template-rows: 125px 160px 170px 60px 100px 60px;
+  grid-template-rows: 125px 215px 170px 60px 100px 60px;
     justify-content: center;
     text-align: center;
     width: 100%;
