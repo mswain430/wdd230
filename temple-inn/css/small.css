@@ -363,9 +363,10 @@ main .home-grid {
   flex-direction: column;
 }
 .hero picture.hero-img {
-  min-width: 320px;
-  max-width: 100%;
-  object-fit: cover;
+    min-width: 320px;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
 }
 .hero h2 {
   color: #f2f6f8;
@@ -526,7 +527,7 @@ p.card-text {margin:0;padding: 2px;color:rgb(5, 60, 155)}
 .featuredtemples section {
   display:flex;
   flex-direction: column;
-  min-height: 480px;
+  min-height: 500px;
   text-align: center;
   font-size: 1.1em; font-weight: bolder;
   line-height: 1.4em;
@@ -541,16 +542,16 @@ section.featuredtemples h3 {
 }
 
 section.featured1 a, section.featured2 a, section.featured3 a {
-  color: #f9a006;
-  font-size: 1.4em;
+  color: #de36e7;
+  font-size: 1.2em;
   text-shadow:1px 1px 1px rgb(10, 52, 88);
   font-weight: bold;
-  letter-spacing: .07em;
+  letter-spacing: .1em;
 }
 .featured1 a:hover, .featured2 a:hover,.featured3 a:hover {
   color:rgb(2, 255, 27);
   font-weight: bold;
-  letter-spacing: .07em;
+  letter-spacing: .1em;
 }
 
 
@@ -570,10 +571,8 @@ section.featured1, section.featured2,section.featured3 {
   flex: auto;
   display:flex;
   justify-content: flex-start;
-
   background-color:rgba(193, 202, 241, 0.4);
   border: 2px solid rgba(104, 111, 248, 0.8);
-  line-height: 1em;
   margin: 2%;
   }
 
