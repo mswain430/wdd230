@@ -80,7 +80,7 @@ main .home-grid {
 /* ****************** FOOTER ************************** */
 footer {
   grid-template-columns: 1fr;
-  grid-template-rows: 110px 160px 170px 40px 40px 40px;
+  grid-template-rows: 110px 185px 170px 40px 40px 40px;
 }
 footer div.flogo {
   grid-column: 1;
