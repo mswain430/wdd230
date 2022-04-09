@@ -52,7 +52,7 @@ nav ul#primaryNav {
 
 main .home-grid {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr;
    grid-template-rows: 1fr 1fr 1fr;
    justify-content: center;
    align-content: center;
@@ -60,9 +60,7 @@ main .home-grid {
 }
 
 .hero {
-  grid-column: span 3;
-  grid-row: 1;
-  object-fit: cover;
+  object-fit: stretch;
   }
 
 .hero h2 {
@@ -215,15 +213,10 @@ span.sm_name::after {
 /* --------------FORM STYLING ----- */
 
 
-.grid-reserve section{
-  min-width: 400px;
-  margin: 20px auto;
-  padding: 25px;
-}
 form {
   align-self: center;
   text-align: left;
-  max-width: 400px;
+  max-width: 500px;
 }
 form label.top input, form label.top select, form label.top textarea {
   font-size: 1.2rem;

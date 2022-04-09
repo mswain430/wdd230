@@ -57,13 +57,18 @@
        <h2>Reservation Service for Temple Inn and Suites </h2>
        <form action="confirmation.html" method="get" autocomplete="on">
         <fieldset>
-        <legend>Applicant Information</legend>
+        <legend>Customer Information</legend>
         <label class="top">First Name*<input type="text" name="fname" required></label>
         <label class="top">Last Name* <input type="text" name="lname" required></label>
         <label class="top">Position <span class="hint">[**Must be alpha, more than 7 characters]</span><input type="text" name="position" pattern="^[a-zA-Z- ].{7,}$"></label>
         <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
         <label class="top">Cell Phone* <input type="tel" name="phone" placeholder="1234567890" required></label>
         <label class="top">Name of your Business <input type="text" name="biztitle" required></label>
+      </fieldset>
+      <fieldset><legend>more here</legend>
+        <label class="top">Location<input type="text" name="location" required></label>
+        <label class="top">Checkin <input type="date" name="checkin" required></label>
+         <label class="top">Checkout <input type="date" name="checkout" required></label>
       </fieldset>
       <fieldset class="membership">
           <legend>Membership Level</legend>

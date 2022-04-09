@@ -8,7 +8,7 @@
 .topdiv {
   display: grid;
   grid-template-columns: 110px auto 50px;
-  height: 60px;
+  height: 70px;
 }
 div.social {
   grid-row: 1;
@@ -80,10 +80,10 @@ nav ul li a {
 
 main .home-grid {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr;
    grid-template-columns: 1fr 1fr 200px 200px 1fr;
 }
-.hero {object-fit: cover;}
+.hero {object-fit: stretch;}
 .hero.call {right: center;text-align: center}
 .hero h2 { align-items: center;max-width: 300px; min-height: 220px;font-size: 1.8em;padding:20px 10px; bottom: 20%;
   right: 10%;
@@ -195,34 +195,32 @@ main .home-grid {
 /* ***************************************** Reserve page ******************* */
 .grid-reserve section{
   max-width: 320px;
-  margin: auto;
+  margin: 2%;
   padding: 5px;
 }
 
 form label.top input, form label.top select, form label.top textarea {
   font-size: 1.2rem;
-  min-width: 300px;
-  max-width: 80%;
 }
 
 .grid-reserve section {
-  min-width: 320px;
-  margin: 20px auto;
   padding: 2%;
+  justify-content: center;
+  align-items:flex-start;
+  text-align: center;
 }
 form {
   align-self: center;
   text-align: left;
-  min-width: 320px;
-  max-width: 320px;
 }
 form fieldset {
-  min-width: 320px;
+  width: 100%;
+  margin: 1%;
 }
 form label.top input, form label.top select, form label.top textarea {
   font-size: 1.2rem;
-  min-width: 100%;
-  max-width: 100%;
+  min-width: 90%;
+  max-width: 90%;
 }
 div.membership{
   display: grid;

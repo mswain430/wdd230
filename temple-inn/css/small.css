@@ -317,7 +317,7 @@ main .home-grid {
 .hero picture.hero-img {
   min-width: 320px;
   max-width: 100%;
-  object-fit: cover;
+  object-fit: stretch;
 }
 .hero h2 {
   color: #f2f6f8;
@@ -393,7 +393,7 @@ main .home-grid {
    padding: 10px;
 }
 .checkform form input {
-  max-height: 30px;
+  max-height: 40px;
 }
 /* ********************************** HOME- Weather ************************ */
 .weather-main {
@@ -855,7 +855,6 @@ main.directory {
   display: flex;
   flex-direction: column;
   text-align:center;
-  margin:0 auto;
   justify-content: center;
   align-content: center;
 
@@ -867,7 +866,6 @@ main.directory {
   background-color: aliceblue;
   border:0px solid #0f4077;
   border-radius: 0px;
-  min-width: 320px;
   max-width:100%;
   margin:1%;
 
@@ -884,8 +882,6 @@ main.directory {
 form {
   align-self: center;
   text-align: left;
-  min-width:  320px;
-  max-width: 320px;
   }
 form fieldset {
     margin: 1%;
