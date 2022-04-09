@@ -433,6 +433,9 @@ main .home-grid {
   padding: 5px;
   font-size: .9em;
 }
+.checkform label {
+  font-weight: bold;
+}
 
 .checkform form input.submitBtn {
    height: 50px;
@@ -934,7 +937,7 @@ form {
   }
 form fieldset {
     margin: 1%;
-    border: 2px solid #0f4077;
+    border: 2px solid #cfe2f8;
     border-radius: 10px;
     padding: 1%;
 
@@ -951,7 +954,7 @@ form label.top {
     padding-top: 1rem;
     color:  #0f4077;
     font-size: 1rem;
-    font-weight: normal;
+    font-weight: bold;
 }
 form div {
     display: block;

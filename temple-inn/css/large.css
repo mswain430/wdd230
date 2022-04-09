@@ -249,7 +249,7 @@ main.services-grid section {
   justify-content: start;
   align-content: center;
   justify-content: start;
-  background-color:rgb(180, 188, 230);
+  background-color:rgb(228, 231, 248);
 }
 .checkform form  {
   display: inline-flex;
@@ -267,7 +267,7 @@ main.services-grid section {
   max-height: 25px;
   margin: 5px;
   padding: 5px;
-  font-size: .9em;
+  font-size: 1.2em;
 }
 
 /* * *8********************** HOT TOPIC ****************** */
@@ -276,5 +276,5 @@ main.services-grid section {
    margin: 25px;
    grid-column: span 3;
    grid-template-columns: 1fr 1fr;
-  
+
  }
