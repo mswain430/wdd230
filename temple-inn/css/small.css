@@ -538,7 +538,8 @@ section.featured1, section.featured2,section.featured3 {
    border: 2px solid red;
  }
 
-
+ picture .service1 {float: right;margin: 5px; padding:5px; background-color: white; border: 1px solid #0f4077}
+picture .service1 img {max-width: 300px; max-height: 400px;}
 
 
 
