@@ -20,6 +20,7 @@
     <script defer src="js/currentdate.js"></script>
     <script defer src="js/lastmodified.js"></script>
     <script defer src="js/toggle.js"></script>
+        <script defer src="js/dropdown.js"></script>
     </head>
 <body>
       <div class="topdiv">
@@ -42,15 +43,21 @@
         </picture>
         <div></div>
        </header>
-         <nav>
+        <nav>
             <ul id="primaryNav" class="navigation">
           <li><a href="index.html">Home</a></li>
           <li><a href="reservation.html">Reservations</a></li>
           <li><a href="temples.html">Locations</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="reception.html">Receptions</a></li>
-          <li><a href="contacts.html" class="active">Contact</a></li>
+          <li><a href="contacts.html">Contact</a></li>
           </ul>
+           <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Services</button>
+           <div id="myDropdown" class="dropdown-content">
+            <a href="reception.html">Receptions</a>
+            <a href="temple-missionary.html">Temple Missionary Services</a>
+            <a href="weatherforcast.html">Weather Forcasts</a>
+          </div>
+        </div>
         </nav>
 
 
