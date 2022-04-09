@@ -73,7 +73,7 @@ main {
 }
 h1, h2, h3, h4 {
   font-family: 'Roboto Serif', serif;
-  color: #3a57a8;
+  color: #05216f;
   font-size: 1.5em;
 }
 h2 {font-size: 1.3em}
@@ -527,9 +527,8 @@ p.card-text {margin:0;padding: 2px;color:rgb(5, 60, 155)}
   flex-direction: column;
   min-height: 380px;
   text-align: center;
-  background-color:rgb(180, 188, 230);
-  font-size: .9em; font-weight: bolder;
-  line-height: .9em;
+  font-size: 1.1em; font-weight: bolder;
+  line-height: 1.4em;
   margin: 2%;
   border: 2px solid rgba(20, 106, 181, 0.8) ;
   border-radius: 8px;
@@ -541,15 +540,16 @@ section.featuredtemples h3 {
 }
 
 section.featured1 a, section.featured2 a, section.featured3 a {
-  color: #ffda00;
+  color: #f9a006;
+  font-size: 1.4em;
   text-shadow:1px 1px 1px rgb(10, 52, 88);
   font-weight: bold;
-  letter-spacing: .05em;
+  letter-spacing: .07em;
 }
 .featured1 a:hover, .featured2 a:hover,.featured3 a:hover {
   color:rgb(2, 255, 27);
   font-weight: bold;
-  letter-spacing: .04em;
+  letter-spacing: .07em;
 }
 
 
