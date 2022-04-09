@@ -249,8 +249,8 @@ main.services-grid section {
 }
 /* *********************** HOME - CHECK FORM ************** */
 .checkform {
-  grid-column: 1 / 5;
-  grid-row: 2;
+  display:flex;
+  flex-direction: row;
   min-height: 100px;
   max-width: 100%;
   justify-content: start;
@@ -258,44 +258,23 @@ main.services-grid section {
   justify-content: start;
   background-color:rgb(180, 188, 230);
 }
-/*.checkform form  {
+.checkform form  {
   display: inline-flex;
   flex-direction: row;
   border: none;
-} */
+}
 .checkform form.check {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
   margin: 4%;
   justify-content: center;
 }
 
 .checkform form h3 {
-  grid-column: 1;
-  grid-row: 1;
+  flex: auto;
   max-height: 25px;
   margin: 5px;
   padding: 5px;
   font-size: .9em;
 }
-.checkform form:nth-child(2){
-  grid-column: 1;
-  grid-row: 2;
-}
-.checkform form:nth-child(3){
-  grid-column: 2;
-  grid-row: 2;
-}
-.checkform form:nth-child(4){
-  grid-column: 3;
-  grid-row: 2;
-}
 
-.checkform form input.submitBtn {
-  grid-column: 4;
-  grid-row: 2;
-   height: 50px;
-   margin: 4%;
-   padding: 10px;
-}
+
