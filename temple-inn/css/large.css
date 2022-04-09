@@ -231,8 +231,6 @@ main.services-grid {
 main.services-grid section {
   grid-column: auto;
   min-height: 400px;
-  display: grid;
-  display: row;
   padding: 4%;
 }
 /* *********************** HOME - CHECK FORM ************** */
