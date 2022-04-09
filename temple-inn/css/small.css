@@ -485,7 +485,7 @@ api-weather-box {
   border:2px solid rgba(10, 52, 88, .8);
   padding: 5px 20px;
   text-align: left;
-  font-size: 1..2em;
+  font-size: 1.2em;
 }
 .weather h3 {
   grid-column: 1;
@@ -1036,7 +1036,7 @@ form label.top input:required:valid {
 /* *********************** SERVICES *************************** */
 .hero-services {
   display: grid;
-  grid-template-columns: lfr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   position: relative;
 
   }
@@ -1064,8 +1064,7 @@ main.services-grid section {
   grid-column: auto;
   min-height: 400px;
   display: flex;
-  display: column;
-  border: 2px solid red;
+  flex-direction: column;
 }
 main.services-grid section picture {
   width: 300px;

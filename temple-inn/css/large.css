@@ -60,7 +60,7 @@ main .home-grid {
 }
 
 .hero {
-  object-fit: stretch;
+  object-fit: cover;
   }
 
 .hero h2 {
@@ -80,9 +80,7 @@ main .home-grid {
 /* ****************** FOOTER ************************** */
 footer {
   grid-template-columns: 1fr;
-    footer {
   grid-template-rows: 110px 160px 170px 40px 40px 40px;
-}
 }
 footer div.flogo {
   grid-column: 1;
@@ -144,12 +142,10 @@ span.sm_name::after {
 
 }
 .featured:nth-child(1){
-  flex: 1fr;
+  flex: auto;
 }
-}
-/* ******************************* LARGE VIEW Directory ***************************** */
 
-@media only screen and (min-width:68rem) {
+/* ******************************* LARGE VIEW Directory ***************************** */
   .card-view {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
@@ -200,7 +196,6 @@ span.sm_name::after {
       display: none;
   }
 
-}
 /* ************************************** RESERVE *************************** */
 .reserve {
   display:block;
@@ -242,7 +237,7 @@ main.services-grid section {
 }
 /* *********************** HOME - CHECK FORM ************** */
 .checkform {
-  display:flex;
+  display: flex;
   flex-direction: row;
   min-height: 100px;
   max-width: 100%;
@@ -277,3 +272,4 @@ main.services-grid section {
    grid-template-columns: 1fr 1fr;
 
  }
+}
