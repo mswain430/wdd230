@@ -23,14 +23,16 @@ div.social {
 header {
     position:relative;
     display:grid;
-    grid-template-columns:50px auto 50px;
-    grid-template-rows: 1fr;
+    grid-template-columns:50px auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
     min-width: 550px;
     justify-content: left;
 }
 header picture.logo {
   justify-content: left;
   min-width: 250px;
+  max-width: 100%;
 }
 header picture.logo img {
   justify-content: right;
@@ -38,6 +40,13 @@ header picture.logo img {
     align-items: center;
 }
 
+header .btncontainer {
+  grid-column: 3;
+  grid-row: 2;
+  text-align: right;
+  align-items: end;
+  justify-content: end;
+}
 
 /* ************************* NAVIGATION - MEDIUM ***********************  */
 nav#primaryNav {
@@ -239,4 +248,5 @@ main.services-grid section {
   min-height: 600px;
   display: flex;
   display: row;
+}
 }

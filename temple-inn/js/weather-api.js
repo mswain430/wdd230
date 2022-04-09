@@ -1,54 +1,53 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/onecall?&lat=32.8473&lon=-117.2742&units=imperial&appid=b49e75d70c70bd1d4ce79a14b0dd0b12";
+const apiURL = "https://api.openweathermap.org/data/2.5/onecall?&lat=32.8473&lon=-117.2742&units=imperial&appid=81e2954ec9838be79fb34da45bdcc0cb";
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
    document.querySelector('#current-temp').textContent = jsObject.current.temp;
- document.querySelector('#humidity').textContent = jsObject.daily;
- document.querySelector('#windspeed').textContent = jsObject.current.wind_speed;
- document.querySelector('#humidity').textContent = `humidity: ${jsObject.current.humidity}%`;
-document.querySelector('#windspeed').textContent = `windspeed: ${jsObject.current.wind_speed}mph`;
- let iconsrc= `http://openweathermap.org/img/wn/${jsObject.daily.weather[0].icon}.png`;
- const desc = jsObject.day.weather[0].description;
-document.querySelector('#current-temp').textContent =`current temp: ${day.weather.temp}`;
- document.querySelector('#icon-src').textContent = iconsrc;
+    document.querySelector('#windspeed').innerHTML = `Windspeed: ${jsObject.current.wind_speed}`;
+    document.querySelector('#current-temp').innerHTML =`Current Temperture is ${jsObject.current.temp}`;
+document.querySelector('#humidity').innerHTML = `Humidity: ${jsObject.current.humidity}&#37;`;
+const iconsrc= `https://openweathermap.org/img/wn/${jsObject.current.weather[0].icon}.png`;
+const desc = jsObject.current.weather[0].description;
+document.querySelector('#description').innerHTML = `Description: ${jsObject.current.weather[0].description}`;
+document.querySelector('#icon-src').textContent = iconsrc;
 document.querySelector('#weathericon').setAttribute('src', iconsrc);
 document.querySelector('#weathericon').setAttribute('alt', desc);
-document.querySelector('figcaption').textContent = jsObject.daily[0];
-} );
+document.querySelector('figcaption').innerHTML = desc;
+/*    document.querySelector('#event').textContent = jsObject.alerts[0].event;
+    document.querySelector('#alert_desc').textContent = jsObject.alerts[0].description;
+document.querySelector('#event').innerHTML = `Event: ${jsObject.alerts[0].event}`;
+document.querySelector('#alert_desc').innerHTML = `Description: ${jsObject.alerts[0].description}`; */
 
-/*
-let cards = document.querySelector('.weather .card');
-cards.innerHTML = response.daily.map((day,idx) => {
-  if (idx <= 2) {
-  let dt = new Date(day.dt * 1000);
-  let sr = new Date(day.sunrise * 1000).toTimeString();
-  let ss = new Date(day.sunset * 1000).toTimeString();
-   return
-`<p>card</p>`
-   `<div class="card">
-     <h5 class="card-title">Date</h5>
-     <img
-      src="http://openweathermap.org/img/wn/${}@4x.png"
-      class="card-img-top"
-      alt="Weather description"
-      />
-     <div class="card-body">
-        <h3 class="card-title">Weather lable</h3>
-        <p class="card-text"></p>
-        <p class="card-text"></p>
-        <p class="card-text"></p>
-        <p class="card-text"></p>
-        <p class="card-text"></p>
-        <p class="card-text"></p>
 
-     </div>
-   </div>`
+});
+
+
+// Get the modal
+let modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+let btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
 }
- } );
 
-*/
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
 
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 
 

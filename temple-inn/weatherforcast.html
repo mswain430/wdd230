@@ -19,8 +19,12 @@
     <link rel="stylesheet" href="css/large.css">
     <script defer src="js/currentdate.js"></script>
     <script defer src="js/toggle.js"></script>
-   <script defer src="js/weather-api.js"></script>
-    <script defer src="js/featured-temples.js"></script>
+    <script defer src="js/weatherforcast.js"></script>
+    <style>
+
+
+
+    </style>
     </head>
 <body>
       <div class="topdiv">
@@ -41,87 +45,41 @@
             <source srcset="images/tis-logo-purple.png" media="(min-width: 65rem)">
                 <img src="images/tis-logo-purple.png" alt="Temple Inn and Suites logo" />
         </picture>
-        <div class="btncontainer"><a href="reservation.html" class="btn_reserve">Make a Reservation</a></div>
+        <div></div>
        </header>
          <nav>
             <ul id="primaryNav" class="navigation">
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="reservation.html">Reservations</a></li>
           <li><a href="temples.html">Locations</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a href="services.html"  class="active">Services</a></li>
           <li><a href="reception.html">Receptions</a></li>
           <li><a href="contacts.html">Contact</a></li>
           </ul>
         </nav>
- <main class="home-grid">
-   <div class="hero">
-        <picture class="hero-img">
-          <source srcset="images/san-diego1.webp"
-            media="(max-width: 35rem)">
-          <source srcset="images/san-diego2-opt.webp"
-            media="(min-width: 57rem)">
-            <img src="images/san-diego-grounds.jpeg" alt="Temple Inn and Suites features San Diego Temple" />
-      </picture>
-        <h2>Check out a Temple<br/> package today!</h2>
-       <div class="call"><a href="reservation.html" class="btn_call">Check Availability Now</a>
-      </div>
-    </div>
-    <div class="checkform">
-      <form action="confirmation.html" method="get" autocomplete="on" class="check">
-        <h3>Check for availability form here:</h3>
-        <label class="top">Location<input type="text" name="location" required></label>
-        <label class="top">Checkin <input type="date" name="checkin" required></label>
-         <label class="top">Checkout <input type="date" name="checkout" required></label>
-        <input type="hidden" value="Date.now()">
-       <input class="button submitBtn" type="submit" value="Reserve your Spot today">
-    </form>
-    </div>
-    <div class="weather-main">
-      <div class="weather-grid">
-         <h2>Weather Information</h2>
-      <div class="dis-card">
-        <span id="icon-src"></span>
-        <figure><img src="http://openweathermap.org/img/wn/01d.png" alt="San Diego Temple Weather" id="weathericon" /><figcaption></figcaption></figure>
-        <p><span id="current-temp"></span>&#8457;<br/>
-        <span id="description"></span><br/>
-        <span id="humidity"></span><br/>
-        <span id="windspeed"></span></p>
-        <!-- Trigger/Open The Modal -->
-      <button id="myBtn">Weather Alert</button>
-     </div>
-     <!-- The Modal -->
-     <div id="myModal" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2>Weather Alert</h2>
-    <div><span id="weatherAlert">
-     <h3><span id="event">Heat Advisory</span></h3>
-     <p><span id="alert_descr">...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS
-       AFTERNOON TO 8PM CDT THIS EVENING...*
-       WHAT...Heat index values of 105 to 109 degrees expected.*
-       WHERE...Creek, Okfuskee, Okmulgee, McIntosh, Pittsburg,Latimer,
-       Pushmataha, and Choctaw Counties.* WHEN...From 1 PM to 8 PM CDT
-       Thursday.*
-       <br/>IMPACTS...The combination of hot temperatures and high
-       humidity will combine to create a dangerous situation in which
-       heat illnesses are possible.</span></p>
-      </div> <!--  end weather Alert-->
-  </div> <!-- end modal content-->
-</div> <!-- end modal -->
 
-    </div>
-  </div>
-    <div class="featuredtemples">
-   <h2>Featured Temples</h2>
-    </div>
-   <div class="hottopic">Hot topic here</div>
-   <div></div>
-</section>
+ <main class="weather-main">
 
+<h2>Weather Forecast</h2>
+<p><div id="current-temp"></div></p>
+<div>
+<p><input type="text" class="form-control" inputmode="numeric" id="longitude" placeholder="longitude" aria-label="longitude" area-described="basic-addon1" value="-117.2742"/></p>
+<p><input type="text" class="form-control" inputmode="numeric" id="latitude" placeholder="latitude" aria-label="latitude" area-described="basic-addon1" value="32.8473"/></p>
+
+<button id="btnGet" type="button" class="btn btn-primary">Get Weather</button>
+<button id="btnCurrent" type="button" class="btn btn-primary">Use Current Location</button>
+</div>
+<div class="content-box">
+
+<!--  ************ Results for weather data ***************-  -->
+<div class="weather row">
+
+</div> <!-- end weather -->
+
+</div>
 </main>
- <footer>
+  <footer>
     <div class="flogo"><img src="images/templeIcon-lavendar.svg" class="ftrLogo" alt="Temple Inn Suites" /></div>
     <div class="address"><h2>Temple Inn and Suites</h2>4800 Montgomery Ln #300<br>Bethesda, MD 20814<br/>
     templeInn@templeInnSuites<br>(435) 678-2791</div>
