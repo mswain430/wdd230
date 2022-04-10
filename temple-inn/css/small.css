@@ -904,44 +904,51 @@ main.directory {
 }
 .reserve p {padding: 5px 10px;font-size: 1em}
 /* ********************** Reservation PAGE ************************** */
-.grid-reserve {
+main .grid-reserve {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr 1fr;
+  justify-content: center;
+  align-self: center;
+
+}
+.grid-reserve h2 {
+  grid-column:1;
+  grid-row: 1;
+  height: 50px;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.2em;
+  background-color: #0f4077;
+  color:rgb(252, 252, 252)
+}
+form .reservations_form {
+  grid-column: 1 ;
+  grid-row: 2;
   display: flex;
   flex-direction: column;
-  text-align:center;
-  justify-content: center;
-  align-content: center;
-
 }
-.grid-reserve section {
-  justify-content:center;
-  display:flex;
+ form .specials_form {
+  grid-column: 1;
+  grid-row: 3;
+  display: flex;
   flex-direction: column;
-  background-color: aliceblue;
-  border:0px solid #0f4077;
-  border-radius: 0px;
-  max-width:100%;
-  margin:1%;
+}
 
-}
-.grid-reserve section h2 {
-  border-radius: 4px;
-  margin: 0 ;
-  padding: 10px 3px;
-  font-size: 1em;
-  background-color: #0f4077;
-  color:rgb(244, 245, 192)
-}
 /* ----------------- FORM STYLING */
-form {
-  align-self: center;
+ form  {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   text-align: left;
   }
+
 form fieldset {
-    margin: 1%;
     border: 2px solid #cfe2f8;
     border-radius: 10px;
     padding: 1%;
-
+    margin: 1rem 2%;
 }
 form legend {
     color: #0f4077;
@@ -949,6 +956,7 @@ form legend {
     padding: 0 .5rem;
     font-size: 1em;
     font-weight: bold;
+
 }
 form label.top {
     display: block;
@@ -984,7 +992,7 @@ form label.top textarea {
   color:rgba(243, 105, 13, 0.6);
   text-shadow:1px 1px black;
 }
-form label textarea#biz {
+form label textarea {
   font-size: .9em;
   font-weight: normal;
   color: #000;
@@ -1014,12 +1022,12 @@ form input.submitBtn {
     border-radius: 4px;
     padding: 1rem 1.5rem;
     margin: 2%;
-    width: 250px;
-    max-width: 250px;
+    width: 300px;
+    max-width: 300px;
     font-weight: bold;
     font-size: 1em;
     transition-duration: 0.4s;
-    background-color:  #2543ec;
+    background-color: #2543ec;
 
 }
 form input.submitBtn:hover {

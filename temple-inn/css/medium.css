@@ -193,40 +193,49 @@ main .home-grid {
   font-size: 1.3em;
 }
 /* ***************************************** Reserve page ******************* */
-.grid-reserve section{
-  max-width: 320px;
-  margin: 2%;
-  padding: 5px;
+main .grid-reserve {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+}
+.grid-reserve form .reservations_form {
+  grid-column-start: 1 ;
+  grid-row: 2;
+  max-width: 450px;
+}
+.grid-reserve form .specials_form {
+  grid-column-start: 2;
+  grid-row: 2;
+  max-width: 400px;
+  align-self: center;
 }
 
 form label.top input, form label.top select, form label.top textarea {
   font-size: 1.2rem;
 }
-
-.grid-reserve section {
-  padding: 2%;
-  justify-content: center;
-  align-items:flex-start;
-  text-align: center;
-}
 form {
-  align-self: center;
   text-align: left;
+  max-width: 400px;
+  justify-content: center;
+
 }
 form fieldset {
-  width: 100%;
+  width: 90%;
   margin: 1%;
 }
 form label.top input, form label.top select, form label.top textarea {
   font-size: 1.2rem;
-  min-width: 90%;
-  max-width: 90%;
+/*  min-width: 90%;
+  max-width: 90%; */
 }
 div.membership{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 160px auto;
   grid-template-rows: auto;
-  column-gap: 2%;
+  column-gap: 1%;
 }
 label {
   grid-column: 1;

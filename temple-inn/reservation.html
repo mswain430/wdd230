@@ -56,26 +56,44 @@
          </ul>
         </nav>
         <main class="grid-reserve">
-          <section>
-       <h2>Reservation Service for Temple Inn and Suites </h2>
-       <form action="confirmation.html" method="get" autocomplete="on">
-        <fieldset>
+       <h2>Reservation Service<br/> for Temple Inn and Suites </h2>
+        <!-- 2 columns -->
+       <article> <form action="confirmation.html" method="get" autocomplete="on" class="reservation_form">
+        <fieldset class="customer">
         <legend>Customer Information</legend>
         <label class="top">First Name*<input type="text" name="fname" required></label>
         <label class="top">Last Name* <input type="text" name="lname" required></label>
-        <label class="top">Position <span class="hint">[**Must be alpha, more than 7 characters]</span><input type="text" name="position" pattern="^[a-zA-Z- ].{7,}$"></label>
         <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
         <label class="top">Cell Phone* <input type="tel" name="phone" placeholder="1234567890" required></label>
-        <label class="top">Name of your Business <input type="text" name="biztitle" required></label>
+        <label class="top">Home State <input type="text" name="state"></label>
+       </fieldset>
+        <fieldset class="stay"><legend>Information about your stay</legend>
+          <label class="top">Location*<input type="text" name="location" required></label>
+          <label class="top">Checkin* <input type="date" name="checkin" required></label>
+           <label class="top">Checkout* <input type="date" name="checkout" required></label>
+           <label class="top">Number of Rooms* <input type="number" name="rooms" required></label>
+           <label class="top">Number of Adults* <input type="number" name="occupancy" required></label>
+           <label class="top">Number of Children* <input type="number" name="children" ></label>
+           <label class="top">'Temple In' Travel Points <input type="number" name="points" ></label>
       </fieldset>
-      <fieldset><legend>more here</legend>
-        <label class="top">Location<input type="text" name="location" required></label>
-        <label class="top">Checkin <input type="date" name="checkin" required></label>
-         <label class="top">Checkout <input type="date" name="checkout" required></label>
+         <fieldset class="business"><legend>Is this a Business?</legend>
+          <label class="top">Name of your Business
+           <input type="text" name="biztitle"></label>
+          <label class="top">Position <span class="hint">[**Must be alpha, more than 7 characters]</span>
+          <input type="text" name="position" pattern="^[a-zA-Z- ].{7,}$"></label></fieldset>
+      <fieldset class="personal">
+          <legend>Personal Information</legend>
+          <label class="top">Please describe any special accommendations<textarea id="accommedations" name="accomedations" rows="3" cols="30"></textarea></label>
       </fieldset>
-      <fieldset class="membership">
-          <legend>Membership Level</legend>
-         <div class="top">Membership Opportunities</div>
+         <input type="hidden" value="Date.now()">
+         <input class="button submitBtn" type="submit" value="Reserve your Spot today">
+      </form>
+      </article>
+      <article>
+        <form action="confirmation.html" method="get" autocomplete="on" class="specials_form">
+          <fieldset class="special_packages">
+          <legend>Special Packages</legend>
+         <div class="top">Member Opportunities</div>
           <div class="membership">
          <label class="sbs">
             <input type="radio" name="membership" value="np"> NP Membership</label>
@@ -89,17 +107,13 @@
 
           <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
           <p class="member-message">These memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc.</p>
-         </div>
-        </fieldset>
-      <fieldset>
-        <legend>Business Information</legend>
-        <label class="top">Please describe your business<textarea id="biz" name="bizInfo" rows="6" cols="30"></textarea></label>
-      </fieldset>
-      <input type="hidden" value="Date.now()">
-      <input class="button submitBtn" type="submit" value="Reserve your Spot today">
+          </div>
+         <input type="hidden" value="Date.now()">
+         <input class="button submitBtn" type="submit" value="Reserve your Special Package today">
 
+        </fieldset>
       </form>
-      </section>
+      </article>
       </main>
   <footer>
     <div class="flogo"><img src="images/templeIcon-lavendar.svg" class="ftrLogo" alt="Temple Inn Suites" /></div>
