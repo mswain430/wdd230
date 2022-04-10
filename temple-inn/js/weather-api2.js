@@ -8,7 +8,7 @@ fetch(apiURL)
  document.querySelector('#windspeed').textContent = jsObject.current.wind_speed;
  document.querySelector('#humidity').textContent = `humidity: ${jsObject.current.humidity}%`;
 document.querySelector('#windspeed').textContent = `windspeed: ${jsObject.current.wind_speed}mph`;
- let iconsrc= `http://openweathermap.org/img/wn/${jsObject.daily.weather[0].icon}.png`;
+ let iconsrc= `https://openweathermap.org/img/wn/${jsObject.daily.weather[0].icon}.png`;
  const desc = jsObject.day.weather[0].description;
 document.querySelector('#current-temp').textContent =`current temp: ${day.weather.temp}`;
  document.querySelector('#icon-src').textContent = iconsrc;
@@ -29,7 +29,7 @@ cards.innerHTML = response.daily.map((day,idx) => {
    `<div class="card">
      <h5 class="card-title">Date</h5>
      <img
-      src="http://openweathermap.org/img/wn/${}@4x.png"
+      src="https://openweathermap.org/img/wn/${}@4x.png"
       class="card-img-top"
       alt="Weather description"
       />

@@ -262,6 +262,8 @@ main.services-grid section {
 }
 /* *********************** HOME - CHECK FORM ************** */
 .checkform {
+  grid-column: 1;
+  grid-row: 2;
   display: flex;
   flex-direction: row;
   min-height: 100px;
@@ -271,13 +273,10 @@ main.services-grid section {
   justify-content: start;
   background-color:rgb(228, 231, 248);
 }
-.checkform form  {
-  display: inline-flex;
-  flex-direction: row;
-  border: none;
-}
+
 .checkform form.check {
   display: flex;
+  flex-direction: row;
   margin: 4%;
   justify-content: center;
 }

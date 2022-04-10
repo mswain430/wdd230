@@ -12,7 +12,7 @@ const app = {
         let key = '9421950099da8441c44c6cedafb441dd'
         let lang = 'en';
         let units = 'imperial';
-        let url = `http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&lang=${lang}&appid=9421950099da8441c44c6cedafb441dd`;
+        let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&lang=${lang}&appid=9421950099da8441c44c6cedafb441dd`;
         //fetch weather
        // https://api.openweathermap.org/data/2.5/onecall?&lat=32.8473&lon=-117.2742&units=imperial&lang=en&appid=9421950099da8441c44c6cedafb441dd
        fetch(url)
@@ -58,7 +58,7 @@ const app = {
             return ` <div class="col">
    <div class="wcard">
      <h4 class="card-title">${dt.toDateString()}</h4>
-     <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}@4x.png" class="card-img-top" alt="${day.weather[0].description}"/>
+     <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}@4x.png" class="card-img-top" alt="${day.weather[0].description}"/>
      <div class="card-body">
          <h3 class="card-title">${day.weather[0].main}</h3>
          <p class="card-text">High ${day.temp.max}&deg;F<br/> Low ${day.temp.min}&deg;F</p>
