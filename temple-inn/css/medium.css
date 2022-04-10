@@ -196,20 +196,19 @@ main .home-grid {
 main .grid-reserve {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px 1fr;
+  grid-template-rows: 90px 1fr;
   justify-items: center;
   align-items: center;
-  margin: auto;
+  margin: 10px auto;
 }
 .grid-reserve form .reservations_form {
   grid-column-start: 1 ;
   grid-row: 2;
-  max-width: 450px;
 }
-.grid-reserve form .specials_form {
-  grid-column-start: 2;
-  grid-row: 2;
-  max-width: 400px;
+.grid-reserve form  {
+  grid-column-start: 1;
+  grid-row: 3;
+  min-width: 450px;
   align-self: center;
 }
 
@@ -218,7 +217,7 @@ form label.top input, form label.top select, form label.top textarea {
 }
 form {
   text-align: left;
-  max-width: 400px;
+  max-width: 500px;
   justify-content: center;
 
 }

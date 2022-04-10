@@ -904,18 +904,19 @@ main.directory {
 }
 .reserve p {padding: 5px 10px;font-size: 1em}
 /* ********************** Reservation PAGE ************************** */
-main .grid-reserve {
+
+section.grid-reserve {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px 1fr 1fr;
+  grid-template-rows: 90px 1fr 1fr;
   justify-content: center;
   align-self: center;
 
 }
-.grid-reserve h2 {
+section.grid-reserve h2 {
   grid-column:1;
   grid-row: 1;
-  height: 50px;
+  height: 60px;
   border-radius: 8px;
   margin: 10px;
   padding: 10px;
@@ -923,6 +924,21 @@ main .grid-reserve {
   background-color: #0f4077;
   color:rgb(252, 252, 252)
 }
+
+
+.grid-reserve article.reservation {
+  grid-column: 1 ;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+}
+.grid-reserve article.specials {
+  grid-column: 1;
+  grid-row: 3;
+  display: flex;
+  flex-direction: column;
+}
+
 form .reservations_form {
   grid-column: 1 ;
   grid-row: 2;
