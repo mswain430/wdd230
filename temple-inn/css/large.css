@@ -349,11 +349,12 @@ h2.team { padding: 10px 20px; font-size: 1.7rem; text-align: center}
 
 section.contacts-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 30% 40% 30%;
   grid-template-rows: 90px auto;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
+  margin: 0 10%;
 }
 section.contacts-grid h2 {
   grid-column: span 3;
