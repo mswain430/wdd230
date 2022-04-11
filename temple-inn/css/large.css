@@ -48,6 +48,39 @@ nav ul#primaryNav {
   max-width: 960px;
 }
 
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 54px; /* the height of the main nav */
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:270px;
+	float:none;
+	display:list-item;
+	position: relative;
+  text-align: left;
+}
+li.sub a {text-align: left}
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-30px;
+	left:170px;
+}
+
+
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
 /* ************************** HOME ************************* */
 
 main .home-grid {

@@ -235,6 +235,10 @@ header picture.logo img {
     width: 40px;
     padding:0;
     }
+
+.container  {
+	margin: 0 auto;
+}
  nav {
     display:flex;
     justify-content: center;
@@ -258,12 +262,14 @@ nav ul {
 }
 nav ul#primaryNav {
   width: 100%;
+  height: 40px;
   margin-left: -40px;
   }
 nav ul#primaryNav li {
   display:block;
   background: linear-gradient(90deg, transparent, yellow, transparent) top /
 		var(--d, 0) 5px no-repeat;
+  background-color:#3a57a8;
 }
 nav ul li a {
   display: block;
@@ -274,7 +280,7 @@ nav ul li a {
 	text-align: center;
 	text-decoration: none;
   cursor: pointer;
-	font-size: 1rem;
+	font-size: 1.1rem;
   font-family: 'Lato', sans-serif;
   letter-spacing: .1em;
 	background: linear-gradient(90deg, transparent, yellow, transparent) top /
@@ -291,7 +297,6 @@ nav ul li a.active  {
 }
 nav ul li a:hover {
   background-color: rgba(0,0,0,.3);
-  background-color: transparent;
   color: yellow;
 }
 
@@ -342,6 +347,15 @@ nav ul.open li a:active {
     background-color:#ADE3C1;
     width: 100%;
 }
+
+nav ul.open ul {
+	display: block;
+	/* position: absolute;
+	 top: 50px; /* the height of the main nav */
+   text-align: left;
+}
+li.sub {text-align: left}
+
 #ham span:nth-child(1) {display:block}
 #ham span:nth-child(2) {display:none}
 
