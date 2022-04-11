@@ -598,7 +598,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
   /*  grid-template-rows: 90px 160px 180px 70px 160px ; */
-  grid-template-rows: 125px 215px 170px 60px 100px 60px;
+  grid-template-rows: 125px 155px 170px 60px 100px 60px;
     justify-content: center;
     text-align: center;
     width: 100%;
@@ -1062,32 +1062,35 @@ form label.top input:required:valid {
   background-color: rgba(27, 58, 216, 0.6)
  }
 main.services-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-}
-main.services-grid section {
-  grid-column: auto;
-  min-height: 400px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
-main.services-grid section picture {
-  width: 300px;
-  margin: 5px;
+.specialgroup h2 {text-align: center;background-color:rgba(57, 70, 186, 0.8);color: aliceblue;padding: 10px 20px;margin: 0 auto}
+.services-grid section {
+  flex: auto;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border:5px solid #b3f1ca;
+  border-radius: 4px;
 }
-picture.right {
-  float: right;
-  margin: 20px;
+.services-grid section  {
+   display: flex;
+   flex-direction: column;
+   background-color:rgb(225, 238, 220)
 }
-
-picture.left {
-  float: left;
-  margin: 20px;
+.services-grid section h2 {text-align: center;margin:0;padding: 10px 20px;}
+.services-grid section picture {
+  justify-content: center;
+  margin: 2% auto;
 }
-
+.services-grid section picture img {
+   min-width: 320px;
+   border: 5px solid #b3f1ca
+}
+.services-grid section article {font-size: 1.3em;}
 /* ********************** WEATHER ALERT ************************* */
 /* The Modal (background) */
 .modal {
