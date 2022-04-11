@@ -151,7 +151,7 @@ main .home-grid {
   }
     .card-view section {
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   }
   .card-view section p3 {
        display: block;
@@ -193,14 +193,7 @@ main .home-grid {
   font-size: 1.3em;
 }
 /* ***************************************** Reserve page ******************* */
-main .grid-reserve {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 90px 1fr;
-  justify-items: center;
-  align-items: center;
-  margin: 10px auto;
-}
+
 .grid-reserve form .reservations_form {
   grid-column-start: 1 ;
   grid-row: 2;

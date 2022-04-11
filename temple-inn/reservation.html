@@ -55,8 +55,9 @@
              <li class="sub"><a href="weatherforcast.html">Weather Forcasts</a></li>
          </ul>
         </nav>
-        <main><section  class="grid-reserve">
-       <h2>Reservation Service<br/> for Temple Inn and Suites </h2>
+        <main>
+          <h2 class="reserve_heading">Reservation Service for Temple Inn and Suites </h2>
+          <section  class="grid-reserve">
         <!-- 2 columns -->
        <article class="reservation"> <form action="confirmation.html" method="get" autocomplete="on" class="reservation_form">
         <fieldset class="customer">
@@ -81,10 +82,10 @@
            <input type="text" name="biztitle"></label>
           <label class="top">Position <span class="hint">[**Must be alpha, more than 7 characters]</span>
           <input type="text" name="position" pattern="^[a-zA-Z- ].{7,}$"></label></fieldset>
-      <fieldset class="personal">
+         <fieldset class="personal">
           <legend>Personal Information</legend>
           <label class="top">Please describe any special accommendations<textarea id="accommedations" name="accomedations" rows="3" cols="30"></textarea></label>
-      </fieldset>
+        </fieldset>
          <input type="hidden" value="Date.now()">
          <input class="button submitBtn" type="submit" value="Reserve your Spot today">
       </form>
@@ -92,24 +93,23 @@
       <article class="specials"><form action="confirmation.html" method="get" autocomplete="on" class="specials_form">
      <fieldset >
        <legend> <h3>Special Packages</h3></legend>
-         <div class="top">Member Opportunities</div>
-          <div class="membership">
+         <div class="membership">
          <label class="sbs">
-            <input type="radio" name="membership" value="np"> NP Membership</label>
-            <p class="member-message">These memberships have free training and networking ...</p>
+            <input type="radio" name="membership" value="military">Military Family Rate</label>
+            <p class="member-message">We’re offering exclusive savings for active & retired military, veterans and their families on leisure stays at participating hotels. ...</p>
 
-          <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
-         <p class="member-message">These memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc.</p>
+          <label class="sbs"><input type="radio" name="membership" value="ARP">ARP Members Save</label>
+         <p class="member-message">AARP Members, Save up to 10%</p>
 
-          <label class="sbs"><input type="radio" name="membership" value="silver"> Silver membership</label>
-          <p class="member-message">These memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc.</p>
+          <label class="sbs"><input type="radio" name="membership" value="plus">Another Night on Us</label>
+          <p class="member-message">Enjoy a complimentary night when you book a minimum length of stay at participating properties.</p>
 
-          <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
-          <p class="member-message">These memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc.</p>
-          </div>
+          <label class="sbs"><input type="radio" name="membership" value="gold">TI&S Loyalty</label>
+          <p class="member-message">Honors Members Get Up To 5% Off All Stays! Sign Up For Free & Save.</p>
+          </div> </fieldset>
          <input type="hidden" value="Date.now()">
          <input class="button submitBtn" type="submit" value="Reserve your Special Package today">
-     </fieldset></form>
+        </form>
          </article></section>
       </main>
   <footer>

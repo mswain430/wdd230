@@ -26,7 +26,7 @@ const output = (temples) => {
     );
  }
 
-fetch ('https://byui-cse.github.io/cse121b-course/week05/temples.json')
+fetch ('https://mswain430.github.io/wdd230/temple-inn/data/temples.json')
   .then(response => response.json())
   .then(temples => {
       console.log(temples)

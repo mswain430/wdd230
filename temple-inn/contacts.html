@@ -21,7 +21,7 @@
     <script defer src="js/toggle.js"></script>
      <script defer src="js/dropdown.js"></script>
     </head>
-<body>
+    <body>
       <div class="topdiv">
           <div class="social">
           <a href="https://facebook.com"><img src="images/facebook.svg" alt="facebook" class="fa fa-facebook"/></a>
@@ -34,13 +34,11 @@
           </div>
     </div>
       <header>
-         <div></div>
           <picture class="logo">
             <source srcset="images/tis-logo-purple.png" media="(max-width: 35rem)">
             <source srcset="images/tis-logo-purple.png" media="(min-width: 65rem)">
                 <img src="images/tis-logo-purple.png" alt="Temple Inn and Suites logo" />
         </picture>
-        <div></div>
        </header>
           <nav>
             <ul id="primaryNav" class="navigation">
@@ -54,42 +52,66 @@
              <li class="sub"><a href="weatherforcast.html">Weather Forcasts</a></li>
          </ul>
         </nav>
-
-<main class="contacts-grid">
-    <h2 class="team">Contact Temple Inn and Suites</h2>
-    <section class="section-contacts">
-  <div class="general" >
-    <h3>General Information</h3>
-    <h4>Physical Address:</h4>
-    <p>48000 Montgomery Ln #30, Bethesda, MD 20814</p>
-    <h4>Mailing Address:</h4>
-    <p>48000 Montgomery Ln #30,<br/> Bethesda, MD 20814</p>
-    <h4>Phone Number</h4>
-    <p>1 (435) 678-2791</p>
-    <h4>Email</h4>
-    <p>templeInn@templeInnSuites</p>
-     <div class="gmap">
+<main>
+<section class="contacts-grid">
+  <h2 class="team">Contact Temple Inn and Suites</h2>
+   <article class="section-contacts">
+        <div class="general" >
+          <h3>General Information</h3>
+          <h4>Headquarters:</h4>
+          <p>48000 Montgomery Ln #30, Bethesda, MD 20814</p>
+          <h4>Mailing Address:</h4>
+          <p>48000 Montgomery Ln #30,<br/> Bethesda, MD 20814</p>
+          <h4>Phone Number:</h4>
+          <p>1 (435) 678-2791</p>
+          <h4>Email:</h4>
+          <p><a href="mailto:templeInn@templeInnSuites">templeInn@templeInnSuites</a></p>
+           <div class="gmap"><h4>Directions:</h4>
+             <a href="https://www.google.com/maps/dir//4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.983252,-77.095532,14z/data=!4m17!1m7!3m6!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!2s4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814!3b1!8m2!3d38.9832518!4d-77.0955318!4m8!1m0!1m5!1m1!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!2m2!1d-77.0955318!2d38.9832518!3e2?hl=en">Directions</a>
          </div>
-</div>
-    <div class="contact-form">
-      <div class="formbox">
-     <div id="feedback"></div>
-      <form method="get" action="thankyou_comments.html" autocomplete="on">
-    <fieldset>
-      <legend><h3>We want to hear from you</h3></legend>
-      <label class="top">First and Last Name*<input type="text" name="name" required></label>
-        <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+        </div>
+    </article>
+    <article class="contact-form">
+       <div class="formbox">
+        <form method="get" action="thankyou_comments.html" autocomplete="on" class="comments">
+        <fieldset>
+          <legend><h3>We want to hear from you</h3></legend>
+          <label class="top">First and Last Name*<input type="text" name="name" required></label>
+          <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
           <p>&nbsp;</p>
-        <p class="imp">Your comments are important to us!</p>
-        <label class="top">Comments<textarea id="comments" name="comments"  rows="6" cols="30"></textarea></label>
-        <p>&nbsp;</p>
-        <input type="hidden" value="Date.now()">
-        <input class="button submitBtn" type="submit" value="My comments to the Chamber">
-    </fieldset>
-    </form>
+          <p class="imp">Your comments are important to us!</p>
+          <label class="top">Comments<textarea id="comments" name="comments"  rows="6" cols="30"></textarea></label>
+          <p>&nbsp;</p>
+          <input type="hidden" value="Date.now()">
+          <input class="button submitBtn" type="submit" value="My comments to the Chamber">
+        </fieldset>
+       </form>
+      </div>
+     </div>
+    </article>
+    <article class="board">
+      <h3>Board members</h3>
+      <div class="member">
+    <p class="boardmem">Samuel Sutton</p>
+    <p class="boardpos">President</p>
+    <p class="boardemail">ssutton@templeInnSuites</p>
     </div>
-  </div>
-  </section>
+    <p class="separator"></p>
+     <div class="member">
+    <p class="boardmem">Mary Miller</p>
+    <p class="boardpos">Vice-President</p>
+    <p class="boardemail">mmiller@templeInnSuites</p>
+     </div><p class="separator"></p>
+    <div class="member"> <p class="boardmem">Katie Catrill</p>
+    <p class="boardpos">Treasurer</p>
+    <p class="boardemail">kcatrill@templeInnSuites</p>
+    </div><p class="separator"></p>
+     <div class="member"><p class="boardmem">Mark Morgan</p>
+    <p class="boardpos">Secretary</p>
+    <p class="boardemail">mmorgan@templeInnSuites</p></div>
+  </article>
+   </section>
+
   </main>
  <footer>
     <div class="flogo"><img src="images/templeIcon-lavendar.svg" class="ftrLogo" alt="Temple Inn Suites" /></div>
