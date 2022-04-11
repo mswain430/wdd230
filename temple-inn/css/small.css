@@ -1108,7 +1108,7 @@ section.services-grid article  {
    border: 5px solid #b3f1ca
 }
 /* ********************** RECEPTION, MISSIONARY *********************** */
-.mission-grid h1 {text-align: center;}
+.mission-grid h1 {text-align: center;padding: 20px}
 section.reception-grid article, section.mission-grid article  {
   flex: auto;
   display: flex;
