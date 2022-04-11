@@ -17,7 +17,10 @@ header {
     width: 100%;
     max-width: 1024px;
     justify-content: left;
-    background: #efeff4 url("images/header_bkgrd.png") no-repeat fixed right;
+    background-image: url('../images/headerImg.png');
+    background-position-x: right;
+    background-position-y: 25%;
+    background-repeat: no-repeat;
 }
 /* Flex *********************/
 nav {
@@ -52,7 +55,7 @@ nav ul#primaryNav {
 nav ul ul {
 	display: none;
 	position: absolute;
-	top: 54px; /* the height of the main nav */
+	top: 55px; /* the height of the main nav */
 }
 
 /* Display Dropdowns on Hover */
@@ -277,15 +280,38 @@ p.member-message {
 }
 
 /* *********************** SERVICES *************************** */
-main.services-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin:2% 4%;
+
+section.services-grid article  {
+ display: grid;
+ grid-template-columns: 40% 60%;
+  grid-template-rows: 75px 270px;
+  min-height: 475px;
+  border:3px solid #c8cef0;
+  border-radius: 4px;
+  margin: 2% 10%;
 }
-main.services-grid section {
-  grid-column: auto;
-  min-height: 400px;
-  padding: 4%;
+
+ section.services-grid article h2 {
+   grid-column: span 2;
+   grid-row: 1;
+   text-align: left;
+   margin:0;
+   padding: 20px 20px;
+  }
+ section.services-grid article div.body-text {
+   grid-column: 1;
+   grid-row: 2;
+   padding: 25px 40px;font-size: 1.3em;
+ }
+ section.services-grid article picture {
+  grid-column: 2;
+  grid-row: span 2;
+  justify-content: center;
+  margin: 2% auto;
+}
+ section.services-grid article picture img {
+   min-width: 320px;
+   border: 1px solid #0b012d;
 }
 /* *********************** HOME - CHECK FORM ************** */
 section.checkAccom {
@@ -349,4 +375,28 @@ article.contact-form {
   grid-column: 2;
   grid-row: 2;
 }
+
+/* *************************** RECEPTION & MISSION ******************** */
+section.reception-grid article, section.mission-grid article  {
+ display: grid;
+ grid-template-columns: 60% 40%;
+  grid-template-rows: 75px auto;
+  border:3px solid #c8cef0;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 2% 10%;
+}
+
+ section.reception-grid article picture, section.mission-grid article picture {
+  grid-column: 2;
+  grid-row: span 2;
+  justify-content: center;
+  margin: 2% auto;
+}
+ section.reception-grid article picture img, section.mission-grid article picture img {
+   min-width: 320px;
+   border: 1px solid #0b012d;
+}
+
+
 }

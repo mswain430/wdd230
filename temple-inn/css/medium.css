@@ -40,6 +40,7 @@ header picture.logo img {
     align-items: center;
 }
 
+
 header .btncontainer {
   grid-column: 3;
   grid-row: 2;
