@@ -112,9 +112,9 @@ li > a:only-child:after { content: ''; }
   object-fit: cover;
   justify-content: center
   }
-.hero picture img {width: 1200px;justify-content:center;margin:auto;}
+
 .hero-service picture img {max-width: 1200px;justify-content:center;margin:auto;}
-.hero picture.hero-img img {min-width: 1200px; max-width: 1200px;max-height: 600px; object-fit: cover;justify-content: center}
+.hero picture.hero-img img {min-width: 100%; max-width: 100%; max-height: 600px; object-fit: cover;justify-content: center}
 
 .hero picture .hero-img img {
   min-width: 100%;
@@ -135,8 +135,6 @@ li > a:only-child:after { content: ''; }
   right:8rem;
   background-color: rgba(27, 58, 216, 0.6)
  }
-
-
 
  a.btn_call {bottom: 6rem;
   right:8rem;text-align: center;min-width: 260px; border:2px solid rgb(244, 212, 50);
