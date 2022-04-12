@@ -247,14 +247,18 @@ p.member-message {
   text-align: left;
 }
 /* *********************** SERVICES *************************** */
-main.services-grid {
+.services-grid {
   grid-template-columns: 1fr 1fr;
 }
-main.services-grid section {
+.services-grid section {
   grid-column: auto;
   min-height: 600px;
+  justify-content: center;
   display: flex;
   flex-direction: row;
+}
+.services-grid h1 {
+  font-size: 1.4em;
 }
 }
 /* *************************** HOT TOPICS ************************** */

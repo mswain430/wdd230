@@ -78,6 +78,7 @@ h1, h2, h3, h4 {
   color: #05216f;
 
 }
+h1 {font-size: 1.8em;line-height: 1.3em;}
 h2 {font-size: 1.7em;line-height: 1.3em;}
 h3 {font-size: 1.4em;line-height: 1.2em;}
 h4 {font-size: 1.2em;line-height: 1.2em;}
@@ -374,6 +375,7 @@ div.home-grid {
    align-content: center;
 }
 .home-service-img img {min-width: 320px; max-width: 320px; }
+.home-reception-img img {min-width: 320px; max-width: 320px; }
 /* ******************************** Hero ******************** */
 .home-grid section {
   justify-content: center;
