@@ -82,7 +82,7 @@ nav ul li a {
  .home-grid {
    display: grid;
    grid-template-columns: 1fr;
-   grid-template-columns: 450 395px 400px 400px;
+   grid-template-columns: 450px 395px 400px 400px;
 }
 .hero picture.hero-img img {min-width: 800px; max-width: 800px;max-height: 450px; object-fit: cover;justify-content: center}
 .hero-reception picture.hero-img img {min-width: 800px; max-width: 800px;max-height: 500px; object-fit: cover;justify-content: center}

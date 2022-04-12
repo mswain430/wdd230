@@ -457,7 +457,7 @@ section.checkAccom {
   background-color:rgb(181, 197, 249)
 }
 section.checkAccom h3{
-  grid-column: 1fr;
+  grid-column: 1;
   grid-row: 1;
   padding:10px 10px;
   text-align: center;
