@@ -369,7 +369,7 @@ li.sub {text-align: left}
 div.home-grid {
    display: grid;
    grid-template-columns: 1fr;
-   grid-template-rows: 450px 420px 490px auto;
+   grid-template-rows: 450px auto 490px auto;
    justify-content: center;
    align-content: center;
 }
@@ -427,22 +427,24 @@ div.home-grid {
   border:2px solid rgb(244, 212, 50);
   border-radius: 4px;
 }
-
-  a:hover .btn_call {
+a:hover .btn_call {
     color:#a4f4f4;
-    text-decoration: green wavy underline;
+   /* text-decoration: green wavy underline; */
   }
 /* *********************** HOME - CHECK FORM ************** */
 section.checkAccom {
   grid-column: 1;
   grid-row: 2;
-
+  background-color:rgb(181, 197, 249)
 }
 section.checkAccom h3{
+  grid-column: 1fr;
+  grid-row: 1;
   padding:10px 10px;
   text-align: center;
   margin: 1%;
 }
+
 .checkform {
   margin: 2%;
   align-items: center;
@@ -454,6 +456,7 @@ section.checkAccom h3{
   flex-direction: column;
   justify-content: center;
   margin: 2%;
+  padding: 20px;
 }
 
 .checkform label {
@@ -548,6 +551,9 @@ p.card-text {margin:0;padding: 2px;color:rgb(5, 60, 155)}
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 1200px;
+  justify-content: center;
+  margin: auto;
 }
 .featuredtemples h2 {text-align: center;}
 .featuredtemples section {
@@ -563,6 +569,7 @@ p.card-text {margin:0;padding: 2px;color:rgb(5, 60, 155)}
 section.featuredtemples h3 {
   flex: auto;
   min-height: 40px;
+  max-height: 40px;
   font-size: 1.4em;
 }
 
@@ -1093,6 +1100,7 @@ section .services-grid, section.reception-grid {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 .specialgroup h2 {text-align: center;background-color:rgba(57, 70, 186, 0.8);color: aliceblue;padding: 10px 20px;margin: 0 auto}
 section.services-grid article  {
@@ -1114,7 +1122,9 @@ section.services-grid article  {
 }
  section.services-grid article picture img {
    min-width: 320px;
-   border: 5px solid #b3f1ca
+   border: 5px solid #b3f1ca;
+   max-width: 1200px;
+   margin: auto;
 }
 /* ********************** RECEPTION, MISSIONARY *********************** */
 .mission-grid h1 {text-align: center;padding: 20px}
@@ -1180,13 +1190,13 @@ h3 span#event{font-weight: bold}
   flex-direction: column;
   transition: box-shadow .2s;
   box-shadow:1px 5px 5px #adbff9;
-  max-width: 280px;
-  height: 380px;
+  max-width: 300px;
+  height: 310px;
   border-radius:8px;
   border: 1px solid rgb(134, 164, 253);
   background: aliceblue;
   margin: 5px 1% 5px 1%;
-  padding: 10px;
+  padding: 5px;
   justify-self: center;
 }
 .dis-card figcaption {  text-transform: capitalize;font-size: 28px; color:rgb(27, 76, 239); font-weight: bold}

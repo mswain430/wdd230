@@ -61,55 +61,54 @@
       </div>
  <main>
    <div class="home-grid">
-     <section>
-       <div class="hero">
-         <picture class="hero-img">
-          <source srcset="images/san-diego-md.jpg" media="(min-width: 35rem)">
-          <source srcset="images/san-diego-lg.jpg" media="(min-width: 58rem)">
-            <img src="images/san-diego-crop.jpg" alt="Temple Inn and Suites features San Diego Temple" />
-        </picture>
-         <h2>Check out a Temple<br/> package today!</h2>
-         <div class="call"><a href="reservation.html" class="btn_call">Check Availability Now</a>
-        </div>
-      </div>
-    </section>
-    <section class="checkAccom">
-      <h3>Check for availability form here:</h3>
-      <div class="checkform">
-        <form action="confirmation.html" method="get" autocomplete="on" class="check">
-          <label class="top">Location<input type="text" name="location" required></label>
-          <label class="top">Checkin <input type="date" name="checkin" required></label>
-          <label class="top">Checkout <input type="date" name="checkout" required></label>
-        <input type="hidden" value="Date.now()">
-        <input class="button submitBtn" type="submit" value="Check my Accommedations">
-      </form>
-      </div>
-  </section>
-  <section class="weather-main">
-        <div class="weather-grid">
-         <h2>Weather Information</h2>
-          <div class="dis-card">
-            <span id="icon-src"></span>
-            <figure><img src="http://openweathermap.org/img/wn/01d.png" alt="San Diego Temple Weather" id="weathericon" /><figcaption></figcaption></figure>
-            <p><span id="current-temp"></span>&#8457;<br/>
-            <span id="description"></span><br/>
-            <span id="humidity"></span><br/>
-            <span id="windspeed"></span></p>
-            <!-- Trigger/Open The Modal -->
-            <br/>
-            <button id="myBtn">Weather Alert</button>
-            <br/>
-            <p><a href="weatherforcast.html" >Weather forcast</a></p>
-       </div>
-    </div>
-  </section>
-     <!-- The Modal -->
-     <div id="myModal" class="modal">
+        <section>
+          <div class="hero">
+            <picture class="hero-img">
+              <source srcset="images/san-diego-md.jpg" media="(min-width: 35rem)">
+              <source srcset="images/san-diego-lg.jpg" media="(min-width: 58rem)">
+                <img src="images/san-diego-crop.jpg" alt="Temple Inn and Suites features San Diego Temple" />
+            </picture>
+            <h2>Check out a Temple<br/> package today!</h2>
+            <div class="call"><a href="reservation.html" class="btn_call">Check Availability Now</a>
+            </div>
+          </div>
+        </section>
+        <section class="checkAccom">
+          <h3>Check for availability form here:</h3>
+          <div class="checkform">
+            <form action="confirmation.html" method="get" autocomplete="on" class="check">
+              <label class="top">Location<input type="text" name="location" required></label>
+              <label class="top">Checkin <input type="date" name="checkin" required></label>
+              <label class="top">Checkout <input type="date" name="checkout" required></label>
+            <input type="hidden" value="Date.now()">
+            <input class="button submitBtn" type="submit" value="Check my Accommedations">
+          </form>
+          </div>
+      </section>
+      <section class="weather-main">
+          <div class="weather-grid">
+            <h2>Weather Information</h2>
+              <div class="dis-card">
+                <span id="icon-src"></span>
+                <figure><img src="http://openweathermap.org/img/wn/01d.png" alt="San Diego Temple Weather" id="weathericon" /><figcaption></figcaption></figure>
+                <p><span id="current-temp"></span>&#8457;<br/>
+                <span id="description"></span><br/>
+                <span id="humidity"></span><br/>
+                <span id="windspeed"></span></p>
+                <!-- Trigger/Open The Modal -->
+                <br/>
+                <button id="myBtn">Weather Alert</button>
+                <br/>
+                <p><a href="weatherforcast.html" >Weather forcast</a></p>
+              </div>
+          </div>
+         <!-- The Modal -->
+          <div id="myModal" class="modal">
   <!-- Modal content -->
         <div class="modal-content">
           <span class="close">&times;</span>
           <h2>Weather Alert</h2>
-          <div>
+           <div>
             <span id="weatherAlert"></span>
               <span id="event">Heat Advisory</span>
               <p><span id="alert_descr">...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS
@@ -121,16 +120,16 @@
                 <br/>IMPACTS...The combination of hot temperatures and high
                 humidity will combine to create a dangerous situation in which
                 heat illnesses are possible.</span></p>
-            </div> <!--  end weather Alert-->
-        </div> <!-- end modal content-->
-    </div> <!-- end modal -->
-
-    <section class="featuredtemples">
-   <h2>Featured Temples</h2>
-    </section>
-   </div>
-  </div>
-</main>
+        </div> <!--  end weather Alert-->
+         </div> <!-- end modal content-->
+         </div> <!-- end modal -->
+     </section>
+      <section class="featuredtemples">
+      <h2>Featured Temples</h2>
+        </section>
+      </div>
+      </div>
+    </main>
  <footer>
     <div class="flogo"><img src="images/templeIcon-lavendar.svg" class="ftrLogo" alt="Temple Inn Suites" /></div>
     <div class="address"><h2>Temple Inn and Suites</h2>4800 Montgomery Ln #300<br>Bethesda, MD 20814<br/>
