@@ -366,26 +366,33 @@ li.sub {text-align: left}
 #ham.open span:nth-child(1) {display:none}
 #ham.open span:nth-child(2) {display:block}
 /* ************************* HOME ***************************** */
-main .home-grid {
+div.home-grid {
    display: grid;
    grid-template-columns: 1fr;
-   grid-template-rows: 280px 100px 400px 600px 400px;
+   grid-template-rows: 450px 100px 400px 600px 400px;
    justify-content: center;
    align-content: center;
 }
 /* ******************************** Hero ******************** */
+.home-grid section {
+  max-width: 1200px;
+  justify-content: center;
+}
 .hero {
   grid-row: 1;
   grid-column: 1;
   position: relative;
   display: flex;
   flex-direction: column;
+
 }
-.hero picture.hero-img {
+.hero picture.hero-img img {
     min-width: 320px;
     width: 100%;
-    max-width: 100%;
+    max-width: 400px;
+    height: 450px;
     object-fit: cover;
+    justify-content: center;
 }
 .hero h2 {
   color: #f2f6f8;

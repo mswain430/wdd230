@@ -22,7 +22,7 @@
    <script defer src="js/weather-api.js"></script>
     <script defer src="js/featured-temples.js"></script>
     </head>
-<body>
+  <body>
       <div class="topdiv">
           <div class="social">
           <a href="https://facebook.com"><img src="images/facebook.svg" alt="facebook" class="fa fa-facebook"/></a>
@@ -59,30 +59,33 @@
         </ul>
         </nav>
       </div>
- <main class="home-grid">
-   <div class="hero">
+ <main>
+   <div class="home-grid">
+     <section>
+       <div class="hero">
          <picture class="hero-img">
-          <source srcset="images/san-diego1.webp"
+          <source srcset="images/san-diego-md.jpg"
             media="(max-width: 35rem)">
-          <source srcset="images/san-diego2.webp"
+          <source srcset="images/san-diego-lg.jpg"
             media="(min-width: 57rem)">
-            <img src="images/san-diego1.webp" alt="Temple Inn and Suites features San Diego Temple" />
-      </picture>
-        <h2>Check out a Temple<br/> package today!</h2>
-       <div class="call"><a href="reservation.html" class="btn_call">Check Availability Now</a>
+            <img src="images/san-diego-crop.jpg" alt="Temple Inn and Suites features San Diego Temple" />
+        </picture>
+         <h2>Check out a Temple<br/> package today!</h2>
+         <div class="call"><a href="reservation.html" class="btn_call">Check Availability Now</a>
+        </div>
       </div>
-    </div>
+    </section>
     <section class="checkAccom">
       <h3>Check for availability form here:</h3>
-    <div class="checkform">
-      <form action="confirmation.html" method="get" autocomplete="on" class="check">
-        <label class="top">Location<input type="text" name="location" required></label>
-        <label class="top">Checkin <input type="date" name="checkin" required></label>
-        <label class="top">Checkout <input type="date" name="checkout" required></label>
-       <input type="hidden" value="Date.now()">
-       <input class="button submitBtn" type="submit" value="Check my Accommedations">
-     </form>
-    </div>
+      <div class="checkform">
+        <form action="confirmation.html" method="get" autocomplete="on" class="check">
+          <label class="top">Location<input type="text" name="location" required></label>
+          <label class="top">Checkin <input type="date" name="checkin" required></label>
+          <label class="top">Checkout <input type="date" name="checkout" required></label>
+        <input type="hidden" value="Date.now()">
+        <input class="button submitBtn" type="submit" value="Check my Accommedations">
+      </form>
+      </div>
   </section>
     <div class="weather-main">
       <div class="weather-grid">
@@ -127,10 +130,19 @@
     <div class="featuredtemples">
    <h2>Featured Temples</h2>
     </div>
-   <div class="hottopic"><h2>We provide many Services</h2><p><a href="services" >Check out our services here.</a></p>
-   <picture class="service1"><img src="images/fresno-temple-lds-935867-sm.webp" alt="Fresno California Temple"/></picture>
+    <div class="hottopic">
+     <h2>We provide many Services</h2>
+     <p><a href="services" >Check out our services here.</a></p>
+     <picture class="home-service-img">
+        <source srcset="images/images/newport-beach-2-md.webp"
+            media="(max-width: 35rem)">
+          <source srcset="images/newport-beach-2-lg.webp"
+            media="(min-width: 57rem)">
+            <img src="images/newport-beach-2-sm.webp" alt="Fresno California Temple" />
+       </picture>
       </div>
      <div>
+  </div>
   </div>
 </main>
  <footer>

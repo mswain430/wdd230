@@ -95,8 +95,11 @@ main .home-grid {
    max-width: 100%;
 }
 
-.hero {
+.hero .hero-img img {
+  max-width: 1200px;
+  max-height: 600px;
   object-fit: cover;
+  justify-content: center
   }
 
 .hero h2 {
