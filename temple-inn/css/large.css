@@ -103,7 +103,7 @@ li > a:only-child:after { content: ''; }
   min-width: 100%;
   max-height: 600px;
   object-fit: cover;
-  justify-content: center
+  justify-content: center;
   }
  .hero-receptions picture.hero-img img {
   min-width: 100%;
@@ -117,6 +117,7 @@ li > a:only-child:after { content: ''; }
   object-fit: cover;
   justify-content: center
   }
+.hero picture img {max-width: 1200px;justify-content:center;margin:auto;}
 .hero-service picture img {max-width: 1200px;justify-content:center;margin:auto;}
 .hero h2 {
   color: #f2f6f8;
