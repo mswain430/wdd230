@@ -136,8 +136,7 @@ li > a:only-child:after { content: ''; }
   background-color: rgba(27, 58, 216, 0.6)
  }
 
- a.btn_call {bottom: 6rem;
-  right:8rem;text-align: center;min-width: 260px; border:2px solid rgb(244, 212, 50);
+ a.btn_call {bottom: 6rem; font-size: 1.8em; line-height:1.4em;  right:8rem;text-align: center;min-width: 260px; border:2px solid rgb(244, 212, 50);
   border-radius: 4px;}
 /* ****************** FOOTER ************************** */
 footer {
