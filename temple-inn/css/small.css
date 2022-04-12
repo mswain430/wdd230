@@ -369,13 +369,13 @@ li.sub {text-align: left}
 div.home-grid {
    display: grid;
    grid-template-columns: 1fr;
-   grid-template-rows: 450px 400px 490px 600px 400px;
+   grid-template-rows: 450px 420px 490px auto;
    justify-content: center;
    align-content: center;
 }
+.home-service-img img {min-width: 320px; max-width: 320px; }
 /* ******************************** Hero ******************** */
 .home-grid section {
-  max-width: 1200px;
   justify-content: center;
 }
 .hero {
@@ -472,19 +472,22 @@ div.checkform form.check input {
 }
 
 /* ********************************** HOME- Weather ************************ */
-.weather-main {
+ .weather-main {
   grid-column: span 3;
   grid-row: 3;
   justify-content: center;
   align-content: center;
   min-height: 200px;
-  background-color: aliceblue;
-  margin: 2%;
+  text-align: center;
+  margin: auto;
+
 }
 /* grid */
 .weather-grid {
   grid-template-columns: 1fr ;
   grid-template-rows: 1fr 0 1fr 1fr 1fr ;
+  justify-content: center;
+  text-align: center;
 }
 .weather-grid h2 {text-align: center;}
 /* or flex */
@@ -545,13 +548,11 @@ p.card-text {margin:0;padding: 2px;color:rgb(5, 60, 155)}
   display: flex;
   flex-direction: column;
   justify-content: center;
-  justify-content:left;
 }
 .featuredtemples h2 {text-align: center;}
 .featuredtemples section {
   display:flex;
   flex-direction: column;
-  min-height: 500px;
   text-align: center;
   font-size: 1.1em; font-weight: bolder;
   line-height: 1.4em;
@@ -566,11 +567,12 @@ section.featuredtemples h3 {
 }
 
 section.featured1 a, section.featured2 a, section.featured3 a {
-  color: #de36e7;
+  color: #78fb05;
   font-size: 1.2em;
   text-shadow:1px 1px 1px rgb(10, 52, 88);
   font-weight: bold;
   letter-spacing: .1em;
+  height: 420px;
 }
 .featured1 a:hover, .featured2 a:hover,.featured3 a:hover {
   color:rgb(2, 255, 27);
@@ -1177,14 +1179,18 @@ h3 span#event{font-weight: bold}
   display: flex;
   flex-direction: column;
   transition: box-shadow .2s;
-  box-shadow:1px 10px 10px #0f4077;
-  width: 300px;
-  height: 425px;
-  border-radius:10px;
-  border: 1px solid #ccc;
-  background: #fff;
-  margin: 25px auto 5px 2%;
+  box-shadow:1px 5px 5px #adbff9;
+  max-width: 280px;
+  height: 380px;
+  border-radius:8px;
+  border: 1px solid rgb(134, 164, 253);
+  background: aliceblue;
+  margin: 5px 1% 5px 1%;
+  padding: 10px;
+  justify-self: center;
 }
+.dis-card figcaption {  text-transform: capitalize;font-size: 28px; color:rgb(27, 76, 239); font-weight: bold}
+.dis-card button {max-width: 200px; margin: auto;}
 .box {
   display: block;
   width: 100%;

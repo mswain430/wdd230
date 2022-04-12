@@ -79,10 +79,10 @@ nav ul li a {
 }
 /*  ****************************** HOME ************************ */
 
-main .home-grid {
+ .home-grid {
    display: grid;
    grid-template-columns: 1fr;
-   grid-template-columns: 450 395px 200px 200px 1fr;
+   grid-template-columns: 450 395px 400px 400px;
 }
 .hero picture.hero-img img {min-width: 800px; max-width: 800px;max-height: 450px; object-fit: cover;justify-content: center}
 .hero.call {text-align: center}
@@ -107,25 +107,25 @@ home-service-img
   grid-row: 4;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-rows: 60px 400px;
 }
 .featuredtemples h2 {
-  grid-column: span;
+  grid-column: span 3;
   grid-row: 1;
 }
 .featuredtemples section {
   grid-row: 2;
   display:flex;
   flex-direction: column;
-  max-height: 350px;
   text-align: center;
   background-color:rgb(193, 200, 235);
   border: 2px solid rgba(98, 135, 236, 0.8);
   border-radius: 8px;
-  align-items: center;
   font-size: .9em;
   line-height: .9em;
   margin: 2%;
-  padding: .25rem;
+  padding: 5px;
+  max-height: 360px;
 }
 .featuredtemples section > p {
   min-height: 50px;
@@ -138,6 +138,10 @@ home-service-img
   border-radius: 8px;
   background-color: aliceblue;
 }
+/*  ************************** HOME  WEATHER ********* */
+ .weather-grid {
+    justify-content: center;
+ }
 
 /* ****************** FOOTER ************************** */
 
