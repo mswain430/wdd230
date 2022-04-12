@@ -369,7 +369,7 @@ li.sub {text-align: left}
 div.home-grid {
    display: grid;
    grid-template-columns: 1fr;
-   grid-template-rows: 450px 100px 400px 600px 400px;
+   grid-template-rows: 450px 400px 490px 600px 400px;
    justify-content: center;
    align-content: center;
 }
@@ -389,7 +389,7 @@ div.home-grid {
 .hero picture.hero-img img {
     min-width: 320px;
     width: 100%;
-    max-width: 400px;
+    max-width: 100%;
     height: 450px;
     object-fit: cover;
     justify-content: center;

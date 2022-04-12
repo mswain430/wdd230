@@ -45,15 +45,15 @@
         <div class="container">
           <nav>
             <ul id="primaryNav" class="navigation">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="reservation.html">Reservations</a></li>
-          <li><a href="temples.html">Locations</a></li>
-          <li><a href="contacts.html">Contact</a>
-          <li class="withsub"><a href="services.html">Services</a>
-            <ul class="main">
-              <li class="sub"><a href="reception.html">Receptions</a></li>
-              <li class="sub"><a href="temple-missionary.html">Temple Missionaries</a></li>
-              <li class="sub"><a href="weatherforcast.html">Weather Forcasts</a></li>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="reservation.html">Reservations</a></li>
+              <li><a href="temples.html">Locations</a></li>
+              <li><a href="contacts.html">Contact</a>
+              <li class="withsub"><a href="services.html">Services</a>
+                <ul class="main">
+                  <li class="sub"><a href="reception.html">Receptions</a></li>
+                  <li class="sub"><a href="temple-missionary.html">Temple Missionaries</a></li>
+                  <li class="sub"><a href="weatherforcast.html">Weather Forcasts</a></li>
             </ul>
           </li>
         </ul>
@@ -64,10 +64,8 @@
      <section>
        <div class="hero">
          <picture class="hero-img">
-          <source srcset="images/san-diego-md.jpg"
-            media="(max-width: 35rem)">
-          <source srcset="images/san-diego-lg.jpg"
-            media="(min-width: 57rem)">
+          <source srcset="images/san-diego-md.jpg" media="(min-width: 35rem)">
+          <source srcset="images/san-diego-lg.jpg" media="(min-width: 58rem)">
             <img src="images/san-diego-crop.jpg" alt="Temple Inn and Suites features San Diego Temple" />
         </picture>
          <h2>Check out a Temple<br/> package today!</h2>
@@ -91,42 +89,42 @@
       <div class="weather-grid">
          <h2>Weather Information</h2>
           <div class="dis-card">
-        <span id="icon-src"></span>
-        <figure><img src="http://openweathermap.org/img/wn/01d.png" alt="San Diego Temple Weather" id="weathericon" /><figcaption></figcaption></figure>
-        <p><span id="current-temp"></span>&#8457;<br/>
-        <span id="description"></span><br/>
-        <span id="humidity"></span><br/>
-        <span id="windspeed"></span></p>
-        <!-- Trigger/Open The Modal -->
-        <br/>
-        <button id="myBtn">Weather Alert</button>
-        <br/>
-         <p><a href="weatherforcast.html" >Weather forcast</a></p>
+            <span id="icon-src"></span>
+            <figure><img src="http://openweathermap.org/img/wn/01d.png" alt="San Diego Temple Weather" id="weathericon" /><figcaption></figcaption></figure>
+            <p><span id="current-temp"></span>&#8457;<br/>
+            <span id="description"></span><br/>
+            <span id="humidity"></span><br/>
+            <span id="windspeed"></span></p>
+            <!-- Trigger/Open The Modal -->
+            <br/>
+            <button id="myBtn">Weather Alert</button>
+            <br/>
+            <p><a href="weatherforcast.html" >Weather forcast</a></p>
        </div>
-     <!-- The Modal -->
-     <div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2>Weather Alert</h2>
-    <div><span id="weatherAlert"></span>
-    <span id="event">Heat Advisory</span>
-     <p><span id="alert_descr">...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS
-       AFTERNOON TO 8PM CDT THIS EVENING...*
-       WHAT...Heat index values of 105 to 109 degrees expected.*
-       WHERE...Creek, Okfuskee, Okmulgee, McIntosh, Pittsburg,Latimer,
-       Pushmataha, and Choctaw Counties.* WHEN...From 1 PM to 8 PM CDT
-       Thursday.*
-       <br/>IMPACTS...The combination of hot temperatures and high
-       humidity will combine to create a dangerous situation in which
-       heat illnesses are possible.</span></p>
-      </div> <!--  end weather Alert-->
-  </div> <!-- end modal content-->
-</div> <!-- end modal -->
-
     </div>
   </div>
+     <!-- The Modal -->
+     <div id="myModal" class="modal">
+  <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Weather Alert</h2>
+          <div>
+            <span id="weatherAlert"></span>
+              <span id="event">Heat Advisory</span>
+              <p><span id="alert_descr">...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS
+                AFTERNOON TO 8PM CDT THIS EVENING...*
+                WHAT...Heat index values of 105 to 109 degrees expected.*
+                WHERE...Creek, Okfuskee, Okmulgee, McIntosh, Pittsburg,Latimer,
+                Pushmataha, and Choctaw Counties.* WHEN...From 1 PM to 8 PM CDT
+                Thursday.*
+                <br/>IMPACTS...The combination of hot temperatures and high
+                humidity will combine to create a dangerous situation in which
+                heat illnesses are possible.</span></p>
+            </div> <!--  end weather Alert-->
+        </div> <!-- end modal content-->
+    </div> <!-- end modal -->
+
     <div class="featuredtemples">
    <h2>Featured Temples</h2>
     </div>
@@ -134,10 +132,6 @@
      <h2>We provide many Services</h2>
      <p><a href="services" >Check out our services here.</a></p>
      <picture class="home-service-img">
-        <source srcset="images/images/newport-beach-2-md.webp"
-            media="(max-width: 35rem)">
-          <source srcset="images/newport-beach-2-lg.webp"
-            media="(min-width: 57rem)">
             <img src="images/newport-beach-2-sm.webp" alt="Fresno California Temple" />
        </picture>
       </div>
