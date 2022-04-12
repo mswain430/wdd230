@@ -60,10 +60,27 @@
  <main class="weather-main">
 
 <h2>Weather Forecast</h2>
-<p><div id="current-temp"></div></p>
+<table>
+  <tr>
+    <th>Place</th>
+    <th>Longitude</th>
+    <th>Latitude</th>
+  </tr>
+  <tr>
+    <td>San Diego</td>
+    <td>-117.2742</td>
+    <td>32.8473</td>
+  </tr>
+   <tr>
+    <td>Sacramento</td>
+    <td>-117.2742</td>
+    <td>32.8473</td>
+  </tr>
+</table>
+<div id="current-temp"></div>
 <div>
-<p><input type="text" class="form-control" inputmode="numeric" id="longitude" placeholder="longitude" aria-label="longitude" area-described="basic-addon1" value="-117.2742"/></p>
-<p><input type="text" class="form-control" inputmode="numeric" id="latitude" placeholder="latitude" aria-label="latitude" area-described="basic-addon1" value="32.8473"/></p>
+<p><input type="text" class="form-control" inputmode="numeric" id="longitude" placeholder="longitude" aria-label="longitude"  /></p>
+<p><input type="text" class="form-control" inputmode="numeric" id="latitude" placeholder="latitude" aria-label="latitude"  /></p>
 
 <button id="btnGet" type="button" class="btn btn-primary">Get Weather</button>
 <button id="btnCurrent" type="button" class="btn btn-primary">Use Current Location</button>
